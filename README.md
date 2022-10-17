@@ -1,2 +1,2 @@
-# page_amazon_lab
-Sistema informativo para un empresa de tecnologia.
+# front
+Plantilla de front con boostrap 5, jquery 3.3
