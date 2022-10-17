@@ -23,6 +23,9 @@
   <link rel="stylesheet" href="../../assets/css/theme.minc619.css?v=1.0">
 </head>
 <body>
+  <!-- ========== HEADER ========== -->
+  
+  <!-- ========== END HEADER ========== -->
 
   <!-- ========== MAIN ========== -->
   <main id="content" role="main">
@@ -33,7 +36,7 @@
            data-hs-video-bg-options='{
              "type": "you-tube",
              "videoId": "0qisGSwZym4",
-             "ratio": 0.75,
+             "ratio": 0.75
            }'>
       </div>
       <!-- End Video Background -->
@@ -107,22 +110,22 @@
                    }]
                  }'>
               <div class="js-slide">
-                <img class="max-w-11rem max-w-md-13rem mx-auto" src="../assets/svg/clients-logo/kaplan-white.svg" alt="Image Description">
+                <img class="max-w-11rem max-w-md-13rem mx-auto" src="../../assets/svg/clients-logo/kaplan-white.svg" alt="Image Description">
               </div>
               <div class="js-slide">
-                <img class="max-w-11rem max-w-md-13rem mx-auto" src="../assets/svg/clients-logo/hubspot-white.svg" alt="Image Description">
+                <img class="max-w-11rem max-w-md-13rem mx-auto" src="../../assets/svg/clients-logo/hubspot-white.svg" alt="Image Description">
               </div>
               <div class="js-slide">
-                <img class="max-w-11rem max-w-md-13rem mx-auto" src="../assets/svg/clients-logo/stripe-white.svg" alt="Image Description">
+                <img class="max-w-11rem max-w-md-13rem mx-auto" src="../../assets/svg/clients-logo/stripe-white.svg" alt="Image Description">
               </div>
               <div class="js-slide">
-                <img class="max-w-11rem max-w-md-13rem mx-auto" src="../assets/svg/clients-logo/slack-white.svg" alt="Image Description">
+                <img class="max-w-11rem max-w-md-13rem mx-auto" src="../../assets/svg/clients-logo/slack-white.svg" alt="Image Description">
               </div>
               <div class="js-slide">
-                <img class="max-w-11rem max-w-md-13rem mx-auto" src="../assets/svg/clients-logo/airbnb-white.svg" alt="Image Description">
+                <img class="max-w-11rem max-w-md-13rem mx-auto" src="../../assets/svg/clients-logo/airbnb-white.svg" alt="Image Description">
               </div>
               <div class="js-slide">
-                <img class="max-w-11rem max-w-md-13rem mx-auto" src="../assets/svg/clients-logo/spotify-white.svg" alt="Image Description">
+                <img class="max-w-11rem max-w-md-13rem mx-auto" src="../../assets/svg/clients-logo/spotify-white.svg" alt="Image Description">
               </div>
             </div>
           </div>
@@ -130,12 +133,40 @@
         <!-- End Clients Section -->
       </div>
 
-      <div class="d-lg-none position-absolute top-0 right-0 bottom-0 left-0 bg-img-hero" style="background-image: url(../assets/img/1920x1080/img2.jpg);"></div>
+      <div class="d-lg-none position-absolute top-0 right-0 bottom-0 left-0 bg-img-hero" style="background-image: url(../../assets/img/1920x1080/img2.jpg);"></div>
     </div>
-    <!-- End Hero Section -->
+    <!-- End Hero Section -->    
 
+    <!-- CTA Section -->
+    <div class="container space-top-2  space-bottom-1">
+      <div class="w-lg-85 mx-lg-auto">
+        <div class="card bg-primary text-white overflow-hidden p-4">
+          <div class="row justify-content-md-start align-items-md-center text-center text-md-left">
+            <div class="col-md-6 offset-md-3 mb-3 mb-md-0">
+              <h3 class="text-white mb-1">Got a question?</h3>
+              <p class="text-white-70 mb-0">We'd love to talk about how we can help you.</p>
+            </div>
+            <div class="col-md-3 text-md-right">
+              <a class="btn btn-light transition-3d-hover" href="#">Contact Us</a>
+            </div>
+          </div>
+
+          <!-- SVG Component -->
+          <figure class="w-25 d-none d-md-block content-centered-y ml-n4">
+            <img class="img-fluid" src="../../assets/svg/illustrations/communication.svg" alt="Image Description">
+          </figure>
+          <!-- End SVG Component -->
+        </div>
+      </div>
+    </div>
+    <!-- End CTA Section -->
+    
   </main>
   <!-- ========== END MAIN ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  
+  <!-- ========== END FOOTER ========== -->
 
   <!-- ========== SECONDARY CONTENTS ========== -->
   <!-- Page Preloader -->
@@ -189,7 +220,7 @@
     $(document).on('ready', function () {
       // INITIALIZATION OF HEADER
       // =======================================================
-      var header = new HSHeader($('#header')).init();
+      // var header = new HSHeader($('#header')).init();
 
 
       // INITIALIZATION OF MEGA MENU
@@ -203,9 +234,8 @@
 
       // INITIALIZATION OF UNFOLD
       // =======================================================
-      // var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
+      //var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
 
-      
 
       // INITIALIZATION OF VIDEO ON BACKGROUND
       // =======================================================
@@ -219,6 +249,7 @@
       $('.js-validate').each(function () {
         var validation = $.HSCore.components.HSValidation.init($(this));
       });
+
 
       // INITIALIZATION OF SLICK CAROUSEL
       // =======================================================
