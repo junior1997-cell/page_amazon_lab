@@ -29,7 +29,7 @@
           <!-- End Avatar -->
 
           <!-- Nav -->
-          <h6 class="text-cap small">Empresa</h6>
+          <h6 class="text-cap small">Pagina 1</h6>
 
           <?php if ($_SESSION['sistema_informativo']==1) {  ?>
             <!-- List -->
@@ -46,32 +46,35 @@
               <li class="nav-item">
                 <a class="nav-link mvalores" href="valores.php"> <i class="fas fa-sliders-h nav-icon"></i> Valores </a>
               </li>
-            </ul>
-            <!-- End List -->
-          <?php  }  ?>
-
-          <h6 class="text-cap small">Servicios</h6>
-
-          <?php if ($_SESSION['sistema_informativo']==1) {  ?>
-            <!-- List -->
-            <ul class="nav nav-sub nav-sm nav-tabs nav-list-y-2 mb-4">
               <li class="nav-item">
                 <a class="nav-link mservicios" href="servicio.php"> <i class="fas fa-shopping-basket nav-icon"></i> Servicios </a>
               </li>
             </ul>
             <!-- End List -->
+            
           <?php  }  ?>
 
-          <h6 class="text-cap small">Proyectos y proveedores</h6>
+          
+
+          <h6 class="text-cap small">Pagina 2</h6>
 
           <?php if ($_SESSION['sistema_informativo']==1) {  ?>
             <!-- List -->
             <ul class="nav nav-sub nav-sm nav-tabs nav-list-y-2 mb-4">
               <li class="nav-item">
-                <a class="nav-link mproyectos" href="proyecto.php"> <i class="fas fa-th nav-icon"></i> Proyectos </a>
+                <a class="nav-link mdatos_generales" href="datos_generales.php"> <i class="fas fa-id-card nav-icon"></i> Datos Generales </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mproveedores" href="proveedores.php"> <i class="fas fa-truck nav-icon"></i> Proveedores </a>
+                <a class="nav-link mvision_vision" href="mision_vision.php"> <i class="fa fa-bullseye nav-icon"></i> Misión y Visión </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mceo_resena" href="ceo_resenia.php"> <i class="fas fa-shield-alt nav-icon"></i>CEO - Reseña </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mvalores" href="valores.php"> <i class="fas fa-sliders-h nav-icon"></i> Valores </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mservicios" href="servicio.php"> <i class="fas fa-shopping-basket nav-icon"></i> Servicios </a>
               </li>
             </ul>
             <!-- End List -->
@@ -81,6 +84,12 @@
           <?php if ($_SESSION['sistema_informativo']==1) {  ?>
             <!-- List -->
             <ul class="nav nav-sub nav-sm nav-tabs nav-list-y-2 mb-4">
+             <li class="nav-item">
+                <a class="nav-link mcargo" href="cargo.php"> <i class="fas fa-users-cog nav-icon"></i> Cargo </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mpersona" href="persona.php"> <i class="fas fa-users-cog nav-icon"></i> Persona </a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link musuarios" href="usuario.php"> <i class="fas fa-users-cog nav-icon"></i> Usuarios </a>
               </li>

@@ -84,19 +84,19 @@
 
           $data[] = [
             "0" => '<div class="d-flex align-items-center mx-auto">
-                    <a onclick="ver_img_perfil(\'' .$img_perfil.$value['imagen_perfil'] . '\',\'' . $value['nombres'] . '\')">
+                    <a onclick="ver_img_perfil(\'' .$img_perfil.$value['foto_perfil'] . '\',\'' . $value['nombre_persona'] . '\')">
                       <div class="avatar avatar-circle">
-                        <img class="avatar-img" src="'.$img_perfil.$value['imagen_perfil'] . '" alt="Image Description" onerror="'.$imagen_error.'">
+                        <img class="avatar-img" src="'.$img_perfil.$value['foto_perfil'] . '" alt="Image Description" onerror="'.$imagen_error.'">
                       </div>
                     </a>
                     <div class="ml-3">
-                      <small style="font-size: 14px;font-weight: bold;">'. $value['nombres'] .'</small> <br>                         
+                      <small style="font-size: 14px;font-weight: bold;">'. $value['nombre_persona'] .'</small> <br>                         
                       <small class="text-muted"> - ' . $value['tipo_documento'] .  ': ' . $value['numero_documento'] .  '</small>
                     </div>
                   </div>',
-            "1" => $value['telefono'],
+            "1" => $value['celular'],
             "2" => $value['login'],
-            "3" => $value['cargo']
+            "3" => $value['nombre_cargo']
           ];
 
         }
