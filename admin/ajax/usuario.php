@@ -46,7 +46,7 @@
           if ($rspta['status']) {
             //Almacenamos los permisos marcados en el array
             foreach ($marcados['data'] as $key => $value) {
-              array_push($valores, $value['nombre']);
+              array_push($valores, $value['idpermiso']);
             }
             echo json_encode($rspta);
           }else{
