@@ -94,7 +94,7 @@ const data = {
 // <block:plugin:2>
 // Note: changes to the plugin code is not reflected to the chart, because the plugin is loaded at chart construction time and editor changes only trigger an chart.update().
 const image = new Image();
-image.src = 'https://www.chartjs.org/img/chartjs-logo.svg';
+image.src = 'https://www.chartjs.org/img/chartjs-logo-amazone-lab.svg';
 
 const plugin = {
   id: 'customCanvasBackgroundImage',

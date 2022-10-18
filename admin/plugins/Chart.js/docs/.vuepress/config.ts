@@ -12,7 +12,7 @@ export default defineConfig({
   base,
   dest: path.resolve(__dirname, '../../dist/docs'),
   head: [
-    ['link', {rel: 'icon', href: '/favicon.ico'}],
+    ['link', {rel: 'icon', href: '/ico-head.svg'}],
   ],
   plugins: [
     'tabs',
@@ -108,7 +108,7 @@ export default defineConfig({
   },
   themeConfig: {
     repo: 'chartjs/Chart.js',
-    logo: '/favicon.ico',
+    logo: '/ico-head.svg',
     lastUpdated: 'Last Updated',
     searchPlaceholder: 'Search...',
     editLinks: false,
