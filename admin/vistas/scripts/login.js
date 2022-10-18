@@ -2,7 +2,7 @@ $("#frmAcceso").on("submit", function (e) {
   e.preventDefault();
   logina = $("#logina").val();
   clavea = $("#clavea").val();
-
+console.log("logina: " + logina + " clavea: " + clavea);
   $("#login-admin-btn").html('<i class="fas fa-spinner fa-pulse fa-2x"></i>').addClass('disabled');
 
   $.post("../ajax/usuario.php?op=verificar", { logina: logina, clavea: clavea }, function (e) {
@@ -14,6 +14,7 @@ $("#frmAcceso").on("submit", function (e) {
       } else {
         toastr.success("Se inicio sesion correctamente. Te hemos extrañado, estamos muy contentos de tenerte de vuelta!");
         $(location).attr("href", "escritorio.php");
+        // console.log('Hola bienvenido de nuevo');
       }
     } else {
       ver_errores(e);

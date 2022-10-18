@@ -289,7 +289,7 @@ class Proyecto
 }
 
 function marca_agua($img_galeria) {
-  $scheme_host=  ($_SERVER['HTTP_HOST'] == 'localhost' ? 'http://localhost/front_sevens/' :  $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'].'/');
+  $scheme_host=  ($_SERVER['HTTP_HOST'] == 'localhost' ? 'http://localhost/page_amazon_lab/' :  $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'].'/');
 
   // if (validar_url($host,$url,$img_galeria)==true) {
 
@@ -347,7 +347,7 @@ function marca_agua($img_galeria) {
 
 function img_resize($imagen_name, $width, $height, $carpeta) {
   //error_reporting( E_ALL ); ini_set( "display_errors", true );
-  $scheme_host = ($_SERVER['HTTP_HOST'] == 'localhost' ? $_SERVER['DOCUMENT_ROOT'].'/front_sevens/' :  $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'].'/');
+  $scheme_host = ($_SERVER['HTTP_HOST'] == 'localhost' ? $_SERVER['DOCUMENT_ROOT'].'/page_amazon_lab/' :  $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'].'/');
 
 	// creamos el nombre
 	date_default_timezone_set('America/Lima'); $date_now = date("d-m-Y h.i.s A");  

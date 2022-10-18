@@ -7,7 +7,7 @@
             $link_host = $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'].'/';
         }else{
             if ($tipo == 'local') {
-                $link_host = "http://localhost/front_sevens/admin/";
+                $link_host = "http://localhost/page_amazon_lab/admin/";
             }            
         }
         return $link_host;

@@ -9,10 +9,9 @@
 
     <!DOCTYPE html>
     <html lang="es">
-      <!-- Mirrored from htmlstream.com/front/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 May 2021 14:15:43 GMT -->
       <head>
         <!-- Title -->
-        <title>Home | Seven's Ingenieros</title>
+        <title>Amazone | Lab</title>
 
         <!-- Required Meta Tags Always Come First -->
         <meta charset="utf-8" />
@@ -25,7 +24,7 @@
         <!-- ========== MAIN ========== -->
         <main id="content" role="main" class="bg-light">
           <?php
-          if ($_SESSION['sistema_informativo']==1){
+          if (true){
             //require 'enmantenimiento.php';
             ?>
               <!-- header -->
@@ -56,9 +55,8 @@
                            <div class="col-6 col-lg-6">
                              <div class="form-group">
                               <label for="">Fecha inicio</label>
-                                <!-- <label for="year_filtro">Año </label> -->
-                                <!-- <select name="year_filtro" id="year_filtro" class="form-control select2" style="width: 100%;" onchange="chart_linea_barra();"> </select> -->
-                                <input type="date" class="form-control form-control-sm" name="filtro_fecha_inicio" id="filtro_fecha_inicio" onchange="cargando_search(); delay(function(){filtros()}, 50 );"  placeholder="Fecha" />
+
+                              <input type="date" class="form-control form-control-sm" name="filtro_fecha_inicio" id="filtro_fecha_inicio" onchange="cargando_search(); delay(function(){filtros()}, 50 );"  placeholder="Fecha" />
 
                               </div>
                             </div>
@@ -112,10 +110,10 @@
             </div>
             <!-- End Content Section -->
             <?php
-            }else{
-              require 'noacceso.php';
-            }
-            require 'footer.php';
+          }else{
+            require 'noacceso.php';
+          }
+          require 'footer.php';
           ?>
         </main>
         <!-- ========== END MAIN ========== -->

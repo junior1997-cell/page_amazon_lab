@@ -25,10 +25,10 @@
 </style>
 
 <!-- JS Implementing Plugins -->
-<script src="../assets/js/vendor.min.js"></script>
+<script src="../../assets/js/vendor.min.js"></script>
 
 <!-- JS Front -->
-<script src="../assets/js/theme.min.js"></script>
+<script src="../../assets/js/theme.min.js"></script>
 
 <!-- DataTables  & Plugins -->
 <script src="../plugins/datatables2/jquery.dataTables.min.js"></script>    

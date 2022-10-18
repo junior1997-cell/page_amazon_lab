@@ -28,14 +28,14 @@
 
           //Declaramos las variables de sesión
           $_SESSION['idusuario'] = $rspta['data']['idusuario'];
-          $_SESSION['nombre'] = $rspta['data']['nombres'];
-          $_SESSION['imagen'] = $rspta['data']['imagen_perfil'];
+          $_SESSION['nombre'] = $rspta['data']['nombre_persona'];
+          $_SESSION['imagen'] = $rspta['data']['foto_perfil'];
           $_SESSION['login'] = $rspta['data']['login'];
-          $_SESSION['cargo'] = $rspta['data']['cargo'];
+          $_SESSION['cargo'] = $rspta['data']['nombre_cargo'];
           $_SESSION['tipo_documento'] = $rspta['data']['tipo_documento'];
           $_SESSION['num_documento'] = $rspta['data']['numero_documento'];
-          $_SESSION['telefono'] = $rspta['data']['telefono'];
-          $_SESSION['email'] = $rspta['data']['email'];
+          $_SESSION['telefono'] = $rspta['data']['celular'];
+          $_SESSION['email'] = $rspta['data']['correo'];
 
           //Obtenemos los permisos del usuario
           $marcados = $usuario->listarmarcados($rspta['data']['idusuario']);
@@ -54,7 +54,8 @@
           }       
 
           //Determinamos los accesos del usuario
-          in_array('Sistema informativo', $valores) ? ($_SESSION['sistema_informativo'] = 1)    : ($_SESSION['sistema_informativo'] = 0);
+          in_array(1, $valores) ? ($_SESSION['escritorio'] = 1) : ($_SESSION['escritorio'] = 0);
+          in_array(2, $valores) ? ($_SESSION['sistema_informativo'] = 1) : ($_SESSION['sistema_informativo'] = 0);
 
         } else {
           echo json_encode($rspta, true);

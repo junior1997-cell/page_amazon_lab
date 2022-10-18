@@ -22,7 +22,7 @@ if (!isset($_SESSION["nombre"])) {
     $proyecto = new Proyecto();
     $toltip = '<script> $(function () { $(\'[data-toggle="tooltip"]\').tooltip(); }); </script>';
 
-    $scheme_host=  ($_SERVER['HTTP_HOST'] == 'localhost' ? 'http://localhost/front_sevens/' :  $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'].'/');
+    $scheme_host=  ($_SERVER['HTTP_HOST'] == 'localhost' ? 'http://localhost/page_amazon_lab/' :  $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'].'/');
 
     //-----------------------P R O Y E C T O ---------------------------------
 

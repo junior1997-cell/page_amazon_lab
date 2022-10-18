@@ -3,7 +3,7 @@
 define("DB_HOST","localhost");
 
 //Nombre de la base de datos
-define("DB_NAME", "front_sevens");
+define("DB_NAME", "admin_amazon_lab");
 
 //Usuario de la base de datos
 define("DB_USERNAME", "root");
@@ -15,7 +15,7 @@ define("DB_PASSWORD", "");
 define("DB_ENCODE","utf8");
 
 //Definimos una constante como nombre del proyecto
-define("PRO_NOMBRE","front_sevens");
+define("PRO_NOMBRE","admin_amazon_lab");
 
 // $config['base_url'] = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
 // $config['base_url'] .= "://".$_SERVER['HTTP_HOST'];

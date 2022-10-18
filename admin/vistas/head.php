@@ -5,10 +5,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
 
 <!-- CSS Implementing Plugins -->
-<link rel="stylesheet" href="../assets/css/vendor.min.css">
+<link rel="stylesheet" href="../../assets/css/vendor.min.css">
 
 <!-- CSS Front Template -->
-<link rel="stylesheet" href="../assets/css/theme.minc619.css?v=1.0">
+<link rel="stylesheet" href="../../assets/css/theme.minc619.css?v=1.0">
 
 <!-- DataTables -->
 <link rel="stylesheet" type="text/css" href="../plugins/datatables2/jquery.dataTables.min.css">    

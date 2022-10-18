@@ -1,6 +1,6 @@
 <?php 
 //Incluímos inicialmente la conexión a la base de datos
-require "../config/Conexion_admin.php";
+require "../config/Conexion.php";
 
 Class Permiso
 {
@@ -16,7 +16,7 @@ Class Permiso
 	{
 		$sql="SELECT * FROM permiso ORDER BY nombre ASC";
 
-		return ejecutarConsulta_admin($sql);		
+		return ejecutarConsulta($sql);		
 	}
 
 	public function ver_usuarios($id_permiso)
@@ -25,7 +25,7 @@ Class Permiso
 		FROM permiso as p, usuario_permiso as up, usuario as u, trabajador as t
 		WHERE p.idpermiso = up.idpermiso and up.idusuario = u.idusuario and u.idtrabajador = t.idtrabajador and u.estado='1' AND u.estado_delete='1' and p.idpermiso = '$id_permiso';";
 
-		return ejecutarConsulta_admin($sql);	
+		return ejecutarConsulta($sql);	
 	}
 
 }
