@@ -26,7 +26,7 @@
     <main id="content" role="main" class="bg-light">
       <?php
 
-    if ($_SESSION['sistema_informativo']==1){
+    if ($_SESSION['cargo']==1){
     //require 'enmantenimiento.php';
   ?>
       <!-- header -->
@@ -40,7 +40,10 @@
             <!-- Card -->
             <div class="card mb-3 mb-lg-5 card-primary card-outline">
               <div class="card-header">
-                <h3 class="card-title">Cargo </h3>
+                <h3 class="card-title">
+                  <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#modal-agregar-cargo" onclick="limpiar_cargo();"><i class="fas fa-plus-circle"></i> Agregar</button>
+                  Admnistrar Cargos.
+                </h3>
               </div>
 
               <!-- Body -->
@@ -59,7 +62,7 @@
                           <th class="text-center">#</th>
                           <th class="">Acciones</th>                                
                           <th>Nombre</th>
-                          <th>Estado</th>
+                          <th>Descripción</th>
                         </tr>
                       </thead>
                       <tbody></tbody>
@@ -68,7 +71,7 @@
                           <th class="text-center">#</th>
                           <th class="">Acciones</th>                                
                           <th>Nombre</th>
-                          <th>Estado</th>
+                          <th>Descripción</th>
                         </tr>
                       </tfoot>
                     </table>
@@ -83,28 +86,66 @@
         <!-- End Row -->
       </div>
       <!-- End Content Section -->
-      <!-- Modal ver imagen -->
-      <div class="modal fade" id="modal-ver-imagen">
+      <!-- MODAL - CARGO TRABAJDOR-->
+      <div class="modal fade" id="modal-agregar-cargo">
         <div class="modal-dialog modal-dialog-scrollable modal-md">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title"><b>Usuario:</b> <span class="text-warning" id="nombre_usuario"></span>  </h4>
+              <h4 class="modal-title">Cargo</h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span class="text-danger" aria-hidden="true">&times;</span>
               </button>
             </div>
 
             <div class="modal-body">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-lg-12 text-center" id="ver_imagen">
+              <!-- form start -->
+              <form id="form-cargo" name="form-cargo" method="POST" autocomplete="off">
+                <div class="card-body">
+                  <div class="row" id="cargando-9-fomulario">
+                    <!-- id idunidad_medida -->
+                    <input type="hidden" name="idcargo" id="idcargo" />
+
+                    <!-- nombre -->
+                    <div class="col-lg-12 class_pading">
+                      <div class="form-group">
+                        <label for="nombre_cargo">Nombre Cargo  <sup class="text-danger">*</sup></label>
+                        <input type="text" name="nombre_cargo" id="nombre_cargo" class="form-control" placeholder="Nombre Cargo" />
+                      </div>
+                    </div>
+                    <!--Descripcion-->
+                    <div class="col-lg-12 class_pading">
+                      <div class="form-group">
+                        <label for="descripcion_pago">Descripción </label> <br />
+                        <textarea name="descripcion" id="descripcion" class="form-control" rows="2"></textarea>
+                      </div>
+                    </div>
+
+                    <!-- barprogress -->
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top:20px;">
+                      <div class="progress" id="div_barra_progress_cargo">
+                        <div id="barra_progress_cargo" class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 0%;">
+                          0%
+                        </div>
+                      </div>
+                    </div>
 
                   </div>
+
+                  <div class="row" id="cargando-10-fomulario" style="display: none;">
+                    <div class="col-lg-12 text-center">
+                      <i class="fas fa-spinner fa-pulse fa-6x"></i><br />
+                      <br />
+                      <h4>Cargando...</h4>
+                    </div>
+                  </div>
                 </div>
-              </div>
+                <!-- /.card-body -->
+                <button type="submit" style="display: none;" id="submit-form-cargo">Submit</button>
+              </form>
             </div>
             <div class="modal-footer justify-content-between">
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger btn-xs" data-dismiss="modal" onclick="limpiar_cargo();">Close</button>
+              <button type="submit" class="btn btn-success btn-xs" id="guardar_registro_cargo">Guardar Cambios</button>
             </div>
           </div>
         </div>
@@ -120,24 +161,24 @@
 
     <!-- Go to Top -->
     <a
-      class="js-go-to go-to position-fixed"
-      href="javascript:;"
-      style="visibility: hidden;"
-      data-hs-go-to-options='{
-       "offsetTop": 700,
-       "position": {
-         "init": {
-           "right": 15
-         },
-         "show": {
-           "bottom": 15
-         },
-         "hide": {
-           "bottom": -15
-         }
-       }
-     }'
-    >
+        class="js-go-to go-to position-fixed"
+        href="javascript:;"
+        style="visibility: hidden;"
+        data-hs-go-to-options='{
+        "offsetTop": 700,
+        "position": {
+          "init": {
+            "right": 15
+          },
+          "show": {
+            "bottom": 15
+          },
+          "hide": {
+            "bottom": -15
+          }
+        }
+      }'
+      >
       <i class="fas fa-angle-up"></i>
     </a>
     <!-- End Go to Top -->
@@ -244,7 +285,7 @@
       if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="assets/vendor/babel-polyfill/dist/polyfill.js"><\/script>');
     </script>
     <!-- JS script -->
-    <script src="scripts/usuario.js"></script>
+    <script src="scripts/cargo.js"></script>
   </body>
 
   <!-- Mirrored from htmlstream.com/front/account-overview.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 May 2021 14:19:48 GMT -->

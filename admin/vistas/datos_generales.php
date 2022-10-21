@@ -25,7 +25,7 @@
     <!-- ========== MAIN ========== -->
     <main id="content" role="main" class="bg-light">
 
-      <?php if ($_SESSION['sistema_informativo']==1){ ?>
+      <?php if ($_SESSION['datos_generales']==1){ ?>
 
         <!-- header -->
         <?php require 'header.php'; ?>

@@ -26,7 +26,7 @@
     <main id="content" role="main" class="bg-light">
       <?php
 
-    if ($_SESSION['sistema_informativo']==1){
+    if ($_SESSION['servicio']==1){
     //require 'enmantenimiento.php';
   ?>
       <!-- header -->

@@ -55,8 +55,14 @@
 
           //Determinamos los accesos del usuario
           in_array(1, $valores) ? ($_SESSION['escritorio'] = 1) : ($_SESSION['escritorio'] = 0);
-          in_array(2, $valores) ? ($_SESSION['sistema_informativo'] = 1) : ($_SESSION['sistema_informativo'] = 0);
-
+          in_array(2, $valores) ? ($_SESSION['datos_generales'] = 1) : ($_SESSION['datos_generales'] = 0);
+          in_array(3, $valores) ? ($_SESSION['mision_vision'] = 1) : ($_SESSION['mision_vision'] = 0);
+          in_array(4, $valores) ? ($_SESSION['ceo_resenia'] = 1) : ($_SESSION['ceo_resenia'] = 0);
+          in_array(5, $valores) ? ($_SESSION['valores'] = 1) : ($_SESSION['valores'] = 0);
+          in_array(6, $valores) ? ($_SESSION['servicio'] = 1) : ($_SESSION['servicio'] = 0);
+          in_array(7, $valores) ? ($_SESSION['cargo'] = 1) : ($_SESSION['cargo'] = 0);
+          in_array(8, $valores) ? ($_SESSION['trabajadores'] = 1) : ($_SESSION['trabajadores'] = 0);
+          in_array(9, $valores) ? ($_SESSION['usuarios'] = 1) : ($_SESSION['usuarios'] = 0);
         } else {
           echo json_encode($rspta, true);
         }

@@ -12,7 +12,7 @@ if (!isset($_SESSION["nombre"])) {
 
 } else {
 
-  if ($_SESSION['sistema_informativo'] == 1) {
+  if ($_SESSION['escritorio'] == 1) {
 
     require_once "../modelos/Escritorio.php";
 
