@@ -1,13 +1,14 @@
 var id_get = varaibles_get();
+
 //Función que se ejecuta al inicio
 function init() {
-
+  var id =id_get.id;
   $(`.mvision_vision${id_get.id}`).addClass("active");
 
   $("#actualizar_registro").on("click", function (e) { $("#submit-form-actualizar-registro").submit(); });
   $("#form-mision-vision").on("submit", function (e) { actualizar_m_v(e); });
 
-  mostrar_m_v(id_get.id);
+  mostrar_m_v(id);
 }
 
 function mostrar_m_v(get_id) {
@@ -19,6 +20,7 @@ function mostrar_m_v(get_id) {
 
     data = JSON.parse(data);  console.log(data);  
     if (data.status){
+
       $("#cargando-1-fomulario").show();
       $("#cargando-2-fomulario").hide();
 
@@ -27,6 +29,7 @@ function mostrar_m_v(get_id) {
       $("#vision").val(data.data.vision);
       $(".clss_mision").html(data.data.mision);
       $(".clss_vision").html(data.data.vision);
+
     }else{
       ver_errores(e);
     }
@@ -53,7 +56,7 @@ function actualizar_m_v(e) {
       if (datos == "ok") {
         Swal.fire("Correcto!", "Misión y visión actualizado correctamente", "success");
 
-        mostrar_m_v(id_get.id); 
+        mostrar_m_v(id); 
 
 
       } else {
