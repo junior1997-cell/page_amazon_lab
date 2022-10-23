@@ -1,16 +1,19 @@
 var tabla;
 var id_get = varaibles_get();
+var id =id_get.id;
+
 //Función que se ejecuta al inicio
-function init() {
+$(document).on("ready", function () {
 
   $(`.mservicios${id_get.id}`).addClass("active");
-
   $("#id_paginaweb").val(id_get.id);
+
   listar(id_get.id);  
 
   $("#guardar_registro").on("click", function (e) {$("#submit-form-servicios").submit();});
 
-}
+});
+
 // abrimos el navegador de archivos
 $("#doc1_i").click(function() {  $('#doc1').trigger('click'); });
 $("#doc1").change(function(e) {  addImageApplication(e,$("#doc1").attr("id")) });
@@ -72,7 +75,6 @@ function listar(id) {
 
         $("td", row).addClass('class_table');
         if (data[0] != '') { $("td", row).eq(0).addClass('text-center'); }
-        if (data[1] != '') { $("td", row).eq(1).addClass('text-center'); }
         if (data[2] != '') { $("td", row).eq(2).addClass('text-nowrap'); }
         if (data[3] != '') { $("td", row).eq(3).addClass('text-center'); }
 
@@ -126,7 +128,7 @@ function ver_caracteristicas(idservicio){
 
     e = JSON.parse(e);  console.log(e);  
 
-    if (e.status) {
+    if (e.status == true) {
 
       if (e.data.caracteristicas==null || caracteristicas=="" || e.data.caracteristicas=='<p><br></p>') {
         $(".nombre_s").html(e.data.nombre_servicio);
@@ -163,34 +165,44 @@ function guardaryeditar(e) {
     data: formData,
     contentType: false,
     processData: false,
-
-    success: function (e) {
-             
+    success: function (e) {             
       try {
-        e = JSON.parse(e);  console.log(e); 
-  
+        e = JSON.parse(e);  console.log(e);   
         if (e.status == true) {
-
           Swal.fire("Correcto!", "Registrado correctamente", "success");
-
-          tabla.ajax.reload();
-         
-          limpiar();
-  
-          $("#modal-agregar-servicios").modal("hide"); 
-  
-        }else{  
-  
+          tabla.ajax.reload();         
+          limpiar();  
+          $("#modal-agregar-servicios").modal("hide");   
+        }else{    
           ver_errores(e);
-        } 
-  
-        $("#guardar_registro_fase").html('Guardar Cambios').removeClass('disabled');
-  
+        }            
       } catch (err) {
         console.log('Error: ', err.message); toastr.error('<h5 class="font-size-16px">Error temporal!!</h5> puede intentalo mas tarde, o comuniquese con <i><a href="tel:+51921305769" >921-305-769</a></i> ─ <i><a href="tel:+51921487276" >921-487-276</a></i>');
       } 
-
+      $("#guardar_registro").html('Actualizar').removeClass('disabled');
     },
+    xhr: function () {
+      var xhr = new window.XMLHttpRequest();
+      xhr.upload.addEventListener("progress", function (evt) {
+        if (evt.lengthComputable) {
+          var percentComplete = (evt.loaded / evt.total)*100;
+          /*console.log(percentComplete + '%');*/
+          $("#barra_progress").css({"width": percentComplete+'%'});
+          $("#barra_progress").text(percentComplete.toFixed(2)+" %");
+        }
+      }, false);
+      return xhr;
+    },
+    beforeSend: function () {
+      $("#guardar_registro").html('<i class="fas fa-spinner fa-pulse fa-lg"></i>').addClass('disabled');
+      $("#barra_progress").css({ width: "0%",  });
+      $("#barra_progress").text("0%").addClass('progress-bar-striped progress-bar-animated');
+    },
+    complete: function () {
+      $("#barra_progress").css({ width: "0%", });
+      $("#barra_progress").text("0%").removeClass('progress-bar-striped progress-bar-animated');
+    },
+    error: function (jqXhr) { ver_errores(jqXhr); },
   });
 }
 
@@ -205,10 +217,7 @@ function mostrar(idservicio) {
 
     e = JSON.parse(e);  console.log(e);  
 
-    if (e.status) {
-
-      $("#cargando-1-fomulario").show();
-      $("#cargando-2-fomulario").hide();
+    if (e.status == true) {      
 
       $("#id_paginaweb").val(e.data.idpagina_web);
       $("#idservicio").val(e.data.idservicio);
@@ -228,8 +237,11 @@ function mostrar(idservicio) {
 
         $("#doc_old_1").val(e.data.icono); 
         $("#doc1_nombre").html(`<div class="row"> <div class="col-md-12"><i>Imagen.${extrae_extencion(e.data.icono)}</i></div></div>`);
-        $("#doc1_ver").html(doc_view_extencion(e.data.icono, 'servicios', 'imagen_perfil', '100%'));        
+        $("#doc1_ver").html(doc_view_extencion(e.data.icono, 'admin/dist/img/servicios/imagen_perfil', '100%'));        
       } 
+
+      $("#cargando-1-fomulario").show();
+      $("#cargando-2-fomulario").hide();
 
     } else {
       ver_errores(e);
@@ -261,7 +273,6 @@ function eliminar(idservicio) {
   });   
 }
 
-init();
 var idproyecto=0;
 $(function () {
 

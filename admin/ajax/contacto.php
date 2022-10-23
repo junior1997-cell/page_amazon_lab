@@ -40,19 +40,19 @@
 
         case 'mostrar':
           $rspta=$contacto->mostrar($_POST["id"]);
-          echo json_encode($rspta);		
+          echo json_encode($rspta, true);		
         break;
 
         case 'actualizar_mision_vision':
 
-          if (empty($id)){
-            echo "Los datos no se pudieron actualizar";
+          if (empty($id)){            
+            $rspta = ['status'=> 'error_user', 'message' => 'Los datos no se pudieron actualizar', 'data' => [] ];  
+            echo json_encode($rspta, true);	
           }else {
 
             // editamos un documento existente
-            $rspta=$contacto->actualizar_mision_vision( $id, $mision, $vision);
-            
-            echo $rspta ? "ok" : "Los datos no se pudieron actualizar";
+            $rspta=$contacto->actualizar_mision_vision( $id, $mision, $vision);            
+            echo json_encode($rspta, true);		
           }            
 
         break;
@@ -60,13 +60,13 @@
         case 'actualizar_ceo_resenia':
 
           if (empty($id)){
-            echo "Los datos no se pudieron actualizar";
+            $rspta = ['status'=> 'error_user', 'message' => 'Los datos no se pudieron actualizar', 'data' => [] ];  
+            echo json_encode($rspta, true);	
           }else {
 
             // editamos un documento existente
-            $rspta=$contacto->actualizar_ceo_resenia( $id, $palabras_ceo, $resenia_h );
-            
-            echo $rspta ? "ok" : "Los datos no se pudieron actualizar";
+            $rspta=$contacto->actualizar_ceo_resenia( $id, $palabras_ceo, $resenia_h );            
+            echo json_encode($rspta, true);		
           }            
 
         break;
@@ -74,15 +74,19 @@
         case 'actualizar_datos_generales':
 
           if (empty($id)){
-            echo "Los datos no se pudieron actualizar";
+            $rspta = ['status'=> 'error_user', 'message' => 'Los datos no se pudieron actualizar', 'data' => [] ];  
+            echo json_encode($rspta, true);	
           }else {
 
             // editamos un documento existente
-            $rspta=$contacto->actualizar_datos_generales( $id, $direcccion,$celular,$telefono,$latitud,$longuitud,$correo,$horario );
-            
-            echo $rspta ? "ok" : "Los datos no se pudieron actualizar";
+            $rspta=$contacto->actualizar_datos_generales( $id, $direcccion,$celular,$telefono,$latitud,$longuitud,$correo,$horario );            
+            echo json_encode($rspta, true);		
           }            
 
+        break;
+
+        default: 
+          $rspta = ['status'=>'error_code', 'message'=>'Te has confundido en escribir en el <b>swich.</b>', 'data'=>[]]; echo json_encode($rspta, true); 
         break;
         
       }

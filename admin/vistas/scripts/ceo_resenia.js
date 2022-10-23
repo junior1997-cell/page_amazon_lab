@@ -1,6 +1,8 @@
 var id_get = varaibles_get();
+var id =id_get.id;
+
 //Función que se ejecuta al inicio
-function init() {
+$(document).on("ready", function () {
 
   $(`.mceo_resena${id_get.id}`).addClass("active");
 
@@ -9,26 +11,28 @@ function init() {
 
   mostrar(id_get.id)
 
-}
+});
 
 function mostrar(get_id) {
 
   $("#cargando-1-fomulario").hide();
   $("#cargando-2-fomulario").show();
 
-  $.post("../ajax/contacto.php?op=mostrar", {id:get_id}, function (data, status) {
+  $.post("../ajax/contacto.php?op=mostrar", {id:get_id}, function (e, status) {
 
-    data = JSON.parse(data);  console.log(data);  
-    if (data.status){
+    e = JSON.parse(e);  console.log(e);  
+    if (e.status == true){
+      
+
+      $("#id").val(e.data.idcontacto);
+      $(".p_ceo").html(e.data.palabras_ceo);
+      $(".r_hist").html(e.data.reseña_historica); 
+
+      $("#palabras_ceo").val(e.data.palabras_ceo);
+      $("#resenia_h").val(e.data.reseña_historica);
+
       $("#cargando-1-fomulario").show();
       $("#cargando-2-fomulario").hide();
-
-      $("#id").val(data.data.idcontacto);
-      $(".p_ceo").html(data.data.palabras_ceo);
-      $(".r_hist").html(data.data.reseña_historica); 
-
-      $("#palabras_ceo").val(data.data.palabras_ceo);
-      $("#resenia_h").val(data.data.reseña_historica);
 
     }else{
       ver_errores(e);
@@ -49,40 +53,42 @@ function actualizar_ceo_resenia(e) {
     data: formData,
     contentType: false,
     processData: false,
+    success: function (e) {
+      try {
+        e = JSON.parse(e);
+        if (e.status == true) {
+          Swal.fire("Correcto!", "Datos actualizados correctamente", "success");  
+          mostrar(id_get.id);   
+        } else {
+          Swal.fire("Error!", datos, "error");
+        }
 
-    success: function (datos) {
-      if (datos == "ok") {
-        Swal.fire("Correcto!", "Datos actualizados correctamente", "success");
-
-        mostrar(id_get.id); 
-
-
-      } else {
-        Swal.fire("Error!", datos, "error");
-      }
+      } catch (err) { console.log('Error: ', err.message); toastr_error("Error temporal!!",'Puede intentalo mas tarde, o comuniquese con:<br> <i><a href="tel:+51921305769" >921-305-769</a></i> ─ <i><a href="tel:+51921487276" >921-487-276</a></i>', 700); }      
+      $("#actualizar_registro").html('Actualizar').removeClass('disabled');
+      
     },
     xhr: function () {
       var xhr = new window.XMLHttpRequest();
-
-      xhr.upload.addEventListener(
-        "progress",
-        function (evt) {
-          if (evt.lengthComputable) {
-            var percentComplete = (evt.loaded / evt.total) * 100;
-            /*console.log(percentComplete + '%');*/
-            $("#barra_progress2").css({ width: percentComplete + "%" });
-
-            $("#barra_progress2").text(percentComplete.toFixed(2) + " %");
-
-            if (percentComplete === 100) {
-              l_m();
-            }
-          }
-        },
-        false
-      );
+      xhr.upload.addEventListener("progress", function (evt) {
+        if (evt.lengthComputable) {
+          var percentComplete = (evt.loaded / evt.total)*100;
+          /*console.log(percentComplete + '%');*/
+          $("#barra_progress").css({"width": percentComplete+'%'});
+          $("#barra_progress").text(percentComplete.toFixed(2)+" %");
+        }
+      }, false);
       return xhr;
     },
+    beforeSend: function () {
+      $("#actualizar_registro").html('<i class="fas fa-spinner fa-pulse fa-lg"></i>').addClass('disabled');
+      $("#barra_progress").css({ width: "0%",  });
+      $("#barra_progress").text("0%").addClass('progress-bar-striped progress-bar-animated');
+    },
+    complete: function () {
+      $("#barra_progress").css({ width: "0%", });
+      $("#barra_progress").text("0%").removeClass('progress-bar-striped progress-bar-animated');
+    },
+    error: function (jqXhr) { ver_errores(jqXhr); },
   });
 }
 
@@ -96,7 +102,7 @@ function l_m() {
 
   $("#barra_progress2").text("0%");
 }
-init();
+
 
 
 /*$(function () {

@@ -167,7 +167,7 @@
                           <input style="display: none;" id="doc1" type="file" name="doc1" accept="application/pdf, image/*" class="docpdf" />
                         </div>
                         <div class="col-md-6 text-center">
-                          <button type="button" class="btn btn-info btn-block btn-xs" onclick="re_visualizacion(1, 'servicios', 'imagen_perfil');"><i class="fas fa-redo"></i> Recargar.</button>
+                          <button type="button" class="btn btn-info btn-block btn-xs" onclick="re_visualizacion(1, 'admin/dist/img/servicios/imagen_perfil');"><i class="fas fa-redo"></i> Recargar.</button>
                         </div>
                       </div>
                       <div id="doc1_ver" class="text-center mt-4">
@@ -175,21 +175,32 @@
                       </div>
                       <div class="text-center" id="doc1_nombre"><!-- aqui va el nombre del pdf --></div>
                     </div>
+
                     <!--indicaciones-->
                     <div class="col-lg-6 class_pading">
-                        <div class="alert alert-warning media" role="alert">
-                          <i class="fas fa-info-circle mt-1 fa-2x"></i>                          
-                          <div class="media-body" role="alert"> 
-                          <div class="text-center"><b> Indicaciones para la imegen</b> </div>                           
-                            <hr style="border-top-color: azure;"/>
-                            <ul>
-                              <li> <b>Tamaño:</b>  500x500 </li>
-                              <li> <b>Formato:</b> <span> .png</span>  </li>
-                              <li>  <b>Peso:</b> Max. 2 mb </li>
-                            </ul>
-                          </div>
+                      <div class="alert alert-warning media" role="alert">
+                        <i class="fas fa-info-circle mt-1 fa-2x"></i>                          
+                        <div class="media-body" role="alert"> 
+                        <div class="text-center"><b> Indicaciones para la imegen</b> </div>                           
+                          <hr style="border-top-color: azure;"/>
+                          <ul>
+                            <li> <b>Tamaño:</b>  500x500 </li>
+                            <li> <b>Formato:</b> <span> .png</span>  </li>
+                            <li>  <b>Peso:</b> Max. 2 mb </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
+
+                    <!-- barprogress -->
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top: 20px;">
+                      <div class="progress" id="dbarra_progress_div">
+                        <div id="barra_progress" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 0%;">
+                          0%
+                        </div>
+                      </div>
+                    </div>
+                    
                   </div>
 
                   <div class="row" id="cargando-2-fomulario" style="display: none;">

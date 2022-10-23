@@ -41,8 +41,8 @@
       
       // datos generales
       case 'datos_generales':
-        $rspta=$contacto->mostrar();
-        echo json_encode($rspta);		
+        // $rspta=$contacto->mostrar();
+        // echo json_encode($rspta);		
       break;
 
       //Listar proyectos
@@ -73,7 +73,6 @@
           echo '<option value=' . $reg->idfase_proyecto . '>' . $reg->numero_fase .'-'.$reg->nombre.'</option>';
         }
 
-
       break;
 
       //Listar proveedores
@@ -82,8 +81,9 @@
         echo json_encode($rspta, true);
       break;
 
-
-     
+      default: 
+        $rspta = ['status'=>'error_code', 'message'=>'Te has confundido en escribir en el <b>swich.</b>', 'data'=>[]]; echo json_encode($rspta, true); 
+      break; 
 
     }
 

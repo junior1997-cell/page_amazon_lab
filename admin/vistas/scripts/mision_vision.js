@@ -1,34 +1,37 @@
 var id_get = varaibles_get();
+var id =id_get.id;
 
 //Función que se ejecuta al inicio
-function init() {
-  var id =id_get.id;
-  $(`.mvision_vision${id_get.id}`).addClass("active");
+$(document).on("ready", function () {
+  
+  $(`.mvision_vision${id}`).addClass("active");
 
   $("#actualizar_registro").on("click", function (e) { $("#submit-form-actualizar-registro").submit(); });
   $("#form-mision-vision").on("submit", function (e) { actualizar_m_v(e); });
 
   mostrar_m_v(id);
-}
+
+});
 
 function mostrar_m_v(get_id) {
 
   $("#cargando-1-fomulario").hide();
   $("#cargando-2-fomulario").show();
 
-  $.post("../ajax/contacto.php?op=mostrar", {id:get_id}, function (data, status) {
+  $.post("../ajax/contacto.php?op=mostrar", {'id':get_id}, function (e, status) {
 
-    data = JSON.parse(data);  console.log(data);  
-    if (data.status){
+    e = JSON.parse(e);  console.log(e);  
+
+    if (e.status == true){     
+
+      $("#id").val(e.data.idcontacto);
+      $("#mision").val(e.data.mision);
+      $("#vision").val(e.data.vision);
+      $(".clss_mision").html(e.data.mision);
+      $(".clss_vision").html(e.data.vision);
 
       $("#cargando-1-fomulario").show();
       $("#cargando-2-fomulario").hide();
-
-      $("#id").val(data.data.idcontacto);
-      $("#mision").val(data.data.mision);
-      $("#vision").val(data.data.vision);
-      $(".clss_mision").html(data.data.mision);
-      $(".clss_vision").html(data.data.vision);
 
     }else{
       ver_errores(e);
@@ -51,40 +54,41 @@ function actualizar_m_v(e) {
     data: formData,
     contentType: false,
     processData: false,
+    success: function (e) {
+      try {
+        e = JSON.parse(e);
+        if (e.status == true) {
+          Swal.fire("Correcto!", "Misión y visión actualizado correctamente", "success");
+          mostrar_m_v(id); 
+        } else {
+          Swal.fire("Error!", datos, "error");
+        }
 
-    success: function (datos) {
-      if (datos == "ok") {
-        Swal.fire("Correcto!", "Misión y visión actualizado correctamente", "success");
-
-        mostrar_m_v(id); 
-
-
-      } else {
-        Swal.fire("Error!", datos, "error");
-      }
+      } catch (err) { console.log('Error: ', err.message); toastr_error("Error temporal!!",'Puede intentalo mas tarde, o comuniquese con:<br> <i><a href="tel:+51921305769" >921-305-769</a></i> ─ <i><a href="tel:+51921487276" >921-487-276</a></i>', 700); }      
+      $("#actualizar_registro").html('Actualizar').removeClass('disabled');      
     },
     xhr: function () {
       var xhr = new window.XMLHttpRequest();
-
-      xhr.upload.addEventListener(
-        "progress",
-        function (evt) {
-          if (evt.lengthComputable) {
-            var percentComplete = (evt.loaded / evt.total) * 100;
-            /*console.log(percentComplete + '%');*/
-            $("#barra_progress2").css({ width: percentComplete + "%" });
-
-            $("#barra_progress2").text(percentComplete.toFixed(2) + " %");
-
-            if (percentComplete === 100) {
-              l_m();
-            }
-          }
-        },
-        false
-      );
+      xhr.upload.addEventListener("progress", function (evt) {
+        if (evt.lengthComputable) {
+          var percentComplete = (evt.loaded / evt.total)*100;
+          /*console.log(percentComplete + '%');*/
+          $("#barra_progress").css({"width": percentComplete+'%'});
+          $("#barra_progress").text(percentComplete.toFixed(2)+" %");
+        }
+      }, false);
       return xhr;
     },
+    beforeSend: function () {
+      $("#actualizar_registro").html('<i class="fas fa-spinner fa-pulse fa-lg"></i>').addClass('disabled');
+      $("#barra_progress").css({ width: "0%",  });
+      $("#barra_progress").text("0%").addClass('progress-bar-striped progress-bar-animated');
+    },
+    complete: function () {
+      $("#barra_progress").css({ width: "0%", });
+      $("#barra_progress").text("0%").removeClass('progress-bar-striped progress-bar-animated');
+    },
+    error: function (jqXhr) { ver_errores(jqXhr); },
   });
 }
 function l_m() {
@@ -97,4 +101,3 @@ function l_m() {
 
   $("#barra_progress2").text("0%");
 }
-init();

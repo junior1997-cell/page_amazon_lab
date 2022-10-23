@@ -101,7 +101,7 @@ if (!isset($_SESSION["nombre"])) {
       
       case 'eliminar':
         $rspta = $proyecto->eliminar($idproyecto);
-        echo $rspta ? " Eliminado" : "No se puede Eliminar";
+        echo json_encode($rspta, true);
       break;
 
       case 'mostrar_valor':
@@ -218,8 +218,8 @@ if (!isset($_SESSION["nombre"])) {
       break;
   
       case 'eliminar_galeria':
-          $rspta = $proyecto->eliminar_galeria($idgaleria_proyecto);
-          echo $rspta ? " Eliminado" : "No se puede Eliminar";
+        $rspta = $proyecto->eliminar_galeria($idgaleria_proyecto);
+        echo json_encode($rspta, true);
           //Fin de las validaciones de acceso
       break;
 
@@ -276,15 +276,15 @@ if (!isset($_SESSION["nombre"])) {
       break;
 
       case 'mostrar_fase':
-          $rspta = $proyecto->mostrar_fase($idfase);
-          //Codificar el resultado utilizando json
-          echo json_encode($rspta, true);
-          //Fin de las validaciones de acceso
+        $rspta = $proyecto->mostrar_fase($idfase);
+        //Codificar el resultado utilizando json
+        echo json_encode($rspta, true);
+        //Fin de las validaciones de acceso
       break;
   
       case 'eliminar_fase':
-          $rspta = $proyecto->eliminar_fase($idfase);
-          echo $rspta ? " Eliminado" : "No se puede Eliminar";
+        $rspta = $proyecto->eliminar_fase($idfase);
+        echo json_encode($rspta, true);
       break;  
       
       case 'select2_fases':
@@ -304,6 +304,10 @@ if (!isset($_SESSION["nombre"])) {
         //Redireccionamos al login
         header("Location: ../index.php");
 
+      break;
+
+      default: 
+        $rspta = ['status'=>'error_code', 'message'=>'Te has confundido en escribir en el <b>swich.</b>', 'data'=>[]]; echo json_encode($rspta, true); 
       break;
     }
   } else {

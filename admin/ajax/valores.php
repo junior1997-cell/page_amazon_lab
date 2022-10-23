@@ -79,7 +79,7 @@ if (!isset($_SESSION["nombre"])) {
 
       case 'eliminar':
         $rspta = $valores->eliminar($idvalores);
-        echo $rspta ? " Eliminado" : "No se puede Eliminar";
+        echo json_encode($rspta, true);
       break;
 
       case 'mostrar_valor':
@@ -106,7 +106,7 @@ if (!isset($_SESSION["nombre"])) {
               "1" =>  '<div class="d-flex align-items-center mx-auto">
                         <a onclick="ver_img_perfil(\'' . $reg->icono . '\',\'' . $reg->nombre_valor . '\')">
                           <div class="avatar avatar-circle">
-                            <img class="avatar-img" src="../dist/img/valores/imagen_perfil/'. $reg->icono .'" alt="Image Description" onerror="'.$imagen_error.'">
+                            <img class="avatar-img cursor-pointer" src="../dist/img/valores/imagen_perfil/'. $reg->icono .'" alt="Image Description" onerror="'.$imagen_error.'">
                           </div>
                         </a>
                         <div class="ml-3">
@@ -138,6 +138,10 @@ if (!isset($_SESSION["nombre"])) {
         //Redireccionamos al login
         header("Location: ../index.php");
 
+      break;
+
+      default: 
+        $rspta = ['status'=>'error_code', 'message'=>'Te has confundido en escribir en el <b>swich.</b>', 'data'=>[]]; echo json_encode($rspta, true); 
       break;
 
     }

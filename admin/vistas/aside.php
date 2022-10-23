@@ -4,7 +4,7 @@
     $link_host="http://admin.sevensingenieros.com/dist/docs/all_trabajador/perfil/";
 
     // if ($_SERVER['HTTP_HOST']=="localhost") {
-    //   $link_host="http://localhost/admin_sevens/dist/docs/all_trabajador/perfil/";
+    //   $link_host="http://localhost/page_amazon_lab/dist/docs/all_trabajador/perfil/";
     // }else{
     //   $link_host="http://admin.sevensingenieros.com/dist/docs/all_trabajador/perfil/";
     // }

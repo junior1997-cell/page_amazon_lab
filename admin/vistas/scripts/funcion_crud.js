@@ -557,31 +557,121 @@ function confirmar_formulario(flat, callback) {
   }
 }
 
+/*  ══════════════════════════════════════════ - A L E R T A S   T o a s t r - ══════════════════════════════════════════ */
+function toastr_error(titulo = "Error!!", mensaje = "Acción ejecutada con error.", timer_duration = 700) {
+  // console.log(titulo, mensaje, timer_duration );
+  toastr.error( mensaje, titulo,{"closeButton": true, "debug": false, "newestOnTop": true, "progressBar": true, "positionClass": "toast-top-right",  "preventDuplicates": false, "onclick": null,  "showDuration": timer_duration, "hideDuration": "1000",  "timeOut": "5000", "extendedTimeOut": "5000", "showEasing": "swing", "hideEasing": "linear", "showMethod": "slideDown", "hideMethod": "fadeOut" });
+}
+
+function toastr_success(titulo = "Éxito!!", mensaje = "Acción ejecutada con éxito.", timer_duration = 1700) {
+  // console.log(titulo, mensaje, timer_duration );
+  toastr.success( mensaje, titulo,{"closeButton": true, "debug": false, "newestOnTop": true, "progressBar": true, "positionClass": "toast-top-right",  "preventDuplicates": false, "onclick": null,  "showDuration": timer_duration, "hideDuration": "1000",  "timeOut": "5000", "extendedTimeOut": "5000", "showEasing": "swing", "hideEasing": "linear", "showMethod": "slideDown", "hideMethod": "fadeOut" });
+}
+
+function toastr_info(titulo = "Informa!!", mensaje = "Verificar esta accion.", timer_duration = 700) {
+  // console.log(titulo, mensaje, timer_duration );
+  toastr.info( mensaje, titulo,{"closeButton": true, "debug": false, "newestOnTop": true, "progressBar": true, "positionClass": "toast-top-right",  "preventDuplicates": false, "onclick": null,  "showDuration": timer_duration, "hideDuration": "1000",  "timeOut": "5000", "extendedTimeOut": "5000", "showEasing": "swing", "hideEasing": "linear", "showMethod": "slideDown", "hideMethod": "fadeOut", iconClass:"toast-info toast-text-black" });
+}
+
+function toastr_warning(titulo = "Alerta!!", mensaje = "Verificar esta accion.", timer_duration = 700) {
+  // console.log(titulo, mensaje, timer_duration );
+  toastr.warning( mensaje, titulo,{"closeButton": true, "debug": false, "newestOnTop": true, "progressBar": true, "positionClass": "toast-top-right",  "preventDuplicates": false, "onclick": null,  "showDuration": timer_duration, "hideDuration": "1000",  "timeOut": "5000", "extendedTimeOut": "5000", "showEasing": "swing", "hideEasing": "linear", "showMethod": "slideDown", "hideMethod": "fadeOut", iconClass:"toast-warning toast-text-black" });
+}
+
 /*  ══════════════════════════════════════════ - E R R O R E S - ══════════════════════════════════════════ */
 
 function ver_errores(e) {
-  
-  if (e.status == 404) {
+  console.log(e.status);
+  if (e.status == 403) {
+    console.group("Error"); console.warn('Error 403 -------------'); console.log(e); console.groupEnd();
+    Swal.fire(`Error 403 😅!`, `<h5>Prohibido</h5> Contacte al <b>Ing. de Sistemas</b> 📞 <br> <i><a href="tel:+51921305769" data-toggle="tooltip" data-original-title="Llamar al Ing. de Sistemas.">921-305-769</a></i> ─ <i><a href="tel:+51921487276" data-toggle="tooltip" data-original-title="Llamar al Ing. de Sistemas.">921-487-276</a></i>`, "error");
+  } else if (e.status == 404) {
     console.group("Error"); console.warn('Error 404 -------------'); console.log(e); console.groupEnd();
-    Swal.fire(`Error 404 😅!`, `<h5>Archivo no encontrado</h5> Contacte al <b>Ing. de Sistemas</b> 📞 <br> <i>921-305-769</i> ─ <i>921-487-276</i>`, "error");
+    Swal.fire(`Error 404 😅!`, `<h5>Archivo no encontrado</h5> Contacte al <b>Ing. de Sistemas</b> 📞 <br> <i><a href="tel:+51921305769" data-toggle="tooltip" data-original-title="Llamar al Ing. de Sistemas.">921-305-769</a></i> ─ <i><a href="tel:+51921487276" data-toggle="tooltip" data-original-title="Llamar al Ing. de Sistemas.">921-487-276</a></i>`, "error");
     
   } else if(e.status == 500) {
     console.group("Error"); console.warn('Error 404 -------------'); console.log(e); console.groupEnd();
-    Swal.fire(`Error 500 😅!`, `<h5>Error Interno del Servidor</h5> Contacte al <b>Ing. de Sistemas</b> 📞 <br> <i>921-305-769</i> ─ <i>921-487-276</i>`, "error");
+    Swal.fire(`Error 500 😅!`, `<h5>Error Interno del Servidor</h5> Contacte al <b>Ing. de Sistemas</b> 📞 <br> <i><a href="tel:+51921305769" data-toggle="tooltip" data-original-title="Llamar al Ing. de Sistemas.">921-305-769</a></i> ─ <i><a href="tel:+51921487276" data-toggle="tooltip" data-original-title="Llamar al Ing. de Sistemas.">921-487-276</a></i>`, "error");
 
   }else if (e.status == false) {
     console.group("Error"); console.warn('Error BD -------------'); console.log(e); console.groupEnd();
-    Swal.fire(`Error en la Base de Datos 😅!`, `Contacte al <b>Ing. de Sistemas</b> 📞 <br> <i>921-305-769</i> ─ <i>921-487-276</i>`, "error");
+    Swal.fire(`Error en la Base de Datos 😅!`, `Contacte al <b>Ing. de Sistemas</b> 📞 <br> <i><a href="tel:+51921305769" data-toggle="tooltip" data-original-title="Llamar al Ing. de Sistemas.">921-305-769</a></i> ─ <i><a href="tel:+51921487276" data-toggle="tooltip" data-original-title="Llamar al Ing. de Sistemas.">921-487-276</a></i>`, "error");
   
+  }else if (e.status == 'mantenimiento') {
+    console.group("Error"); console.warn('Mantenimiento -------------'); console.log(e); console.groupEnd();
+    sw_error('En Mantenimiento!', `${e.message} <br> Contacte al <b>Ing. de Sistemas</b> 📞 <br> <i><a href="tel:+51921305769" data-toggle="tooltip" data-original-title="Llamar al Ing. de Sistemas.">921-305-769</a></i> ─ <i><a href="tel:+51921487276" data-toggle="tooltip" data-original-title="Llamar al Ing. de Sistemas.">921-487-276</a></i>`, 5000);  
+    Swal.fire({
+      title: `En Mantenimiento!`, 
+      html: `<h5>${e.message}</h5> Contacte al <b>Ing. de Sistemas</b> 📞 <br> <i><a href="tel:+51921305769" data-toggle="tooltip" data-original-title="Llamar al Ing. de Sistemas.">921-305-769</a></i> ─ <i><a href="tel:+51921487276" data-toggle="tooltip" data-original-title="Llamar al Ing. de Sistemas.">921-487-276</a></i>`, 
+      iconHtml: '<img src="../dist/svg/mantenimiento.svg" width="150">',
+    });
+  }else if (e.status == 'es_sabado') {
+    console.group("Error"); console.warn('Es sabado -------------'); console.log(e); console.groupEnd();
+    //sw_error('Es Sábado!', `${e.message} <br> Contacte al <b>Ing. de Sistemas</b> 📞 <br> <i><a href="tel:+51921305769" data-toggle="tooltip" data-original-title="Llamar al Ing. de Sistemas.">921-305-769</a></i> ─ <i><a href="tel:+51921487276" data-toggle="tooltip" data-original-title="Llamar al Ing. de Sistemas.">921-487-276</a></i>`, 5000);
+    Swal.fire({
+      title: `Es Sábado!`, 
+      html: `<h5>${e.message}</h5> Contacte al <b>Ing. de Sistemas</b> 📞 <br> <i><a href="tel:+51921305769" data-toggle="tooltip" data-original-title="Llamar al Ing. de Sistemas.">921-305-769</a></i> ─ <i><a href="tel:+51921487276" data-toggle="tooltip" data-original-title="Llamar al Ing. de Sistemas.">921-487-276</a></i>`, 
+      iconHtml: '<img src="../dist/svg/Jesus-Christ.svg" width="100">',
+    });
+
   }else if (e.status == 'duplicado') {
     console.group("Error"); console.warn('Duplicado Error BD -------------'); console.log(e); console.groupEnd();
-    Swal.fire(`Estos datos ya existen 😅!`, e.data, "error");   
+    Swal.fire(`Estos datos ya existen 😅!`, e.data, "error");  
+
+  }else if (e.status == 'login') {
+    console.warn('--- Tu sesion se ha terminado!!');
+    Swal.fire({
+      title: '<strong>Tu sesion se ha terminado!!</strong>',
+      icon: 'info',
+      html: `Inicia <b>sesion</b> nuevamente , <a href="//sweetalert2.github.io">links.</a>`,
+      showCloseButton: true,
+      showCancelButton: true,
+      focusConfirm: false,
+      confirmButtonText: '<i class="fas fa-sign-out-alt"></i> Salir!',
+      confirmButtonAriaLabel: 'Thumbs up, great!',
+      cancelButtonText: '<i class="fa fa-thumbs-down"></i>',
+      cancelButtonAriaLabel: 'Thumbs down'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire('Saliendo...', '<i class="fas fa-spinner fa-pulse"></i> Redireccionando...', 'success');
+        window.location.href = `${window.location.host=='localhost'?'http://localhost/page_amazon_lab':window.location.origin}`;
+      } else {
+        Swal.fire('Cerrando sesion', '<i class="fas fa-spinner fa-pulse"></i> De igual manera vamos a cerrar la sesión, jijijiji...', 'success');
+        window.location.href = `${window.location.host=='localhost'?'http://localhost/page_amazon_lab':window.location.origin}`;
+      }
+    });
+
+  }else if (e.status == 'nopermiso') {
+    console.warn('--- Tu no tienes permiso!!');
+    Swal.fire({
+      title: '<strong>No tienes permiso!!</strong>',
+      icon: 'info',
+      html: `Puedes pedir a tu administrador que de acceso o regresa al </b>, <a href="//sweetalert2.github.io">home</a>`,
+      showCloseButton: true,
+      showCancelButton: true,
+      focusConfirm: false,
+      confirmButtonText: '<i class="fa fa-thumbs-up"></i> Great!',
+      confirmButtonAriaLabel: 'Thumbs up, great!',
+      cancelButtonText: '<i class="fa fa-thumbs-down"></i>',
+      cancelButtonAriaLabel: 'Thumbs down'
+    }).then((result) => {
+      if (result.isConfirmed) {        
+        window.location.href = `${window.location.host=='localhost'?'http://localhost/page_amazon_lab/vistas/escritorio.php':window.location.origin+'/vistas/escritorio.php'}`;
+      } else {
+        window.location.href = `${window.location.host=='localhost'?'http://localhost/page_amazon_lab/vistas/escritorio.php':window.location.origin+'/vistas/escritorio.php'}`;
+      }
+    });
   
+  }else if (e.status == 'error_code') {
+    sw_error('Error de escritura de <b>codigo</b>!', `${e.message} <br> Contacte al <b>Ing. de Sistemas</b> 📞 <br> <i><a href="tel:+51921305769" data-toggle="tooltip" data-original-title="Llamar al Ing. de Sistemas.">921-305-769</a></i> ─ <i><a href="tel:+51921487276" data-toggle="tooltip" data-original-title="Llamar al Ing. de Sistemas.">921-487-276</a></i>`, 5000);
+  }else if (e.status == 'error_user') {
+    sw_error(`Upss!! Estimado <br> ${e.user}!`, `${e.message} <br> <small>─ o contacte al <b class="cursor-pointer text-primary" data-toggle="modal" data-target="#modal-contacto-desarrollador" >Ing. de Sistemas</b> ─</small>`,  6000);
   } else {
     console.group("Error"); console.warn('Error Grave -------------'); console.log(e); console.groupEnd();
-    Swal.fire(`Error Grave 😱!`, `Contacte al <b>Ing. de Sistemas</b> 📞 <br> <i>921-305-769</i> ─ <i>921-487-276</i>`, "error");
+    Swal.fire(`Error Grave 😱!`, `Contacte al <b>Ing. de Sistemas</b> 📞 <br> <i><a href="tel:+51921305769" data-toggle="tooltip" data-original-title="Llamar al Ing. de Sistemas.">921-305-769</a></i> ─ <i><a href="tel:+51921487276" data-toggle="tooltip" data-original-title="Llamar al Ing. de Sistemas.">921-487-276</a></i>`, "error");
   }
 }
+
 
 function alert_danger(html) {
   return (

@@ -780,8 +780,8 @@ function addImageApplication(e, id, img_default='', width='100%', height='310', 
 }
 
 // recargar un doc para ver
-function re_visualizacion(id, carpeta, sub_carpeta, width='100%', height='310') {
-  console.log(id, carpeta, sub_carpeta, width, height);
+function re_visualizacion(id, ruta,  width='100%', height='310') {
+  
   $("#doc"+id+"_ver").html('<i class="fas fa-spinner fa-pulse fa-6x"></i><br><br>');
 
   pdffile     = document.getElementById("doc"+id+"").files[0];
@@ -805,7 +805,7 @@ function re_visualizacion(id, carpeta, sub_carpeta, width='100%', height='310') 
 		  $("#doc"+id+"_nombre").html("");
 
     } else {
-      $("#doc"+id+"_ver").html( doc_view_extencion(antiguopdf, carpeta, sub_carpeta, width, height) );
+      $("#doc"+id+"_ver").html( doc_view_extencion(antiguopdf, ruta, width, height) );
 
       if (pdf_o_img(antiguopdf) == true) {
         toastr.success('Documento vizualizado correctamente!!!');
@@ -873,20 +873,14 @@ function re_visualizacion(id, carpeta, sub_carpeta, width='100%', height='310') 
   }
 }
 
-function doc_view_extencion(filename, carpeta, sub_carpeta='', width='50%', height='auto') {
+function doc_view_extencion(filename, ruta,  width='50%', height='auto') {
 
   var html = ''; var extencion = '';
-  var host = '';
-  var ruta = sub_carpeta=='' || sub_carpeta == null ?  `../dist/docs/${carpeta}/${filename}`: `../dist/docs/${carpeta}/${sub_carpeta}/${filename}`;
-  
-  if (sub_carpeta == '' || sub_carpeta == null) {
-    host = window.location.host == 'localhost'? `http://localhost/admin_sevens/dist/docs/${carpeta}/${filename}` : `${window.location.origin}/dist/docs/${carpeta}/${filename}` ;
-  } else {
-    host = window.location.host == 'localhost'? `http://localhost/admin_sevens/dist/docs/${carpeta}/${sub_carpeta}/${filename}` : `${window.location.origin}/dist/docs/${carpeta}/${sub_carpeta}/${filename}` ;
-  }
+
+  var ruta_file = window.location.host == 'localhost'? `http://localhost/page_amazon_lab/${ruta}/${filename}` : `${window.location.origin}/${ruta}/${filename}` ;
 
   // cargamos la imagen adecuada par el archivo
-  if ( UrlExists(host) != 200 ) {
+  if ( UrlExists(ruta_file) != 200 ) {
 
     html = `<div class="callout callout-danger">
       <p class="text-danger font-size-12px text-left">404 Documento no encontrado!!</p>
@@ -940,7 +934,7 @@ function doc_view_extencion(filename, carpeta, sub_carpeta='', width='50%', heig
 
   }else if ( extrae_extencion(filename) == "pdf" || extrae_extencion(filename) == "PDF" ) {
     //recomendado - height="210" 
-    html = `<iframe src="${ruta}" onerror="this.src='../dist/svg/404-v2.svg';" frameborder="0" scrolling="no" width="${width}" height="${height}"> </iframe>`;
+    html = `<iframe src="${ruta_file}" onerror="this.src='../dist/svg/404-v2.svg';" frameborder="0" scrolling="no" width="${width}" height="${height}"> </iframe>`;
     extencion = extrae_extencion(filename);
   
   } else if (
@@ -949,9 +943,9 @@ function doc_view_extencion(filename, carpeta, sub_carpeta='', width='50%', heig
     extrae_extencion(filename) == "tiff" || extrae_extencion(filename) == "tif" || extrae_extencion(filename) == "webp" ||
     extrae_extencion(filename) == "bmp" || extrae_extencion(filename) == "svg" ) {
 
-    html = `<center><span class="jq_image_zoom"><img id="_cargando_img_" src="${ruta}" alt="" width="${width}" onerror="this.src='../dist/svg/404-v2.svg';"  ></span></center>`;
+    html = `<center><span class="jq_image_zoom"><img id="_cargando_img_" src="${ruta_file}" alt="" width="${width}" onerror="this.src='../dist/svg/404-v2.svg';"  ></span></center>`;
     extencion = extrae_extencion(filename);
-    //loading_img('_cargando_img_', ruta, width);
+    //loading_img('_cargando_img_', ruta_file, width);
     
   }else{
     html = `<img src="../dist/svg/doc_si_extencion.svg" alt="" width="50%" height="50%"  >`;
@@ -1363,7 +1357,7 @@ function UrlExists(url) {
 
 function DocExist(url) {  
   
-  var host = window.location.host == 'localhost'? `http://localhost/admin_sevens/${url}` : `${window.location.origin}/${url}`;
+  var host = window.location.host == 'localhost'? `http://localhost/page_amazon_lab/${url}` : `${window.location.origin}/${url}`;
   
   var http = new XMLHttpRequest();
   http.open("HEAD", host, false);

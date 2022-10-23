@@ -1,7 +1,9 @@
 var tabla;
 var id_get = varaibles_get();
+var id =id_get.id;
+
 //Función que se ejecuta al inicio
-function init() {
+$(document).on("ready", function () {
 
   $(`.mvalores${id_get.id}`).addClass("active");
 
@@ -11,7 +13,7 @@ function init() {
 
   $("#guardar_registro").on("click", function (e) {$("#submit-form-valores").submit();});
 
-}
+});
 
 $("#doc1_i").click(function() {  $('#doc1').trigger('click'); });
 $("#doc1").change(function(e) {  addImageApplication(e,$("#doc1").attr("id")) });
@@ -99,12 +101,12 @@ function ver_img_perfil(img_perfil,nombre_valor){
   if (img_perfil == "" || img_perfil == null  ) {
 
     $(".img_modal_xl_").html(`<img class="rounded-lg" src="../dist/svg/drag-n-drop.svg" style="width: 100%;"  alt="Image Description"></img>`)
-  
-   }else{
-     
+
+  }else{
+    
     $(".img_modal_xl_").html(`<img class="rounded-lg" src="../dist/img/valores/imagen_perfil/${img_perfil}" style="width: 100%;"  alt="Image Description"></img>`)
- 
-   }
+
+  }
 }
 
 //Función para guardar o editar
@@ -119,34 +121,45 @@ function guardaryeditar(e) {
     data: formData,
     contentType: false,
     processData: false,
-
-    success: function (e) {
-             
+    success: function (e) {             
       try {
-        e = JSON.parse(e);  console.log(e); 
-  
+        e = JSON.parse(e);  console.log(e);   
         if (e.status == true) {
-
           Swal.fire("Correcto!", "Registrado correctamente", "success");
-
-          tabla.ajax.reload();
-         
-          limpiar();
-  
-          $("#modal-agregar-valores").modal("hide");
-  
+          tabla.ajax.reload();         
+          limpiar();  
+          $("#modal-agregar-valores").modal("hide");  
         }else{  
-
           ver_errores(e);
-        } 
-  
-        //$("#guardar_registro_fase").html('Guardar Cambios').removeClass('disabled');
-  
+        }   
       } catch (err) {
         console.log('Error: ', err.message); toastr.error('<h5 class="font-size-16px">Error temporal!!</h5> puede intentalo mas tarde, o comuniquese con <i><a href="tel:+51921305769" >921-305-769</a></i> ─ <i><a href="tel:+51921487276" >921-487-276</a></i>');
       } 
+      $("#guardar_registro").html('Actualizar').removeClass('disabled');
 
     },
+    xhr: function () {
+      var xhr = new window.XMLHttpRequest();
+      xhr.upload.addEventListener("progress", function (evt) {
+        if (evt.lengthComputable) {
+          var percentComplete = (evt.loaded / evt.total)*100;
+          /*console.log(percentComplete + '%');*/
+          $("#barra_progress").css({"width": percentComplete+'%'});
+          $("#barra_progress").text(percentComplete.toFixed(2)+" %");
+        }
+      }, false);
+      return xhr;
+    },
+    beforeSend: function () {
+      $("#guardar_registro").html('<i class="fas fa-spinner fa-pulse fa-lg"></i>').addClass('disabled');
+      $("#barra_progress").css({ width: "0%",  });
+      $("#barra_progress").text("0%").addClass('progress-bar-striped progress-bar-animated');
+    },
+    complete: function () {
+      $("#barra_progress").css({ width: "0%", });
+      $("#barra_progress").text("0%").removeClass('progress-bar-striped progress-bar-animated');
+    },
+    error: function (jqXhr) { ver_errores(jqXhr); },
   });
 }
 
@@ -162,10 +175,7 @@ function mostrar(idvalores) {
 
     e = JSON.parse(e);  console.log(e);  
 
-    if (e.status) {
-
-      $("#cargando-1-fomulario").show();
-      $("#cargando-2-fomulario").hide();
+    if (e.status == true) {      
 
       $("#id_paginaweb").val(e.data.idpagina_web);
       $("#idvalores").val(e.data.idvalores);
@@ -182,8 +192,11 @@ function mostrar(idvalores) {
 
         $("#doc_old_1").val(e.data.icono); 
         $("#doc1_nombre").html(`<div class="row"> <div class="col-md-12"><i>Imagen.${extrae_extencion(e.data.icono)}</i></div></div>`);
-        $("#doc1_ver").html(doc_view_extencion(e.data.icono, 'valores', 'imagen_perfil', '100%'));        
+        $("#doc1_ver").html(doc_view_extencion(e.data.icono, 'admin/dist/img/valores/imagen_perfil', '100%'));        
       } 
+
+      $("#cargando-1-fomulario").show();
+      $("#cargando-2-fomulario").hide();
       
     } else {
       ver_errores(e);
@@ -214,57 +227,39 @@ function eliminar(idvalores) {
   });   
 }
 
-init();
-
 var idproyecto=0;
-$(function () {
 
-  
-  $.validator.setDefaults({
-
-    submitHandler: function (e) {
-        guardaryeditar(e);
-      
-    },
-  });
-  
+$(function () {  
 
   $("#form-valores").validate({
     ignore: '.select2-input, .select2-focusser',
     rules: {
-
       nombre:{required: true},
       descripcion:{required: true}, 
-      // terms: { required: true },
     },
     messages: {
-
-        nombre: { required: "Campo requerido", },
-        descripcion: { required: "Campo requerido", }, 
-
+      nombre: { required: "Campo requerido", },
+      descripcion: { required: "Campo requerido", }, 
     },
         
     errorElement: "span",
 
     errorPlacement: function (error, element) {
-
       error.addClass("invalid-feedback");
-
       element.closest(".form-group").append(error);
     },
 
     highlight: function (element, errorClass, validClass) {
-
       $(element).addClass("is-invalid").removeClass("is-valid");
     },
 
     unhighlight: function (element, errorClass, validClass) {
-
-      $(element).removeClass("is-invalid").addClass("is-valid");
-   
+      $(element).removeClass("is-invalid").addClass("is-valid");   
     },
 
-
+    submitHandler: function (e) {
+      guardaryeditar(e);      
+    },
   });
 
 });

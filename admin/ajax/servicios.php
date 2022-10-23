@@ -66,10 +66,7 @@ if (!isset($_SESSION["nombre"])) {
 
               $ficha1_ant = $datos_ficha1['data']['icono'];
 
-              if ($ficha1_ant != "") {
-
-                unlink("../dist/img/servicios/imagen_perfil/" . $ficha1_ant);
-              }
+              if (!empty($ficha1_ant) ) {  unlink("../dist/img/servicios/imagen_perfil/" . $ficha1_ant);  }
             }
           }
 
@@ -82,7 +79,7 @@ if (!isset($_SESSION["nombre"])) {
 
       case 'eliminar':
         $rspta = $servicios->eliminar($idservicio);
-        echo $rspta ? " Eliminado" : "No se puede Eliminar";
+        echo json_encode($rspta, true);
       break;
 
       case 'mostrar_servicio':
@@ -104,15 +101,17 @@ if (!isset($_SESSION["nombre"])) {
             $data[] = [
               "0" => '<button class="btn btn-warning btn-xs" onclick="mostrar(' . $reg->idservicio . ')"><i class="fas fa-pencil-alt"></i></button>
                         <button class="btn btn-danger btn-xs" onclick="eliminar(' . $reg->idservicio . ')"><i class="far fa-trash-alt"></i></button>',
-              "1" =>  '<div class="d-flex align-items-center mx-auto">
-                        <a onclick="ver_img_perfil(\'' . $reg->icono . '\',\'' . $reg->nombre_servicio . '\')">
-                          <div class="avatar avatar-circle">
-                            <img class="avatar-img" src="../dist/img/servicios/imagen_perfil/'. $reg->icono .'" alt="Image Description" onerror="'.$imagen_error.'">
-                          </div>
-                        </a>
+              "1" =>  '<div class="media">
+                        <div class="avatar avatar-circle mr-3">
+                          <img onclick="ver_img_perfil(\'' . $reg->icono . '\',\'' . $reg->nombre_servicio . '\')" class="avatar-img cursor-pointer" src="../dist/img/servicios/imagen_perfil/'. $reg->icono .'" onerror="'.$imagen_error.'" alt="Image Description">
+                        </div>
+                        <div class="media-body">
+                          <span class="d-block h5 mb-0">'. $reg->nombre_servicio .'</span>
+                          <small class="d-block text-muted"><b>Precio:</b> S/ 56.00</small>
+                        </div>
                       </div>',
-              "2" => '<textarea cols="30" rows="3" class="textarea_datatable" readonly="" style="font-size: 12px;">' . $reg->descripcion . '</textarea>',
-              "3" => '<button class="btn btn-info btn-xs" onclick="ver_caracteristicas(\'' . $reg->idservicio . '\')"><i class="far fa-file-pdf fa-2x text-gray-50"></i></button>',
+              "2" => '<div class="bg-color-242244245 " style="overflow: auto; resize: vertical; height: 45px;" >'.$reg->descripcion .'</div>',
+              "3" => '<button class="btn btn-info btn-xs" onclick="ver_caracteristicas(\'' . $reg->idservicio . '\')"><i class="fas fa-list-ul"></i></button>',
             ];
           }
           $results = [
@@ -137,6 +136,10 @@ if (!isset($_SESSION["nombre"])) {
         //Redireccionamos al login
         header("Location: ../index.php");
 
+      break;
+
+      default: 
+        $rspta = ['status'=>'error_code', 'message'=>'Te has confundido en escribir en el <b>swich.</b>', 'data'=>[]]; echo json_encode($rspta, true); 
       break;
 
     }

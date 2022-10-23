@@ -110,8 +110,8 @@
                       <button type="submit" style="display: none;" id="submit-form-actualizar-registro">Submit</button>
                       <!-- barprogress -->
                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top: 20px;">
-                        <div class="progress" id="div_barra_progress2">
-                          <div id="barra_progress2" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 0%;">
+                        <div class="progress" id="barra_progress_div">
+                          <div id="barra_progress" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 0%;">
                             0%
                           </div>
                         </div>
@@ -130,8 +130,8 @@
                 </div>
                 <!-- End Body -->
                 <div class="modal-footer justify-content-end">
-                  <button class="btn btn-warning btn-xs editar" onclick="activar_editar(1);">Editar</button>
-                  <button type="submit" class="btn btn-success btn-xs actualizar" style="display: none;" id="actualizar_registro">Actualizar</button>
+                  <button class="btn btn-warning btn-xs btn_editar" onclick="activar_editar(1);">Editar</button>
+                  <button type="submit" class="btn btn-success btn-xs btn_actualizar" style="display: none;" id="actualizar_registro">Actualizar</button>
                   <!-- -->
                 </div>
               </div>
