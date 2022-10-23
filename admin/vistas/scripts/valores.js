@@ -1,11 +1,13 @@
 var tabla;
-
+var id_get = varaibles_get();
 //Función que se ejecuta al inicio
 function init() {
 
-  $(".mvalores").addClass("active");
+  $(`.mvalores${id_get.id}`).addClass("active");
 
-  listar();  
+  $("#id_paginaweb").val(id_get.id);
+
+  listar(id_get.id);  
 
   $("#guardar_registro").on("click", function (e) {$("#submit-form-valores").submit();});
 
@@ -44,7 +46,7 @@ function limpiar() {
 }
 
 //Función Listar
-function listar() {
+function listar(id) {
 
   $(".tabla").hide();
   $(".cargando").show();
@@ -57,7 +59,7 @@ function listar() {
     dom: '<Bl<f>rtip>',//Definimos los elementos del control de tabla
     buttons: ['excelHtml5','pdf'],
     "ajax":{
-        url: '../ajax/valores.php?op=listar',
+        url: `../ajax/valores.php?op=listar&id=${id}`,
         type : "get",
         dataType : "json",						
         error: function(e){
@@ -158,18 +160,19 @@ function mostrar(idvalores) {
 
   $.post("../ajax/valores.php?op=mostrar_valor", { idvalores: idvalores }, function (e, status) {
 
-    e = JSON.parse(data);  console.log(e);  
+    e = JSON.parse(e);  console.log(e);  
 
     if (e.status) {
 
       $("#cargando-1-fomulario").show();
       $("#cargando-2-fomulario").hide();
 
+      $("#id_paginaweb").val(e.data.idpagina_web);
       $("#idvalores").val(e.data.idvalores);
       $("#nombre").val(e.data.nombre_valor);
       $("#descripcion").val(e.data.descripcion);
         
-      if (e.data.img_perfil == "" || e.data.img_perfil == null  ) {
+      if (e.data.icono == "" || e.data.icono == null  ) {
 
         $("#doc1_ver").html('<img src="../dist/svg/doc_uploads.svg" alt="" width="50%" >');
         $("#doc1_nombre").html('');
@@ -177,9 +180,9 @@ function mostrar(idvalores) {
 
       } else {
 
-        $("#doc_old_1").val(e.data.img_perfil); 
-        $("#doc1_nombre").html(`<div class="row"> <div class="col-md-12"><i>Imagen.${extrae_extencion(e.data.img_perfil)}</i></div></div>`);
-        $("#doc1_ver").html(doc_view_extencion(e.data.img_perfil, 'valores', 'imagen_perfil', '100%'));        
+        $("#doc_old_1").val(e.data.icono); 
+        $("#doc1_nombre").html(`<div class="row"> <div class="col-md-12"><i>Imagen.${extrae_extencion(e.data.icono)}</i></div></div>`);
+        $("#doc1_ver").html(doc_view_extencion(e.data.icono, 'valores', 'imagen_perfil', '100%'));        
       } 
       
     } else {
@@ -206,7 +209,6 @@ function eliminar(idvalores) {
         Swal.fire("Eliminado!", "Tu registro ha sido Eliminado.", "success");
     
         tabla.ajax.reload();
-        total();
       });      
     }
   });   

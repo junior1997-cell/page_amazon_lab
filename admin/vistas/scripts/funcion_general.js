@@ -526,6 +526,21 @@ function capitalizeWords(str) {
   return string;
 };
 
+function varaibles_get() {
+  var v_args = location.search.substring(1).split("&");
+  var param_values = [];
+  if ( v_args != '' && v_args != 'undefined')
+  for (var i = 0; i < v_args.length; i++) {
+      var pair = v_args[i].split("=");
+      if ( typeOfVar( pair ) === 'array' ) {
+          param_values[ decodeURIComponent( pair[0] ) ] = decodeURIComponent( pair[1] );
+      }
+  }
+  return param_values;
+}
+function typeOfVar (obj) {
+  return {}.toString.call(obj).split(' ')[1].slice(0, -1).toLowerCase();
+}
 /*  ══════════════════════════════════════════ - T I E M P O S - ══════════════════════════════════════════ */
 
 // retrazamos la ejecuccion de una funcion

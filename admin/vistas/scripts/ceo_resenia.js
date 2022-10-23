@@ -1,22 +1,22 @@
-
+var id_get = varaibles_get();
 //Función que se ejecuta al inicio
 function init() {
 
-  $(".mceo_resena").addClass("active");
+  $(`.mceo_resena${id_get.id}`).addClass("active");
 
   $("#actualizar_registro").on("click", function (e) { $("#submit-form-actualizar-registro").submit();  });
   $("#form-palabrasceo-resenia").on("submit", function (e) { actualizar_ceo_resenia(e) });
 
-  
+  mostrar(id_get.id)
 
 }
 
-function mostrar() {
+function mostrar(get_id) {
 
   $("#cargando-1-fomulario").hide();
   $("#cargando-2-fomulario").show();
 
-  $.post("../ajax/contacto.php?op=mostrar", {}, function (data, status) {
+  $.post("../ajax/contacto.php?op=mostrar", {id:get_id}, function (data, status) {
 
     data = JSON.parse(data);  console.log(data);  
     if (data.status){
@@ -54,7 +54,7 @@ function actualizar_ceo_resenia(e) {
       if (datos == "ok") {
         Swal.fire("Correcto!", "Datos actualizados correctamente", "success");
 
-        mostrar(); 
+        mostrar(id_get.id); 
 
 
       } else {

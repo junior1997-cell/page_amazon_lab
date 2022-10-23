@@ -91,7 +91,7 @@
         <div class="modal-dialog modal-dialog-scrollable modal-md">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">persona</h4>
+              <h4 class="modal-title">Persona</h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span class="text-danger" aria-hidden="true">&times;</span>
               </button>
@@ -108,15 +108,23 @@
                     <!-- nombre -->
                     <div class="col-lg-12 class_pading">
                       <div class="form-group">
-                        <label for="nombre_persona">Nombre persona  <sup class="text-danger">*</sup></label>
+                        <label for="nombre_persona">Nombre <sup class="text-danger">*</sup></label>
                         <input type="text" name="nombre_persona" id="nombre_persona" class="form-control" placeholder="Nombre persona" />
                       </div>
                     </div>
-                    <!--Descripcion-->
-                    <div class="col-lg-12 class_pading">
+                    <!-- Correo electronico -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                       <div class="form-group">
-                        <label for="descripcion_pago">Descripción </label> <br />
-                        <textarea name="descripcion" id="descripcion" class="form-control" rows="2"></textarea>
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" name="email" class="form-control" id="email" placeholder="Correo electrónico" onkeyup="convert_minuscula(this);" />
+                      </div>
+                    </div>
+
+                    <!-- Telefono -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                      <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="text" name="telefono" id="telefono" class="form-control" data-inputmask="'mask': ['999-999-999', '+51 999 999 999']" data-mask />
                       </div>
                     </div>
 

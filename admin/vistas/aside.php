@@ -35,31 +35,31 @@
           <ul class="nav nav-sub nav-sm nav-tabs nav-list-y-2 mb-4">
             <?php if ($_SESSION['datos_generales']==1) {  ?>
             <li class="nav-item">
-              <a class="nav-link mdatos_generales" href="datos_generales.php"> <i class="fas fa-id-card nav-icon"></i> Datos Generales </a>
+              <a class="nav-link mdatos_generales1 btnSeeGlossary" href="datos_generales.php?id=1"> <i class="fas fa-id-card nav-icon"></i> Datos Generales </a>
             </li>
             <?php  }  ?>
 
             <?php if ($_SESSION['mision_vision']==1) {  ?>
             <li class="nav-item">
-              <a class="nav-link mvision_vision" href="mision_vision.php"> <i class="fa fa-bullseye nav-icon"></i> Misión y Visión </a>
+              <a class="nav-link mvision_vision1" href="mision_vision.php?id=1"> <i class="fa fa-bullseye nav-icon"></i> Misión y Visión </a>
             </li>
             <?php  }  ?>
 
             <?php if ($_SESSION['ceo_resenia']==1) {  ?>
             <li class="nav-item">
-              <a class="nav-link mceo_resena" href="ceo_resenia.php"> <i class="fas fa-shield-alt nav-icon"></i>CEO - Reseña </a>
+              <a class="nav-link mceo_resena1" href="ceo_resenia.php?id=1"> <i class="fas fa-shield-alt nav-icon"></i>CEO - Reseña </a>
             </li>
             <?php  }  ?>
 
             <?php if ($_SESSION['valores']==1) {  ?>
             <li class="nav-item">
-              <a class="nav-link mvalores" href="valores.php"> <i class="fas fa-sliders-h nav-icon"></i> Valores </a>
+              <a class="nav-link mvalores1" href="valores.php?id=1"> <i class="fas fa-sliders-h nav-icon"></i> Valores </a>
             </li>
             <?php  }  ?>
 
             <?php if ($_SESSION['servicio']==1) {  ?>
             <li class="nav-item">
-              <a class="nav-link mservicios" href="servicio.php"> <i class="fas fa-shopping-basket nav-icon"></i> Servicios </a>
+              <a class="nav-link mservicios1" href="servicio.php?id=1"> <i class="fas fa-shopping-basket nav-icon"></i> Servicios </a>
             </li>
             <?php  }  ?>
 
@@ -72,31 +72,31 @@
           <ul class="nav nav-sub nav-sm nav-tabs nav-list-y-2 mb-4">
             <?php if ($_SESSION['datos_generales']==1) {  ?>
             <li class="nav-item">
-              <a class="nav-link mdatos_generales" href="datos_generales.php"> <i class="fas fa-id-card nav-icon"></i> Datos Generales </a>
+              <a class="nav-link mdatos_generales2" href="datos_generales.php?id=2"> <i class="fas fa-id-card nav-icon"></i> Datos Generales </a>
             </li>
             <?php  }  ?>
 
             <?php if ($_SESSION['mision_vision']==1) {  ?>
             <li class="nav-item">
-              <a class="nav-link mvision_vision" href="mision_vision.php"> <i class="fa fa-bullseye nav-icon"></i> Misión y Visión </a>
+              <a class="nav-link mvision_vision2" href="mision_vision.php?id=2"> <i class="fa fa-bullseye nav-icon"></i> Misión y Visión </a>
             </li>
             <?php  }  ?>
 
             <?php if ($_SESSION['ceo_resenia']==1) {  ?>
             <li class="nav-item">
-              <a class="nav-link mceo_resena" href="ceo_resenia.php"> <i class="fas fa-shield-alt nav-icon"></i>CEO - Reseña </a>
+              <a class="nav-link mceo_resena2" href="ceo_resenia.php?id=2"> <i class="fas fa-shield-alt nav-icon"></i>CEO - Reseña </a>
             </li>
             <?php  }  ?>
 
             <?php if ($_SESSION['valores']==1) {  ?>
             <li class="nav-item">
-              <a class="nav-link mvalores" href="valores.php"> <i class="fas fa-sliders-h nav-icon"></i> Valores </a>
+              <a class="nav-link mvalores2" href="valores.php?id=2"> <i class="fas fa-sliders-h nav-icon"></i> Valores </a>
             </li>
             <?php  }  ?>
 
             <?php if ($_SESSION['servicio']==1) {  ?>
             <li class="nav-item">
-              <a class="nav-link mservicios" href="servicio.php"> <i class="fas fa-shopping-basket nav-icon"></i> Servicios </a>
+              <a class="nav-link mservicios2" href="servicio.php?id=2"> <i class="fas fa-shopping-basket nav-icon"></i> Servicios </a>
             </li>
             <?php  }  ?>
           </ul>

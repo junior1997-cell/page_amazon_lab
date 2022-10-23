@@ -10,7 +10,7 @@ if (!isset($_SESSION["nombre"])) {
   header("Location: ../vistas/login.html"); //Validamos el acceso solo a los usuarios logueados al sistema.
 } else {
   //Validamos el acceso solo al usuario logueado y autorizado.
-  if ($_SESSION['sistema_informativo'] == 1) {
+  if ($_SESSION['valores'] == 1) {
 
     require_once "../modelos/Valores.php";
 
@@ -18,7 +18,7 @@ if (!isset($_SESSION["nombre"])) {
     $date_now = date("d-m-Y h.i.s A");
 
     $valores = new Valores();
-
+    $id_paginaweb = isset($_POST["id_paginaweb"]) ? limpiarCadena($_POST["id_paginaweb"]) : "";
     $idvalores = isset($_POST["idvalores"]) ? limpiarCadena($_POST["idvalores"]) : "";
     $nombre = isset($_POST["nombre"]) ? limpiarCadena($_POST["nombre"]) : "";
     $descripcion = isset($_POST["descripcion"]) ? limpiarCadena($_POST["descripcion"]) : "";
@@ -48,7 +48,7 @@ if (!isset($_SESSION["nombre"])) {
 
         if (empty($idvalores)) {
           
-          $rspta = $valores->insertar($nombre,$descripcion,$imagen_perfil); 
+          $rspta = $valores->insertar($id_paginaweb,$nombre,$descripcion,$imagen_perfil); 
           echo json_encode($rspta, true);
 
         } else {
@@ -59,7 +59,7 @@ if (!isset($_SESSION["nombre"])) {
 
             if ( $datos_ficha1['status'] ) {
       
-              $ficha1_ant = $datos_ficha1['data']['img_perfil'];
+              $ficha1_ant = $datos_ficha1['data']['icono'];
         
               if ($ficha1_ant != "") {
 
@@ -70,7 +70,7 @@ if (!isset($_SESSION["nombre"])) {
 
           }
 
-          $rspta = $valores->editar($idvalores,$nombre,$descripcion,$imagen_perfil);
+          $rspta = $valores->editar($idvalores,$id_paginaweb,$nombre,$descripcion,$imagen_perfil);
           echo json_encode($rspta, true);
 
         }
@@ -89,7 +89,7 @@ if (!isset($_SESSION["nombre"])) {
 
       case 'listar':
 
-        $rspta = $valores->listar();
+        $rspta = $valores->listar($_GET['id']);
         //Vamos a declarar un array
         $data = [];
         $comprobante = '';
@@ -104,9 +104,9 @@ if (!isset($_SESSION["nombre"])) {
               "0" => '<button class="btn btn-warning btn-xs" onclick="mostrar(' .$reg->idvalores .')"><i class="fas fa-pencil-alt"></i></button>
                       <button class="btn btn-danger btn-xs" onclick="eliminar(' .$reg->idvalores .')"><i class="far fa-trash-alt"></i></button>',
               "1" =>  '<div class="d-flex align-items-center mx-auto">
-                        <a onclick="ver_img_perfil(\'' . $reg->img_perfil . '\',\'' . $reg->nombre_valor . '\')">
+                        <a onclick="ver_img_perfil(\'' . $reg->icono . '\',\'' . $reg->nombre_valor . '\')">
                           <div class="avatar avatar-circle">
-                            <img class="avatar-img" src="../dist/img/valores/imagen_perfil/'. $reg->img_perfil .'" alt="Image Description" onerror="'.$imagen_error.'">
+                            <img class="avatar-img" src="../dist/img/valores/imagen_perfil/'. $reg->icono .'" alt="Image Description" onerror="'.$imagen_error.'">
                           </div>
                         </a>
                         <div class="ml-3">

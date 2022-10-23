@@ -6,7 +6,7 @@ function init() {
   tbla_principal('todos');
 
   // ══════════════════════════════════════ S E L E C T 2 ══════════════════════════════════════
-  lista_select2("../ajax/ajax_general.php?op=select2Banco", '#banco', null);
+  lista_select2("../ajax/persona.php?op=cargo_persona", '#banco', null);
   
   // ══════════════════════════════════════ G U A R D A R   F O R M ══════════════════════════════════════
   $("#guardar_registro").on("click", function (e) {  $("#submit-form-persona").submit(); });  

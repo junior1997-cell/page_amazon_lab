@@ -12,7 +12,7 @@ if (!isset($_SESSION["nombre"])) {
 
 } else {
   
-  if ($_SESSION['sistema_informativo'] == 1) {
+  if ($_SESSION['servicio'] == 1) {
 
     require_once "../modelos/Servicios.php";
 
@@ -21,8 +21,8 @@ if (!isset($_SESSION["nombre"])) {
     date_default_timezone_set('America/Lima');
     $date_now = date("d-m-Y h.i.s A");
 
+    $id_paginaweb = isset($_POST["id_paginaweb"]) ? limpiarCadena($_POST["id_paginaweb"]) : "";
     $idservicio = isset($_POST["idservicio"]) ? limpiarCadena($_POST["idservicio"]) : "";
-    $precio = isset($_POST["precio"]) ? limpiarCadena($_POST["precio"]) : "";
     $nombre = isset($_POST["nombre"]) ? limpiarCadena($_POST["nombre"]) : "";
     $descripcion = isset($_POST["descripcion"]) ? limpiarCadena($_POST["descripcion"]) : "";
     $caracteristicas = isset($_POST["caracteristicas"]) ? limpiarCadena($_POST["caracteristicas"]) : "";
@@ -53,7 +53,7 @@ if (!isset($_SESSION["nombre"])) {
 
         if (empty($idservicio)) {
           
-          $rspta = $servicios->insertar($nombre, $precio, $descripcion, $caracteristicas, $imagen_perfil);
+          $rspta = $servicios->insertar($id_paginaweb,$nombre, $descripcion, $caracteristicas, $imagen_perfil);
           echo json_encode($rspta, true);
 
         } else {
@@ -64,7 +64,7 @@ if (!isset($_SESSION["nombre"])) {
 
             if ($datos_ficha1['status']) {
 
-              $ficha1_ant = $datos_ficha1['data']['img_perfil'];
+              $ficha1_ant = $datos_ficha1['data']['icono'];
 
               if ($ficha1_ant != "") {
 
@@ -73,7 +73,7 @@ if (!isset($_SESSION["nombre"])) {
             }
           }
 
-          $rspta = $servicios->editar($idservicio, $nombre, $precio, $descripcion, $caracteristicas, $imagen_perfil);
+          $rspta = $servicios->editar($idservicio, $id_paginaweb, $nombre, $descripcion, $caracteristicas, $imagen_perfil);
           echo json_encode($rspta, true);
 
         }
@@ -91,7 +91,7 @@ if (!isset($_SESSION["nombre"])) {
       break;
 
       case 'listar':
-        $rspta = $servicios->listar();
+        $rspta = $servicios->listar($_GET['id']);
 
         $data = [];
         $comprobante = '';
@@ -105,18 +105,14 @@ if (!isset($_SESSION["nombre"])) {
               "0" => '<button class="btn btn-warning btn-xs" onclick="mostrar(' . $reg->idservicio . ')"><i class="fas fa-pencil-alt"></i></button>
                         <button class="btn btn-danger btn-xs" onclick="eliminar(' . $reg->idservicio . ')"><i class="far fa-trash-alt"></i></button>',
               "1" =>  '<div class="d-flex align-items-center mx-auto">
-                        <a onclick="ver_img_perfil(\'' . $reg->img_perfil . '\',\'' . $reg->nombre_servicio . '\')">
+                        <a onclick="ver_img_perfil(\'' . $reg->icono . '\',\'' . $reg->nombre_servicio . '\')">
                           <div class="avatar avatar-circle">
-                            <img class="avatar-img" src="../dist/img/servicios/imagen_perfil/'. $reg->img_perfil .'" alt="Image Description" onerror="'.$imagen_error.'">
+                            <img class="avatar-img" src="../dist/img/servicios/imagen_perfil/'. $reg->icono .'" alt="Image Description" onerror="'.$imagen_error.'">
                           </div>
                         </a>
-                        <div class="ml-3">
-                          <small style="font-size: 14px;font-weight: bold;">'. $reg->nombre_servicio .'</small>                          
-                          <small class="text-muted">' . $reg->precio . '</small>
-                        </div>
                       </div>',
               "2" => '<textarea cols="30" rows="3" class="textarea_datatable" readonly="" style="font-size: 12px;">' . $reg->descripcion . '</textarea>',
-              "3" => '<button class="btn btn-info btn-xs" onclick="ver_caracteristicas(\'' . $reg->nombre_servicio . '\',\'' . $reg->caracteristicas . '\')"><i class="far fa-file-pdf fa-2x text-gray-50"></i></button>',
+              "3" => '<button class="btn btn-info btn-xs" onclick="ver_caracteristicas(\'' . $reg->idservicio . '\')"><i class="far fa-file-pdf fa-2x text-gray-50"></i></button>',
             ];
           }
           $results = [

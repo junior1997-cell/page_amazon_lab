@@ -161,10 +161,11 @@
 
     /* =========================== S E C C I O N  T I P O   P E R S O N A  =========================== */
 
-    public function tipo_persona()
+    public function cargo()
     {
-      $sql = "SELECT idtipo_persona, nombre FROM tipo_persona WHERE  estado=1 AND estado_delete=1 AND idtipo_persona>1;";
-      return ejecutarConsultaArray($sql);
+      //sql cargo persona
+      $sql = "SELECT idcargo_persona, nombre_cargo FROM cargo_persona WHERE estado='1' AND estado_delete='1' ORDER BY nombre ASC";
+      return ejecutarConsulta($sql);
     }
 
   }

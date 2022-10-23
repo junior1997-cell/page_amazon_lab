@@ -101,6 +101,7 @@
                 <div class="card-body">
                   <div class="row" id="cargando-1-fomulario">
                     <!--  idvalores -->
+                    <input type="hidden" name="id_paginaweb" id="id_paginaweb" />
                     <input type="hidden" name="idvalores" id="idvalores" />
 
                    <!-- Sub total -->

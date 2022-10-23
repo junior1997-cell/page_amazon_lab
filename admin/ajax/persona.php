@@ -174,11 +174,14 @@
           echo json_encode($rspta, true);           
         break;
         /* =========================== S E C C I O N  T I P O   P E R S O N A  =========================== */
-        case 'tipo_persona':
+        case 'cargo_persona':
 
-          $rspta=$persona->tipo_persona();
-          //Codificar el resultado utilizando json
-          echo json_encode($rspta, true);
+          $rspta=$persona->cargo();
+
+          while ($reg = $rspta['data']->fetch_object())  {
+      
+            echo '<option value=' . $reg->idcargo_persona . '>' . $reg->nombre_cargo .'</option>';
+          }
 
         break;
 

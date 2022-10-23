@@ -1,11 +1,12 @@
 var tabla;
-
+var id_get = varaibles_get();
 //Función que se ejecuta al inicio
 function init() {
 
-  $(".mservicios").addClass("active");
+  $(`.mservicios${id_get.id}`).addClass("active");
 
-  listar();  
+  $("#id_paginaweb").val(id_get.id);
+  listar(id_get.id);  
 
   $("#guardar_registro").on("click", function (e) {$("#submit-form-servicios").submit();});
 
@@ -47,7 +48,7 @@ function limpiar() {
 
 }
 
-function listar() {
+function listar(id) {
 
   $(".tabla").hide();
   $(".cargando").show();
@@ -60,7 +61,7 @@ function listar() {
     dom: '<Bl<f>rtip>',//Definimos los elementos del control de tabla
     buttons: ['excelHtml5','pdf'],
     "ajax":{
-        url: '../ajax/servicios.php?op=listar',
+        url: `../ajax/servicios.php?op=listar&id=${id}`,
         type : "get",
         dataType : "json",						
         error: function(e){
@@ -115,28 +116,38 @@ function ver_img_perfil(img_perfil,nombre_servicio){
 }
 
 //ver caracteristicas
-function ver_caracteristicas(nombre_servicio,caracteristicas){
-  console.log(nombre_servicio+'  - '+caracteristicas);
+function ver_caracteristicas(idservicio){
+  // console.log(idservicio+'  - '+idservicio);
 
 
   $("#modal-ver-caracteristicas").modal("show");
 
+  $.post("../ajax/servicios.php?op=mostrar_servicio", { idservicio: idservicio }, function (e, status) {
 
-  if (caracteristicas==null || caracteristicas=="" || caracteristicas=='<p><br></p>') {
-    $(".nombre_s").html(nombre_servicio);
+    e = JSON.parse(e);  console.log(e);  
 
-    $(".listar_caracteristicas").html(`<div class="col-lg-12">
-    <div class="cbp-item product">
-      <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <strong>Ninguna Característica por mostrar!</strong> puede editar el registro y agregar características.
-      </div>
-    </div>
-  </div>`);
-    
-  } else {
-    $(".nombre_s").html(nombre_servicio);
-    $(".listar_caracteristicas").html(caracteristicas);
-  }
+    if (e.status) {
+
+      if (e.data.caracteristicas==null || caracteristicas=="" || e.data.caracteristicas=='<p><br></p>') {
+        $(".nombre_s").html(e.data.nombre_servicio);
+
+        $(".listar_caracteristicas").html(`<div class="col-lg-12">
+        <div class="cbp-item product">
+          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Ninguna Característica por mostrar!</strong> puede editar el registro y agregar características.
+          </div>
+        </div>
+      </div>`);
+        
+      } else {
+        $(".nombre_s").html(e.data.nombre_servicio);
+        $(".listar_caracteristicas").html(e.data.caracteristicas);
+      }
+    } else {
+      ver_errores(e);
+    } 
+
+  }).fail( function(e) { console.log(e); ver_errores(e); } );
  
 }
 
@@ -199,6 +210,7 @@ function mostrar(idservicio) {
       $("#cargando-1-fomulario").show();
       $("#cargando-2-fomulario").hide();
 
+      $("#id_paginaweb").val(e.data.idpagina_web);
       $("#idservicio").val(e.data.idservicio);
       $("#nombre").val(e.data.nombre_servicio);
       $("#precio").val(e.data.precio);
@@ -206,7 +218,7 @@ function mostrar(idservicio) {
       $("#caracteristicas").val(e.data.caracteristicas);
       $(".clss_caracteristicas").html(e.data.caracteristicas);
       
-      if (e.data.img_perfil == "" || e.data.img_perfil == null  ) {
+      if (e.data.icono == "" || e.data.icono == null  ) {
 
         $("#doc1_ver").html('<img src="../dist/svg/doc_uploads.svg" alt="" width="50%" >');
         $("#doc1_nombre").html('');
@@ -214,9 +226,9 @@ function mostrar(idservicio) {
 
       } else {
 
-        $("#doc_old_1").val(e.data.img_perfil); 
-        $("#doc1_nombre").html(`<div class="row"> <div class="col-md-12"><i>Imagen.${extrae_extencion(e.data.img_perfil)}</i></div></div>`);
-        $("#doc1_ver").html(doc_view_extencion(e.data.img_perfil, 'servicios', 'imagen_perfil', '100%'));        
+        $("#doc_old_1").val(e.data.icono); 
+        $("#doc1_nombre").html(`<div class="row"> <div class="col-md-12"><i>Imagen.${extrae_extencion(e.data.icono)}</i></div></div>`);
+        $("#doc1_ver").html(doc_view_extencion(e.data.icono, 'servicios', 'imagen_perfil', '100%'));        
       } 
 
     } else {

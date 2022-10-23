@@ -8,9 +8,9 @@ Class Contacto
 	public function __construct() { }
 
 	//mostrar_comprobante
-	public function mostrar(){
+	public function mostrar($id){
 		
-		$sql="SELECT * FROM contacto WHERE idcontacto='1';";
+		$sql="SELECT * FROM contacto WHERE idcontacto='$id' AND idpagina_web = '$id';";
 		return ejecutarConsultaSimpleFila($sql);
 	}
 

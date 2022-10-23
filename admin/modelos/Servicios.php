@@ -7,18 +7,18 @@ Class Servicios
 	//Implementamos nuestro constructor
 	public function __construct() { }
 
-	public function insertar($nombre,$precio,$descripcion,$caracteristicas,$imagen_perfil)
+	public function insertar($id_paginaweb,$nombre,$descripcion,$caracteristicas,$imagen_perfil)
 	{
 	
-		$sql="INSERT INTO servicio(nombre_servicio, precio, descripcion, caracteristicas, img_perfil) 
-		VALUES ('$nombre','$precio','$descripcion','$caracteristicas','$imagen_perfil')";
+		$sql="INSERT INTO servicio(idpagina_web, nombre_servicio, descripcion, caracteristicas, icono) 
+		VALUES ('$id_paginaweb','$nombre','$descripcion','$caracteristicas','$imagen_perfil')";
 		return ejecutarConsulta($sql);
 			
 	}
 
-	public function editar($idservicio,$nombre,$precio,$descripcion,$caracteristicas,$imagen_perfil)
+	public function editar($idservicio,$id_paginaweb,$nombre,$descripcion,$caracteristicas,$imagen_perfil)
 	{
-		$sql="UPDATE servicio SET nombre_servicio='$nombre',caracteristicas='$caracteristicas',descripcion='$descripcion',img_perfil='$imagen_perfil',precio='$precio'
+		$sql="UPDATE servicio SET idpagina_web='$id_paginaweb', nombre_servicio='$nombre',caracteristicas='$caracteristicas',descripcion='$descripcion',icono='$imagen_perfil'
 		 WHERE idservicio='$idservicio'";	
 		return ejecutarConsulta($sql);	
 	}
@@ -36,15 +36,15 @@ Class Servicios
 		return ejecutarConsultaSimpleFila($sql);
 	}
 
-	public function listar()
+	public function listar($id)
 	{
-		$sql="SELECT*FROM servicio ORDER BY idservicio DESC";
+		$sql="SELECT*FROM servicio WHERE idpagina_web='$id' ORDER BY idservicio DESC";
 		return ejecutarConsulta($sql);		
 	}
 
 	public function reg_img($idservicio)
 	{
-		$sql="SELECT img_perfil FROM servicio WHERE idservicio='$idservicio'";
+		$sql="SELECT icono FROM servicio WHERE idservicio='$idservicio'";
 		return ejecutarConsultaSimpleFila($sql);		
 	}
 		

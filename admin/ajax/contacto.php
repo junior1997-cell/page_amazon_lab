@@ -13,7 +13,7 @@
   } else {
 
     //Validamos el acceso solo al usuario logueado y autorizado.
-    if ($_SESSION['sistema_informativo'] == 1) {
+    if ($_SESSION['datos_generales'] == 1) {
 
       require_once "../modelos/Contacto.php";
 
@@ -39,7 +39,7 @@
       switch ($_GET["op"]){
 
         case 'mostrar':
-          $rspta=$contacto->mostrar();
+          $rspta=$contacto->mostrar($_POST["id"]);
           echo json_encode($rspta);		
         break;
 

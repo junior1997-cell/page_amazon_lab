@@ -10,16 +10,16 @@ Class Valores
 
 	}
 	//Implementamos un método para insertar registros
-	public function insertar($nombre,$descripcion,$imagen_perfil)
+	public function insertar($id_paginaweb,$nombre,$descripcion,$imagen_perfil)
 	{
-		$sql="INSERT INTO valores(nombre_valor, descripcion, img_perfil) VALUES ('$nombre','$descripcion','$imagen_perfil')";
+		$sql="INSERT INTO valores(idpagina_web,nombre_valor, descripcion, icono) VALUES ('$id_paginaweb','$nombre','$descripcion','$imagen_perfil')";
 		return ejecutarConsulta($sql);
 	}
 
 	//Implementamos un método para editar registros
-	public function editar($idvalores,$nombre,$descripcion,$imagen_perfil)
+	public function editar($idvalores,$id_paginaweb,$nombre,$descripcion,$imagen_perfil)
 	{
-		$sql="UPDATE valores SET nombre_valor='$nombre', descripcion='$descripcion', img_perfil='$imagen_perfil' WHERE idvalores='$idvalores'";	
+		$sql="UPDATE valores SET idpagina_web='$id_paginaweb', nombre_valor='$nombre', descripcion='$descripcion', icono='$imagen_perfil' WHERE idvalores='$idvalores'";	
 		return ejecutarConsulta($sql);	
 	}
 
@@ -45,16 +45,16 @@ Class Valores
 	}
 
 	//Implementar un método para listar los registros
-	public function listar()
+	public function listar($id)
 	{
-		$sql="SELECT*FROM valores ORDER BY idvalores DESC";
+		$sql="SELECT*FROM valores WHERE idpagina_web = '$id' AND estado='1' ORDER BY idvalores DESC;";
 		return ejecutarConsulta($sql);		
 	}
 
 	//Seleccionar un comprobante
 	public function reg_img($idvalores)
 	{
-		$sql="SELECT img_perfil FROM valores WHERE idvalores='$idvalores'";
+		$sql="SELECT icono FROM valores WHERE idvalores='$idvalores'";
 		return ejecutarConsultaSimpleFila($sql);		
 	}
 

@@ -1,13 +1,13 @@
-
+var id_get = varaibles_get();
 //Función que se ejecuta al inicio
 function init() {
 
-  $(".mdatos_generales").addClass("active");
+
+  $(`.mdatos_generales${id_get.id}`).addClass("active");
 
   $("#actualizar_registro").on("click", function (e) { $("#submit-form-actualizar-registro").submit(); });
 
-  mostrar();
-  
+  mostrar(id_get.id);
 }
 
 function activar_editar(estado) {
@@ -44,14 +44,14 @@ function activar_editar(estado) {
   }
 
 }
-function mostrar() {
+function mostrar(get_id) {
 
   $("#cargando-1-fomulario").hide();
   $("#cargando-2-fomulario").show();
 
-  $.post("../ajax/contacto.php?op=mostrar", {}, function (data, status) {
+  $.post("../ajax/contacto.php?op=mostrar", {id: get_id}, function (data, status) {
 
-    data = JSON.parse(data);  console.log(data);  
+    data = JSON.parse(data);  //console.log(data);  
     if (data.status){
 
       $("#cargando-1-fomulario").show();
@@ -88,7 +88,8 @@ function actualizar_datos_generales(e) {
       if (datos == "ok") {
         Swal.fire("Correcto!", "Datos actualizados correctamente", "success");
 
-        mostrar(); activar_editar(2);
+        mostrar(get_id); 
+        activar_editar(2);
 
 
       } else {
