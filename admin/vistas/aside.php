@@ -27,9 +27,16 @@
             <p class="card-text font-size-1"><?php  echo $_SESSION['email'];?></p>
           </div>
           <!-- End Avatar -->
+          <ul class="nav nav-sub nav-sm nav-tabs nav-list-y-2 mb-4">
+            <?php if ($_SESSION['escritorio']==1) {  ?>
+            <li class="nav-item">
+              <a class="nav-link mescritorio btnSeeGlossary" href="escritorio.php"> <i class="fas fa-id-card nav-icon"></i> Escritorio </a>
+            </li>
+            <?php  }  ?>
+          </ul>
 
           <!-- Nav -->
-          <h6 class="text-cap small">Pagina 1</h6>
+          <h6 class="text-cap small">Inmobiliaria</h6>
           
           <!-- List -->
           <ul class="nav nav-sub nav-sm nav-tabs nav-list-y-2 mb-4">
@@ -66,7 +73,7 @@
           </ul>
           <!-- End List -->            
 
-          <h6 class="text-cap small">Pagina 2</h6>
+          <h6 class="text-cap small">Consultoría</h6>
           
           <!-- List -->
           <ul class="nav nav-sub nav-sm nav-tabs nav-list-y-2 mb-4">
@@ -100,7 +107,42 @@
             </li>
             <?php  }  ?>
           </ul>
-          <!-- End List -->          
+          <!-- End List -->   
+          <h6 class="text-cap small">Estrategia Digital</h6>
+          
+          <!-- List -->
+          <ul class="nav nav-sub nav-sm nav-tabs nav-list-y-2 mb-4">
+            <?php if ($_SESSION['datos_generales']==1) {  ?>
+            <li class="nav-item">
+              <a class="nav-link mdatos_generales3" href="datos_generales.php?id=3"> <i class="fas fa-id-card nav-icon"></i> Datos Generales </a>
+            </li>
+            <?php  }  ?>
+
+            <?php if ($_SESSION['mision_vision']==1) {  ?>
+            <li class="nav-item">
+              <a class="nav-link mvision_vision3" href="mision_vision.php?id=3"> <i class="fa fa-bullseye nav-icon"></i> Misión y Visión </a>
+            </li>
+            <?php  }  ?>
+
+            <?php if ($_SESSION['ceo_resenia']==1) {  ?>
+            <li class="nav-item">
+              <a class="nav-link mceo_resena3" href="ceo_resenia.php?id=3"> <i class="fas fa-shield-alt nav-icon"></i>CEO - Reseña </a>
+            </li>
+            <?php  }  ?>
+
+            <?php if ($_SESSION['valores']==1) {  ?>
+            <li class="nav-item">
+              <a class="nav-link mvalores3" href="valores.php?id=3"> <i class="fas fa-sliders-h nav-icon"></i> Valores </a>
+            </li>
+            <?php  }  ?>
+
+            <?php if ($_SESSION['servicio']==1) {  ?>
+            <li class="nav-item">
+              <a class="nav-link mservicios3" href="servicio.php?id=3"> <i class="fas fa-shopping-basket nav-icon"></i> Servicios </a>
+            </li>
+            <?php  }  ?>
+          </ul>
+          <!-- End List -->         
 
           <h6 class="text-cap small">Usuarios</h6>
           
