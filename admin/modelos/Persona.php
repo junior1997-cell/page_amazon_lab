@@ -1,6 +1,6 @@
 <?php
   //Incluímos inicialmente la conexión a la base de datos
-  require "../config/Conexion_v2.php";
+  require "../config/Conexion.php";
 
   class Persona
   {
@@ -9,17 +9,17 @@
     {
     }
 
-    public function insertar($id_tipo_persona,$tipo_documento,$num_documento,$nombre,$input_socio,$email,$telefono,$banco,$cta_bancaria,$cci,$titular_cuenta,$direccion, $imagen1) {
+    public function insertar($nombre, $tipo_documento, $num_documento, $direccion, $telefono, $email, $cargo_persona, $imagen1) {
       $sw = Array();
       // var_dump($idcargo_persona,$nombre, $tipo_documento, $num_documento, $direccion, $telefono, $nacimiento, $edad,  $email, $banco, $cta_bancaria,  $cci,  $titular_cuenta, $ruc, $imagen1); die();
-      $sql_0 = "SELECT nombres,tipo_documento, numero_documento,estado, estado_delete FROM persona as t WHERE numero_documento = '$num_documento';";
+      $sql_0 = "SELECT nombre_persona,tipo_documento, numero_documento,estado, estado_delete FROM persona WHERE numero_documento = '$num_documento';";
 
       $existe = ejecutarConsultaArray($sql_0); if ($existe['status'] == false) { return $existe;}
       
       if ( empty($existe['data']) ) {
 
-        $sql="INSERT INTO persona(idtipo_persona, idbancos, nombres, tipo_documento, numero_documento, celular, direccion, correo, cuenta_bancaria, cci, titular_cuenta, es_socio, foto_perfil,user_created) 
-        VALUES ('$id_tipo_persona','$banco','$nombre','$tipo_documento','$num_documento','$telefono','$direccion','$email','$cta_bancaria','$cci','$titular_cuenta','$input_socio','$imagen1', '" . $_SESSION['idusuario'] . "')";
+        $sql="INSERT INTO persona(idcargo_persona, nombre_persona, tipo_documento, numero_documento, celular, direccion, correo, foto_perfil,user_created) 
+        VALUES ('$cargo_persona','$nombre','$tipo_documento','$num_documento','$telefono','$direccion','$email','$imagen1','" . $_SESSION['idusuario'] . "')";
         $new_persona = ejecutarConsulta_retornarID($sql);
 
         if ($new_persona['status'] == false) { return $new_persona;}
@@ -48,23 +48,23 @@
       return $sw;        
     }
 
-    public function editar($idpersona,$id_tipo_persona,$tipo_documento,$num_documento,$nombre,$input_socio,$email,$telefono,$banco,$cta_bancaria,$cci,$titular_cuenta,$direccion, $imagen1) {
-      $sql="UPDATE persona SET idtipo_persona='$id_tipo_persona',idbancos='$banco',nombres='$nombre',
-      tipo_documento='$tipo_documento',numero_documento='$num_documento',celular='$telefono',
-      direccion='$direccion',correo='$email',cuenta_bancaria='$cta_bancaria',
-      cci='$cci',titular_cuenta='$titular_cuenta',es_socio='$input_socio',
-      foto_perfil='$imagen1',user_updated= '" . $_SESSION['idusuario'] . "' WHERE idpersona='$idpersona'";	      
-      $persona = ejecutarConsulta($sql);
-      if ($persona['status'] == false) { return  $persona;}
+    // public function editar($idpersona, $nombre, $tipo_documento, $num_documento, $direccion, $telefono, $email, $cargo_persona, $imagen1) {
+    //   $sql="UPDATE persona SET idtipo_persona='$id_tipo_persona',idbancos='$banco',nombres='$nombre',
+    //   tipo_documento='$tipo_documento',numero_documento='$num_documento',celular='$telefono',
+    //   direccion='$direccion',correo='$email',cuenta_bancaria='$cta_bancaria',
+    //   cci='$cci',titular_cuenta='$titular_cuenta',es_socio='$input_socio',
+    //   foto_perfil='$imagen1',user_updated= '" . $_SESSION['idusuario'] . "' WHERE idpersona='$idpersona'";	      
+    //   $persona = ejecutarConsulta($sql);
+    //   if ($persona['status'] == false) { return  $persona;}
 
-      //add registro en nuestra bitacora
-      $sql = "INSERT INTO bitacora_bd( nombre_tabla, id_tabla, accion, id_user) VALUES ('persona','".$idpersona."','Editamos el registro persona','" . $_SESSION['idusuario'] . "')";
-      $bitacora = ejecutarConsulta($sql); if ( $bitacora['status'] == false) {return $bitacora; }  
+    //   //add registro en nuestra bitacora
+    //   $sql = "INSERT INTO bitacora_bd( nombre_tabla, id_tabla, accion, id_user) VALUES ('persona','".$idpersona."','Editamos el registro persona','" . $_SESSION['idusuario'] . "')";
+    //   $bitacora = ejecutarConsulta($sql); if ( $bitacora['status'] == false) {return $bitacora; }  
       
-      // return $persona;     
-      return array( 'status' => true, 'message' => 'todo ok', 'data' => $idpersona, 'id_tabla' =>$idpersona ); 
+    //   // return $persona;     
+    //   return array( 'status' => true, 'message' => 'todo ok', 'data' => $idpersona, 'id_tabla' =>$idpersona ); 
       
-    }
+    // }
 
     public function desactivar($idpersona) {
       $sql="UPDATE persona SET estado='0',user_trash= '" . $_SESSION['idusuario'] . "' WHERE idpersona='$idpersona'";
@@ -164,8 +164,8 @@
     public function cargo()
     {
       //sql cargo persona
-      $sql = "SELECT idcargo_persona, nombre_cargo FROM cargo_persona WHERE estado='1' AND estado_delete='1' ORDER BY nombre ASC";
-      return ejecutarConsulta($sql);
+      $sql = "SELECT idcargo_persona, nombre_cargo FROM cargo_persona WHERE estado='1' AND estado_delete='1' ORDER BY nombre_cargo ASC;";
+      return ejecutarConsultaArray($sql);
     }
 
   }

@@ -41,7 +41,7 @@
             <div class="card mb-3 mb-lg-5 card-primary card-outline">
               <div class="card-header">
                 <h3 class="card-title">
-                  <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#modal-agregar-persona" onclick="limpiar_persona();"><i class="fas fa-plus-circle"></i> Agregar</button>
+                  <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#modal-agregar-persona" onclick="limpiar_form_persona();"><i class="fas fa-plus-circle"></i> Agregar</button>
                   Admnistrar Trabajadores.
                 </h3>
               </div>
@@ -88,7 +88,7 @@
       <!-- End Content Section -->
       <!-- MODAL - persona TRABAJDOR-->
       <div class="modal fade" id="modal-agregar-persona">
-        <div class="modal-dialog modal-dialog-scrollable modal-md">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl">
           <div class="modal-content">
             <div class="modal-header">
               <h4 class="modal-title">Persona</h4>
@@ -101,17 +101,51 @@
               <!-- form start -->
               <form id="form-persona" name="form-persona" method="POST" autocomplete="off">
                 <div class="card-body">
-                  <div class="row" id="cargando-9-fomulario">
-                    <!-- id idunidad_medida -->
-                    <input type="hidden" name="idpersona" id="idpersona" />
 
-                    <!-- nombre -->
-                    <div class="col-lg-12 class_pading">
+                  <div class="row" id="cargando-1-fomulario">
+                    <!-- id persona -->
+                    <input type="hidden" name="idpersona" id="idpersona" />
+                    <!-- Tipo de documento -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                      <label for="tipo_documento">Tipo Doc.</label> <br>
+                      <select class="js-custom-select custom-select" size="1" style="opacity: 0;"
+                              data-hs-select2-options='{
+                                "placeholder": "Select tipo doc."
+                              }'
+                              name="tipo_documento" 
+                              id="tipo_documento" >
+                        <option value="DNI" selected>DNI</option>
+                        <option value="RUC">RUC</option>
+                        <option value="CEDULA">CEDULA</option>
+                        <option value="OTRO">OTRO</option>
+                      </select>
+                      <!-- End Select -->
+                    </div>
+                    
+                    <!-- N° de documento -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
                       <div class="form-group">
-                        <label for="nombre_persona">Nombre <sup class="text-danger">*</sup></label>
-                        <input type="text" name="nombre_persona" id="nombre_persona" class="form-control" placeholder="Nombre persona" />
+                        <label for="num_documento">N° de documento</label>
+                        <div class="input-group">
+                          <input type="number" name="num_documento" class="form-control" id="num_documento" placeholder="N° de documento" />
+                          <div class="input-group-append" data-toggle="tooltip" data-original-title="Buscar Reniec/SUNAT" onclick="buscar_sunat_reniec('');">
+                            <span class="input-group-text" style="cursor: pointer;">
+                              <i class="fas fa-search text-primary" id="search"></i>
+                              <i class="fa fa-spinner fa-pulse fa-fw fa-lg text-primary" id="charge" style="display: none;"></i>
+                            </span>
+                          </div>
+                        </div>
                       </div>
                     </div>
+
+                    <!-- Nombre -->
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                      <div class="form-group">
+                        <label for="nombre">Nombres/Razon Social</label>
+                        <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombres y apellidos" />
+                      </div>
+                    </div>
+
                     <!-- Correo electronico -->
                     <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                       <div class="form-group">
@@ -123,36 +157,68 @@
                     <!-- Telefono -->
                     <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                       <div class="form-group">
-                        <label for="telefono">Teléfono</label>
-                        <input type="text" name="telefono" id="telefono" class="form-control" data-inputmask="'mask': ['999-999-999', '+51 999 999 999']" data-mask />
+                        <label for="telefono">Teléfono</label><br>
+                        <input type="text" class="js-masked-input form-control" placeholder="+51 xxx-xx-xx"
+                          data-hs-mask-options='{
+                            "template": "+51 999 999 999",
+                            "clearIfNotMatch": true
+                          }' name="telefono" id="telefono"
+                        >
                       </div>
                     </div>
 
-                    <!-- barprogress -->
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top:20px;">
-                      <div class="progress" id="div_barra_progress_persona">
-                        <div id="barra_progress_persona" class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 0%;">
-                          0%
+                    <!-- Tipo de documento -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                      <label for="cargo_persona">Cargo persona</label> <br>
+                      <select class="js-custom-select custom-select" size="1" style="opacity: 0;"
+                              data-hs-select2-options='{
+                                "placeholder": "Cargo persona"
+                              }'
+                              name="cargo_persona" 
+                              id="cargo_persona" >
+                      </select>
+                    </div>
+                    <!-- Direccion -->
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="form-group">
+                        <label for="direccion">Dirección</label>
+                        <input type="text" name="direccion" class="form-control" id="direccion" placeholder="Dirección" />
+                      </div>
+                    </div>
+                    <!-- imagen perfil -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                      <div class="col-lg-12 borde-arriba-naranja mt-2 mb-2"></div>
+                      <label for="foto1">Foto de perfil</label> <br />
+                      <img onerror="this.src='../dist/img/default/img_defecto.png';" src="../dist/img/default/img_defecto.png" class="img-thumbnail" id="foto1_i" style="cursor: pointer !important;" width="auto" />
+                      <input style="display: none;" type="file" name="foto1" id="foto1" accept="image/*" />
+                      <input type="hidden" name="foto1_actual" id="foto1_actual" />
+                      <div class="text-center" id="foto1_nombre"><!-- aqui va el nombre de la FOTO --></div>
+                    </div>
+
+                    <!-- Progress -->
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <div class="progress" id="div_barra_progress" style="display: none !important;">
+                          <div id="barra_progress" class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                       </div>
                     </div>
-
                   </div>
 
-                  <div class="row" id="cargando-10-fomulario" style="display: none;">
+                  <div class="row" id="cargando-2-fomulario" style="display: none;" >
                     <div class="col-lg-12 text-center">
-                      <i class="fas fa-spinner fa-pulse fa-6x"></i><br />
-                      <br />
+                      <i class="fas fa-spinner fa-pulse fa-6x"></i><br><br>
                       <h4>Cargando...</h4>
                     </div>
                   </div>
+                        
                 </div>
                 <!-- /.card-body -->
                 <button type="submit" style="display: none;" id="submit-form-persona">Submit</button>
               </form>
             </div>
             <div class="modal-footer justify-content-between">
-              <button type="button" class="btn btn-danger btn-xs" data-dismiss="modal" onclick="limpiar_persona();">Close</button>
+              <button type="button" class="btn btn-danger btn-xs" data-dismiss="modal" onclick="limpiar_form_persona();">Close</button>
               <button type="submit" class="btn btn-success btn-xs" id="guardar_registro_persona">Guardar Cambios</button>
             </div>
           </div>

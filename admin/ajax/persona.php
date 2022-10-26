@@ -26,22 +26,20 @@
       $toltip = '<script> $(function () { $(\'[data-toggle="tooltip"]\').tooltip(); }); </script>';
       
       $idpersona	  	= isset($_POST["idpersona"])? limpiarCadena($_POST["idpersona"]):"";
-      $id_tipo_persona 		      = isset($_POST["id_tipo_persona"])? limpiarCadena($_POST["id_tipo_persona"]):"";
       $nombre 		      = isset($_POST["nombre"])? limpiarCadena($_POST["nombre"]):"";
       $tipo_documento 	= isset($_POST["tipo_documento"])? limpiarCadena($_POST["tipo_documento"]):"";
       $num_documento  	= isset($_POST["num_documento"])? limpiarCadena($_POST["num_documento"]):"";
-      $input_socio     	= isset($_POST["input_socio"])? limpiarCadena($_POST["input_socio"]):"";
       $direccion		    = isset($_POST["direccion"])? limpiarCadena($_POST["direccion"]):"";
       $telefono		      = isset($_POST["telefono"])? limpiarCadena($_POST["telefono"]):"";     
       $email			      = isset($_POST["email"])? limpiarCadena($_POST["email"]):"";
-      $banco            = isset($_POST["banco"])? $_POST["banco"] :"";
-      $cta_bancaria_format  = isset($_POST["cta_bancaria"])?$_POST["cta_bancaria"]:"";
-      $cta_bancaria     = isset($_POST["cta_bancaria"])?$_POST["cta_bancaria"]:"";
-      $cci_format      	= isset($_POST["cci"])? $_POST["cci"]:"";
-      $cci            	= isset($_POST["cci"])? $_POST["cci"]:"";
-      $titular_cuenta		= isset($_POST["titular_cuenta"])? limpiarCadena($_POST["titular_cuenta"]):"";
+      $cargo_persona     = isset($_POST["cargo_persona"])? $_POST["cargo_persona"] :"";
 
-      //$idpersona,$id_tipo_persona,$tipo_documento,$num_documento,$nombre,$input_socio,$email,$telefono,$banco,$cta_bancaria,$cci,$titular_cuenta,$direccion
+
+
+      // foto1, 
+      // foto1_actual, 
+
+      // $idpersona, $nombre, $tipo_documento, $num_documento, $direccion, $telefono, $email, $cargo_persona, 
        
       $imagen1			    = isset($_POST["foto1"])? limpiarCadena($_POST["foto1"]):"";
       switch ($_GET["op"]) {
@@ -59,13 +57,13 @@
 
             $imagen1 = $date_now .' '. rand(0, 20) . round(microtime(true)) . rand(21, 41) . '.' . end($ext1);
 
-            move_uploaded_file($_FILES["foto1"]["tmp_name"], "../dist/docs/persona/perfil/" . $imagen1);
+            move_uploaded_file($_FILES["foto1"]["tmp_name"], "../dist/img/persona/perfil/" . $imagen1);
 						
 					}
 
           if (empty($idpersona)){
             
-            $rspta=$persona->insertar($id_tipo_persona,$tipo_documento,$num_documento,$nombre,$input_socio,$email,$telefono,$banco,$cta_bancaria,$cci,$titular_cuenta,$direccion, $imagen1);
+            $rspta=$persona->insertar($nombre, $tipo_documento, $num_documento, $direccion, $telefono, $email, $cargo_persona, $imagen1);
             
             echo json_encode($rspta, true);
   
@@ -75,11 +73,11 @@
             if ($flat_img1 == true) {
               $datos_f1 = $persona->obtenerImg($idpersona);
               $img1_ant = $datos_f1['data']['foto_perfil'];
-              if ($img1_ant != "") { unlink("../dist/docs/persona/perfil/" . $img1_ant);  }
+              if ($img1_ant != "") { unlink("../dist/img/persona/perfil/" . $img1_ant);  }
             }            
 
             // editamos un persona existente
-            $rspta=$persona->editar($idpersona,$id_tipo_persona,$tipo_documento,$num_documento,$nombre,$input_socio,$email,$telefono,$banco,$cta_bancaria,$cci,$titular_cuenta,$direccion, $imagen1);
+            // $rspta=$persona->editar($idpersona, $nombre, $tipo_documento, $num_documento, $direccion, $telefono, $email, $cargo_persona, $imagen1);
             
             echo json_encode($rspta, true);
           }            
@@ -126,7 +124,7 @@
                 "1"=>'<button class="btn btn-warning btn-sm" onclick="mostrar('.$value['idpersona'].')" data-toggle="tooltip" data-original-title="Editar"><i class="fas fa-pencil-alt"></i></button>'.
                   ' <button class="btn btn-danger btn-sm" onclick="eliminar_persona('.$value['idpersona'].', \''.encodeCadenaHtml($value['nombres']).'\')" data-toggle="tooltip" data-original-title="Eliminar o papelera"><i class="fas fa-skull-crossbones"></i></button>',
                 "2"=>'<div class="user-block">
-                  <img class="img-circle" src="../dist/docs/persona/perfil/'. $value['foto_perfil'] .'" alt="User Image" onerror="'.$imagen_error.'">
+                  <img class="img-circle" src="../dist/img/persona/perfil/'. $value['foto_perfil'] .'" alt="User Image" onerror="'.$imagen_error.'">
                   <span class="username"><p class="text-primary m-b-02rem" >'. $value['nombres'] .'</p></span>
                   <span class="description">'. $value['tipo_documento'] .': '. $value['numero_documento'] .' </span>
                   </div>',
@@ -177,17 +175,25 @@
         case 'cargo_persona':
 
           $rspta=$persona->cargo();
+          $data = "";
 
-          while ($reg = $rspta['data']->fetch_object())  {
-      
-            echo '<option value=' . $reg->idcargo_persona . '>' . $reg->nombre_cargo .'</option>';
-          }
+          if ($rspta['status'] == true) {
 
-        break;
-
-        default: 
-          $rspta = ['status'=>'error_code', 'message'=>'Te has confundido en escribir en el <b>swich.</b>', 'data'=>[]]; echo json_encode($rspta, true); 
-        break;
+            foreach ($rspta['data'] as $key => $reg) { 
+             $data .= '<option value=' . $reg['idcargo_persona'] . '>' . $reg['nombre_cargo'] . '</option>';
+           }
+           $retorno = array(
+             'status' => true, 
+             'message' => 'Salió todo ok', 
+             'data' => $data, 
+           );
+   
+           echo json_encode($retorno, true);
+ 
+         } else {
+ 
+           echo json_encode($rspta, true); 
+         }
 
       }
 
