@@ -128,6 +128,79 @@
       header("Location: ../index.php");
 
     break;
+    
+    case 'permisos':
+      //Obtenemos todos los permisos de la tabla permisos      
+      $rspta = $permisos->listar();
+
+      if ( $rspta['status'] ) {
+
+        //Obtener los permisos asignados al usuario
+        $id = $_GET['id'];
+        $marcados = $usuario->listarmarcados($id);
+        //Declaramos el array para almacenar todos los permisos marcados
+        $valores = [];
+
+        if ($marcados['status']) {
+
+          //Almacenar los permisos asignados al usuario en el array
+          foreach ($marcados['data'] as $key => $value) {
+            array_push($valores, $value['idpermiso']);
+          }
+
+          $data = ""; $num = 8;  $stado_close = false;
+          //Mostramos la lista de permisos en la vista y si están o no marcados <label for=""></label>
+          foreach ($rspta['data'] as $key => $value) {
+
+            $div_open = ''; $div_close = '';
+
+            if ( ($key + 1) == 1 ) {                  
+              $div_open = '<ol class="list-unstyled row"><div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">'. 
+              '<li class="text-primary"><input class="h-1rem w-1rem" type="checkbox" id="marcar_todo" onclick="marcar_todos_permiso();"> ' .
+                '<label for="marcar_todo" class="marcar_todo">Marcar Todo</label>'.
+              '</li>';                 
+            } else {
+              if ( ($key + 1) == $num ) { 
+                $div_close = '</div>';
+                $num += 9;
+                $stado_close = true;
+              } else {
+                if ($stado_close) {
+                  $div_open = '<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">';
+                  $stado_close = false; 
+                }             
+              }
+            }               
+            
+            $sw = in_array($value['idpermiso'], $valores) ? 'checked' : '';
+
+            $data .= $div_open.'<li>'. 
+              '<div class="form-group mb-0">'.
+                '<div class="custom-control custom-checkbox">'.
+                  '<input id="permiso_'.$value['idpermiso'].'" class="custom-control-input permiso h-1rem w-1rem" type="checkbox" ' . $sw . ' name="permiso[]" value="' . $value['idpermiso'] . '"> '.
+                  '<label for="permiso_'.$value['idpermiso'].'" class="custom-control-label font-weight-normal" >' .$value['icono'] .' '. $value['nombre'].'</label>' . 
+                '</div>'.
+              '</div>'.
+            '</li>'. $div_close;
+          }
+
+          $retorno = array(
+            'status' => true, 
+            'message' => 'Salió todo ok', 
+            'data' => $data.'</ol>', 
+          );
+
+          echo json_encode($retorno, true);
+
+        } else {
+          echo json_encode($marcados, true);
+        }
+
+      } else {
+        echo json_encode($rspta, true);
+      }    
+
+    break;    
 
     default: 
       $rspta = ['status'=>'error_code', 'message'=>'Te has confundido en escribir en el <b>swich.</b>', 'data'=>[]]; echo json_encode($rspta, true); 

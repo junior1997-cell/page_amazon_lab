@@ -9,20 +9,71 @@ function init() {
 
 }
 
+function show_hide_form(flag) {
+	if (flag == 1)	{		
+		$("#mostrar-tabla").show();
+    $("#mostrar-form").hide();
+    $(".btn-regresar").hide();
+    $(".btn-agregar").show();
+	}	else	{
+		$("#mostrar-tabla").hide();
+    $("#mostrar-form").show();
+    $(".btn-regresar").show();
+    $(".btn-agregar").hide();
+	}
+}
+
+function permisos() {
+  $("#permisos").html('<i class="fas fa-spinner fa-pulse fa-2x"></i>');
+  //Permiso
+  $.post(`../ajax/usuario.php?op=permisos&id=`, function (e) {
+
+    e = JSON.parse(e); //console.log(r);
+
+    if (e.status == true) { $("#permisos").html(e.data); } else { ver_errores(e); }
+    //$("#permiso_4").rules('add', { required: true, messages: {  required: "Campo requerido" } });
+    
+  }).fail( function(e) { console.log(e); ver_errores(e); } );
+}
+
+//Función limpiar
+function limpiar_form_usuario() {
+  $("#guardar_registro").html('Guardar Cambios').removeClass('disabled');
+  // Agregamos la validacion
+  $("#trabajador").rules('add', { required: true, messages: {  required: "Campo requerido" } });  
+  $("#password").rules('add', { required: true, messages: {  required: "Campo requerido" } });
+
+  //Select2 trabajador
+  lista_select2("../ajax/usuario.php?op=select2Trabajador", '#trabajador', null);
+ 
+  $("#idusuario").val("");
+  $("#trabajador_c").html("Trabajador");   
+  $("#trabajador_old").val(""); 
+  $("#cargo").val("").trigger("change"); 
+  $("#login").val("");
+  $("#password").val("");
+  $("#password-old").val(""); 
+  
+  $(".modal-title").html("Agregar usuario");    
+
+  // Limpiamos las validaciones
+  $(".form-control").removeClass('is-valid');
+  $(".form-control").removeClass('is-invalid');
+  $(".error.invalid-feedback").remove();
+}
+
 //Función Listar
 function tbla_principal() {
 
-  $(".tabla").hide();
-  $(".cargando").show();
 
   tabla = $('#tabla-usuarios').dataTable({
-    "responsive": true,
+    responsive: true,
     lengthMenu: [[ -1, 5, 10, 25, 75, 100, 200,], ["Todos", 5, 10, 25, 75, 100, 200, ]],//mostramos el menú de registros a revisar
-    "aProcessing": true,//Activamos el procesamiento del datatables
-    "aServerSide": true,//Paginación y filtrado realizados por el servidor
+    aProcessing: true,//Activamos el procesamiento del datatables
+    aServerSide: true,//Paginación y filtrado realizados por el servidor
     dom: '<Bl<f>rtip>',//Definimos los elementos del control de tabla
     buttons: [ { extend: 'excelHtml5'}, { extend: 'pdfHtml5'}],
-    "ajax":{
+    ajax:{
       url: '../ajax/usuario.php?op=tbla_principal',
       type : "get",
       dataType : "json",						
@@ -38,20 +89,14 @@ function tbla_principal() {
           
       }
     },
-    "language": {
-      "lengthMenu": "Mostrar: _MENU_ registros",
-      "buttons": {
-        "copyTitle": "Tabla Copiada",
-        "copySuccess": {
-          _: '%d líneas copiadas',
-          1: '1 línea copiada'
-        }
-      },
+    language: {
+      lengthMenu: "Mostrar: _MENU_ registros",
+      buttons: { copyTitle: "Tabla Copiada", copySuccess: { _: "%d líneas copiadas", 1: "1 línea copiada", }, },
       sLoadingRecords: '<i class="fas fa-spinner fa-pulse fa-lg"></i> Cargando datos...'
     },
-    "bDestroy": true,
-    "iDisplayLength": 5,//Paginación
-    "order": [[ 0, "asc" ]]//Ordenar (columna,orden)
+    bDestroy: true,
+    iDisplayLength: 5,//Paginación
+    order: [[ 0, "asc" ]],//Ordenar (columna,orden)
   }).DataTable();
 
   $(".tabla").show();
