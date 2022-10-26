@@ -50,7 +50,7 @@
               <div class="card-body">
                 <div class="row">
                   <div class="col-lg-12 text-center cargando">
-                    <i class="fas fa-spinner fa-pulse fa-6x"></i><br />
+                    <i class="fas fa-spinner fa-pulse fa-3x"></i><br />
                     <br />
                     <h4>Cargando...</h4>
                   </div>
@@ -62,7 +62,12 @@
                           <th class="text-center">#</th>
                           <th class="">Acciones</th>                                
                           <th>Nombre</th>
-                          <th>Descripción</th>
+                          <th>Dirección</th>
+                          <th>Nombres</th>
+                          <th>Tipo Doc.</th>
+                          <th>numero_documento</th>
+                          <th>celular</th>
+                          <th>correo</th>
                         </tr>
                       </thead>
                       <tbody></tbody>
@@ -71,7 +76,12 @@
                           <th class="text-center">#</th>
                           <th class="">Acciones</th>                                
                           <th>Nombre</th>
-                          <th>Descripción</th>
+                          <th>Dirección</th>
+                          <th>Nombres</th>
+                          <th>Tipo Doc.</th>
+                          <th>numero_documento</th>
+                          <th>celular</th>
+                          <th>correo</th>
                         </tr>
                       </tfoot>
                     </table>

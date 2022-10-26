@@ -2,7 +2,7 @@ var tabla;
 //Función que se ejecuta al inicio
 function init() {
   $(".mpersona").addClass("active");
-
+  tbla_principal();
 
   // ══════════════════════════════════════ S E L E C T 2 ══════════════════════════════════════
   lista_select2("../ajax/persona.php?op=cargo_persona", '#cargo_persona', null);
@@ -58,6 +58,8 @@ function limpiar_form_persona() {
 
 //Función Listar
 function tbla_principal() {
+  $(".tabla").hide();
+  $(".cargando").show();
 
   tabla=$('#tabla-persona').dataTable({
     responsive: true,
@@ -66,12 +68,12 @@ function tbla_principal() {
     aServerSide: true,//Paginación y filtrado realizados por el servidor
     dom: '<Bl<f>rtip>',//Definimos los elementos del control de tabla
     buttons: [
-      { extend: 'copyHtml5', footer: true, exportOptions: { columns: [0,7,8,9,3,4,10,11,12], } }, 
-      { extend: 'excelHtml5', footer: true, exportOptions: { columns: [0,7,8,9,3,4,10,11,12], } }, 
-      { extend: 'pdfHtml5', footer: false, orientation: 'landscape', pageSize: 'LEGAL', exportOptions: { columns: [0,7,8,9,3,4,10,11,12], } }, {extend: "colvis"} ,
+      { extend: 'copyHtml5', footer: true, exportOptions: { columns: [4,5,6,7,8,3], } }, 
+      { extend: 'excelHtml5', footer: true, exportOptions: { columns: [4,5,6,7,8,3], } }, 
+      { extend: 'pdfHtml5', footer: false, orientation: 'landscape', pageSize: 'LEGAL', exportOptions: { columns: [4,5,6,7,8,3], } }, {extend: "colvis"} ,
     ],
     ajax:{
-      url: `../ajax/persona.php?op=tbla_principal&tipo_persona`,
+      url: `../ajax/persona.php?op=tbla_principal`,
       type : "get",
       dataType : "json",						
       error: function(e){
@@ -93,9 +95,12 @@ function tbla_principal() {
     iDisplayLength: 10,//Paginación
     order: [[ 0, "asc" ]],//Ordenar (columna,orden)
     columnDefs: [
-      { targets: [6,7,8,9,10,11,12], visible: false, searchable: false, }, 
+      { targets: [4,5,6,7,8], visible: false, searchable: false, }, 
     ],
   }).DataTable();
+
+  $(".tabla").show();
+  $(".cargando").hide();
 
 }
 
@@ -283,28 +288,18 @@ function mostrar(idpersona) {
     if (e.status == true) {       
 
       $("#tipo_documento").val(e.data.tipo_documento).trigger("change");
-      $("#nombre").val(e.data.nombres);
+      $("#nombre").val(e.data.nombre_persona);
       $("#num_documento").val(e.data.numero_documento);
       $("#direccion").val(e.data.direccion);
       $("#telefono").val(e.data.celular);
       $("#email").val(e.data.correo);
-           
-      $("#titular_cuenta").val(e.data.titular_cuenta);
       $("#idpersona").val(e.data.idpersona);
-      $("#ruc").val(e.data.ruc);   
     
-      $("#cta_bancaria").val(e.data.cuenta_bancaria).trigger("change"); 
-      $("#cci").val(e.data.cci).trigger("change"); 
-      $("#banco").val(e.data.idbancos).trigger("change"); 
-
-      $("#sueldo_mensual").val(e.data.sueldo_mensual);
-      $("#sueldo_diario").val(e.data.sueldo_diario);  
-
-      $("#id_tipo_persona").val(e.data.idtipo_persona); 
+      $("#cargo_persona").val(e.data.idcargo_persona).trigger("change"); 
 
 
       if (e.data.foto_perfil!="") {
-        $("#foto1_i").attr("src", "../dist/docs/persona/perfil/" + e.data.foto_perfil);
+        $("#foto1_i").attr("src", "../dist/img/persona/perfil/" + e.data.foto_perfil);
         $("#foto1_actual").val(e.data.foto_perfil);
       }
 

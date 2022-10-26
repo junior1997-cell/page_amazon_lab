@@ -34,12 +34,6 @@
       $email			      = isset($_POST["email"])? limpiarCadena($_POST["email"]):"";
       $cargo_persona     = isset($_POST["cargo_persona"])? $_POST["cargo_persona"] :"";
 
-
-
-      // foto1, 
-      // foto1_actual, 
-
-      // $idpersona, $nombre, $tipo_documento, $num_documento, $direccion, $telefono, $email, $cargo_persona, 
        
       $imagen1			    = isset($_POST["foto1"])? limpiarCadena($_POST["foto1"]):"";
       switch ($_GET["op"]) {
@@ -77,7 +71,7 @@
             }            
 
             // editamos un persona existente
-            // $rspta=$persona->editar($idpersona, $nombre, $tipo_documento, $num_documento, $direccion, $telefono, $email, $cargo_persona, $imagen1);
+            $rspta=$persona->editar($idpersona, $nombre, $tipo_documento, $num_documento, $direccion, $telefono, $email, $cargo_persona, $imagen1);
             
             echo json_encode($rspta, true);
           }            
@@ -110,7 +104,7 @@
 
         case 'tbla_principal':          
 
-          $rspta=$persona->tbla_principal($_GET["tipo_persona"]);
+          $rspta=$persona->tbla_principal();
           
           //Vamos a declarar un array
           $data= Array(); $cont=1;
@@ -121,23 +115,26 @@
           
               $data[]=array(
                 "0"=>$cont++,
-                "1"=>'<button class="btn btn-warning btn-sm" onclick="mostrar('.$value['idpersona'].')" data-toggle="tooltip" data-original-title="Editar"><i class="fas fa-pencil-alt"></i></button>'.
-                  ' <button class="btn btn-danger btn-sm" onclick="eliminar_persona('.$value['idpersona'].', \''.encodeCadenaHtml($value['nombres']).'\')" data-toggle="tooltip" data-original-title="Eliminar o papelera"><i class="fas fa-skull-crossbones"></i></button>',
-                "2"=>'<div class="user-block">
-                  <img class="img-circle" src="../dist/img/persona/perfil/'. $value['foto_perfil'] .'" alt="User Image" onerror="'.$imagen_error.'">
-                  <span class="username"><p class="text-primary m-b-02rem" >'. $value['nombres'] .'</p></span>
-                  <span class="description">'. $value['tipo_documento'] .': '. $value['numero_documento'] .' </span>
-                  </div>',
+                "1"=>'<button class="btn btn-warning btn-xs" onclick="mostrar('.$value['idpersona'].')" data-toggle="tooltip" data-original-title="Editar"><i class="fas fa-pencil-alt"></i></button>'.
+                  ' <button class="btn btn-danger btn-xs" onclick="eliminar_persona('.$value['idpersona'].', \''.encodeCadenaHtml($value['nombre_persona']).'\')" data-toggle="tooltip" data-original-title="Eliminar o papelera"><i class="fas fa-skull-crossbones"></i></button>',
+                "2"=>'<div class="d-flex align-items-center mx-auto">
+                      <a onclick="ver_img_perfil(\'' .$value['foto_perfil'] . '\',\'' . $value['nombre_persona'] . '\')">
+                        <div class="avatar avatar-circle">
+                          <img class="avatar-img" src="../dist/img/persona/perfil/'.$value['foto_perfil'] . '" alt="Image Description" onerror="'.$imagen_error.'">
+                        </div>
+                      </a>
+                      <div class="ml-3">
+                        <small style="font-size: 14px;font-weight: bold;">'. $value['nombre_persona'] .'</small> <br>                         
+                        <small class="text-muted"> ' . $value['tipo_documento'] .  ': ' . $value['numero_documento'] .  '</small> -
+                        <small class="text-muted"> Cell : ' . $value['celular'] .  '</small>
+                      </div>
+                    </div>',
                 "3"=> $value['direccion'],
-                "4"=>'<a href="tel:+51'.quitar_guion($value['celular']).'" data-toggle="tooltip" data-original-title="Llamar al persona.">'. $value['celular'] . '</a>',
-                "5"=> '<b>'.$value['banco'] .': </b>'. $value['cuenta_bancaria'] .' <br> <b>CCI: </b>'.$value['cci'],
-                "6"=>(($value['estado'])?'<span class="text-center badge badge-success">Activado</span>': '<span class="text-center badge badge-danger">Desactivado</span>').$toltip,
-                "7"=> $value['nombres'],
-                "8"=> $value['tipo_documento'],
-                "9"=> $value['numero_documento'],
-                "10"=> $value['banco'],
-                "11"=> $value['cuenta_bancaria'],
-                "12"=> $value['cci']
+                "4"=> $value['nombre_persona'],
+                "5"=> $value['tipo_documento'],
+                "6"=> $value['numero_documento'],
+                "7"=> $value['celular'],
+                "8"=> $value['correo'],
 
               );
             }
@@ -153,25 +150,7 @@
           }
         break;  
 
-        case 'verdatos':
-          $rspta=$persona->verdatos($idpersona);
-          //Codificar el resultado utilizando json
-          echo json_encode($rspta, true);
-        break;        
-
-        case 'formato_banco':           
-          $rspta=$persona->formato_banco($_POST["idbanco"]);
-          //Codificar el resultado utilizando json
-          echo json_encode($rspta, true);           
-        break;
-
-        /* =========================== S E C C I O N   R E C U P E R A R   B A N C O S =========================== */
-        case 'recuperar_banco':           
-          $rspta=$persona->recuperar_banco();
-          //Codificar el resultado utilizando json
-          echo json_encode($rspta, true);           
-        break;
-        /* =========================== S E C C I O N  T I P O   P E R S O N A  =========================== */
+        /* =========================== C A R G O   P E R S O N A  =========================== */
         case 'cargo_persona':
 
           $rspta=$persona->cargo();
