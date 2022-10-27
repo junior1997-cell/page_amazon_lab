@@ -593,7 +593,7 @@ function addImage(e, id, img_default='') {
 
 					$("#"+id+"_i").attr("src", result);
 
-          $(`.jq_image_zoom`).zoom({ on:'grab' });
+          // $(`.jq_image_zoom`).zoom({ on:'grab' });
 
 					$("#"+id+"_nombre").html(''+
 						'<div class="row">'+
@@ -702,7 +702,7 @@ function addImageApplication(e, id, img_default='', width='100%', height='310', 
             extrae_extencion(file.name) == "bmp" || extrae_extencion(file.name) == "svg" ) {
 
             $(`#${id}_ver`).html(`<span class="jq_image_zoom"><img src="${result}" alt="" width="100%" onerror="this.src='../dist/svg/error-404-x.svg';" ></span>`); 
-            $(`.jq_image_zoom`).zoom({ on:'grab' });
+            // $(`.jq_image_zoom`).zoom({ on:'grab' });
           } else {
             $(`#${id}_ver`).html('<img src="../dist/svg/doc_si_extencion.svg" alt="" width="50%" >');
           }
@@ -862,7 +862,7 @@ function re_visualizacion(id, ruta,  width='100%', height='310') {
       extrae_extencion(pdffile.name) == "bmp" || extrae_extencion(pdffile.name) == "svg" ) {
 
       $("#doc"+id+"_ver").html(`<span class="jq_image_zoom"><img src="${pdffile_url}" alt="" width="100%" ></span>`);
-      $(`.jq_image_zoom`).zoom({ on:'grab' });
+      // $(`.jq_image_zoom`).zoom({ on:'grab' });
       toastr.success('Documento vizualizado correctamente!!!');
     } else {
       $("#doc"+id+"_ver").html('<img src="../dist/svg/doc_si_extencion.svg" alt="" width="50%" >');
@@ -1050,7 +1050,7 @@ function pdf_o_img(filename) {
 
 // cuando hace click en revizualizar
 function reload_zoom() {
-  $(`.jq_image_zoom`).zoom({ on:'grab' });
+  // $(`.jq_image_zoom`).zoom({ on:'grab' });
 }
 
 

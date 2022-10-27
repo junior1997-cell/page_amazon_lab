@@ -2,7 +2,7 @@ $("#frmAcceso").on("submit", function (e) {
   e.preventDefault();
   logina = $("#logina").val();
   clavea = $("#clavea").val();
-console.log("logina: " + logina + " clavea: " + clavea);
+// console.log("logina: " + logina + " clavea: " + clavea);
   $("#login-admin-btn").html('<i class="fas fa-spinner fa-pulse fa-2x"></i>').addClass('disabled');
 
   $.post("../ajax/usuario.php?op=verificar", { logina: logina, clavea: clavea }, function (e) {
