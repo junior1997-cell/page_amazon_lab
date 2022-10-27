@@ -55,6 +55,8 @@
                           <table id="tabla-usuarios" class="table table-bordered table-striped display" style="width: 100% !important;">
                             <thead>
                               <tr>
+                                <th data-toggle="tooltip" data-original-title="N°">N°</th>
+                                <th data-toggle="tooltip" data-original-title="Acciones">Acciones</th>
                                 <th data-toggle="tooltip" data-original-title="Nombres">Nombre</th>
                                 <th data-toggle="tooltip" data-original-title="Descripción">Telef.</th>
                                 <th data-toggle="tooltip" data-original-title="Descripción">Login</th>
@@ -64,6 +66,8 @@
                             <tbody></tbody>
                             <tfoot>
                               <tr>
+                              <th data-toggle="tooltip" data-original-title="N°">N°</th>
+                                <th data-toggle="tooltip" data-original-title="Acciones">Acciones</th>
                                 <th data-toggle="tooltip" data-original-title="Nombres">Nombre</th>
                                 <th data-toggle="tooltip" data-original-title="Descripción">Telef.</th>
                                 <th data-toggle="tooltip" data-original-title="Descripción">Login</th>
@@ -81,38 +85,28 @@
                                 <input type="hidden" name="idusuario" id="idusuario" />
 
                                 <!-- Trabajador -->
-                                <div class="col-12 col-sm-9 col-md-9 col-lg-7 col-xl-7">
-                                  <div class="form-group">
-                                    <label for="trabajador" id="trabajador_c">Trabajador</label>                               
-                                    <select name="trabajador" id="trabajador" class="form-control select2" style="width: 100%;" > </select>
-                                    <input type="hidden" name="trabajador_old" id="trabajador_old" /> 
-                                  </div>                                                        
-                                </div>
+                                <div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
 
-                                <!-- adduser --> 
-                                <div class="col-12 col-sm-3 col-md-3 col-lg-1 col-xl-1">
-                                  <div class="form-group">
-                                    <label class="text-white d-none show-min-width-576px">.</label> 
-                                    <label class="d-none show-max-width-576px" >Nuevo Trabajador</label>
-                                    <a data-toggle="modal" href="#modal-agregar-trabajador" >
-                                      <button type="button" class="btn btn-success btn-block" data-toggle="tooltip" data-original-title="Agregar nuevo Trabajador" onclick="limpiar_form_trabajador();">
-                                        <i class="fa fa-user-plus" aria-hidden="true"></i>
-                                      </button>
-                                    </a>
-                                  </div>
+                                  <label for="trabajador" id="trabajador_c">Trabajador</label>                               
+                                  
+                                  <select class="js-custom-select custom-select" size="1" style="opacity: 0;"
+                                    data-hs-select2-options='{
+                                      "placeholder": "Seleccionar"
+                                    }'
+                                    name="trabajador" id="trabajador"
+                                    onchange="cargo_persona(this);"
+                                  >
+                                  </select>
+                                  <input type="hidden" name="trabajador_old" id="trabajador_old" /> 
                                 </div>
-
                                 <!-- cargo -->
-                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                                   <div class="form-group">
-                                    <label for="cargo">Cargo</label>                               
-                                    <select name="cargo" id="cargo" class="form-control select2" style="width: 100%;"  >
-                                      <option data-option-template='<span class="d-flex align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="assets/vendor/flag-icon-css/flags/1x1/io.svg" alt="British Indian Ocean Territory Flag" /><span class="text-truncate">British Indian Ocean Territory</span></span>' value="Administrador">Administrador</option>
-                                      <option value="Recursos Humanos">Recursos Humanos</option>
-                                      <option value="Contador">Contador</option>
-                                      <option value="SSOMA">SSOMA</option>
-                                    </select> 
-                                  </div>                                                        
+                                    <label for="cargo">Cargo</label> 
+                                    <input type="text" class="form-control cargo_trabajador" placeholder="Cargo"  readonly>
+
+                                  </div>  
+
                                 </div>
 
                                 <!-- Login -->

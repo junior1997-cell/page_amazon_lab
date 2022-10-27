@@ -7,6 +7,8 @@ function init() {
 
   tbla_principal();
 
+
+
 }
 
 function show_hide_form(flag) {
@@ -31,7 +33,6 @@ function permisos() {
     e = JSON.parse(e); //console.log(r);
 
     if (e.status == true) { $("#permisos").html(e.data); } else { ver_errores(e); }
-    //$("#permiso_4").rules('add', { required: true, messages: {  required: "Campo requerido" } });
     
   }).fail( function(e) { console.log(e); ver_errores(e); } );
 }
@@ -44,7 +45,7 @@ function limpiar_form_usuario() {
   $("#password").rules('add', { required: true, messages: {  required: "Campo requerido" } });
 
   //Select2 trabajador
-  lista_select2("../ajax/usuario.php?op=select2Trabajador", '#trabajador', null);
+  lista_select2("../ajax/usuario.php?op=select2_persona", '#trabajador', null);
  
   $("#idusuario").val("");
   $("#trabajador_c").html("Trabajador");   
@@ -103,6 +104,129 @@ function tbla_principal() {
   $(".cargando").hide();
 }
 
+//Función para guardar o editar
+function guardar_y_editar_usuario(e) {
+  // e.preventDefault(); //No se activará la acción predeterminada del evento
+  var formData = new FormData($("#form-usuario")[0]);
+
+  $.ajax({
+    url: "../ajax/usuario.php?op=guardar_y_editar_usuario",
+    type: "POST",
+    data: formData,
+    contentType: false,
+    processData: false,
+    success: function (e) { 
+      try {
+        e = JSON.parse(e); console.log(e);
+        if (e.status == true) {
+          tabla.ajax.reload(null, false);
+          show_hide_form(1); limpiar_form_usuario(); sw_success('Correcto!', "Usuario guardado correctamente." );
+          $("#guardar_registro").html('Guardar Cambios').removeClass('disabled');
+        } else {
+          ver_errores(d);
+        }
+      } catch (err) { console.log('Error: ', err.message); toastr.error('<h5 class="font-size-16px">Error temporal!!</h5> puede intentalo mas tarde, o comuniquese con <i><a href="tel:+51921305769" >921-305-769</a></i> ─ <i><a href="tel:+51921487276" >921-487-276</a></i>'); }             
+    },
+    xhr: function () {
+      var xhr = new window.XMLHttpRequest();
+
+      xhr.upload.addEventListener( "progress", function (evt) {
+
+        if (evt.lengthComputable) {
+          var prct = (evt.loaded / evt.total) * 100;
+          prct = Math.round(prct);
+
+          $("#barra_progress_usuario").css({ width: prct + "%", });
+
+          $("#barra_progress_usuario").text(prct + "%");
+
+        }
+      }, false );
+
+      return xhr;
+    },
+    beforeSend: function () {
+      $("#guardar_registro").html('<i class="fas fa-spinner fa-pulse fa-lg"></i>').addClass('disabled');
+      $("#div_barra_progress_usuario").show();
+      $("#barra_progress_usuario").css({ width: "0%",  });
+      $("#barra_progress_usuario").text("0%");
+    },
+    complete: function () {
+      $("#div_barra_progress_usuario").hide();
+      $("#barra_progress_usuario").css({ width: "0%", });
+      $("#barra_progress_usuario").text("0%");
+    },
+    error: function (jqXhr) { ver_errores(jqXhr); },
+  });
+}
+
+function mostrar(idusuario) {
+
+  $(".tooltip").removeClass("show").addClass("hidde");
+  $(".trabajador-name").html(`<i class="fas fa-spinner fa-pulse fa-2x"></i>`);  
+
+  limpiar_form_usuario();  
+
+  $(".modal-title").html("Editar usuario");
+  $("#trabajador").val("").trigger("change"); 
+  $("#trabajador_c").html(`Trabajador <b class="text-danger">(Selecione nuevo) </b>`);
+  $("#cargando-1-fomulario").hide();
+  $("#cargando-2-fomulario").show();
+
+  // Removemos la validacion
+  $("#trabajador").rules('remove', 'required');
+  $("#password").rules('remove', 'required');
+
+  show_hide_form(2);
+
+  $("#permisos").html('<i class="fas fa-spinner fa-pulse fa-2x"></i>');
+
+  $.post("../ajax/usuario.php?op=mostrar", { idusuario: idusuario }, function (e, status) {
+
+    e = JSON.parse(e);  console.log(e); 
+
+    $(".trabajador-name").html(` <i class="fas fa-users-cog text-primary"></i> <b class="texto-parpadeante font-size-20px">${e.data.nombre_persona}</b> `);    
+    // $("#trabajador").val(e.data.idpersona).trigger("change"); 
+    $("#trabajador_old").val(e.data.idpersona); 
+    $(".cargo_trabajador").val(e.data.nombre_cargo).trigger("change"); 
+    $("#login").val(e.data.login);
+    $("#password-old").val(e.data.password);
+    $("#idusuario").val(e.data.idusuario);
+
+    $("#cargando-1-fomulario").show();
+    $("#cargando-2-fomulario").hide();    
+
+  }).fail( function(e) { console.log(e); ver_errores(e); } );
+
+  //Permiso
+  $.post(`../ajax/usuario.php?op=permisos&id=${idusuario}`, function (r) {
+
+    r = JSON.parse(r); console.log(r);
+
+    if (r.status) { $("#permisos").html(r.data); } else { ver_errores(e); }
+    
+  }).fail( function(e) { console.log(e); ver_errores(e); } );
+}
+
+//Función para desactivar registros
+function eliminar(idusuario, nombre) {
+  
+  crud_eliminar_papelera(
+    "../ajax/usuario.php?op=desactivar",
+    "../ajax/usuario.php?op=eliminar", 
+    idusuario, 
+    "!Elija una opción¡", 
+    `<b class="text-danger"><del>${nombre}</del></b> <br> En <b>papelera</b> encontrará este registro! <br> Al <b>eliminar</b> no tendrá acceso a recuperar este registro!`, 
+    function(){ sw_success('♻️ Papelera! ♻️', "Tu registro ha sido reciclado." ) }, 
+    function(){ sw_success('Eliminado!', 'Tu registro ha sido Eliminado.' ) }, 
+    function(){ tabla.ajax.reload(null, false) },
+    false, 
+    false, 
+    false,
+    false
+  );
+}
+
 //ver perfil
 function ver_img_perfil(img_perfil,nombre_usuario){
 
@@ -140,3 +264,61 @@ function ver_img_perfil(img_perfil,nombre_usuario){
 }
 
 init();
+// .....::::::::::::::::::::::::::::::::::::: V A L I D A T E   F O R M  :::::::::::::::::::::::::::::::::::::::..
+
+$(function () {
+
+  $("#trabajador").on('change', function() { $(this).trigger('blur'); });
+  
+
+  $("#form-usuario").validate({
+    ignore: '.select2-input, .select2-focusser',
+    rules: {
+      // trabajador: { required: true },
+      login:    { required: true, minlength: 3, maxlength: 20 },
+      password: { required: true, minlength: 4, maxlength: 20 },
+    },
+    messages: {
+      // trabajador: { required: "Campo requerido" },
+      login:    { required: "Este campo es requerido.", minlength: "MÍNIMO 4 caracteres.", maxlength: "MÁXIMO 20 caracteres.", },
+      password: { equired: "Campo requerido.", minlength: "MÍNIMO 4 caracteres.", maxlength: "MÁXIMO 20 caracteres.", },
+    },
+    
+    errorElement: "span",
+
+    errorPlacement: function (error, element) {
+      error.addClass("invalid-feedback");
+      element.closest(".form-group").append(error); 
+    },
+
+    highlight: function (element, errorClass, validClass) {
+      $(element).addClass("is-invalid").removeClass("is-valid"); 
+    },
+
+    unhighlight: function (element, errorClass, validClass) {
+      $(element).removeClass("is-invalid").addClass("is-valid");              
+    },
+
+    submitHandler: function (e) {
+      guardar_y_editar_usuario(e);
+    },
+  });
+
+  $("#trabajador").rules('add', { required: true, messages: {  required: "Campo requerido" } });
+  
+});
+
+// .....::::::::::::::::::::::::::::::::::::: F U N C I O N E S    A L T E R N A S  :::::::::::::::::::::::::::::::::::::::..
+
+function marcar_todos_permiso() {
+   
+  if ($(`#marcar_todo`).is(':checked')) {
+    $('.permiso').each(function(){ this.checked = true; });
+    $('.marcar_todo').html('Desmarcar Todo');
+  } else {
+    $('.permiso').each(function(){ this.checked = false; });
+    $('.marcar_todo').html('Marcar Todo');
+  }  
+}
+
+function cargo_persona(select){ $(".cargo_trabajador").val($('option:selected', select).attr('cargo')).trigger("change"); }
