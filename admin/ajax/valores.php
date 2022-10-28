@@ -19,6 +19,7 @@ if (!isset($_SESSION["nombre"])) {
 
     $valores = new Valores();
     $id_paginaweb = isset($_POST["id_paginaweb"]) ? limpiarCadena($_POST["id_paginaweb"]) : "";
+    $carpeta_pag = isset($_POST["carpeta_pag"]) ? limpiarCadena($_POST["carpeta_pag"]) : "";
     $idvalores = isset($_POST["idvalores"]) ? limpiarCadena($_POST["idvalores"]) : "";
     $nombre = isset($_POST["nombre"]) ? limpiarCadena($_POST["nombre"]) : "";
     $descripcion = isset($_POST["descripcion"]) ? limpiarCadena($_POST["descripcion"]) : "";
@@ -43,7 +44,7 @@ if (!isset($_SESSION["nombre"])) {
 
           $imagen_perfil = $date_now.' '.rand(0, 20) . round(microtime(true)) . rand(21, 41) . '.' . end($ext1);
 
-          move_uploaded_file($_FILES["doc1"]["tmp_name"], "../dist/img/valores/imagen_perfil/" . $imagen_perfil);
+          move_uploaded_file($_FILES["doc1"]["tmp_name"], "../dist/".$carpeta_pag."/img/$imagen_perfil");
         }
 
         if (empty($idvalores)) {
@@ -63,7 +64,7 @@ if (!isset($_SESSION["nombre"])) {
         
               if ($ficha1_ant != "") {
 
-                unlink("../dist/img/valores/imagen_perfil/" . $ficha1_ant);
+                unlink("../dist/".$carpeta_pag."/img/$ficha1_ant");
               }
 
             }
@@ -90,6 +91,7 @@ if (!isset($_SESSION["nombre"])) {
       case 'listar':
 
         $rspta = $valores->listar($_GET['id']);
+        $carpeta = $_GET['carpeta'];
         //Vamos a declarar un array
         $data = [];
         $comprobante = '';
@@ -99,14 +101,14 @@ if (!isset($_SESSION["nombre"])) {
         if ($rspta['status']) {
 
           while ($reg = $rspta['data']->fetch_object()) {
-
+            $img = "../dist/".$carpeta."/img/$reg->icono";
             $data[] = [
               "0" => '<button class="btn btn-warning btn-xs" onclick="mostrar(' .$reg->idvalores .')"><i class="fas fa-pencil-alt"></i></button>
                       <button class="btn btn-danger btn-xs" onclick="eliminar(' .$reg->idvalores .')"><i class="far fa-trash-alt"></i></button>',
               "1" =>  '<div class="d-flex align-items-center mx-auto">
                         <a onclick="ver_img_perfil(\'' . $reg->icono . '\',\'' . $reg->nombre_valor . '\')">
                           <div class="avatar avatar-circle">
-                            <img class="avatar-img cursor-pointer" src="../dist/img/valores/imagen_perfil/'. $reg->icono .'" alt="Image Description" onerror="'.$imagen_error.'">
+                            <img class="avatar-img cursor-pointer" src="'.$img.'" alt="Image Description" onerror="'.$imagen_error.'">
                           </div>
                         </a>
                         <div class="ml-3">

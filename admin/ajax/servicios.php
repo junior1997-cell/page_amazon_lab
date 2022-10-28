@@ -22,6 +22,7 @@ if (!isset($_SESSION["nombre"])) {
     $date_now = date("d-m-Y h.i.s A");
 
     $id_paginaweb = isset($_POST["id_paginaweb"]) ? limpiarCadena($_POST["id_paginaweb"]) : "";
+    $carpeta_pag = isset($_POST["carpeta_pag"]) ? limpiarCadena($_POST["carpeta_pag"]) : "";
     $idservicio = isset($_POST["idservicio"]) ? limpiarCadena($_POST["idservicio"]) : "";
     $nombre = isset($_POST["nombre"]) ? limpiarCadena($_POST["nombre"]) : "";
     $descripcion = isset($_POST["descripcion"]) ? limpiarCadena($_POST["descripcion"]) : "";
@@ -47,7 +48,7 @@ if (!isset($_SESSION["nombre"])) {
 
           $imagen_perfil = $date_now.' '.rand(0, 20) . round(microtime(true)) . rand(21, 41) . '.' . end($ext1);
 
-          move_uploaded_file($_FILES["doc1"]["tmp_name"], "../dist/img/servicios/imagen_perfil/" . $imagen_perfil);
+          move_uploaded_file($_FILES["doc1"]["tmp_name"], "../dist/".$carpeta_pag."/img/$imagen_perfil");
 
         }
 
@@ -66,7 +67,7 @@ if (!isset($_SESSION["nombre"])) {
 
               $ficha1_ant = $datos_ficha1['data']['icono'];
 
-              if (!empty($ficha1_ant) ) {  unlink("../dist/img/servicios/imagen_perfil/" . $ficha1_ant);  }
+              if (!empty($ficha1_ant) ) {  unlink("../dist/".$carpeta_pag."/img/$ficha1_ant");  }
             }
           }
 
@@ -89,7 +90,7 @@ if (!isset($_SESSION["nombre"])) {
 
       case 'listar':
         $rspta = $servicios->listar($_GET['id']);
-
+        $carpeta = $_GET['carpeta'];
         $data = [];
         $comprobante = '';
         $cont = 1;
@@ -98,12 +99,14 @@ if (!isset($_SESSION["nombre"])) {
         if ($rspta['status']) {
 
           while ($reg = $rspta['data']->fetch_object()) {
+            $img = "../dist/".$carpeta."/img/$reg->icono";
             $data[] = [
+
               "0" => '<button class="btn btn-warning btn-xs" onclick="mostrar(' . $reg->idservicio . ')"><i class="fas fa-pencil-alt"></i></button>
                         <button class="btn btn-danger btn-xs" onclick="eliminar(' . $reg->idservicio . ')"><i class="far fa-trash-alt"></i></button>',
               "1" =>  '<div class="media">
                         <div class="avatar avatar-circle mr-3">
-                          <img onclick="ver_img_perfil(\'' . $reg->icono . '\',\'' . $reg->nombre_servicio . '\')" class="avatar-img cursor-pointer" src="../dist/img/servicios/imagen_perfil/'. $reg->icono .'" onerror="'.$imagen_error.'" alt="Image Description">
+                          <img onclick="ver_img_perfil(\'' . $reg->icono . '\',\'' . $reg->nombre_servicio . '\')" class="avatar-img cursor-pointer" src="'.$img.'" onerror="'.$imagen_error.'" alt="Image Description">
                         </div>
                         <div class="media-body">
                           <span class="d-block h5 mb-0">'. $reg->nombre_servicio .'</span>

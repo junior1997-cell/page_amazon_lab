@@ -1,12 +1,15 @@
 var tabla;
 var id_get = varaibles_get();
 var id =id_get.id;
+var carpeta =id_get.carpeta;
+console.log(carpeta);
 
 //Función que se ejecuta al inicio
 $(document).on("ready", function () {
 
   $(`.mservicios${id_get.id}`).addClass("active");
   $("#id_paginaweb").val(id_get.id);
+  $("#carpeta_pag").val(id_get.carpeta);
 
   listar(id_get.id);  
 
@@ -28,6 +31,11 @@ function doc1_eliminar() {
 	$("#doc1_nombre").html("");
 
 }
+//revisualizar imagen
+$(document).ready(function() {
+  $('.revisualizar').attr("onclick",`1, 'admin/dist/img/${carpeta}/img'`);
+  //console.log($('.revisualizar').attr("onclick"));
+});
 
 //Función limpiar
 function limpiar() {
@@ -64,7 +72,7 @@ function listar(id) {
     dom: '<Bl<f>rtip>',//Definimos los elementos del control de tabla
     buttons: ['excelHtml5','pdf'],
     "ajax":{
-        url: `../ajax/servicios.php?op=listar&id=${id}`,
+        url: `../ajax/servicios.php?op=listar&id=${id}&carpeta=${carpeta}`,
         type : "get",
         dataType : "json",						
         error: function(e){
@@ -111,7 +119,7 @@ function ver_img_perfil(img_perfil,nombre_servicio){
   
    }else{
      
-    $(".img_modal_xl_").html(`<img class="rounded-lg" src="../dist/img/servicios/imagen_perfil/${img_perfil}" style="width: 100%;"  alt="Image Description"></img>`)
+    $(".img_modal_xl_").html(`<img class="rounded-lg" src="../dist/${carpeta}/img/${img_perfil}" style="width: 100%;"  alt="Image Description"></img>`)
  
    }
 
@@ -237,7 +245,7 @@ function mostrar(idservicio) {
 
         $("#doc_old_1").val(e.data.icono); 
         $("#doc1_nombre").html(`<div class="row"> <div class="col-md-12"><i>Imagen.${extrae_extencion(e.data.icono)}</i></div></div>`);
-        $("#doc1_ver").html(doc_view_extencion(e.data.icono, 'admin/dist/img/servicios/imagen_perfil', '100%'));        
+        $("#doc1_ver").html(doc_view_extencion(e.data.icono, `admin/dist/${carpeta}/img`, '100%'));        
       } 
 
       $("#cargando-1-fomulario").show();
