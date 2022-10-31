@@ -12,6 +12,7 @@ Class Valores
 	//Implementamos un método para insertar registros
 	public function insertar($id_paginaweb,$nombre,$descripcion,$imagen_perfil)
 	{
+		// var_dump($id_paginaweb,$nombre,$descripcion,$imagen_perfil);die();
 		$sql="INSERT INTO valores(idpagina_web,nombre_valor, descripcion, icono) VALUES ('$id_paginaweb','$nombre','$descripcion','$imagen_perfil')";
 		return ejecutarConsulta($sql);
 	}

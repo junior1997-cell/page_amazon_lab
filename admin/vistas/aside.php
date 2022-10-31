@@ -60,13 +60,13 @@
 
             <?php if ($_SESSION['valores']==1) {  ?>
             <li class="nav-item">
-              <a class="nav-link mvalores1" href="valores.php?id=1"> <i class="fas fa-sliders-h nav-icon"></i> Valores </a>
+              <a class="nav-link mvalores1" href="valores.php?id=1&carpeta=inmobiliaria"> <i class="fas fa-sliders-h nav-icon"></i> Valores </a>
             </li>
             <?php  }  ?>
 
             <?php if ($_SESSION['servicio']==1) {  ?>
             <li class="nav-item">
-              <a class="nav-link mservicios1" href="servicio.php?id=1"> <i class="fas fa-shopping-basket nav-icon"></i> Servicios </a>
+              <a class="nav-link mservicios1" href="servicio.php?id=1&carpeta=inmobiliaria"> <i class="fas fa-shopping-basket nav-icon"></i> Servicios </a>
             </li>
             <?php  }  ?>
 
@@ -97,13 +97,13 @@
 
             <?php if ($_SESSION['valores']==1) {  ?>
             <li class="nav-item">
-              <a class="nav-link mvalores2" href="valores.php?id=2"> <i class="fas fa-sliders-h nav-icon"></i> Valores </a>
+              <a class="nav-link mvalores2" href="valores.php?id=2&carpeta=consultoria"> <i class="fas fa-sliders-h nav-icon"></i> Valores </a>
             </li>
             <?php  }  ?>
 
             <?php if ($_SESSION['servicio']==1) {  ?>
             <li class="nav-item">
-              <a class="nav-link mservicios2" href="servicio.php?id=2"> <i class="fas fa-shopping-basket nav-icon"></i> Servicios </a>
+              <a class="nav-link mservicios2" href="servicio.php?id=2&carpeta=consultoria"> <i class="fas fa-shopping-basket nav-icon"></i> Servicios </a>
             </li>
             <?php  }  ?>
           </ul>
@@ -132,13 +132,13 @@
 
             <?php if ($_SESSION['valores']==1) {  ?>
             <li class="nav-item">
-              <a class="nav-link mvalores3" href="valores.php?id=3"> <i class="fas fa-sliders-h nav-icon"></i> Valores </a>
+              <a class="nav-link mvalores3" href="valores.php?id=3&carpeta=estrategia_digital"> <i class="fas fa-sliders-h nav-icon"></i> Valores </a>
             </li>
             <?php  }  ?>
 
             <?php if ($_SESSION['servicio']==1) {  ?>
             <li class="nav-item">
-              <a class="nav-link mservicios3" href="servicio.php?id=3"> <i class="fas fa-shopping-basket nav-icon"></i> Servicios </a>
+              <a class="nav-link mservicios3" href="servicio.php?id=3&carpeta=estrategia_digital"> <i class="fas fa-shopping-basket nav-icon"></i> Servicios </a>
             </li>
             <?php  }  ?>
           </ul>

@@ -102,6 +102,7 @@
                   <div class="row" id="cargando-1-fomulario">
                     <!--  idvalores -->
                     <input type="hidden" name="id_paginaweb" id="id_paginaweb" />
+                    <input type="hidden" name="carpeta_pag" id="carpeta_pag" />
                     <input type="hidden" name="idvalores" id="idvalores" />
 
                    <!-- Sub total -->
@@ -130,7 +131,7 @@
                           <input style="display: none;" id="doc1" type="file" name="doc1" accept="image/*" class="docpdf" />
                         </div>
                         <div class="col-md-6 text-center">
-                          <button type="button" class="btn btn-info btn-block btn-xs" onclick="re_visualizacion(1, 'admin/dist/img/valores/imagen_perfil');"><i class="fas fa-redo"></i> Recargar.</button>
+                          <button type="button" class="btn btn-info btn-block btn-xs revisualizar"><i class="fas fa-redo"></i> Recargar.</button>
                         </div>
                       </div>
                       <div id="doc1_ver" class="text-center mt-4">
