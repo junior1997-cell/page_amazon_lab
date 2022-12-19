@@ -49,7 +49,7 @@
                 </li>
                 <!-- inicio -->
                <li class="navbar navbar-light ">
-                  <a id="pagesMegaMenu" href="#idnosostros" aria-haspopup="true" aria-expanded="false" class="hover_morado morado_active" style="color:#5a1318;"><b>Nosotros</b></a>
+                  <a id="pagesMegaMenu" href="#idnosotros" aria-haspopup="true" aria-expanded="false" class="hover_morado morado_active" style="color:#5a1318;"><b>Nosotros</b></a>
                   <!-- Pages - Submenu -->
                   <div id="pagesSubMenu" class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 30px;">
                   </div>

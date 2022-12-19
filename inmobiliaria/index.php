@@ -3,250 +3,157 @@
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
     <!-- Hero Section -->
-    <div class="" id="idinicio">
-      <h1>holaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h1>
-      <img src="../assets/inmobiliaria/img/img2_principal.webp" alt="">
-    </div>
-    <!-- End Hero Section -->
-    <!-- nosostros Form Section -->
-    <div class="container space-top-3 space-top-lg-6 space-bottom-2" id="idnosostros" >
-      <div class="row">
-        <div class="col-lg-6 mb-9 mb-lg-0">
-          <div class="mb-5">
-            <h1>Ubícanos</h1>
-            <p>We'd love to talk about how we can help you.</p>
-          </div>
-
-          <!-- Leaflet -->
-          <div id="map" class="min-h-300rem mb-5"
-               data-hs-leaflet-options='{
-                 "map": {
-                   "scrollWheelZoom": true,
-                   "coords": [-6.487578584951772, -76.35602821271281]  
-                 },
-                 "marker": [
-                   {
-                     "coords": [-6.487578584951772, -76.35602821271281],
-                     "icon": {
-                       "iconUrl": "../assets/inmobiliaria/components/ubi.png",
-                       "iconSize": [50, 45]
-                     },
-                     "popup": {
-                       "text": "214,"
-                     }
-                   }
-                 ]
-                }'></div>
-          <!-- End Leaflet -->
-
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="mb-3">
-                <span class="d-block h5 mb-1">Teléfono:</span>
-                <span class="d-block text-body font-size-1">+1 (062) 109-9222</span>
-              </div>
-
-              <div class="mb-3">
-                <span class="d-block h5 mb-1">Correo:</span>
-                <span class="d-block text-body font-size-1">hello@example.com</span>
-              </div>
-            </div>
-
-            <div class="col-sm-6">
-              <div class="mb-3">
-                <span class="d-block h5 mb-1">Dirección:</span>
-                <span class="d-block text-body font-size-1">153 Williamson Plaza, Maggieberg</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6">
-          <div class="ml-lg-5">
-            <!-- Form -->
-            <form class="js-validate card shadow-lg mb-4">
-              <div class="card-header border-0 bg-light text-center py-4 px-4 px-md-6">
-                <h2 class="h4 mb-0">¡Escríbenos y te contactaremos! </h2>
-              </div>
-
-              <div class="card-body p-4 p-md-6">
-                <div class="row">
-                  <div class="col-sm-6">
-                    <!-- Form Group -->
-                    <div class="js-form-message form-group">
-                      <label for="nombres" class="input-label">Nombres</label>
-                      <input type="text" class="form-control" name="nombres" id="nombres" placeholder="Nombres" aria-label="Nombres" required
-                             data-msg="Please enter first your name"
-                             onkeyup="form_whatsapp();">
-                    </div>
-                    <!-- End Form Group -->
-                  </div>
-
-                  <div class="col-sm-6">
-                    <!-- Form Group -->
-                    <div class="js-form-message form-group">
-                      <label for="apellidos" class="input-label">Apellidos</label>
-                      <input type="text" class="form-control" name="apellidos" id="apellidos" placeholder="Apellidos" aria-label="Apellidos" required
-                             data-msg="Please enter last your name"
-                             onkeyup="form_whatsapp();">
-                    </div>
-                    <!-- End Form Group -->
-                  </div>
-
-                  <div class="col-sm-12">
-                    <!-- Form Group -->
-                    <div class="js-form-message form-group">
-                      <label for="correo" class="input-label">Correo electronico</label>
-                      <input type="email" class="form-control" name="correo" id="correo" placeholder="xxxxxx@gmail.com" aria-label="alex@pixeel.com" required
-                             data-msg="Please enter a valid email address"
-                             onkeyup="form_whatsapp();">
-                    </div>
-                    <!-- End Form Group -->
-                  </div>
-
-                  <div class="col-sm-12">
-                    <!-- Form Group -->
-                    <div class="js-form-message form-group">
-                      <label for="descripcion" class="input-label">Descripción</label>
-                      <div class="input-group">
-                        <textarea class="form-control" rows="4" name="descripcion" id="descripcion" placeholder="Escriba su texto aqui!!!" aria-label="Hi there, I would like to ..." required
-                                  data-msg="Please enter a reason."
-                                  onkeyup="form_whatsapp();"></textarea>
-                      </div>
-                    </div>
-                    <!-- End Form Group -->
-                  </div>
-                </div>
-
-                <a type="submit" id="btn_enviarwhats" class="btn btn-block btn-warning transition-3d-hover" href="#" target="_blank"></i>Enviar</a>
-              </div>
-            </form>
-            <!-- End Form -->
-          </div>
+    <div class="position-relative bg-img-hero" id="idinicio" style="background-image: url(../assets/inmobiliaria/img/img3_principal.jpg);">
+      <div class="container space-2 space-md-3 space-bottom-lg-4 min-h-300rem">
+        <div class="d-none d-md-block w-lg-50">
+          <h1>You're in good company.</h1>
+          <h2 class="h1 text-primary">Join millions of businesses on Front.</h2>
         </div>
       </div>
+
+      <!-- SVG Background -->
+      <figure class="position-absolute right-0 bottom-0 left-0">
+        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1920 100.1">
+          <path fill="#fff" d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"/>
+        </svg>
+      </figure>
+      <!-- End SVG Background -->
     </div>
-    <!-- End nosostros Form Section -->
+    <!-- End Hero Section -->
 
-    <!-- Contact Form Section -->
-    <div class="container space-top-3 space-top-lg-6 space-bottom-2" id="idcontactanos" >
-      <div class="row">
-        <div class="col-lg-6 mb-9 mb-lg-0">
-          <div class="mb-5">
-            <h1>Ubícanos</h1>
-            <p>We'd love to talk about how we can help you.</p>
-          </div>
-
-          <!-- Leaflet -->
-          <div id="map" class="min-h-300rem mb-5"
-               data-hs-leaflet-options='{
-                 "map": {
-                   "scrollWheelZoom": true,
-                   "coords": [-6.487578584951772, -76.35602821271281]  
-                 },
-                 "marker": [
-                   {
-                     "coords": [-6.487578584951772, -76.35602821271281],
-                     "icon": {
-                       "iconUrl": "../assets/inmobiliaria/components/ubi.png",
-                       "iconSize": [50, 45]
-                     },
-                     "popup": {
-                       "text": "214,"
-                     }
-                   }
-                 ]
-                }'></div>
-          <!-- End Leaflet -->
-
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="mb-3">
-                <span class="d-block h5 mb-1">Teléfono:</span>
-                <span class="d-block text-body font-size-1">+1 (062) 109-9222</span>
-              </div>
-
-              <div class="mb-3">
-                <span class="d-block h5 mb-1">Correo:</span>
-                <span class="d-block text-body font-size-1">hello@example.com</span>
-              </div>
+    <!-- nosotros Form Section background: linear-gradient(to top, #000000 0%, #000000bd 100%);  -->
+    <div style="background-image: url(../assets/inmobiliaria/img/sobre_nosotros.jpg);background-repeat: no-repeat;position: relative;width: 85%;height: 610px;margin-left: auto;margin-right: auto;">
+      <div class="container space-top-3 space-top-lg-6 space-bottom-2" id="idnosotros" >
+        <div class="row">
+          <div class="col-lg-6 mb-9 mb-lg-0">
+            <div class="mb-5">
+              <h1>Ubícanos</h1>
             </div>
-
-            <div class="col-sm-6">
-              <div class="mb-3">
-                <span class="d-block h5 mb-1">Dirección:</span>
-                <span class="d-block text-body font-size-1">153 Williamson Plaza, Maggieberg</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6">
-          <div class="ml-lg-5">
-            <!-- Form -->
-            <form class="js-validate card shadow-lg mb-4">
-              <div class="card-header border-0 bg-light text-center py-4 px-4 px-md-6">
-                <h2 class="h4 mb-0">¡Escríbenos y te contactaremos! </h2>
-              </div>
-
-              <div class="card-body p-4 p-md-6">
-                <div class="row">
-                  <div class="col-sm-6">
-                    <!-- Form Group -->
-                    <div class="js-form-message form-group">
-                      <label for="nombres" class="input-label">Nombres</label>
-                      <input type="text" class="form-control" name="nombres" id="nombres" placeholder="Nombres" aria-label="Nombres" required
-                             data-msg="Please enter first your name"
-                             onkeyup="form_whatsapp();">
-                    </div>
-                    <!-- End Form Group -->
-                  </div>
-
-                  <div class="col-sm-6">
-                    <!-- Form Group -->
-                    <div class="js-form-message form-group">
-                      <label for="apellidos" class="input-label">Apellidos</label>
-                      <input type="text" class="form-control" name="apellidos" id="apellidos" placeholder="Apellidos" aria-label="Apellidos" required
-                             data-msg="Please enter last your name"
-                             onkeyup="form_whatsapp();">
-                    </div>
-                    <!-- End Form Group -->
-                  </div>
-
-                  <div class="col-sm-12">
-                    <!-- Form Group -->
-                    <div class="js-form-message form-group">
-                      <label for="correo" class="input-label">Correo electronico</label>
-                      <input type="email" class="form-control" name="correo" id="correo" placeholder="xxxxxx@gmail.com" aria-label="alex@pixeel.com" required
-                             data-msg="Please enter a valid email address"
-                             onkeyup="form_whatsapp();">
-                    </div>
-                    <!-- End Form Group -->
-                  </div>
-
-                  <div class="col-sm-12">
-                    <!-- Form Group -->
-                    <div class="js-form-message form-group">
-                      <label for="descripcion" class="input-label">Descripción</label>
-                      <div class="input-group">
-                        <textarea class="form-control" rows="4" name="descripcion" id="descripcion" placeholder="Escriba su texto aqui!!!" aria-label="Hi there, I would like to ..." required
-                                  data-msg="Please enter a reason."
-                                  onkeyup="form_whatsapp();"></textarea>
-                      </div>
-                    </div>
-                    <!-- End Form Group -->
-                  </div>
-                </div>
-
-                <a type="submit" id="btn_enviarwhats" class="btn btn-block btn-warning transition-3d-hover" href="#" target="_blank"></i>Enviar</a>
-              </div>
-            </form>
-            <!-- End Form -->
           </div>
         </div>
       </div>
     </div>
     <!-- End Contact Form Section -->
+
+    <!-- nosostros Form Section -->
+    <div style="background-color: rgb(8 7 7 / 1);" >
+      <div class="container space-top-3 space-top-lg-6 space-bottom-2" id="idcontactanos" style="font-family: monospace;color: white; font-size: 25px;">
+        <div class="row">
+          <div class="col-lg-6 mb-9 mb-lg-0" style="border: 6px solid #df924a; border-radius: 20px;">
+            <div class="mb-1">
+              <h1 style="font-family: monospace;color: white; text-align:center">Ubícanos</h1>
+            </div>
+            <!-- Leaflet -->
+            <div id="map" class="min-h-300rem mb-5"
+                data-hs-leaflet-options='{
+                  "map": {
+                    "scrollWheelZoom": false,
+                    "coords": [-6.487578584951772, -76.35602821271281]  
+                  },
+                  "marker": [
+                    {
+                      "coords": [-6.487578584951772, -76.35602821271281],
+                      "icon": {
+                        "iconUrl": "../assets/inmobiliaria/components/ubi.png",
+                        "iconSize": [80, 75]
+                      },
+                      "popup": {
+                        "text": "214,"
+                      }
+                    }
+                  ]
+                  }'></div>
+            <!-- End Leaflet -->
+
+            <div class="row">
+              <div class="col-sm-6 col-lg-6">
+                <div class="mb-3">
+                  <span class="d-block h5 mb-1" style="font-size: 20px;color: #ffffff;">Teléfono:</span>
+                  <span class="class_span">+51 944 411 328</span>
+                </div>
+
+                <div class="mb-3">
+                  <span class="d-block h5 mb-1"  style="font-size: 20px;color: #ffffff;">Correo:</span>
+                  <span class="class_span">estrategiadigital@gmail.com</span>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-6">
+                <div class="mb-3">
+                  <span class="d-block h5 mb-1"  style="font-size: 20px;color: #ffffff;">Dirección:</span>
+                  <div class="class_span">Jr. Los Helechos 214 – Urb. Bernabe Guridi.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="ml-lg-5">
+              <!-- Form -->
+              <form class="js-validate card shadow-lg mb-4" style="border: 6px solid #df924a; border-radius: 30px;">
+                <div class="card-header border-0 bg-light text-center py-4 px-4 px-md-6">
+                  <h2 class="h4 mb-0" style="font-family: monospace; color: black; font-size: 25px;">¡Escríbenos y te contactaremos! </h2>
+                </div>
+
+                <div class="card-body p-4 p-md-6" >
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- Form Group -->
+                      <div class="js-form-message form-group">
+                        <label for="nombres" class="input-label">Nombres</label>
+                        <input type="text" class="form-control" name="nombres" id="nombres" placeholder="Nombres" aria-label="Nombres" required
+                              data-msg="Please enter first your name"
+                              onkeyup="form_whatsapp();">
+                      </div>
+                      <!-- End Form Group -->
+                    </div>
+
+                    <div class="col-sm-6">
+                      <!-- Form Group -->
+                      <div class="js-form-message form-group">
+                        <label for="apellidos" class="input-label">Apellidos</label>
+                        <input type="text" class="form-control" name="apellidos" id="apellidos" placeholder="Apellidos" aria-label="Apellidos" required
+                              data-msg="Please enter last your name"
+                              onkeyup="form_whatsapp();">
+                      </div>
+                      <!-- End Form Group -->
+                    </div>
+
+                    <div class="col-sm-12">
+                      <!-- Form Group -->
+                      <div class="js-form-message form-group">
+                        <label for="correo" class="input-label">Correo electronico</label>
+                        <input type="email" class="form-control" name="correo" id="correo" placeholder="xxxxxx@gmail.com" aria-label="alex@pixeel.com" required
+                              data-msg="Please enter a valid email address"
+                              onkeyup="form_whatsapp();">
+                      </div>
+                      <!-- End Form Group -->
+                    </div>
+
+                    <div class="col-sm-12">
+                      <!-- Form Group -->
+                      <div class="js-form-message form-group">
+                        <label for="descripcion" class="input-label">Descripción</label>
+                        <div class="input-group">
+                          <textarea class="form-control" rows="4" name="descripcion" id="descripcion" placeholder="Escriba su texto aqui!!!" aria-label="Hi there, I would like to ..." required
+                                    data-msg="Please enter a reason."
+                                    onkeyup="form_whatsapp();"></textarea>
+                        </div>
+                      </div>
+                      <!-- End Form Group -->
+                    </div>
+                  </div>
+
+                  <a type="submit" id="btn_enviarwhats" class="btn btn-block btn-warning transition-3d-hover" href="#" target="_blank" style="font-size: 25px;"></i>Enviar</a>
+                </div>
+              </form>
+              <!-- End Form -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End nosostros Form Section -->
 
     <!-- Features Section -->
     <div class="overflow-hidden" id="idservicios">
@@ -417,6 +324,17 @@
       // INITIALIZATION OF TEXT ANIMATION (TYPING)
       // =======================================================
       var typed = $.HSCore.components.HSTyped.init(".js-text-animation");
+
+      
+      // INITIALIZATION OF LEAFLET
+      // =======================================================
+      $('#map').each(function () {
+        var leaflet = $.HSCore.components.HSLeaflet.init($(this)[0]);
+
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+          id: 'mapbox/light-v9'
+        }).addTo(leaflet);
+      });
 
       // INITIALIZATION OF GO TO
       // =======================================================
