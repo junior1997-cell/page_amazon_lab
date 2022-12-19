@@ -11,3 +11,9 @@
         text-align:center;
         z-index:999;
 }
+/*Difuminado fondo*/
+.imagen-difuminado:hover {filter: blur(5px);}
+
+.texto-borde {
+  -webkit-text-stroke: 3px white !important;
+  }
