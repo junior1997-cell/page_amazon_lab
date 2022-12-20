@@ -2,32 +2,63 @@
 
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
+
     <!-- Hero Section -->
-    <div class="position-relative bg-img-hero" id="idinicio" style="background-image: url(../assets/inmobiliaria/img/img3_principal.jpg);">
-      <div class="container space-2 space-md-3 space-bottom-lg-4 min-h-300rem">
-        <div class="d-none d-md-block w-lg-50">
-          <h1>You're in good company.</h1>
-          <h2 class="h1 text-primary">Join millions of businesses on Front.</h2>
-        </div>
+    <div class="position-relative bg-img-hero" id="idinicio">
+
+      <div class="container space-top-3 space-top-lg-6 space-bottom-2 position-absolute">
+          <h1 class="text-white text-center" style="font-size: 60px;">Encuentra.</h1>
+          <h1 class="text-white text-center" style="font-size: 60px;">el mejor lugar para empezar a vivir.</h1>
       </div>
 
-      <!-- SVG Background -->
-      <figure class="position-absolute right-0 bottom-0 left-0">
-        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1920 100.1">
-          <path fill="#fff" d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"/>
-        </svg>
-      </figure>
-      <!-- End SVG Background -->
+      <div class="slider">
+        
+        <ul class="slider__ul">
+    
+          <li class="slider__li"></li>
+          <li class="slider__li"></li>
+          <li class="slider__li"></li>
+          <li class="slider__li"></li>
+    
+        </ul>
+    
+      </div>
+
     </div>
     <!-- End Hero Section -->
 
     <!-- nosotros Form Section background: linear-gradient(to top, #000000 0%, #000000bd 100%);  -->
-    <div style="background-image: url(../assets/inmobiliaria/img/sobre_nosotros.jpg);background-repeat: no-repeat;position: relative;width: 85%;height: 610px;margin-left: auto;margin-right: auto;">
-      <div class="container space-top-3 space-top-lg-6 space-bottom-2" id="idnosotros" >
+    <div style="background-image: url(../assets/inmobiliaria/img/sobre_nosotros.jpg); background-repeat: no-repeat; position: relative; width: 85%; height: 610px; margin-left: auto; margin-right: auto;">
+      <div class="container space-top-2 space-top-lg-6 space-bottom-2" id="idnosotros">
         <div class="row">
-          <div class="col-lg-6 mb-9 mb-lg-0">
+          <div class="col-lg-8 mb-9 mb-lg-0">
             <div class="mb-5">
-              <h1>Ubícanos</h1>
+              <h1 style="font-family: monospace; text-align: center;">Sobre Nosotros</h1>
+              <div style="height: 200px; background-color: #fbfcff; border-radius: 20px; box-shadow: 0px 15px 23px 0px rgb(35 49 64 / 9%); z-index: -1;">
+                <p style="font-family: monospace; font-size: 18px; text-align: justify; padding: 6px;">
+                  Pertenecemos a una organización líder con 50 años de experiencia en el mercado inmobiliario en España, el Grupo Romero Mora, especializado en la inversión y gestión de activos inmobiliarios. Llegamos a Perú en el años 2012 con
+                  el nombre de Urbalima bajo un sólido gobierno corporativo, desarrollando proyectos residenciales en donde nos apasiona innovar.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 containerr">
+                <img src="../assets/inmobiliaria/img/vision2.png" alt="Avatar" class="image" style="width: 100%;" />
+                <div class="middle">
+                  <div class="text">Liderar el mercado inmobiliario de la región con estrategias innovadoras que nos mantengan a la vanguardia en cada servicio ofrecido.</div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 containerr">
+                <img src="../assets/inmobiliaria/img/mision2.png" alt="Avatar" class="image" style="width: 100%;" />
+                <div class="middle">
+                  <div class="text">Ofrecer productos inmobiliarios de manera confiable y segura para cumplir con las expectativas y necesidades de nuestros clientes.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-5">
+              <div>Valores</div>
             </div>
           </div>
         </div>
@@ -150,6 +181,7 @@
               <!-- End Form -->
             </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -348,7 +380,6 @@
   <script>
     if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="../assets/vendor/babel-polyfill/dist/polyfill.js"><\/script>');
   </script>
-
 
 
 </body>
