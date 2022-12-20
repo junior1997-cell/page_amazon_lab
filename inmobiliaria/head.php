@@ -24,94 +24,7 @@
     <style>
       .class_span{ font-size: 18px; background-color: beige; color: #5a1318;}
       .class_sspan{ font-size: 18px; background-color: beige; color: #5a1318; padding: 6px; border: 6px solid #f5ca99; }
-
-          
-      .slider {
-
-      width: 100%;
-      overflow: hidden;
-
-      }
-
-      .slider__ul {
-
-      list-style: none;
-      height: 500px;
-      width: 400%;
-      display: flex;
-      animation: trasladarse 20s infinite linear alternate;
-
-      }
-
-      .slider__li {
-
-      height: 100%;
-      width: 100%;
-
-      }
-
-      .slider__li:nth-child(1) {
-
-        background-image: url("../assets/inmobiliaria/img/img3_principal.jpg");
-        background-size: contain;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-      }
-
-      .slider__li:nth-child(2) {
-
-        background-image: url("../assets/inmobiliaria/img/img3_principal.jpg");
-        background-size: contain;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-      }
-
-      .slider__li:nth-child(3) {
-
-        background-image: url("../assets/inmobiliaria/img/img3_principal.jpg");
-        background-size: contain;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-      }
-
-      .slider__li:nth-child(4) {
-
-        background-image: url("../assets/inmobiliaria/img/img3_principal.jpg");
-        background-size: contain;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-      }
-
-
-      @keyframes trasladarse {
-
-      0% {margin-left: 0;}
-
-      20% {margin-left: 0;}
-
-      25% {margin-left: -100%;}
-
-      45% {margin-left: -100%;}
-
-      50% {margin-left: -200%;}
-
-      70% {margin-left: -200%;}
-
-      75% {margin-left: -300%;}
-
-      100% {margin-left: -300%;}
-
-      }
-
-
+ 
       .containerr {
         position: relative;
         width: 50%;
@@ -154,6 +67,8 @@
         font-size: 16px;
         padding: 16px 32px;
       }
+
+      #more {display: none;}
 
     </style>
   </head>

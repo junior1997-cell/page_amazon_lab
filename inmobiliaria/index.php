@@ -5,60 +5,84 @@
 
     <!-- Hero Section -->
     <div class="position-relative bg-img-hero" id="idinicio">
-
-      <div class="container space-top-3 space-top-lg-6 space-bottom-2 position-absolute">
-          <h1 class="text-white text-center" style="font-size: 60px;">Encuentra.</h1>
-          <h1 class="text-white text-center" style="font-size: 60px;">el mejor lugar para empezar a vivir.</h1>
+      <div class="js-slide gradient-y-overlay-sm-gray-100 bg-img-hero" style="background-image: url(../assets/inmobiliaria/img/img_principal2.jpg) ; height: 550px;  object-position: right bottom !important;
+            object-fit: cover !important;">
+          <!-- Slide #1 -->
+          <!-- Hero Section -->
+          <div style="z-index:2!important; background-image: linear-gradient(to right,rgb(0 0 0 / 11%) 0,rgb(22 21 21 / 76%) 100%) !important; background-repeat: repeat-x !important;height: 550px;">
+                  <div class="container space-top-3 space-bottom-1 space-bottom-sm-2" >
+                    <div class="w-lg-55">
+                      <h1 class="display-2 mb-5 text-left text-white">
+                      <font face="monospace"s>Encuentra
+                      <span class="text-warning">
+                          <span class="js-text-animation"
+                                data-hs-typed-options='{
+                                  "strings": ["el", "mejor", "lugar", "el mejor lugar"],
+                                  "typeSpeed": 70,
+                                  "loop": true,
+                                  "backSpeed": 40,
+                                  "backDelay": 2000
+                                }'></span>
+                      </span>
+                      <br>
+                      para empezar a vivir
+                    </font>
+                </h1>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div class="slider">
-        
-        <ul class="slider__ul">
-    
-          <li class="slider__li"></li>
-          <li class="slider__li"></li>
-          <li class="slider__li"></li>
-          <li class="slider__li"></li>
-    
-        </ul>
-    
-      </div>
-
     </div>
     <!-- End Hero Section -->
 
     <!-- nosotros Form Section background: linear-gradient(to top, #000000 0%, #000000bd 100%);  -->
-    <div style="background-image: url(../assets/inmobiliaria/img/sobre_nosotros.jpg); background-repeat: no-repeat; position: relative; width: 85%; height: 610px; margin-left: auto; margin-right: auto;">
-      <div class="container space-top-2 space-top-lg-6 space-bottom-2" id="idnosotros">
-        <div class="row">
-          <div class="col-lg-8 mb-9 mb-lg-0">
-            <div class="mb-5">
-              <h1 style="font-family: monospace; text-align: center;">Sobre Nosotros</h1>
-              <div style="height: 200px; background-color: #fbfcff; border-radius: 20px; box-shadow: 0px 15px 23px 0px rgb(35 49 64 / 9%); z-index: -1;">
-                <p style="font-family: monospace; font-size: 18px; text-align: justify; padding: 6px;">
-                  Pertenecemos a una organización líder con 50 años de experiencia en el mercado inmobiliario en España, el Grupo Romero Mora, especializado en la inversión y gestión de activos inmobiliarios. Llegamos a Perú en el años 2012 con
-                  el nombre de Urbalima bajo un sólido gobierno corporativo, desarrollando proyectos residenciales en donde nos apasiona innovar.
-                </p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-6 containerr">
-                <img src="../assets/inmobiliaria/img/vision2.png" alt="Avatar" class="image" style="width: 100%;" />
-                <div class="middle">
-                  <div class="text">Liderar el mercado inmobiliario de la región con estrategias innovadoras que nos mantengan a la vanguardia en cada servicio ofrecido.</div>
+    <div  id="idnosotros">
+      <div style="background-image: url(../assets/inmobiliaria/img/sobre_nosotros.jpg); background-repeat: no-repeat; position: relative; width: 85%; height: auto; margin-left: auto; margin-right: auto;">
+        <div class="container space-top-2 space-top-lg-6 space-bottom-2" style="height: auto">
+          <div class="row">
+            <div class="col-lg-8 mb-9 mb-lg-0">
+              <div class="mb-5">
+                <h1 style="font-family: monospace; text-align: center;">Sobre Nosotros</h1>
+                <div style="height: auto; background-color: #fbfcff; border-radius: 20px; box-shadow: 0px 15px 23px 0px rgb(35 49 64 / 9%); z-index: -1;">
+                  <p style="font-family: monospace; font-size: 18px; text-align: justify; padding: 6px;">
+                    Pertenecemos a una organización líder con 50 años de experiencia en el mercado inmobiliario en España, el Grupo Romero Mora,
+                    especializado en la inversión y gestión de activos inmobiliarios. <span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. 
+                      Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, 
+                      sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. 
+                      Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                      <button onclick="myFunction()" id="myBtn">Read more</button>
                 </div>
               </div>
+              <div class="row">
+                <div class="col-lg-6 containerr">
+                  <img src="../assets/inmobiliaria/img/vision2.png" alt="Avatar" class="image" style="width: 100%;" />
+                  <div class="middle">
+                    <div class="text">Liderar el mercado inmobiliario de la región con estrategias innovadoras que nos mantengan a la vanguardia en cada servicio ofrecido.</div>
+                  </div>
+                </div>
 
-              <div class="col-lg-6 containerr">
-                <img src="../assets/inmobiliaria/img/mision2.png" alt="Avatar" class="image" style="width: 100%;" />
-                <div class="middle">
-                  <div class="text">Ofrecer productos inmobiliarios de manera confiable y segura para cumplir con las expectativas y necesidades de nuestros clientes.</div>
+                <div class="col-lg-6 containerr">
+                  <img src="../assets/inmobiliaria/img/mision2.png" alt="Avatar" class="image" style="width: 100%;" />
+                  <div class="middle">
+                    <div class="text">Ofrecer productos inmobiliarios de manera confiable y segura para cumplir con las expectativas y necesidades de nuestros clientes.</div>
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <hr style="border: 1px solid #632126; width: 80%;"/>
+      <div style="background-image: url(../assets/inmobiliaria/img/sobre_nosotros2.jpg); background-repeat: no-repeat; position: relative; width: 85%; height: auto; margin-left: auto; margin-right: auto;">
+        <div class="container space-top-2 space-top-lg-6 space-bottom-2">
+          <div class="row">
+            <div class="col-lg-4 mb-6 mb-lg-0" style="background-image: url(../assets/inmobiliaria/img/valores.png); background-repeat: no-repeat; position: relative; width: 85%; height: 610px; margin-left: auto; margin-right: auto;">
+            </div>
+            <div class="col-lg-8 mb-6 mb-lg-0">
+              <div class="mb-5">
+                <div>Valores</div>
+              </div>
 
-            <div class="mb-5">
-              <div>Valores</div>
             </div>
           </div>
         </div>
@@ -379,6 +403,24 @@
   <!-- IE Support -->
   <script>
     if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="../assets/vendor/babel-polyfill/dist/polyfill.js"><\/script>');
+  </script>
+
+  <script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
   </script>
 
 
