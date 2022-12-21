@@ -1,5 +1,6 @@
 <?php require 'head.php'; require 'header.php'; ?>
-
+<!-- http://localhost/page_amazon_lab/blog-metro.html -->
+<!-- http://localhost/page_amazon_lab/landing-onepage-corporate.html#homeSection -->
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
 
@@ -37,32 +38,33 @@
 
     <!-- nosotros Form Section background: linear-gradient(to top, #000000 0%, #000000bd 100%);  -->
     <div  id="idnosotros">
-      <div style="background-image: url(../assets/inmobiliaria/img/sobre_nosotros.jpg); background-repeat: no-repeat; position: relative; width: 85%; height: auto; margin-left: auto; margin-right: auto;">
+      <div class="class_nos_g">
         <div class="container space-top-2 space-top-lg-6 space-bottom-2" style="height: auto">
           <div class="row">
             <div class="col-lg-8 mb-9 mb-lg-0">
               <div class="mb-5">
                 <h1 style="font-family: monospace; text-align: center;">Sobre Nosotros</h1>
-                <div style="height: auto; background-color: #fbfcff; border-radius: 20px; box-shadow: 0px 15px 23px 0px rgb(35 49 64 / 9%); z-index: -1;">
+                <div class="historia">
                   <p style="font-family: monospace; font-size: 18px; text-align: justify; padding: 6px;">
                     Pertenecemos a una organización líder con 50 años de experiencia en el mercado inmobiliario en España, el Grupo Romero Mora,
-                    especializado en la inversión y gestión de activos inmobiliarios. <span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. 
+                    especializado en la inversión y gestión de activos inmobiliarios<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. 
                       Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, 
                       sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. 
                       Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-                      <button onclick="myFunction()" id="myBtn">Read more</button>
+                      <button class="btn btn-info btn-sm" onclick="myFunction()" id="myBtn">más</button>
                 </div>
               </div>
+              <h1 style="font-family: monospace; text-align: center;">Visión y Misión</h1>
               <div class="row">
                 <div class="col-lg-6 containerr">
-                  <img src="../assets/inmobiliaria/img/vision2.png" alt="Avatar" class="image" style="width: 100%;" />
+                  <img src="../assets/inmobiliaria/img/vision2.png" class="image" style="width: 100%;" />
                   <div class="middle">
                     <div class="text">Liderar el mercado inmobiliario de la región con estrategias innovadoras que nos mantengan a la vanguardia en cada servicio ofrecido.</div>
                   </div>
                 </div>
 
                 <div class="col-lg-6 containerr">
-                  <img src="../assets/inmobiliaria/img/mision2.png" alt="Avatar" class="image" style="width: 100%;" />
+                  <img src="../assets/inmobiliaria/img/mision2.png" class="image" style="width: 100%;" />
                   <div class="middle">
                     <div class="text">Ofrecer productos inmobiliarios de manera confiable y segura para cumplir con las expectativas y necesidades de nuestros clientes.</div>
                   </div>
@@ -75,14 +77,108 @@
       <hr style="border: 1px solid #632126; width: 80%;"/>
       <div style="background-image: url(../assets/inmobiliaria/img/sobre_nosotros2.jpg); background-repeat: no-repeat; position: relative; width: 85%; height: auto; margin-left: auto; margin-right: auto;">
         <div class="container space-top-2 space-top-lg-6 space-bottom-2">
+          <h1 style="font-family: monospace; text-align: center;">Valores</h1>
           <div class="row">
-            <div class="col-lg-4 mb-6 mb-lg-0" style="background-image: url(../assets/inmobiliaria/img/valores.png); background-repeat: no-repeat; position: relative; width: 85%; height: 610px; margin-left: auto; margin-right: auto;">
-            </div>
-            <div class="col-lg-8 mb-6 mb-lg-0">
-              <div class="mb-5">
-                <div>Valores</div>
-              </div>
+            <!-- <div class="col-lg-4 col-12 mb-6 mb-lg-0 contenedor">
+            <img class="img_val" src="../assets/inmobiliaria/img/valores.png">
+            </div> -->
+            <div class="col-lg-12 mb-6 mb-lg-0">
+              <div class="mx-lg-auto">
+                <div class="row align-items-sm-end mx-n2 mb-5 mb-md-7">
 
+                  <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0">
+                    <!-- Pricing -->
+                    <div class="card card-bordered shadow-none text-center" data-aos="fade-up" data-aos-delay="100">
+                      <div class="card-body">
+                        <span class="text-dark font-size-2 font-weight-bold">Free</span>
+                      </div>
+                      <div class="card-body pt-0 pb-5 px-5">
+                        <ul class="list-unstyled list-sm-article mb-4">
+                          <li>Community support</li>
+                          <li>400+ pages</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0">
+                    <!-- Pricing -->
+                    <div class="card card-bordered shadow-none text-center" data-aos="fade-up" data-aos-delay="100">
+                      <div class="card-body">
+                        <span class="text-dark font-size-2 font-weight-bold">Free</span>
+                      </div>
+                      <div class="card-body pt-0 pb-5 px-5">
+                        <ul class="list-unstyled list-sm-article mb-4">
+                          <li>Community support</li>
+                          <li>400+ pages</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0">
+                    <!-- Pricing -->
+                    <div class="card card-bordered shadow-none text-center" data-aos="fade-up" data-aos-delay="100">
+                      <div class="card-body">
+                        <span class="text-dark font-size-2 font-weight-bold">Free</span>
+                      </div>
+                      <div class="card-body pt-0 pb-5 px-5">
+                        <ul class="list-unstyled list-sm-article mb-4">
+                          <li>Community support</li>
+                          <li>400+ pages</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0">
+                    <!-- Pricing -->
+                    <div class="card card-bordered shadow-none text-center" data-aos="fade-up" data-aos-delay="100">
+                      <div class="card-body">
+                        <span class="text-dark font-size-2 font-weight-bold">Free</span>
+                      </div>
+                      <div class="card-body pt-0 pb-5 px-5">
+                        <ul class="list-unstyled list-sm-article mb-4">
+                          <li>Community support</li>
+                          <li>400+ pages</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0">
+                    <!-- Pricing -->
+                    <div class="card card-bordered shadow-none text-center" data-aos="fade-up" data-aos-delay="100">
+                      <div class="card-body">
+                        <span class="text-dark font-size-2 font-weight-bold">Free</span>
+                      </div>
+                      <div class="card-body pt-0 pb-5 px-5">
+                        <ul class="list-unstyled list-sm-article mb-4">
+                          <li>Community support</li>
+                          <li>400+ pages</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0">
+                    <!-- Pricing -->
+                    <div class="card card-bordered shadow-none text-center" data-aos="fade-up" data-aos-delay="100">
+                      <div class="card-body">
+                        <span class="text-dark font-size-2 font-weight-bold">Free</span>
+                      </div>
+                      <div class="card-body pt-0 pb-5 px-5">
+                        <ul class="list-unstyled list-sm-article mb-4">
+                          <li>Community support</li>
+                          <li>400+ pages</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
             </div>
           </div>
         </div>
@@ -380,7 +476,12 @@
       // INITIALIZATION OF TEXT ANIMATION (TYPING)
       // =======================================================
       var typed = $.HSCore.components.HSTyped.init(".js-text-animation");
-
+      // INITIALIZATION OF AOS
+      // =======================================================
+      AOS.init({
+        duration: 650,
+        once: true
+      });
       
       // INITIALIZATION OF LEAFLET
       // =======================================================
