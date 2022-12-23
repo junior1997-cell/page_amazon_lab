@@ -13,6 +13,10 @@
   width: 50%;
 }
 
+.divnosotros{
+  background-color: #eff0f2;
+}
+
 .image {
   opacity: 1;
   display: block;
@@ -51,7 +55,22 @@
   padding: 16px 32px;
 }
 
-#more {display: none;}
+#more1 {display: none;}
+
+.bord_css{
+  border: 5px solid #5a1318 !important;
+  margin-bottom: 3px;
+  background-color: rgb(255, 255, 255)!important;
+  transition: background-color .5s !important;
+
+}  
+.bord_css:hover {
+  background-color: #df924a!important;
+  color: white!important;
+  /* text-align: justify!important; */
+}
+
+
 
 
 /* Extra small devices (phones, 600px and down) */

@@ -37,7 +37,7 @@
     <!-- End Hero Section -->
 
     <!-- nosotros Form Section background: linear-gradient(to top, #000000 0%, #000000bd 100%);  -->
-    <div  id="idnosotros">
+    <div  id="idnosotros" class="divnosotros">
       <div class="class_nos_g">
         <div class="container space-top-2 space-top-lg-6 space-bottom-2" style="height: auto">
           <div class="row">
@@ -54,6 +54,8 @@
                       <button class="btn btn-info btn-sm" onclick="myFunction()" id="myBtn">más</button>
                 </div>
               </div>
+             <hr style="border: 1px solid #632126; width: 80%;"/>
+
               <h1 style="font-family: monospace; text-align: center;">Visión y Misión</h1>
               <div class="row">
                 <div class="col-lg-6 containerr">
@@ -76,26 +78,37 @@
       </div>
       <hr style="border: 1px solid #632126; width: 80%;"/>
       <div style="background-image: url(../assets/inmobiliaria/img/sobre_nosotros2.jpg); background-repeat: no-repeat; position: relative; width: 85%; height: auto; margin-left: auto; margin-right: auto;">
-        <div class="container space-top-2 space-top-lg-6 space-bottom-2">
+        <div class="container space-bottom-2" style="font-family: monospace;">
           <h1 style="font-family: monospace; text-align: center;">Valores</h1>
           <div class="row">
-            <!-- <div class="col-lg-4 col-12 mb-6 mb-lg-0 contenedor">
-            <img class="img_val" src="../assets/inmobiliaria/img/valores.png">
-            </div> -->
-            <div class="col-lg-12 mb-6 mb-lg-0">
+            <div class="col-lg-4 mb-6 mb-lg-0" style="background-image: url(../assets/inmobiliaria/img/val_mediano1.jpg); background-repeat: no-repeat; position: relative; width: 85%; height: auto; margin-left: auto; margin-right: auto;">
+            <!-- <img class="img_val" src="../assets/inmobiliaria/img/valores.png"> -->
+            </div>
+            <div class="col-lg-8 mb-6 mb-lg-0">
               <div class="mx-lg-auto">
                 <div class="row align-items-sm-end mx-n2 mb-5 mb-md-7">
 
                   <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0">
                     <!-- Pricing -->
-                    <div class="card card-bordered shadow-none text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card card-bordered shadow-none text-center bord_css" data-aos="fade-up" data-aos-delay="100">
                       <div class="card-body">
-                        <span class="text-dark font-size-2 font-weight-bold">Free</span>
+                        <span class="text-dark font-size-2 font-weight-bold">Integridad</span>
+                      </div>
+                      <div class="card-body pt-0 pb-5 px-5">
+                        <p>Ser muy consecuente con lo que se pueda decir o con lo que se pueda considera que es correcto, en cualquier circunstancia...</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0">
+                    <!-- Pricing -->
+                    <div class="card card-bordered shadow-none text-center bord_css" data-aos="fade-up" data-aos-delay="100">
+                      <div class="card-body">
+                        <span class="text-dark font-size-2 font-weight-bold">Liderazgo</span>
                       </div>
                       <div class="card-body pt-0 pb-5 px-5">
                         <ul class="list-unstyled list-sm-article mb-4">
-                          <li>Community support</li>
-                          <li>400+ pages</li>
+                          <span>Capacidad para motivar y dirigir, creando un ambiente de empatía, colaboración y respeto, para lograr ...</span>
                         </ul>
                       </div>
                     </div>
@@ -103,79 +116,31 @@
 
                   <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0">
                     <!-- Pricing -->
-                    <div class="card card-bordered shadow-none text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card card-bordered shadow-none text-center bord_css" data-aos="fade-up" data-aos-delay="100">
                       <div class="card-body">
-                        <span class="text-dark font-size-2 font-weight-bold">Free</span>
+                        <span class="text-dark font-size-2 font-weight-bold">Perseverancia</span>
                       </div>
                       <div class="card-body pt-0 pb-5 px-5">
                         <ul class="list-unstyled list-sm-article mb-4">
-                          <li>Community support</li>
-                          <li>400+ pages</li>
+                          <span>Actitud que marca el rumbo de la empresa con acciones concretas, logrando superar obstáculos y enfocándose ...</span>
                         </ul>
                       </div>
                     </div>
                   </div>
 
-                  <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0">
+                  <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0 mx-auto">
                     <!-- Pricing -->
-                    <div class="card card-bordered shadow-none text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card card-bordered shadow-none text-center bord_css" data-aos="fade-up" data-aos-delay="100">
                       <div class="card-body">
-                        <span class="text-dark font-size-2 font-weight-bold">Free</span>
+                        <span class="text-dark font-size-2 font-weight-bold">Compromiso</span>
                       </div>
                       <div class="card-body pt-0 pb-5 px-5">
                         <ul class="list-unstyled list-sm-article mb-4">
-                          <li>Community support</li>
-                          <li>400+ pages</li>
+                          <span>Cumplir con las obligaciones contraídas, buscando el mejor resultado, respetando las normas legales aplicables...</span>
                         </ul>
                       </div>
                     </div>
                   </div>
-
-                  <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0">
-                    <!-- Pricing -->
-                    <div class="card card-bordered shadow-none text-center" data-aos="fade-up" data-aos-delay="100">
-                      <div class="card-body">
-                        <span class="text-dark font-size-2 font-weight-bold">Free</span>
-                      </div>
-                      <div class="card-body pt-0 pb-5 px-5">
-                        <ul class="list-unstyled list-sm-article mb-4">
-                          <li>Community support</li>
-                          <li>400+ pages</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0">
-                    <!-- Pricing -->
-                    <div class="card card-bordered shadow-none text-center" data-aos="fade-up" data-aos-delay="100">
-                      <div class="card-body">
-                        <span class="text-dark font-size-2 font-weight-bold">Free</span>
-                      </div>
-                      <div class="card-body pt-0 pb-5 px-5">
-                        <ul class="list-unstyled list-sm-article mb-4">
-                          <li>Community support</li>
-                          <li>400+ pages</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0">
-                    <!-- Pricing -->
-                    <div class="card card-bordered shadow-none text-center" data-aos="fade-up" data-aos-delay="100">
-                      <div class="card-body">
-                        <span class="text-dark font-size-2 font-weight-bold">Free</span>
-                      </div>
-                      <div class="card-body pt-0 pb-5 px-5">
-                        <ul class="list-unstyled list-sm-article mb-4">
-                          <li>Community support</li>
-                          <li>400+ pages</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
                 </div>
 
               </div>
@@ -506,23 +471,7 @@
     if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="../assets/vendor/babel-polyfill/dist/polyfill.js"><\/script>');
   </script>
 
-  <script>
-    function myFunction() {
-      var dots = document.getElementById("dots");
-      var moreText = document.getElementById("more");
-      var btnText = document.getElementById("myBtn");
-
-      if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-      } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
-      }
-    }
-  </script>
+  <script src="script.js"></script>
 
 
 </body>
