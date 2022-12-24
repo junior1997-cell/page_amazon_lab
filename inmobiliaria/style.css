@@ -2,9 +2,7 @@
 
 .historia{ height: auto; background-color: #fbfcff; border-radius: 20px; box-shadow: 0px 15px 23px 0px rgb(35 49 64 / 9%); z-index: -1;}
 /* .historia.texto{ font-family: monospace; font-size: 18px; text-align: justify; padding: 6px;} */
-.class_nos_g{
-    background-image: url(../assets/inmobiliaria/img/sobre_nosotros.jpg); background-repeat: no-repeat; position: relative; width: 85%; height: auto; margin-left: auto; margin-right: auto;
-}
+
 .class_span{ font-size: 18px; background-color: beige; color: #5a1318;}
 .class_sspan{ font-size: 18px; background-color: beige; color: #5a1318; padding: 6px; border: 6px solid #f5ca99; }
 
@@ -24,7 +22,7 @@
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
-  border: 6px solid #df924a;
+  border: 6px solid #5a1318;
   border-radius: 20px;
 }
 
@@ -49,13 +47,13 @@
 }
 
 .text {
-  background-color: #df924a;;
+  background-color: #df924a;
   color: white;
   font-size: 16px;
   padding: 16px 32px;
 }
 
-#more1 {display: none;}
+#more {display: none;}
 
 .bord_css{
   border: 5px solid #5a1318 !important;
@@ -64,11 +62,25 @@
   transition: background-color .5s !important;
 
 }  
+
 .bord_css:hover {
   background-color: #df924a!important;
   color: white!important;
-  /* text-align: justify!important; */
 }
+
+.class_p_d{
+  color: white!important;
+  font-size: 20px!important;
+  font-family: monospace!important;
+  border-radius: 6px;
+}
+
+.back_hover:hover{
+  background-color: #df924a!important;
+  color: rgb(255, 255, 255)!important;
+  font-size: 20px;
+}
+
 
 
 
@@ -122,6 +134,9 @@
         margin-right: auto;
     }
     .img_val:hover {filter: saturate(180%);}
+    .class_nos_g{
+      background-image: url(../assets/inmobiliaria/img/sobre_nosotros.jpg); background-repeat: no-repeat; position: relative; width: 100%; height: auto; margin-left: auto; margin-right: auto;
+    }
 
 }
 
@@ -135,5 +150,27 @@
         margin-right: auto;
     }
     .img_val:hover {filter: saturate(180%);}
+
+    .class_nos_g{
+      background-image: url(../assets/inmobiliaria/img/sobre_nosotros.jpg); background-repeat: no-repeat; position: relative; width: 90%; height: auto; margin-left: auto; margin-right: auto;
+    }
+
+}
+
+@media only screen and (min-width: 1449px) and (max-width: 1768px)  {
+  .class_nos_g{background-image: url(../assets/inmobiliaria/img/sobre_nosotros.jpg); background-repeat: no-repeat; position: relative; width: 78%; height: auto; margin-left: auto; margin-right: auto;}
+
+}
+
+@media only screen and (min-width: 1769px) and (max-width: 1999px)  {
+  .class_nos_g{background-image: url(../assets/inmobiliaria/img/sobre_nosotros.jpg); background-repeat: no-repeat; position: relative; width: 67%; height: auto; margin-left: auto; margin-right: auto;}
+
+}
+
+@media only screen and (min-width: 2000px) {
+
+  .class_nos_g{
+    background-image: url(../assets/inmobiliaria/img/sobre_nosotros.jpg); background-repeat: no-repeat; position: relative; width: 50%; height: auto; margin-left: auto; margin-right: auto;
+}
 
 }

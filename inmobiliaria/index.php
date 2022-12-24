@@ -36,7 +36,6 @@
     </div>
     <!-- End Hero Section -->
 
-    <!-- nosotros Form Section background: linear-gradient(to top, #000000 0%, #000000bd 100%);  -->
     <div  id="idnosotros" class="divnosotros">
       <div class="class_nos_g">
         <div class="container space-top-2 space-top-lg-6 space-bottom-2" style="height: auto">
@@ -51,7 +50,8 @@
                       Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, 
                       sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. 
                       Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-                      <button class="btn btn-info btn-sm" onclick="myFunction()" id="myBtn">más</button>
+                      <div class="mx-auto" style="text-align: center;padding-bottom: 9px;"><button class="btn btn-info btn-xs" onclick="myFunction()" id="myBtn">Leer más</button></div>
+                      
                 </div>
               </div>
              <hr style="border: 1px solid #632126; width: 80%;"/>
@@ -81,26 +81,26 @@
         <div class="container space-bottom-2" style="font-family: monospace;">
           <h1 style="font-family: monospace; text-align: center;">Valores</h1>
           <div class="row">
-            <div class="col-lg-4 mb-6 mb-lg-0" style="background-image: url(../assets/inmobiliaria/img/val_mediano1.jpg); background-repeat: no-repeat; position: relative; width: 85%; height: auto; margin-left: auto; margin-right: auto;">
+            <div class="col-lg-5 mb-6 mb-lg-0" style="background-image: url(../assets/inmobiliaria/img/valores4.png); background-repeat: no-repeat; position: relative; width: 85%; height: auto; margin-left: auto; margin-right: auto;">
             <!-- <img class="img_val" src="../assets/inmobiliaria/img/valores.png"> -->
             </div>
-            <div class="col-lg-8 mb-6 mb-lg-0">
+            <div class="col-lg-7 mb-6 mb-lg-0">
               <div class="mx-lg-auto">
                 <div class="row align-items-sm-end mx-n2 mb-5 mb-md-7">
 
-                  <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0">
+                  <div class="col-sm-6 col-md-6 px-2 mb-3 mb-md-0">
                     <!-- Pricing -->
                     <div class="card card-bordered shadow-none text-center bord_css" data-aos="fade-up" data-aos-delay="100">
                       <div class="card-body">
                         <span class="text-dark font-size-2 font-weight-bold">Integridad</span>
                       </div>
                       <div class="card-body pt-0 pb-5 px-5">
-                        <p>Ser muy consecuente con lo que se pueda decir o con lo que se pueda considera que es correcto, en cualquier circunstancia...</p>
+                        <p>Ser muy consecuente con lo que se pueda decir o con lo que se pueda considera que es correcto ...</p>
                       </div>
                     </div>
                   </div>
 
-                  <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0">
+                  <div class="col-sm-6 col-md-6 px-2 mb-3 mb-md-0">
                     <!-- Pricing -->
                     <div class="card card-bordered shadow-none text-center bord_css" data-aos="fade-up" data-aos-delay="100">
                       <div class="card-body">
@@ -114,7 +114,7 @@
                     </div>
                   </div>
 
-                  <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0">
+                  <div class="col-sm-6 col-md-6 px-2 mb-3 mb-md-0">
                     <!-- Pricing -->
                     <div class="card card-bordered shadow-none text-center bord_css" data-aos="fade-up" data-aos-delay="100">
                       <div class="card-body">
@@ -128,7 +128,7 @@
                     </div>
                   </div>
 
-                  <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0 mx-auto">
+                  <div class="col-sm-6 col-md-6 px-2 mb-3 mb-md-0 mx-auto">
                     <!-- Pricing -->
                     <div class="card card-bordered shadow-none text-center bord_css" data-aos="fade-up" data-aos-delay="100">
                       <div class="card-body">
@@ -152,7 +152,7 @@
     <!-- End Contact Form Section -->
 
     <!-- nosostros Form Section -->
-    <div style="background-color: rgb(8 7 7 / 1);" >
+    <div style="background-color: rgb(8 7 7 / 80%);" >
       <div class="container space-top-3 space-top-lg-6 space-bottom-2" id="idcontactanos" style="font-family: monospace;color: white; font-size: 25px;">
         <div class="row">
           <div class="col-lg-6 mb-9 mb-lg-0" style="border: 6px solid #df924a; border-radius: 20px;">
@@ -182,22 +182,19 @@
             <!-- End Leaflet -->
 
             <div class="row">
-              <div class="col-sm-6 col-lg-6">
-                <div class="mb-3">
-                  <span class="d-block h5 mb-1" style="font-size: 20px;color: #ffffff;">Teléfono:</span>
-                  <span class="class_span">+51 944 411 328</span>
+              <div class="col-sm-12 col-lg-12 back_hover">
+                <div class="mb-4">
+                  <p class="d-block h5 mb-1 class_p_d">Teléfono: <span>+51 944 411 328</span> </p>
+                  <!-- <span class="class_span">+51 944 411 328</span> -->
                 </div>
 
-                <div class="mb-3">
-                  <span class="d-block h5 mb-1"  style="font-size: 20px;color: #ffffff;">Correo:</span>
-                  <span class="class_span">estrategiadigital@gmail.com</span>
+                <div class="mb-4">
+                  <p class="d-block h5 mb-1 class_p_d">Correo: <span>estrategiadigital@gmail.com</span></p>
+                  <!-- <span class="class_span">estrategiadigital@gmail.com</span> -->
                 </div>
-              </div>
-
-              <div class="col-sm-6 col-lg-6">
-                <div class="mb-3">
-                  <span class="d-block h5 mb-1"  style="font-size: 20px;color: #ffffff;">Dirección:</span>
-                  <div class="class_span">Jr. Los Helechos 214 – Urb. Bernabe Guridi.</div>
+                <div class="mb-4">
+                  <p class="d-block h5 mb-1 class_p_d">Dirección: <span>Jr. Los Helechos 214 – Urb. Bernabe Guridi.</span> </p>
+                  <!-- <div class="class_span">Jr. Los Helechos 214 – Urb. Bernabe Guridi.</div> -->
                 </div>
               </div>
             </div>
