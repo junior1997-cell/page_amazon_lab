@@ -152,121 +152,161 @@
     <!-- End Contact Form Section -->
 
     <!-- nosostros Form Section -->
-    <div style="background-color: rgb(8 7 7 / 80%);" >
-      <div class="container space-top-3 space-top-lg-6 space-bottom-2" id="idcontactanos" style="font-family: monospace;color: white; font-size: 25px;">
-        <div class="row">
-          <div class="col-lg-6 mb-9 mb-lg-0" style="border: 6px solid #df924a; border-radius: 20px;">
-            <div class="mb-1">
-              <h1 style="font-family: monospace;color: white; text-align:center">Ubícanos</h1>
-            </div>
-            <!-- Leaflet -->
-            <div id="map" class="min-h-300rem mb-5"
-                data-hs-leaflet-options='{
-                  "map": {
-                    "scrollWheelZoom": false,
-                    "coords": [-6.487578584951772, -76.35602821271281]  
-                  },
-                  "marker": [
-                    {
-                      "coords": [-6.487578584951772, -76.35602821271281],
-                      "icon": {
-                        "iconUrl": "../assets/inmobiliaria/components/ubi.png",
-                        "iconSize": [80, 75]
-                      },
-                      "popup": {
-                        "text": "214,"
-                      }
-                    }
-                  ]
-                  }'></div>
-            <!-- End Leaflet -->
-
-            <div class="row">
-              <div class="col-sm-12 col-lg-12 back_hover">
-                <div class="mb-4">
-                  <p class="d-block h5 mb-1 class_p_d">Teléfono: <span>+51 944 411 328</span> </p>
-                  <!-- <span class="class_span">+51 944 411 328</span> -->
-                </div>
-
-                <div class="mb-4">
-                  <p class="d-block h5 mb-1 class_p_d">Correo: <span>estrategiadigital@gmail.com</span></p>
-                  <!-- <span class="class_span">estrategiadigital@gmail.com</span> -->
-                </div>
-                <div class="mb-4">
-                  <p class="d-block h5 mb-1 class_p_d">Dirección: <span>Jr. Los Helechos 214 – Urb. Bernabe Guridi.</span> </p>
-                  <!-- <div class="class_span">Jr. Los Helechos 214 – Urb. Bernabe Guridi.</div> -->
-                </div>
-              </div>
-            </div>
+    <!-- Hero Section -->
+    <div class="container position-relative z-index-4 " style="margin-top: 2rem;">
+      <div class="row justify-content-lg-between align-items-lg-center">
+        <div class="col-md-10 col-lg-5 mb-9 mb-lg-0">
+          <div class="mb-7">
+            <h1 class="display-4 mb-4">Solicita más información</h1>
+            <p class="lead">¡INVIERTE PENSANDO EN TU FUTURO!</p>
           </div>
 
-          <div class="col-lg-6">
-            <div class="ml-lg-5">
-              <!-- Form -->
-              <form class="js-validate card shadow-lg mb-4" style="border: 6px solid #df924a; border-radius: 30px;">
-                <div class="card-header border-0 bg-light text-center py-4 px-4 px-md-6">
-                  <h2 class="h4 mb-0" style="font-family: monospace; color: black; font-size: 25px;">¡Escríbenos y te contactaremos! </h2>
+          <img class="img-fluid" src="../assets/inmobiliaria/img/we-are-in-office-1.svg" alt="Image Description">
+        </div>
+
+        <div class="col-lg-6">
+          <!-- Form -->
+          <form class="js-validate card shadow-lg mb-4" style="border: 6px solid #df924a; border-radius: 30px;">
+            <div class="card-header border-0 bg-light text-center py-4 px-4 px-md-6">
+              <h2 class="h4 mb-0" style="font-family: monospace; color: black; font-size: 25px;">¡Escríbenos y te contactaremos! </h2>
+            </div>
+
+            <div class="card-body p-4 p-md-6" >
+              <div class="row">
+                <div class="col-sm-6">
+                  <!-- Form Group -->
+                  <div class="js-form-message form-group">
+                    <label for="nombres" class="input-label">Nombres</label>
+                    <input type="text" class="form-control" name="nombres" id="nombres" placeholder="Nombres" aria-label="Nombres" required
+                          data-msg="Please enter first your name"
+                          onkeyup="form_whatsapp();">
+                  </div>
+                  <!-- End Form Group -->
                 </div>
 
-                <div class="card-body p-4 p-md-6" >
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <!-- Form Group -->
-                      <div class="js-form-message form-group">
-                        <label for="nombres" class="input-label">Nombres</label>
-                        <input type="text" class="form-control" name="nombres" id="nombres" placeholder="Nombres" aria-label="Nombres" required
-                              data-msg="Please enter first your name"
-                              onkeyup="form_whatsapp();">
-                      </div>
-                      <!-- End Form Group -->
-                    </div>
+                <div class="col-sm-6">
+                  <!-- Form Group -->
+                  <div class="js-form-message form-group">
+                    <label for="apellidos" class="input-label">Apellidos</label>
+                    <input type="text" class="form-control" name="apellidos" id="apellidos" placeholder="Apellidos" aria-label="Apellidos" required
+                          data-msg="Please enter last your name"
+                          onkeyup="form_whatsapp();">
+                  </div>
+                  <!-- End Form Group -->
+                </div>
 
-                    <div class="col-sm-6">
-                      <!-- Form Group -->
-                      <div class="js-form-message form-group">
-                        <label for="apellidos" class="input-label">Apellidos</label>
-                        <input type="text" class="form-control" name="apellidos" id="apellidos" placeholder="Apellidos" aria-label="Apellidos" required
-                              data-msg="Please enter last your name"
-                              onkeyup="form_whatsapp();">
-                      </div>
-                      <!-- End Form Group -->
-                    </div>
+                <div class="col-sm-12">
+                  <!-- Form Group -->
+                  <div class="js-form-message form-group">
+                    <label for="correo" class="input-label">Correo electronico</label>
+                    <input type="email" class="form-control" name="correo" id="correo" placeholder="xxxxxx@gmail.com" aria-label="alex@pixeel.com" required
+                          data-msg="Please enter a valid email address"
+                          onkeyup="form_whatsapp();">
+                  </div>
+                  <!-- End Form Group -->
+                </div>
 
-                    <div class="col-sm-12">
-                      <!-- Form Group -->
-                      <div class="js-form-message form-group">
-                        <label for="correo" class="input-label">Correo electronico</label>
-                        <input type="email" class="form-control" name="correo" id="correo" placeholder="xxxxxx@gmail.com" aria-label="alex@pixeel.com" required
-                              data-msg="Please enter a valid email address"
-                              onkeyup="form_whatsapp();">
-                      </div>
-                      <!-- End Form Group -->
-                    </div>
-
-                    <div class="col-sm-12">
-                      <!-- Form Group -->
-                      <div class="js-form-message form-group">
-                        <label for="descripcion" class="input-label">Descripción</label>
-                        <div class="input-group">
-                          <textarea class="form-control" rows="4" name="descripcion" id="descripcion" placeholder="Escriba su texto aqui!!!" aria-label="Hi there, I would like to ..." required
-                                    data-msg="Please enter a reason."
-                                    onkeyup="form_whatsapp();"></textarea>
-                        </div>
-                      </div>
-                      <!-- End Form Group -->
+                <div class="col-sm-12">
+                  <!-- Form Group -->
+                  <div class="js-form-message form-group">
+                    <label for="descripcion" class="input-label">Descripción</label>
+                    <div class="input-group">
+                      <textarea class="form-control" rows="4" name="descripcion" id="descripcion" placeholder="Escriba su texto aqui!!!" aria-label="Hi there, I would like to ..." required
+                                data-msg="Please enter a reason."
+                                onkeyup="form_whatsapp();"></textarea>
                     </div>
                   </div>
-
-                  <a type="submit" id="btn_enviarwhats" class="btn btn-block btn-warning transition-3d-hover" href="#" target="_blank" style="font-size: 25px;"></i>Enviar</a>
+                  <!-- End Form Group -->
                 </div>
-              </form>
-              <!-- End Form -->
-            </div>
-          </div>
+              </div>
 
+              <a type="submit" id="btn_enviarwhats" class="btn btn-block btn-warning transition-3d-hover" href="#" target="_blank" style="font-size: 25px;"></i>Enviar</a>
+            </div>
+          </form>
+          <!-- End Form -->
         </div>
       </div>
     </div>
+    <!-- End Hero Section -->
+
+    <!-- Map Section -->
+    <div id="contactsSection" class="position-relative mx-3 mx-md-8">
+      <div class="container space-1 space-lg-3">
+        <div class="row justify-content-md-end">
+          <div class="col-md-6 col-lg-5">
+            <div class="card bg-white position-relative z-index-999 p-5 p-sm-7">
+              <div class="mb-5">
+                <span class="d-block font-size-2 text-dark text-lh-sm">3 medios para</span>
+                <span class="d-block font-size-4 text-dark font-weight-bold text-lh-sm">contactarse</span>
+              </div>
+
+              <!-- Contacts -->
+              <div class="media mb-5">
+                <span class="icon icon-xs icon-soft-primary icon-circle mr-3">
+                  <i class="fas fa-phone"></i>
+                </span>
+                <div class="media-body">
+                  <h5 class=" mb-1">Celular</h5>
+                  <span class="d-block text-body font-size-1">+51 944 411 328</span>
+                </div>
+              </div>
+              <!-- End Contacts -->
+
+              <!-- Contacts -->
+              <div class="media mb-5">
+                <span class="icon icon-xs icon-soft-primary icon-circle mr-3">
+                  <i class="fas fa-envelope"></i>
+                </span>
+                <div class="media-body text-truncate">
+                  <h5 class=" mb-1">Correo</h5>
+                  <span class="d-block text-body font-size-1">estrategiadigital@gmail.com</span>
+                </div>
+              </div>
+              <!-- End Contacts -->
+
+              <!-- Contacts -->
+              <div class="media">
+                <span class="icon icon-xs icon-soft-primary icon-circle mr-3">
+                  <i class="fas fa-map-marker-alt"></i>
+                </span>
+                <div class="media-body">
+                  <h5 class=" mb-1">Dirección</h5>
+                  <span class="d-block text-body font-size-1">Jr. Los Helechos 214 – Urb. Bernabe Guridi.</span>
+                </div>
+              </div>
+              <!-- End Contacts -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gmap -->
+      <div class="position-md-absolute top-0 right-0 bottom-0 left-0">
+        <div id="map" class="min-h-300rem h-100 rounded-lg"
+             data-hs-leaflet-options='{
+               "map": {
+                 "scrollWheelZoom": false,
+                 "coords": [-6.487578584951772, -76.35602821271281]
+               },
+               "marker": [
+                 {
+                   "coords": [-6.487578584951772, -76.35602821271281],
+                   "icon": {
+                     "iconUrl": "../assets/inmobiliaria/components/ubi.png",
+                     "iconSize": [50, 45]
+                   },
+                   "popup": {
+                     "text": "153 Williamson Plaza, Maggieberg",
+                     "title": "Address"
+                   }
+                 }
+               ]
+              }'></div>
+      </div>
+      <!-- End Gmap -->
+    </div>
+    <!-- End Map Section -->
+
     <!-- End nosostros Form Section -->
 
     <!-- Features Section -->
@@ -274,8 +314,8 @@
       <div class="container space-top-2 space-top-lg-3 space-bottom-3">
         <!-- Title -->
         <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-          <h2>Features built for scale</h2>
-          <p>Get insights to dig down into what's powering your growth the most.</p>
+          <h2>Nuestros Servicios</h2>
+          <p>Conozca nuestros servicios y comprenderá por qué la empresa Business inmobiliaria es mucho más que una simple empresa inmobiliaria.</p>
         </div>
         <!-- End Title -->
 
