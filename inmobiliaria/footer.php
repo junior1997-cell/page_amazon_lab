@@ -1,7 +1,7 @@
   <!-- ========== FOOTER ========== -->
   <footer class="bg-dark">
     <div class="container">
-      <div class="space-top-2 space-bottom-1 space-bottom-lg-2">
+      <div class="" style="padding: 1rem;">
         <div class="row justify-content-lg-between">
           <div class="col-lg-3 ml-lg-auto mb-5 mb-lg-0">
             <!-- Logo -->
@@ -19,7 +19,7 @@
                     <span class="media">
                       <span class="fas fa-location-arrow mt-1 mr-2"></span>
                       <span class="media-body">
-                        153 Williamson Plaza, Maggieberg
+                         Jr. Los Helechos 214 – Urb. Bernabe Guridi.
                       </span>
                     </span>
                 </a>
@@ -29,7 +29,7 @@
                     <span class="media">
                       <span class="fas fa-phone-alt mt-1 mr-2"></span>
                       <span class="media-body">
-                        +1 (062) 109-9222
+                        +51 944 411 328
                       </span>
                     </span>
                 </a>
@@ -39,7 +39,7 @@
           </div>
 
           <div class="col-6 col-md-3 col-lg mb-5 mb-lg-0">
-            <h5 class="text-white">Company</h5>
+            <h5 class="text-white">Nuestra compañía</h5>
 
             <!-- Nav Link -->
             <ul class="nav nav-sm nav-x-0 nav-white flex-column">
@@ -47,31 +47,17 @@
               <li class="nav-item"><a class="nav-link" href="#">Careers <span class="badge badge-primary ml-1">We're hiring</span></a></li>
               <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
               <li class="nav-item"><a class="nav-link" href="#">Customers</a></li> -->
-              <li class="nav-item"><a class="nav-link" href="#">Hire us</a></li>
-            </ul>
-            <!-- End Nav Link -->
-          </div>
-
-          <div class="col-6 col-md-3 col-lg mb-5 mb-lg-0">
-            <h5 class="text-white">Features</h5>
-
-            <!-- Nav Link -->
-            <ul class="nav nav-sm nav-x-0 nav-white flex-column">
-              <li class="nav-item"><a class="nav-link" href="#">Press</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Release notes</a></li>
-              <!-- <li class="nav-item"><a class="nav-link" href="#">Integrations</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li> -->
+              <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
             </ul>
             <!-- End Nav Link -->
           </div>
 
           <div class="col-6 col-md-3 col-lg">
-            <h5 class="text-white">Documentation</h5>
+            <h5 class="text-white">Documentación</h5>
 
             <!-- Nav Link -->
             <ul class="nav nav-sm nav-x-0 nav-white flex-column">
-              <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Docs</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Soporte</a></li>
               <!-- <li class="nav-item"><a class="nav-link" href="#">Status</a></li>
               <li class="nav-item"><a class="nav-link" href="#">API Reference</a></li>
               <li class="nav-item"><a class="nav-link" href="#">Tech Requirements</a></li> -->
@@ -80,7 +66,7 @@
           </div>
 
           <div class="col-6 col-md-3 col-lg">
-            <h5 class="text-white">Resources</h5>
+            <h5 class="text-white">Recursos</h5>
 
             <!-- Nav Link -->
             <ul class="nav nav-sm nav-x-0 nav-white flex-column">
@@ -108,21 +94,13 @@
 
       <hr class="opacity-xs my-0">
 
-      <div class="space-1">
+      <div class="space-1" >
         <div class="row align-items-md-center mb-7">
           <div class="col-md-6 mb-4 mb-md-0">
             <!-- Nav Link -->
             <ul class="nav nav-sm nav-white nav-x-sm align-items-center">
               <li class="nav-item">
-                <a class="nav-link" href="#">Privacidad </a>
-              </li>
-              <li class="nav-item opacity mx-3">&#47;</li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Términos</a>
-              </li>
-              <li class="nav-item opacity mx-3">&#47;</li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Mapa</a>
+                <a class="nav-link" href="#">&copy; 2023 Reservados todos los derechos JDL TECHNOLOGY </a>
               </li>
             </ul>
             <!-- End Nav Link -->
@@ -152,37 +130,17 @@
                 </a>
               </li>
               <!-- End Social Networks -->
-
-              <!-- Language -->
-              <li class="list-inline-item">
-                <div class="hs-unfold">
-                  <a class="js-hs-unfold-invoker dropdown-toggle btn btn-xs btn-soft-light" href="javascript:;"
-                     data-hs-unfold-options='{
-                        "target": "#footerLanguage",
-                        "type": "css-animation",
-                        "animationIn": "slideInDown"
-                       }'>
-                    <img class="dropdown-item-icon" src="../assets/vendor/flag-icon-css/flags/4x3/us.svg" alt="United States Flag">
-                    <span>United States</span>
-                  </a>
-
-                  <div id="footerLanguage" class="hs-unfold-content dropdown-menu dropdown-unfold dropdown-menu-bottom mb-2">
-                    <a class="dropdown-item" href="#">Español</a>
-                  </div>
-                </div>
-              </li>
-              <!-- End Language -->
             </ul>
           </div>
         </div>
 
         <!-- Copyright -->
-        <div class="w-md-75 text-lg-center mx-lg-auto">
+        <!-- <div class="w-md-75 text-lg-center mx-lg-auto">
           <p class="text-white opacity-sm small">&copy; 2023 Reservados todos los derechos.</p>
         </div>
         <div class="w-md-75 text-lg-center mx-lg-auto">
           <p class="text-white opacity-sm small">JDL TECHNOLOGY </p>
-        </div>
+        </div> -->
         <!-- End Copyright -->
       </div>
     </div>
