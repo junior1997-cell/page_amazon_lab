@@ -151,167 +151,9 @@
     </div>
     <!-- End Contact Form Section -->
 
-    <!-- nosostros Form Section -->
-    <!-- Hero Section -->
-    <div class="container position-relative z-index-4 " style="margin-top: 2rem;">
-      <div class="row justify-content-lg-between align-items-lg-center">
-        <div class="col-md-10 col-lg-5 mb-9 mb-lg-0">
-          <div class="mb-7">
-            <h1 class="display-4 mb-4">Solicita más información</h1>
-            <p class="lead">¡INVIERTE PENSANDO EN TU FUTURO!</p>
-          </div>
-
-          <img class="img-fluid" src="../assets/inmobiliaria/img/we-are-in-office-1.svg" alt="Image Description">
-        </div>
-
-        <div class="col-lg-6">
-          <!-- Form -->
-          <form class="js-validate card shadow-lg mb-4" style="border: 6px solid #df924a; border-radius: 30px;">
-            <div class="card-header border-0 bg-light text-center py-4 px-4 px-md-6">
-              <h2 class="h4 mb-0" style="font-family: monospace; color: black; font-size: 25px;">¡Escríbenos y te contactaremos! </h2>
-            </div>
-
-            <div class="card-body p-4 p-md-6" >
-              <div class="row">
-                <div class="col-sm-6">
-                  <!-- Form Group -->
-                  <div class="js-form-message form-group">
-                    <label for="nombres" class="input-label">Nombres</label>
-                    <input type="text" class="form-control" name="nombres" id="nombres" placeholder="Nombres" aria-label="Nombres" required
-                          data-msg="Please enter first your name"
-                          onkeyup="form_whatsapp();">
-                  </div>
-                  <!-- End Form Group -->
-                </div>
-
-                <div class="col-sm-6">
-                  <!-- Form Group -->
-                  <div class="js-form-message form-group">
-                    <label for="apellidos" class="input-label">Apellidos</label>
-                    <input type="text" class="form-control" name="apellidos" id="apellidos" placeholder="Apellidos" aria-label="Apellidos" required
-                          data-msg="Please enter last your name"
-                          onkeyup="form_whatsapp();">
-                  </div>
-                  <!-- End Form Group -->
-                </div>
-
-                <div class="col-sm-12">
-                  <!-- Form Group -->
-                  <div class="js-form-message form-group">
-                    <label for="correo" class="input-label">Correo electronico</label>
-                    <input type="email" class="form-control" name="correo" id="correo" placeholder="xxxxxx@gmail.com" aria-label="alex@pixeel.com" required
-                          data-msg="Please enter a valid email address"
-                          onkeyup="form_whatsapp();">
-                  </div>
-                  <!-- End Form Group -->
-                </div>
-
-                <div class="col-sm-12">
-                  <!-- Form Group -->
-                  <div class="js-form-message form-group">
-                    <label for="descripcion" class="input-label">Descripción</label>
-                    <div class="input-group">
-                      <textarea class="form-control" rows="4" name="descripcion" id="descripcion" placeholder="Escriba su texto aqui!!!" aria-label="Hi there, I would like to ..." required
-                                data-msg="Please enter a reason."
-                                onkeyup="form_whatsapp();"></textarea>
-                    </div>
-                  </div>
-                  <!-- End Form Group -->
-                </div>
-              </div>
-
-              <a type="submit" id="btn_enviarwhats" class="btn btn-block btn-warning transition-3d-hover" href="#" target="_blank" style="font-size: 25px;"></i>Enviar</a>
-            </div>
-          </form>
-          <!-- End Form -->
-        </div>
-      </div>
-    </div>
-    <!-- End Hero Section -->
-
-    <!-- Map Section -->
-    <div id="contactsSection" class="position-relative mx-3 mx-md-8">
-      <div class="container space-1 space-lg-3">
-        <div class="row justify-content-md-end">
-          <div class="col-md-6 col-lg-5">
-            <div class="card bg-white position-relative z-index-999 p-5 p-sm-7">
-              <div class="mb-5">
-                <span class="d-block font-size-2 text-dark text-lh-sm">3 medios para</span>
-                <span class="d-block font-size-4 text-dark font-weight-bold text-lh-sm">contactarse</span>
-              </div>
-
-              <!-- Contacts -->
-              <div class="media mb-5">
-                <span class="icon icon-xs icon-soft-primary icon-circle mr-3">
-                  <i class="fas fa-phone"></i>
-                </span>
-                <div class="media-body">
-                  <h5 class=" mb-1">Celular</h5>
-                  <span class="d-block text-body font-size-1">+51 944 411 328</span>
-                </div>
-              </div>
-              <!-- End Contacts -->
-
-              <!-- Contacts -->
-              <div class="media mb-5">
-                <span class="icon icon-xs icon-soft-primary icon-circle mr-3">
-                  <i class="fas fa-envelope"></i>
-                </span>
-                <div class="media-body text-truncate">
-                  <h5 class=" mb-1">Correo</h5>
-                  <span class="d-block text-body font-size-1">estrategiadigital@gmail.com</span>
-                </div>
-              </div>
-              <!-- End Contacts -->
-
-              <!-- Contacts -->
-              <div class="media">
-                <span class="icon icon-xs icon-soft-primary icon-circle mr-3">
-                  <i class="fas fa-map-marker-alt"></i>
-                </span>
-                <div class="media-body">
-                  <h5 class=" mb-1">Dirección</h5>
-                  <span class="d-block text-body font-size-1">Jr. Los Helechos 214 – Urb. Bernabe Guridi.</span>
-                </div>
-              </div>
-              <!-- End Contacts -->
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Gmap -->
-      <div class="position-md-absolute top-0 right-0 bottom-0 left-0">
-        <div id="map" class="min-h-300rem h-100 rounded-lg"
-             data-hs-leaflet-options='{
-               "map": {
-                 "scrollWheelZoom": false,
-                 "coords": [-6.487578584951772, -76.35602821271281]
-               },
-               "marker": [
-                 {
-                   "coords": [-6.487578584951772, -76.35602821271281],
-                   "icon": {
-                     "iconUrl": "../assets/inmobiliaria/components/ubi.png",
-                     "iconSize": [50, 45]
-                   },
-                   "popup": {
-                     "text": "153 Williamson Plaza, Maggieberg",
-                     "title": "Address"
-                   }
-                 }
-               ]
-              }'></div>
-      </div>
-      <!-- End Gmap -->
-    </div>
-    <!-- End Map Section -->
-
-    <!-- End nosostros Form Section -->
-
     <!-- Features Section -->
     <div class="overflow-hidden" id="idservicios">
-      <div class="container space-top-2 space-top-lg-3 space-bottom-3">
+      <div class="container space-top-2">
         <!-- Title -->
         <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
           <h2>Nuestros Servicios</h2>
@@ -328,7 +170,7 @@
                   <figure class="max-w-6rem w-100 mb-4">
                     <img class="img-fluid" src="../assets/svg/icons/icon-2.svg" alt="SVG">
                   </figure>
-                  <h3 class="h4">Smart Dashboards</h3>
+                  <h3 class="h4">Servicio 1</h3>
                   <p class="text-body">This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.</p>
                 </div>
                 <!-- End Icon Blocks -->
@@ -338,9 +180,9 @@
                 <!-- Icon Blocks -->
                 <div class="pr-lg-6">
                   <figure class="max-w-6rem w-100 mb-4">
-                    <img class="img-fluid" src="../assets/svg/icons/icon-1.svg" alt="SVG">
+                    <img class="img-fluid" src="../assets/svg/icons/icon-2.svg" alt="SVG">
                   </figure>
-                  <h4>Control Center</h4>
+                  <h4>Servicio 2</h4>
                   <p class="text-body">Now that we've aligned the details, it's time to get things mapped out and organized.</p>
                 </div>
                 <!-- End Icon Blocks -->
@@ -350,9 +192,9 @@
                 <!-- Icon Blocks -->
                 <div class="pr-lg-6">
                   <figure class="max-w-6rem w-100 mb-4">
-                    <img class="img-fluid" src="../assets/svg/icons/icon-15.svg" alt="SVG">
+                    <img class="img-fluid" src="../assets/svg/icons/icon-2.svg" alt="SVG">
                   </figure>
-                  <h4>Email Reports</h4>
+                  <h4>Servicio 3</h4>
                   <p class="text-body">We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
                 </div>
                 <!-- End Icon Blocks -->
@@ -362,9 +204,9 @@
                 <!-- Icon Blocks -->
                 <div class="pr-lg-6">
                   <figure class="max-w-6rem w-100 mb-4">
-                    <img class="img-fluid" src="../assets/svg/icons/icon-26.svg" alt="SVG">
+                    <img class="img-fluid" src="../assets/svg/icons/icon-2.svg" alt="SVG">
                   </figure>
-                  <h4>Forecasting</h4>
+                  <h4>Servicio 4</h4>
                   <p class="text-body">Staying focused allows us to turn every project we complete into something we love.</p>
                 </div>
                 <!-- End Icon Blocks -->
@@ -375,14 +217,12 @@
           <div class="col-sm-8 col-md-6 col-lg-4">
             <!-- Article -->
             <article class="position-relative">
-              <a class="card shadow-none bg-img-hero w-100 min-h-450rem transition-3d-hover" href="#" style="background-image: url(../assets/img/400x500/img26.jpg);">
+              <a class="card shadow-none bg-img-hero w-100 min-h-450rem transition-3d-hover" href="#" style="background-image: url(../assets/inmobiliaria/img/servicios1.jpg);">
                 <div class="card-body">
-                  <h4>Adobe Ai</h4>
-                  <p class="text-body">Access to the Adobe Illustrator techniques</p>
                 </div>
                 <div class="card-footer border-0 bg-transparent pt-0">
-                  <span class="font-weight-bold">Browse tools <i class="fas fa-angle-right fa-sm ml-1"></i></span>
                 </div>
+
               </a>
 
               <!-- SVG Elements -->
@@ -399,6 +239,166 @@
       </div>
     </div>
     <!-- End Features Section -->
+
+
+    <!-- nosostros Form Section -->
+    <di id="idcontactanos">
+      <!-- Hero Section -->
+      <div class="container position-relative z-index-4 " style="margin-top: 2rem;">
+        <div class="row justify-content-lg-between align-items-lg-center">
+          <div class="col-md-10 col-lg-5 mb-9 mb-lg-0">
+            <div class="mb-7">
+              <h1 class="display-4 mb-4">Solicita más información</h1>
+              <p class="lead">¡INVIERTE PENSANDO EN TU FUTURO!</p>
+            </div>
+
+            <img class="img-fluid" src="../assets/inmobiliaria/img/we-are-in-office-1.svg" alt="Image Description">
+          </div>
+
+          <div class="col-lg-6">
+            <!-- Form -->
+            <form class="js-validate card shadow-lg mb-4" style="border: 6px solid #df924a; border-radius: 30px;">
+              <div class="card-header border-0 bg-light text-center py-4 px-4 px-md-6">
+                <h2 class="h4 mb-0" style="font-family: monospace; color: black; font-size: 25px;">¡Escríbenos y te contactaremos! </h2>
+              </div>
+
+              <div class="card-body p-4 p-md-6" >
+                <div class="row">
+                  <div class="col-sm-6">
+                    <!-- Form Group -->
+                    <div class="js-form-message form-group">
+                      <label for="nombres" class="input-label">Nombres</label>
+                      <input type="text" class="form-control" name="nombres" id="nombres" placeholder="Nombres" aria-label="Nombres" required
+                            data-msg="Please enter first your name"
+                            onkeyup="form_whatsapp();">
+                    </div>
+                    <!-- End Form Group -->
+                  </div>
+
+                  <div class="col-sm-6">
+                    <!-- Form Group -->
+                    <div class="js-form-message form-group">
+                      <label for="apellidos" class="input-label">Apellidos</label>
+                      <input type="text" class="form-control" name="apellidos" id="apellidos" placeholder="Apellidos" aria-label="Apellidos" required
+                            data-msg="Please enter last your name"
+                            onkeyup="form_whatsapp();">
+                    </div>
+                    <!-- End Form Group -->
+                  </div>
+
+                  <div class="col-sm-12">
+                    <!-- Form Group -->
+                    <div class="js-form-message form-group">
+                      <label for="correo" class="input-label">Correo electronico</label>
+                      <input type="email" class="form-control" name="correo" id="correo" placeholder="xxxxxx@gmail.com" aria-label="alex@pixeel.com" required
+                            data-msg="Please enter a valid email address"
+                            onkeyup="form_whatsapp();">
+                    </div>
+                    <!-- End Form Group -->
+                  </div>
+
+                  <div class="col-sm-12">
+                    <!-- Form Group -->
+                    <div class="js-form-message form-group">
+                      <label for="descripcion" class="input-label">Descripción</label>
+                      <div class="input-group">
+                        <textarea class="form-control" rows="4" name="descripcion" id="descripcion" placeholder="Escriba su texto aqui!!!" aria-label="Hi there, I would like to ..." required
+                                  data-msg="Please enter a reason."
+                                  onkeyup="form_whatsapp();"></textarea>
+                      </div>
+                    </div>
+                    <!-- End Form Group -->
+                  </div>
+                </div>
+
+                <a type="submit" id="btn_enviarwhats" class="btn btn-block btn-warning transition-3d-hover" href="#" target="_blank" style="font-size: 25px;"></i>Enviar</a>
+              </div>
+            </form>
+            <!-- End Form -->
+          </div>
+        </div>
+      </div>
+      <!-- End Hero Section -->
+
+      <!-- Map Section -->
+      <div id="contactsSection" class="position-relative mx-3 mx-md-8">
+        <div class="container space-1 space-lg-3">
+          <div class="row justify-content-md-end">
+            <div class="col-md-6 col-lg-5">
+              <div class="card bg-white position-relative z-index-999 p-5 p-sm-7">
+                <div class="mb-5">
+                  <span class="d-block font-size-2 text-dark text-lh-sm">3 medios para</span>
+                  <span class="d-block font-size-4 text-dark font-weight-bold text-lh-sm">contactarse</span>
+                </div>
+
+                <!-- Contacts -->
+                <div class="media mb-5">
+                  <span class="icon icon-xs icon-soft-primary icon-circle mr-3">
+                    <i class="fas fa-phone"></i>
+                  </span>
+                  <div class="media-body">
+                    <h5 class=" mb-1">Celular</h5>
+                    <span class="d-block text-body font-size-1">+51 944 411 328</span>
+                  </div>
+                </div>
+                <!-- End Contacts -->
+
+                <!-- Contacts -->
+                <div class="media mb-5">
+                  <span class="icon icon-xs icon-soft-primary icon-circle mr-3">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <div class="media-body text-truncate">
+                    <h5 class=" mb-1">Correo</h5>
+                    <span class="d-block text-body font-size-1">estrategiadigital@gmail.com</span>
+                  </div>
+                </div>
+                <!-- End Contacts -->
+
+                <!-- Contacts -->
+                <div class="media">
+                  <span class="icon icon-xs icon-soft-primary icon-circle mr-3">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </span>
+                  <div class="media-body">
+                    <h5 class=" mb-1">Dirección</h5>
+                    <span class="d-block text-body font-size-1">Jr. Los Helechos 214 – Urb. Bernabe Guridi.</span>
+                  </div>
+                </div>
+                <!-- End Contacts -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gmap -->
+        <div class="position-md-absolute top-0 right-0 bottom-0 left-0">
+          <div id="map" class="min-h-200rem h-100 rounded-lg"
+              data-hs-leaflet-options='{
+                "map": {
+                  "scrollWheelZoom": false,
+                  "coords": [-6.487578584951772, -76.35602821271281]
+                },
+                "marker": [
+                  {
+                    "coords": [-6.487578584951772, -76.35602821271281],
+                    "icon": {
+                      "iconUrl": "../assets/inmobiliaria/components/ubi.png",
+                      "iconSize": [50, 45]
+                    },
+                    "popup": {
+                      "text": "153 Williamson Plaza, Maggieberg",
+                      "title": "Address"
+                    }
+                  }
+                ]
+                }'></div>
+        </div>
+        <!-- End Gmap -->
+      </div>
+      <!-- End Map Section -->
+    </div>
+    <!-- End nosostros Form Section -->
 
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
