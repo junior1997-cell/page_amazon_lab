@@ -1,33 +1,149 @@
 <?php require 'head.php'; require 'header.php'; ?>
-
+<!-- http://localhost/page_amazon_lab/blog-metro.html -->
+<!-- http://localhost/page_amazon_lab/landing-onepage-corporate.html#homeSection -->
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
+
     <!-- Hero Section -->
-    <div class="position-relative bg-img-hero" id="idinicio" style="background-image: url(../assets/inmobiliaria/img/img3_principal.jpg);">
-      <div class="container space-2 space-md-3 space-bottom-lg-4 min-h-300rem">
-        <div class="d-none d-md-block w-lg-50">
-          <h1>You're in good company.</h1>
-          <h2 class="h1 text-primary">Join millions of businesses on Front.</h2>
+    <div class="position-relative bg-img-hero" id="idinicio">
+      <div class="js-slide gradient-y-overlay-sm-gray-100 bg-img-hero" style="background-image: url(../assets/inmobiliaria/img/img_principal2.jpg) ; height: 550px;  object-position: right bottom !important;
+            object-fit: cover !important;">
+          <!-- Slide #1 -->
+          <!-- Hero Section -->
+          <div style="z-index:2!important; background-image: linear-gradient(to right,rgb(0 0 0 / 11%) 0,rgb(22 21 21 / 76%) 100%) !important; background-repeat: repeat-x !important;height: 550px;">
+                  <div class="container space-top-3 space-bottom-1 space-bottom-sm-2" >
+                    <div class="w-lg-55">
+                      <h1 class="display-2 mb-5 text-left text-white">
+                      <font face="monospace"s>Encuentra
+                      <span class="text-warning">
+                          <span class="js-text-animation"
+                                data-hs-typed-options='{
+                                  "strings": ["el", "mejor", "lugar", "el mejor lugar"],
+                                  "typeSpeed": 70,
+                                  "loop": true,
+                                  "backSpeed": 40,
+                                  "backDelay": 2000
+                                }'></span>
+                      </span>
+                      <br>
+                      para empezar a vivir
+                    </font>
+                </h1>
+            </div>
+          </div>
         </div>
       </div>
-
-      <!-- SVG Background -->
-      <figure class="position-absolute right-0 bottom-0 left-0">
-        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1920 100.1">
-          <path fill="#fff" d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"/>
-        </svg>
-      </figure>
-      <!-- End SVG Background -->
     </div>
     <!-- End Hero Section -->
 
-    <!-- nosotros Form Section background: linear-gradient(to top, #000000 0%, #000000bd 100%);  -->
-    <div style="background-image: url(../assets/inmobiliaria/img/sobre_nosotros.jpg);background-repeat: no-repeat;position: relative;width: 85%;height: 610px;margin-left: auto;margin-right: auto;">
-      <div class="container space-top-3 space-top-lg-6 space-bottom-2" id="idnosotros" >
-        <div class="row">
-          <div class="col-lg-6 mb-9 mb-lg-0">
-            <div class="mb-5">
-              <h1>Ubícanos</h1>
+    <div  id="idnosotros" class="divnosotros">
+      <div class="class_nos_g">
+        <div class="container space-top-2 space-top-lg-6 space-bottom-2" style="height: auto">
+          <div class="row">
+            <div class="col-lg-8 mb-9 mb-lg-0">
+              <div class="mb-5">
+                <h1 style="font-family: monospace; text-align: center;">Sobre Nosotros</h1>
+                <div class="historia">
+                  <p style="font-family: monospace; font-size: 18px; text-align: justify; padding: 6px;">
+                    Pertenecemos a una organización líder con 50 años de experiencia en el mercado inmobiliario en España, el Grupo Romero Mora,
+                    especializado en la inversión y gestión de activos inmobiliarios<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. 
+                      Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, 
+                      sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. 
+                      Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                      <div class="mx-auto" style="text-align: center;padding-bottom: 9px;"><button class="btn btn-info btn-xs" onclick="myFunction()" id="myBtn">Leer más</button></div>
+                      
+                </div>
+              </div>
+             <hr style="border: 1px solid #632126; width: 80%;"/>
+
+              <h1 style="font-family: monospace; text-align: center;">Visión y Misión</h1>
+              <div class="row">
+                <div class="col-lg-6 containerr">
+                  <img src="../assets/inmobiliaria/img/vision2.png" class="image" style="width: 100%;" />
+                  <div class="middle">
+                    <div class="text">Liderar el mercado inmobiliario de la región con estrategias innovadoras que nos mantengan a la vanguardia en cada servicio ofrecido.</div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 containerr">
+                  <img src="../assets/inmobiliaria/img/mision2.png" class="image" style="width: 100%;" />
+                  <div class="middle">
+                    <div class="text">Ofrecer productos inmobiliarios de manera confiable y segura para cumplir con las expectativas y necesidades de nuestros clientes.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr style="border: 1px solid #632126; width: 80%;"/>
+      <div style="background-image: url(../assets/inmobiliaria/img/sobre_nosotros2.jpg); background-repeat: no-repeat; position: relative; width: 85%; height: auto; margin-left: auto; margin-right: auto;">
+        <div class="container space-bottom-2" style="font-family: monospace;">
+          <h1 style="font-family: monospace; text-align: center;">Valores</h1>
+          <div class="row">
+            <div class="col-lg-5 mb-6 mb-lg-0" style="background-image: url(../assets/inmobiliaria/img/valores4.png); background-repeat: no-repeat; position: relative; width: 85%; height: auto; margin-left: auto; margin-right: auto;">
+            <!-- <img class="img_val" src="../assets/inmobiliaria/img/valores.png"> -->
+            </div>
+            <div class="col-lg-7 mb-6 mb-lg-0">
+              <div class="mx-lg-auto">
+                <div class="row align-items-sm-end mx-n2 mb-5 mb-md-7">
+
+                  <div class="col-sm-6 col-md-6 px-2 mb-3 mb-md-0">
+                    <!-- Pricing -->
+                    <div class="card card-bordered shadow-none text-center bord_css" data-aos="fade-up" data-aos-delay="100">
+                      <div class="card-body">
+                        <span class="text-dark font-size-2 font-weight-bold">Integridad</span>
+                      </div>
+                      <div class="card-body pt-0 pb-5 px-5">
+                        <p>Ser muy consecuente con lo que se pueda decir o con lo que se pueda considera que es correcto ...</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-6 px-2 mb-3 mb-md-0">
+                    <!-- Pricing -->
+                    <div class="card card-bordered shadow-none text-center bord_css" data-aos="fade-up" data-aos-delay="100">
+                      <div class="card-body">
+                        <span class="text-dark font-size-2 font-weight-bold">Liderazgo</span>
+                      </div>
+                      <div class="card-body pt-0 pb-5 px-5">
+                        <ul class="list-unstyled list-sm-article mb-4">
+                          <span>Capacidad para motivar y dirigir, creando un ambiente de empatía, colaboración y respeto, para lograr ...</span>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-6 px-2 mb-3 mb-md-0">
+                    <!-- Pricing -->
+                    <div class="card card-bordered shadow-none text-center bord_css" data-aos="fade-up" data-aos-delay="100">
+                      <div class="card-body">
+                        <span class="text-dark font-size-2 font-weight-bold">Perseverancia</span>
+                      </div>
+                      <div class="card-body pt-0 pb-5 px-5">
+                        <ul class="list-unstyled list-sm-article mb-4">
+                          <span>Actitud que marca el rumbo de la empresa con acciones concretas, logrando superar obstáculos y enfocándose ...</span>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-6 px-2 mb-3 mb-md-0 mx-auto">
+                    <!-- Pricing -->
+                    <div class="card card-bordered shadow-none text-center bord_css" data-aos="fade-up" data-aos-delay="100">
+                      <div class="card-body">
+                        <span class="text-dark font-size-2 font-weight-bold">Compromiso</span>
+                      </div>
+                      <div class="card-body pt-0 pb-5 px-5">
+                        <ul class="list-unstyled list-sm-article mb-4">
+                          <span>Cumplir con las obligaciones contraídas, buscando el mejor resultado, respetando las normas legales aplicables...</span>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </div>
         </div>
@@ -35,133 +151,13 @@
     </div>
     <!-- End Contact Form Section -->
 
-    <!-- nosostros Form Section -->
-    <div style="background-color: rgb(8 7 7 / 1);" >
-      <div class="container space-top-3 space-top-lg-6 space-bottom-2" id="idcontactanos" style="font-family: monospace;color: white; font-size: 25px;">
-        <div class="row">
-          <div class="col-lg-6 mb-9 mb-lg-0" style="border: 6px solid #df924a; border-radius: 20px;">
-            <div class="mb-1">
-              <h1 style="font-family: monospace;color: white; text-align:center">Ubícanos</h1>
-            </div>
-            <!-- Leaflet -->
-            <div id="map" class="min-h-300rem mb-5"
-                data-hs-leaflet-options='{
-                  "map": {
-                    "scrollWheelZoom": false,
-                    "coords": [-6.487578584951772, -76.35602821271281]  
-                  },
-                  "marker": [
-                    {
-                      "coords": [-6.487578584951772, -76.35602821271281],
-                      "icon": {
-                        "iconUrl": "../assets/inmobiliaria/components/ubi.png",
-                        "iconSize": [80, 75]
-                      },
-                      "popup": {
-                        "text": "214,"
-                      }
-                    }
-                  ]
-                  }'></div>
-            <!-- End Leaflet -->
-
-            <div class="row">
-              <div class="col-sm-6 col-lg-6">
-                <div class="mb-3">
-                  <span class="d-block h5 mb-1" style="font-size: 20px;color: #ffffff;">Teléfono:</span>
-                  <span class="class_span">+51 944 411 328</span>
-                </div>
-
-                <div class="mb-3">
-                  <span class="d-block h5 mb-1"  style="font-size: 20px;color: #ffffff;">Correo:</span>
-                  <span class="class_span">estrategiadigital@gmail.com</span>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-lg-6">
-                <div class="mb-3">
-                  <span class="d-block h5 mb-1"  style="font-size: 20px;color: #ffffff;">Dirección:</span>
-                  <div class="class_span">Jr. Los Helechos 214 – Urb. Bernabe Guridi.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="ml-lg-5">
-              <!-- Form -->
-              <form class="js-validate card shadow-lg mb-4" style="border: 6px solid #df924a; border-radius: 30px;">
-                <div class="card-header border-0 bg-light text-center py-4 px-4 px-md-6">
-                  <h2 class="h4 mb-0" style="font-family: monospace; color: black; font-size: 25px;">¡Escríbenos y te contactaremos! </h2>
-                </div>
-
-                <div class="card-body p-4 p-md-6" >
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <!-- Form Group -->
-                      <div class="js-form-message form-group">
-                        <label for="nombres" class="input-label">Nombres</label>
-                        <input type="text" class="form-control" name="nombres" id="nombres" placeholder="Nombres" aria-label="Nombres" required
-                              data-msg="Please enter first your name"
-                              onkeyup="form_whatsapp();">
-                      </div>
-                      <!-- End Form Group -->
-                    </div>
-
-                    <div class="col-sm-6">
-                      <!-- Form Group -->
-                      <div class="js-form-message form-group">
-                        <label for="apellidos" class="input-label">Apellidos</label>
-                        <input type="text" class="form-control" name="apellidos" id="apellidos" placeholder="Apellidos" aria-label="Apellidos" required
-                              data-msg="Please enter last your name"
-                              onkeyup="form_whatsapp();">
-                      </div>
-                      <!-- End Form Group -->
-                    </div>
-
-                    <div class="col-sm-12">
-                      <!-- Form Group -->
-                      <div class="js-form-message form-group">
-                        <label for="correo" class="input-label">Correo electronico</label>
-                        <input type="email" class="form-control" name="correo" id="correo" placeholder="xxxxxx@gmail.com" aria-label="alex@pixeel.com" required
-                              data-msg="Please enter a valid email address"
-                              onkeyup="form_whatsapp();">
-                      </div>
-                      <!-- End Form Group -->
-                    </div>
-
-                    <div class="col-sm-12">
-                      <!-- Form Group -->
-                      <div class="js-form-message form-group">
-                        <label for="descripcion" class="input-label">Descripción</label>
-                        <div class="input-group">
-                          <textarea class="form-control" rows="4" name="descripcion" id="descripcion" placeholder="Escriba su texto aqui!!!" aria-label="Hi there, I would like to ..." required
-                                    data-msg="Please enter a reason."
-                                    onkeyup="form_whatsapp();"></textarea>
-                        </div>
-                      </div>
-                      <!-- End Form Group -->
-                    </div>
-                  </div>
-
-                  <a type="submit" id="btn_enviarwhats" class="btn btn-block btn-warning transition-3d-hover" href="#" target="_blank" style="font-size: 25px;"></i>Enviar</a>
-                </div>
-              </form>
-              <!-- End Form -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End nosostros Form Section -->
-
     <!-- Features Section -->
     <div class="overflow-hidden" id="idservicios">
-      <div class="container space-top-2 space-top-lg-3 space-bottom-3">
+      <div class="container space-top-2">
         <!-- Title -->
         <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-          <h2>Features built for scale</h2>
-          <p>Get insights to dig down into what's powering your growth the most.</p>
+          <h2>Nuestros Servicios</h2>
+          <p>Conozca nuestros servicios y comprenderá por qué la empresa Business inmobiliaria es mucho más que una simple empresa inmobiliaria.</p>
         </div>
         <!-- End Title -->
 
@@ -174,7 +170,7 @@
                   <figure class="max-w-6rem w-100 mb-4">
                     <img class="img-fluid" src="../assets/svg/icons/icon-2.svg" alt="SVG">
                   </figure>
-                  <h3 class="h4">Smart Dashboards</h3>
+                  <h3 class="h4">Servicio 1</h3>
                   <p class="text-body">This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.</p>
                 </div>
                 <!-- End Icon Blocks -->
@@ -184,9 +180,9 @@
                 <!-- Icon Blocks -->
                 <div class="pr-lg-6">
                   <figure class="max-w-6rem w-100 mb-4">
-                    <img class="img-fluid" src="../assets/svg/icons/icon-1.svg" alt="SVG">
+                    <img class="img-fluid" src="../assets/svg/icons/icon-2.svg" alt="SVG">
                   </figure>
-                  <h4>Control Center</h4>
+                  <h4>Servicio 2</h4>
                   <p class="text-body">Now that we've aligned the details, it's time to get things mapped out and organized.</p>
                 </div>
                 <!-- End Icon Blocks -->
@@ -196,9 +192,9 @@
                 <!-- Icon Blocks -->
                 <div class="pr-lg-6">
                   <figure class="max-w-6rem w-100 mb-4">
-                    <img class="img-fluid" src="../assets/svg/icons/icon-15.svg" alt="SVG">
+                    <img class="img-fluid" src="../assets/svg/icons/icon-2.svg" alt="SVG">
                   </figure>
-                  <h4>Email Reports</h4>
+                  <h4>Servicio 3</h4>
                   <p class="text-body">We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
                 </div>
                 <!-- End Icon Blocks -->
@@ -208,9 +204,9 @@
                 <!-- Icon Blocks -->
                 <div class="pr-lg-6">
                   <figure class="max-w-6rem w-100 mb-4">
-                    <img class="img-fluid" src="../assets/svg/icons/icon-26.svg" alt="SVG">
+                    <img class="img-fluid" src="../assets/svg/icons/icon-2.svg" alt="SVG">
                   </figure>
-                  <h4>Forecasting</h4>
+                  <h4>Servicio 4</h4>
                   <p class="text-body">Staying focused allows us to turn every project we complete into something we love.</p>
                 </div>
                 <!-- End Icon Blocks -->
@@ -221,14 +217,12 @@
           <div class="col-sm-8 col-md-6 col-lg-4">
             <!-- Article -->
             <article class="position-relative">
-              <a class="card shadow-none bg-img-hero w-100 min-h-450rem transition-3d-hover" href="#" style="background-image: url(../assets/img/400x500/img26.jpg);">
+              <a class="card shadow-none bg-img-hero w-100 min-h-450rem transition-3d-hover" href="#" style="background-image: url(../assets/inmobiliaria/img/servicios1.jpg);">
                 <div class="card-body">
-                  <h4>Adobe Ai</h4>
-                  <p class="text-body">Access to the Adobe Illustrator techniques</p>
                 </div>
                 <div class="card-footer border-0 bg-transparent pt-0">
-                  <span class="font-weight-bold">Browse tools <i class="fas fa-angle-right fa-sm ml-1"></i></span>
                 </div>
+
               </a>
 
               <!-- SVG Elements -->
@@ -245,6 +239,166 @@
       </div>
     </div>
     <!-- End Features Section -->
+
+
+    <!-- nosostros Form Section -->
+    <di id="idcontactanos">
+      <!-- Hero Section -->
+      <div class="container position-relative z-index-4 " style="margin-top: 2rem;">
+        <div class="row justify-content-lg-between align-items-lg-center">
+          <div class="col-md-10 col-lg-5 mb-9 mb-lg-0">
+            <div class="mb-7">
+              <h1 class="display-4 mb-4">Solicita más información</h1>
+              <p class="lead">¡INVIERTE PENSANDO EN TU FUTURO!</p>
+            </div>
+
+            <img class="img-fluid" src="../assets/inmobiliaria/img/we-are-in-office-1.svg" alt="Image Description">
+          </div>
+
+          <div class="col-lg-6">
+            <!-- Form -->
+            <form class="js-validate card shadow-lg mb-4" style="border: 6px solid #df924a; border-radius: 30px;">
+              <div class="card-header border-0 bg-light text-center py-4 px-4 px-md-6">
+                <h2 class="h4 mb-0" style="font-family: monospace; color: black; font-size: 25px;">¡Escríbenos y te contactaremos! </h2>
+              </div>
+
+              <div class="card-body p-4 p-md-6" >
+                <div class="row">
+                  <div class="col-sm-6">
+                    <!-- Form Group -->
+                    <div class="js-form-message form-group">
+                      <label for="nombres" class="input-label">Nombres</label>
+                      <input type="text" class="form-control" name="nombres" id="nombres" placeholder="Nombres" aria-label="Nombres" required
+                            data-msg="Please enter first your name"
+                            onkeyup="form_whatsapp();">
+                    </div>
+                    <!-- End Form Group -->
+                  </div>
+
+                  <div class="col-sm-6">
+                    <!-- Form Group -->
+                    <div class="js-form-message form-group">
+                      <label for="apellidos" class="input-label">Apellidos</label>
+                      <input type="text" class="form-control" name="apellidos" id="apellidos" placeholder="Apellidos" aria-label="Apellidos" required
+                            data-msg="Please enter last your name"
+                            onkeyup="form_whatsapp();">
+                    </div>
+                    <!-- End Form Group -->
+                  </div>
+
+                  <div class="col-sm-12">
+                    <!-- Form Group -->
+                    <div class="js-form-message form-group">
+                      <label for="correo" class="input-label">Correo electronico</label>
+                      <input type="email" class="form-control" name="correo" id="correo" placeholder="xxxxxx@gmail.com" aria-label="alex@pixeel.com" required
+                            data-msg="Please enter a valid email address"
+                            onkeyup="form_whatsapp();">
+                    </div>
+                    <!-- End Form Group -->
+                  </div>
+
+                  <div class="col-sm-12">
+                    <!-- Form Group -->
+                    <div class="js-form-message form-group">
+                      <label for="descripcion" class="input-label">Descripción</label>
+                      <div class="input-group">
+                        <textarea class="form-control" rows="4" name="descripcion" id="descripcion" placeholder="Escriba su texto aqui!!!" aria-label="Hi there, I would like to ..." required
+                                  data-msg="Please enter a reason."
+                                  onkeyup="form_whatsapp();"></textarea>
+                      </div>
+                    </div>
+                    <!-- End Form Group -->
+                  </div>
+                </div>
+
+                <a type="submit" id="btn_enviarwhats" class="btn btn-block btn-warning transition-3d-hover" href="#" target="_blank" style="font-size: 25px;"></i>Enviar</a>
+              </div>
+            </form>
+            <!-- End Form -->
+          </div>
+        </div>
+      </div>
+      <!-- End Hero Section -->
+
+      <!-- Map Section -->
+      <div id="contactsSection" class="position-relative mx-3 mx-md-8">
+        <div class="container space-1 space-lg-3">
+          <div class="row justify-content-md-end">
+            <div class="col-md-6 col-lg-5">
+              <div class="card bg-white position-relative z-index-999 p-5 p-sm-7">
+                <div class="mb-5">
+                  <span class="d-block font-size-2 text-dark text-lh-sm">3 medios para</span>
+                  <span class="d-block font-size-4 text-dark font-weight-bold text-lh-sm">contactarse</span>
+                </div>
+
+                <!-- Contacts -->
+                <div class="media mb-5">
+                  <span class="icon icon-xs icon-soft-primary icon-circle mr-3">
+                    <i class="fas fa-phone"></i>
+                  </span>
+                  <div class="media-body">
+                    <h5 class=" mb-1">Celular</h5>
+                    <span class="d-block text-body font-size-1">+51 944 411 328</span>
+                  </div>
+                </div>
+                <!-- End Contacts -->
+
+                <!-- Contacts -->
+                <div class="media mb-5">
+                  <span class="icon icon-xs icon-soft-primary icon-circle mr-3">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <div class="media-body text-truncate">
+                    <h5 class=" mb-1">Correo</h5>
+                    <span class="d-block text-body font-size-1">estrategiadigital@gmail.com</span>
+                  </div>
+                </div>
+                <!-- End Contacts -->
+
+                <!-- Contacts -->
+                <div class="media">
+                  <span class="icon icon-xs icon-soft-primary icon-circle mr-3">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </span>
+                  <div class="media-body">
+                    <h5 class=" mb-1">Dirección</h5>
+                    <span class="d-block text-body font-size-1">Jr. Los Helechos 214 – Urb. Bernabe Guridi.</span>
+                  </div>
+                </div>
+                <!-- End Contacts -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gmap -->
+        <div class="position-md-absolute top-0 right-0 bottom-0 left-0">
+          <div id="map" class="min-h-200rem h-100 rounded-lg"
+              data-hs-leaflet-options='{
+                "map": {
+                  "scrollWheelZoom": false,
+                  "coords": [-6.487578584951772, -76.35602821271281]
+                },
+                "marker": [
+                  {
+                    "coords": [-6.487578584951772, -76.35602821271281],
+                    "icon": {
+                      "iconUrl": "../assets/inmobiliaria/components/ubi.png",
+                      "iconSize": [50, 45]
+                    },
+                    "popup": {
+                      "text": "153 Williamson Plaza, Maggieberg",
+                      "title": "Address"
+                    }
+                  }
+                ]
+                }'></div>
+        </div>
+        <!-- End Gmap -->
+      </div>
+      <!-- End Map Section -->
+    </div>
+    <!-- End nosostros Form Section -->
 
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
@@ -324,7 +478,12 @@
       // INITIALIZATION OF TEXT ANIMATION (TYPING)
       // =======================================================
       var typed = $.HSCore.components.HSTyped.init(".js-text-animation");
-
+      // INITIALIZATION OF AOS
+      // =======================================================
+      AOS.init({
+        duration: 650,
+        once: true
+      });
       
       // INITIALIZATION OF LEAFLET
       // =======================================================
@@ -349,6 +508,7 @@
     if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="../assets/vendor/babel-polyfill/dist/polyfill.js"><\/script>');
   </script>
 
+  <script src="script.js"></script>
 
 
 </body>

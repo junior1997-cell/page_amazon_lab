@@ -17,13 +17,9 @@
 
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="../assets/css/vendor.min.css" />
-
+    <!-- estilos css -->
+    <link rel="stylesheet" href="style.css" />
     <!-- CSS Front Template -->
     <link rel="stylesheet" href="../assets/css/theme.minc619.css?v=1.0" />
-    <!-- <link rel="stylesheet" href="./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css"> -->
-    <style>
-      .class_span{ font-size: 18px; background-color: beige; color: #5a1318;}
-      .class_sspan{ font-size: 18px; background-color: beige; color: #5a1318; padding: 6px; border: 6px solid #f5ca99; }
-       
-    </style>
+
   </head>

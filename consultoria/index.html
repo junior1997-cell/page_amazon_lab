@@ -15,9 +15,17 @@
 
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"/>
 
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="../assets/css/vendor.min.css">
+
+  <!-- Font Awesome -->
+  <!-- <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css" /> -->
+  <link rel="stylesheet" href="../assets/css/fontawesome-free-6.2.0/css/all.min.css" />
+
+  <!-- IonIcons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
   <!-- CSS Front Template -->
   <link rel="stylesheet" href="../assets/css/theme.minc619.css?v=1.0">
@@ -27,14 +35,14 @@
   <link rel="stylesheet" href="../assets/consultoria/css/my_stilo.css">
   
 </head>
-<body class="bg-color-000000">
+<body>
   <!-- ========== HEADER ========== -->
   <header id="header" class="header header-box-shadow-on-scroll header-abs-top header-white-nav-links-lg header-bg-transparent header-show-hide"
           data-hs-header-options='{
             "fixMoment": 1000,
             "fixEffect": "slide"
           }'>
-    <div class="header-section bg-color-000000">
+    <div class="nav_dark" >
       <!-- Topbar -->
       
       <!-- End Topbar -->
@@ -44,7 +52,7 @@
         <nav class="navbar navbar-expand-lg mt-3">
           <!-- Logo -->
           <a class="navbar-brand" href="index.html" aria-label="Front">
-            <img src="../assets/consultoria/svg/logo-busines-wassi-amarillo.svg" alt="Logo" style="width: 200px !important;">
+            <img src="../assets/consultoria/svg/logo-busines-wassi-amarillo.svg" alt="Logo" style="width: 150px !important;">
           </a>
           <!-- End Logo -->
 
@@ -67,18 +75,23 @@
           <div id="navBar" class="collapse navbar-collapse">
             <ul class="navbar-nav">
               <li class="navbar-nav-item">
-                <a class="nav-link active" href="index.html">Nosotros</a>
+                <a class="nav-link active nav_dark_text" href="index.html">Nosotros</a>
               </li>
 
               <!-- Property Pages -->
               <li class="navbar-nav-item">
-                <a class="nav-link" href="servicios.html">Servicios</a>
+                <a class="nav-link nav_dark_text" href="servicios.html">Servicios</a>
               </li>
               <!-- End Property Pages -->
 
               <li class="navbar-nav-item">
-                <a class="nav-link" href="contactanos.html">Contactanos</a>
+                <a class="nav-link nav_dark_text" href="contactanos.html">Contactanos</a>
               </li>
+
+              <button class="switch" id="switch">
+                <span><i class="fa-solid fa-sun"></i></span>
+                <span><i class="fa-solid fa-moon"></i></span>
+              </button>
               
             </ul>
           </div>
@@ -117,8 +130,8 @@
               <p class="text-white-70">Brochure para emprendedores.</p>
             </div>
 
-            <a class="btn btn-light btn-wide btn-pill shadow-soft transition-3d-hover mb-2 mb-sm-0 mr-4" href="" download="Brochure"><i class="fas fa-download"></i> Descargar Brochure</a>
-            <a class="btn btn-success btn-wide btn-pill transition-3d-hover mb-2 mb-sm-0" href="#"><i class="fab fa-whatsapp"></i> Contactanos</a>
+            <a class="btn btn-light btn-wide btn-pill shadow-soft transition-3d-hover mb-2 mb-sm-0 mr-4 dark_buttom_brochure" href="" download="Brochure"><i class="fas fa-download"></i> Descargar Brochure</a>
+            <a class="btn btn-success btn-wide btn-pill transition-3d-hover mb-2 mb-sm-0 dark_buttom_contac" href="#"><i class="fab fa-whatsapp"></i> Contactanos</a>
             <!-- End Info -->
           </div>
 
@@ -165,7 +178,7 @@
 
       <figure class="position-absolute bottom-0 right-0 left-0">
         <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1921 273">
-          <polygon fill="#fff" points="0,273 1921,273 1921,0 "/>
+          <polygon id="svg-footer-1" fill="#FEFEFE" points="0,273 1921,273 1921,0 "/>
         </svg>
       </figure>
       <!-- End SVG Shape -->
@@ -333,8 +346,8 @@
       <!-- End Title -->
 
       <!-- Pricing -->
-      <div class="row no-gutters align-items-lg-center mb-7 mb-md-11">
-        <div class="col-lg-7 shadow-lg rounded-lg">
+      <div class="row no-gutters align-items-lg-center bg-color-000001 mb-7 mb-md-11">
+        <div class="col-lg-7 bg-color-000001 shadow-lg rounded-lg">
           <div class="text-center py-11 px-5 px-sm-9">
             <header class="mb-9">
               <div class="mb-1">
@@ -610,6 +623,9 @@
 
   <!-- JS Front -->
   <script src="../assets/js/theme.min.js"></script>
+
+   <!-- ESTILO-->
+   <script src="../assets/consultoria/js/estilo.js"></script>
 
   <!-- JS Plugins Init. -->
   <script>

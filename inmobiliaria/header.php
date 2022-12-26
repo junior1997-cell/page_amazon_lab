@@ -59,7 +59,7 @@
 
                 <!-- Pages -->
                 <li class="navbar navbar-light" >
-                  <a id="pagesMegaMenu" href="#idcontactanos" aria-haspopup="true" aria-expanded="false" class="hover_morado" style="color:#5a1318;"><b>Contáctanos</b></a>
+                  <a id="pagesMegaMenu" href="#idservicios" aria-haspopup="true" aria-expanded="false" class="hover_morado" style="color:#5a1318;"><b>Servicios</b></a>
                   <!-- Pages - Submenu -->
                   <div id="pagesSubMenu" class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 230px;">
                   </div>
@@ -72,7 +72,7 @@
                 <!-- Docs -->
                 <li class="navbar navbar-light" >
                   <!-- <p id="idfuturos" aria-haspopup="true" aria-expanded="false" class="hover_morado" style="color:#5a1318;"><b>Servicios</b></p> -->
-                  <a id="pagesMegaMenu" href="#idservicios" aria-haspopup="true" aria-expanded="false" class="hover_morado" style="color:#5a1318;"><b>Servicios</b></a>
+                  <a id="pagesMegaMenu" href="#idcontactanos" aria-haspopup="true" aria-expanded="false" class="hover_morado" style="color:#5a1318;"><b>Contáctanos</b></a>
                   <!-- Pages - Submenu -->
                   <div id="pagesSubMenu" class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 30px;">
                   </div>
