@@ -16,8 +16,10 @@
 
 .texto-borde {
   -webkit-text-stroke: 2px #803588 !important;
-
-  }
+}
+.texto-borde2 {
+  -webkit-text-stroke: 2px #F4B222 !important;
+}
 .body{
         background-image: url(https://media.istockphoto.com/id/1060478984/es/foto/resumen-de-degradado-de-fondo-azul.jpg?b=1&s=170667a&w=0&k=20&c=QFSgmSbZqr5cB6WkxB42KRKrDRgV6RAalK49Bqzx1gI=);
         background-repeat: no-repeat;
