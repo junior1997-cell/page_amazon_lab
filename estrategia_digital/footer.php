@@ -1,8 +1,8 @@
         <!-- ========== FOOTER ========== -->
         <div class="container space-1"></div>
-         <footer class="bg-black contenido" style="background-color: black !important;">
+         <footer class="bg-black contenido" style="background-color: black !important; text-center">
             <div class="container">
-                <div class="space-top-1 space-bottom-1 space-bottom-lg-1">
+                <div class="space-top-1 space-bottom-1 space-bottom-lg-1 ">
                     <div class="row justify-content-lg-between">
                         <div class="col-lg-3 ml-lg-auto mb-5 mb-lg-0">
                             <!-- Logo -->
@@ -62,7 +62,6 @@
 
                         <div class="col-6 col-md-3 col-lg">
                             <h5 style="color: #b609a8;">Recursos</h5>
-
                             <!-- Nav Link -->
                             <ul class="nav nav-sm nav-x-0 flex-column">
                                 <li class="nav-item">

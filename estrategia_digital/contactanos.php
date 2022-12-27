@@ -3,7 +3,7 @@
   <!-- ========== MAIN ========== -->
   <main id="content" role="main" class="body">
     <!-- Contact Form Section -->
-    <div class="container space-top-3 space-top-lg-6 space-bottom-2">
+    <div class="container space-top-3 space-top-lg-6 space-bottom-0">
       <div class="row">
         <div class="col-lg-6 mb-9 mb-lg-0">
           <div class="mb-5">
