@@ -3,8 +3,8 @@
           data-hs-header-options='{
               "fixMoment": 100,
               "fixEffect": "slide"
-            }'>
-    <div class="header-section">
+            }' >
+    <div class="header-section" style="background-color: #101624!important; ">
       <div id="logoAndNav" class="container">
         <!-- Nav -->
         <nav class="js-mega-menu navbar navbar-expand-lg">
@@ -36,11 +36,11 @@
 
           <!-- Navigation -->
           <div id="navBar" class="collapse navbar-collapse">
-            <div class="navbar-body header-abs-top-inner">
+            <div class="navbar-body header-abs-top-inner" style="font-family: 'GothamLight';">
               <ul class="navbar-nav ">
                 <!-- inicio -->
                <li class="navbar navbar-light ">
-                  <a id="pagesMegaMenu" href="#idinicio" aria-haspopup="true" aria-expanded="false" class="hover_morado morado_active" style="color:#5a1318;"><b>Inicio</b></a>
+                  <a id="pagesMegaMenu" href="#idinicio" aria-haspopup="true" aria-expanded="false" class="hover_morado morado_active text-white" ><b>Inicio</b></a>
                   <!-- Pages - Submenu -->
                   <div id="pagesSubMenu" class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 30px;">
                   </div>
@@ -49,7 +49,7 @@
                 </li>
                 <!-- inicio -->
                <li class="navbar navbar-light ">
-                  <a id="pagesMegaMenu" href="#idnosotros" aria-haspopup="true" aria-expanded="false" class="hover_morado morado_active" style="color:#5a1318;"><b>Nosotros</b></a>
+                  <a id="pagesMegaMenu" href="#idnosotros" aria-haspopup="true" aria-expanded="false" class="hover_morado morado_active text-white"><b>Nosotros</b></a>
                   <!-- Pages - Submenu -->
                   <div id="pagesSubMenu" class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 30px;">
                   </div>
@@ -59,7 +59,7 @@
 
                 <!-- Pages -->
                 <li class="navbar navbar-light" >
-                  <a id="pagesMegaMenu" href="#idservicios" aria-haspopup="true" aria-expanded="false" class="hover_morado" style="color:#5a1318;"><b>Servicios</b></a>
+                  <a id="pagesMegaMenu" href="#idservicios" aria-haspopup="true" aria-expanded="false" class="hover_morado text-white"><b>Servicios</b></a>
                   <!-- Pages - Submenu -->
                   <div id="pagesSubMenu" class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 230px;">
                   </div>
@@ -71,8 +71,8 @@
 
                 <!-- Docs -->
                 <li class="navbar navbar-light" >
-                  <!-- <p id="idfuturos" aria-haspopup="true" aria-expanded="false" class="hover_morado" style="color:#5a1318;"><b>Servicios</b></p> -->
-                  <a id="pagesMegaMenu" href="#idcontactanos" aria-haspopup="true" aria-expanded="false" class="hover_morado" style="color:#5a1318;"><b>Contáctanos</b></a>
+                  <!-- <p id="idfuturos" aria-haspopup="true" aria-expanded="false" class="hover_morado"><b>Servicios</b></p> -->
+                  <a id="pagesMegaMenu" href="#idcontactanos" aria-haspopup="true" aria-expanded="false" class="hover_morado text-white"><b>Contáctanos</b></a>
                   <!-- Pages - Submenu -->
                   <div id="pagesSubMenu" class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 30px;">
                   </div>

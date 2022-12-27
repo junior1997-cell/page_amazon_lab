@@ -1,3 +1,20 @@
+
+@font-face {
+  font-family: 'GothamThin';
+  src:     url('Gotham-Thin.otf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'GothamMedium';
+  src:     url('GothamMedium.ttf')  format('truetype'); /* Safari, Android, iOS */
+
+}
+@font-face {
+  font-family: 'GothamLight';
+  src:     url('GothamLight.ttf')  format('truetype'); /* Safari, Android, iOS */
+
+}
+
+
 /* sobre nosotros */
 
 .historia{ height: auto; background-color: #fbfcff; border-radius: 20px; box-shadow: 0px 15px 23px 0px rgb(35 49 64 / 9%); z-index: -1;}
@@ -22,7 +39,7 @@
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
-  border: 6px solid #5a1318;
+  border: 6px solid #EDC452;
   border-radius: 20px;
 }
 
@@ -47,7 +64,7 @@
 }
 
 .text {
-  background-color: #df924a;
+  background-color: #EDC452;
   color: white;
   font-size: 16px;
   padding: 16px 32px;
@@ -56,7 +73,7 @@
 #more {display: none;}
 
 .bord_css{
-  border: 5px solid #5a1318 !important;
+  border: 5px solid #EDC452 !important;
   margin-bottom: 3px;
   background-color: rgb(255, 255, 255)!important;
   transition: background-color .5s !important;
@@ -64,21 +81,26 @@
 }  
 
 .bord_css:hover {
-  background-color: #df924a!important;
+  background-color: #EDC452!important;
   color: white!important;
 }
 
 .class_p_d{
   color: white!important;
   font-size: 20px!important;
-  font-family: monospace!important;
+  font-family: GothamMedium!important;
   border-radius: 6px;
 }
 
 .back_hover:hover{
-  background-color: #df924a!important;
+  background-color: #EDC452!important;
   color: rgb(255, 255, 255)!important;
   font-size: 20px;
+}
+
+.gradient-x-overlay-lg-darkk::before {
+  background-image: linear-gradient(to right,rgb(0 0 0 / 11%) 0,rgb(22 21 21 / 76%) 100%) !important;
+  background-repeat: repeat-x;
 }
 
 
