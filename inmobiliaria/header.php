@@ -40,7 +40,7 @@
               <ul class="navbar-nav ">
                 <!-- inicio -->
                <li class="navbar navbar-light ">
-                  <a id="pagesMegaMenu" href="#idinicio" aria-haspopup="true" aria-expanded="false" class="hover_morado morado_active text-white" ><b>Inicio</b></a>
+                  <a id="pagesMegaMenu" href="#idinicio" aria-haspopup="true" aria-expanded="false" class="inicio hover_h _active" onclick="active('inicio');" ><b>Inicio</b></a>
                   <!-- Pages - Submenu -->
                   <div id="pagesSubMenu" class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 30px;">
                   </div>
@@ -49,7 +49,7 @@
                 </li>
                 <!-- inicio -->
                <li class="navbar navbar-light ">
-                  <a id="pagesMegaMenu" href="#idnosotros" aria-haspopup="true" aria-expanded="false" class="hover_morado morado_active text-white"><b>Nosotros</b></a>
+                  <a id="pagesMegaMenu" href="#idnosotros" aria-haspopup="true" aria-expanded="false" class="nosotros hover_h " onclick="active('nosotros');"><b>Nosotros</b></a>
                   <!-- Pages - Submenu -->
                   <div id="pagesSubMenu" class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 30px;">
                   </div>
@@ -59,7 +59,7 @@
 
                 <!-- Pages -->
                 <li class="navbar navbar-light" >
-                  <a id="pagesMegaMenu" href="#idservicios" aria-haspopup="true" aria-expanded="false" class="hover_morado text-white"><b>Servicios</b></a>
+                  <a id="pagesMegaMenu" href="#idservicios" aria-haspopup="true" aria-expanded="false" class="servicios hover_h" onclick="active('servicios');"><b>Servicios</b></a>
                   <!-- Pages - Submenu -->
                   <div id="pagesSubMenu" class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 230px;">
                   </div>
@@ -71,8 +71,7 @@
 
                 <!-- Docs -->
                 <li class="navbar navbar-light" >
-                  <!-- <p id="idfuturos" aria-haspopup="true" aria-expanded="false" class="hover_morado"><b>Servicios</b></p> -->
-                  <a id="pagesMegaMenu" href="#idcontactanos" aria-haspopup="true" aria-expanded="false" class="hover_morado text-white"><b>Contáctanos</b></a>
+                  <a id="pagesMegaMenu" href="#idcontactanos" aria-haspopup="true" aria-expanded="false" class="contactanos hover_h" onclick="active('contactanos');"><b>Contáctanos</b></a>
                   <!-- Pages - Submenu -->
                   <div id="pagesSubMenu" class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 30px;">
                   </div>

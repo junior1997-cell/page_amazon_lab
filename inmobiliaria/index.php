@@ -5,7 +5,7 @@
   <main id="content" role="main">
 
      <!-- Hero Section -->
-    <div class="js-slick-carousel slick slick-equal-height w-100"
+    <div class="js-slick-carousel slick slick-equal-height w-100" id="idinicio"
          data-hs-slick-carousel-options='{
            "infinite": true,
            "autoplay": true,
@@ -14,6 +14,7 @@
            "rows": 0,
            "dotsClass": "slick-pagination slick-pagination-white position-absolute bottom-0 right-0 left-0 mb-3"
          }'>
+
       <div class="js-slide gradient-x-overlay-lg-darkk bg-img-hero space-3 min-vh-lg-100" style="background-image: url(../assets/inmobiliaria/img/img_principal2.webp);">
         <!-- Hero News -->
         <div class="container d-lg-flex align-items-lg-center">
@@ -78,6 +79,7 @@
         </div>
         <!-- End Hero News -->
       </div>
+
     </div>
     <!-- End Hero Section -->
 
@@ -611,9 +613,9 @@
     if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="../assets/vendor/babel-polyfill/dist/polyfill.js"><\/script>');
   </script>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 
-  <script src="whatsappme.min.js"></script>
+  <script src="js/whatsappme.min.js"></script>
 
 </body>
 
