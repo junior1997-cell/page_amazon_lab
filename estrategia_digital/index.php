@@ -327,7 +327,7 @@
         <script>
             if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="../assets/vendor/babel-polyfill/dist/polyfill.js"><\/script>');
         </script>
-        <script src="script.js"></script>
+        <script src="scripts/script_nosotros.js"></script>
     </body>
 
     <!-- Mirrored from htmlstream.com/front/landing-classic-advertisement.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 May 2021 14:17:37 GMT -->

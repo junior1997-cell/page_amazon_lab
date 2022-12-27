@@ -44,7 +44,7 @@
                                 <ul class="navbar-nav">
                                     <!-- Home -->
                                     <li class="navbar navbar-light">
-                                        <a id="pagesMegaMenu" href="index.php" aria-haspopup="true" aria-expanded="false" class=" nosotros hover_morado morado_active" onclick="add_quit_clss_header('nosotros')"><b>Nosotros</b></a>
+                                        <a id="pagesMegaMenu" href="index.php" aria-haspopup="true" aria-expanded="false" class=" nosotros hover_morado morado_active"><b>Nosotros</b></a>
                                         <!-- Pages - Submenu -->
                                         <div id="pagesSubMenu" class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 30px;"></div>
                                         <div class="col-lg-6"></div>
@@ -52,7 +52,7 @@
 
                                     <!-- Docs -->
                                     <li class="navbar navbar-white">
-                                        <a id="pagesMegaMenu" href="servicios.php" aria-haspopup="true" aria-expanded="false" class="servicios hover_morado text-white" onclick="add_quit_clss_header('servicios')"><b>Servicios</b></a>
+                                        <a id="pagesMegaMenu" href="servicios.php" aria-haspopup="true" aria-expanded="false" class="servicios hover_morado text-white"><b>Servicios</b></a>
                                         <!-- Pages - Submenu -->
                                         <div id="pagesSubMenu" class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 30px;"></div>
                                         <div class="col-lg-6"></div>
@@ -61,7 +61,7 @@
 
                                     <!-- Pages -->
                                     <li class="navbar navbar-white">
-                                        <a id="pagesMegaMenu" href="contactanos.php" aria-haspopup="true" aria-expanded="false" class="contactanos hover_morado text-white" onclick="add_quit_clss_header('contactanos')"><b>Contáctanos</b></a>
+                                        <a id="pagesMegaMenu" href="contactanos.php" aria-haspopup="true" aria-expanded="false" class="contactanos hover_morado text-white"><b>Contáctanos</b></a>
                                         <!-- Pages - Submenu -->
                                         <div id="pagesSubMenu" class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 230px;"></div>
                                         <div class="col-lg-6"></div>
@@ -69,7 +69,7 @@
                                     </li>
                                     <!-- Pages -->
                                     <li class="navbar navbar-white">
-                                        <a id="pagesMegaMenu" href="#" aria-haspopup="true" aria-expanded="false" class="hover_morado text-white" onclick="add_quit_clss_header('cursos')"><b>Cursos</b></a>
+                                        <a id="pagesMegaMenu" href="#" aria-haspopup="true" aria-expanded="false" class="hover_morado text-white" ><b>Cursos</b></a>
                                         <!-- Pages - Submenu -->
                                         <div id="pagesSubMenu" class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 230px;"></div>
                                         <div class="col-lg-6"></div>

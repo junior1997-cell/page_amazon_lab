@@ -233,6 +233,8 @@
   <script>
     if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="assets/vendor/babel-polyfill/dist/polyfill.js"><\/script>');
   </script>
+  <script src="scripts/script_contactanos.js"></script>
+
 </body>
 
 <!-- Mirrored from htmlstream.com/front/page-contacts-start-up.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 May 2021 14:20:42 GMT -->
