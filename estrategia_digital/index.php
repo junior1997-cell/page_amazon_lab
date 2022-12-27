@@ -44,7 +44,7 @@
                     <!-- Title -->
                     <div class="mx-auto text-center">
                         <div class="texto-borde2 text-center">
-                            <h1 class="text-white titulos">BIENVENIDOS</h1>
+                            <h1 class="text-white titulos welcome">BIENVENIDOS</h1>
                         </div>
                         <h2 class="text-dark mt-5 mb-6 titulos">Somos V5, estrategia digital.</h2>
                     </div>

@@ -4,7 +4,7 @@
         <main id="content" role="main" class="body">
             <!-- Hero Section -->
             <div class="position-relative bg-img-hero" style="background-image: url(../assets/estrategia_digital/img/img6.jpg);">
-                <div class="container space-2 space-md-3 space-bottom-lg-4 min-h-300rem">
+                <div class="container space-2 space-md-4 space-bottom-lg-4 min-h-300rem">
                     <div class="d-none d-md-block w-lg-50">
                         <h1 class="titulos" style="color: #F4B222;" style="font-weight:bold;">Es momento de potenciar tu negocio</h1>
                         <h2 class="contenido" class="h2" style="color: #803588;">con estrategias integradas</h2>
