@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../assets/css/vendor.min.css" />
     <!-- estilos css -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="whatsappme.min.css" />
     <!-- CSS Front Template -->
     <link rel="stylesheet" href="../assets/css/theme.minc619.css?v=1.0" />
 
