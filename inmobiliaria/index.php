@@ -1,7 +1,7 @@
 <?php require 'head.php'; require 'header.php'; ?>
 <!-- http://localhost/page_amazon_lab/blog-metro.html -->
 <!-- http://localhost/page_amazon_lab/landing-onepage-corporate.html#homeSection -->
-  <!-- ========== MAIN CONTENT ========== -->
+  <!-- ========== MAIN CONTENT ========== style="font-family: GothamMedium;"-->
   <main id="content" role="main">
 
      <!-- Hero Section -->
@@ -20,11 +20,11 @@
           <article class="w-lg-60 text-center mx-lg-auto">
             <span class="d-block mb-2"
                   data-hs-slick-carousel-animation="fadeInUp">
-              <span class="d-block small text-white-70 font-weight-bold text-cap mb-2" href="#">Business Wasi inmobiliaria: </span>
+              <span class="d-block small text-white-70 font-weight-bold text-cap mb-2" href="#" style="font-family: GothamMedium;">Business Wasi inmobiliaria: </span>
             </span>
             <h1 class="text-white mb-4 mb-md-7"
                 data-hs-slick-carousel-animation="fadeInUp"
-                data-hs-slick-carousel-animation-delay="150">Juntos encontraremos el hogar de tus sueños</h1>
+                data-hs-slick-carousel-animation-delay="150" style="font-family: GothamLight;">Juntos encontraremos el hogar de tus sueños</h1>
           </article>
         </div>
         <!-- End Hero News -->
@@ -36,12 +36,12 @@
           <article class="w-lg-60 text-center mx-lg-auto">
             <span class="d-block mb-2"
                   data-hs-slick-carousel-animation="fadeInUp">
-              <span class="d-block small text-white-70 font-weight-bold text-cap mb-2" href="#">Business Wasi inmobiliaria: </span>
+              <span class="d-block small text-white-70 font-weight-bold text-cap mb-2" href="#" style="font-family: GothamMedium;">Business Wasi inmobiliaria: </span>
             </span>
 
             <h2 class="h1 text-white mb-4 mb-md-7"
                 data-hs-slick-carousel-animation="fadeInUp"
-                data-hs-slick-carousel-animation-delay="150">Trabajamos por y para tu tranquilidad</h2>
+                data-hs-slick-carousel-animation-delay="150" style="font-family: GothamLight;">Trabajamos por y para tu tranquilidad</h2>
           </article>
         </div>
         <!-- End Hero News -->
@@ -53,11 +53,11 @@
           <article class="w-lg-60 text-center mx-lg-auto">
             <span class="d-block mb-2"
                   data-hs-slick-carousel-animation="fadeInUp">
-            <span class="d-block small text-white-70 font-weight-bold text-cap mb-2" href="#">Business Wasi inmobiliaria: </span>
+            <span class="d-block small text-white-70 font-weight-bold text-cap mb-2" href="#" style="font-family: GothamMedium;">Business Wasi inmobiliaria: </span>
             </span>
             <h2 class="h1 text-white mb-4 mb-md-7"
                 data-hs-slick-carousel-animation="fadeInUp"
-                data-hs-slick-carousel-animation-delay="150">No busques más, has llegado al final del camino</h2>
+                data-hs-slick-carousel-animation-delay="150" style="font-family: GothamLight;">No busques más, has llegado al final del camino</h2>
           </article>
         </div>
         <!-- End Hero News -->
@@ -69,11 +69,11 @@
           <article class="w-lg-60 text-center mx-lg-auto">
             <span class="d-block mb-2"
                   data-hs-slick-carousel-animation="fadeInUp">
-            <span class="d-block small text-white-70 font-weight-bold text-cap mb-2" href="#">Business Wasi inmobiliaria: </span>
+            <span class="d-block small text-white-70 font-weight-bold text-cap mb-2" href="#" style="font-family: GothamMedium;">Business Wasi inmobiliaria: </span>
             </span>
             <h2 class="h1 text-white mb-4 mb-md-7"
                 data-hs-slick-carousel-animation="fadeInUp"
-                data-hs-slick-carousel-animation-delay="150">No vendemos propiedades, cumplimos sueños</h2>
+                data-hs-slick-carousel-animation-delay="150" style="font-family: GothamLight;">No vendemos propiedades, cumplimos sueños</h2>
           </article>
         </div>
         <!-- End Hero News -->
@@ -91,33 +91,33 @@
           <div class="row">
             <div class="col-lg-8 mb-9 mb-lg-0">
               <div class="mb-5">
-                <h1 style="font-family: monospace; text-align: center;">Sobre Nosotros</h1>
+                <h1 style="font-family: GothamMedium; text-align: center;">Sobre Nosotros</h1>
                 <div class="historia">
-                  <p style="font-family: monospace; font-size: 18px; text-align: justify; padding: 6px;">
+                  <p style="font-family: GothamLight; font-size: 18px; text-align: justify; padding: 6px;">
                     Pertenecemos a una organización líder con 50 años de experiencia en el mercado inmobiliario en España, el Grupo Romero Mora,
                     especializado en la inversión y gestión de activos inmobiliarios<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. 
                       Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, 
                       sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. 
                       Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-                      <div class="mx-auto" style="text-align: center;padding-bottom: 9px;"><button class="btn btn-info btn-xs" onclick="myFunction()" id="myBtn">Leer más</button></div>
+                      <div class="mx-auto" style="text-align: center;padding-bottom: 9px;"><button class="btn btn-info btn-xs" onclick="myFunction()" id="myBtn" style="font-family: GothamMedium;">Leer más</button></div>
                       
                 </div>
               </div>
-             <hr style="border: 1px solid #df924a; width: 80%;"/>
+             <hr style="border: 1px solid #EDC452; width: 80%;"/>
 
-              <h1 style="font-family: monospace; text-align: center;">Visión y Misión</h1>
+              <h1 style="font-family: GothamMedium; text-align: center;">Visión y Misión</h1>
               <div class="row">
                 <div class="col-lg-6 containerr">
                   <img src="../assets/inmobiliaria/img/vision2.png" class="image" style="width: 100%;" />
                   <div class="middle">
-                    <div class="text">Liderar el mercado inmobiliario de la región con estrategias innovadoras que nos mantengan a la vanguardia en cada servicio ofrecido.</div>
+                    <div class="text" style="font-family: GothamLight;">Liderar el mercado inmobiliario de la región con estrategias innovadoras que nos mantengan a la vanguardia en cada servicio ofrecido.</div>
                   </div>
                 </div>
 
                 <div class="col-lg-6 containerr">
                   <img src="../assets/inmobiliaria/img/mision2.png" class="image" style="width: 100%;" />
                   <div class="middle">
-                    <div class="text">Ofrecer productos inmobiliarios de manera confiable y segura para cumplir con las expectativas y necesidades de nuestros clientes.</div>
+                    <div class="text" style="font-family: GothamLight;">Ofrecer productos inmobiliarios de manera confiable y segura para cumplir con las expectativas y necesidades de nuestros clientes.</div>
                   </div>
                 </div>
               </div>
@@ -125,10 +125,10 @@
           </div>
         </div>
       </div>
-      <hr style="border: 1px solid #df924a; width: 80%;"/>
+      <hr style="border: 1px solid #EDC452; width: 80%;"/>
       <div style="background-image: url(../assets/inmobiliaria/img/sobre_nosotros2.jpg); background-repeat: no-repeat; position: relative; width: 85%; height: auto; margin-left: auto; margin-right: auto;">
-        <div class="container space-bottom-2" style="font-family: monospace;">
-          <h1 style="font-family: monospace; text-align: center;">Valores</h1>
+        <div class="container space-bottom-2" style="font-family: GothamMedium;">
+          <h1 style="font-family: GothamMedium; text-align: center;">Valores</h1>
           <div class="row">
             <div class="col-lg-5 mb-6 mb-lg-0" style="background-image: url(../assets/inmobiliaria/img/valores4.png); background-repeat: no-repeat; position: relative; width: 85%; height: auto; margin-left: auto; margin-right: auto;">
             <!-- <img class="img_val" src="../assets/inmobiliaria/img/valores.png"> -->
@@ -141,10 +141,10 @@
                     <!-- Pricing -->
                     <div class="card card-bordered shadow-none text-center bord_css" data-aos="fade-up" data-aos-delay="100">
                       <div class="card-body">
-                        <span class="text-dark font-size-2 font-weight-bold">Integridad</span>
+                        <span class="text-dark font-size-2" style="font-family: GothamMedium;">Integridad</span>
                       </div>
                       <div class="card-body pt-0 pb-5 px-5">
-                        <p>Ser muy consecuente con lo que se pueda decir o con lo que se pueda considera que es correcto ...</p>
+                        <p  style="font-family: GothamLight;">Ser muy consecuente con lo que se pueda decir o con lo que se pueda considera que es correcto ...</p>
                       </div>
                     </div>
                   </div>
@@ -153,11 +153,11 @@
                     <!-- Pricing -->
                     <div class="card card-bordered shadow-none text-center bord_css" data-aos="fade-up" data-aos-delay="100">
                       <div class="card-body">
-                        <span class="text-dark font-size-2 font-weight-bold">Liderazgo</span>
+                        <span class="text-dark font-size-2 " style="font-family: GothamMedium;">Liderazgo</span>
                       </div>
                       <div class="card-body pt-0 pb-5 px-5">
                         <ul class="list-unstyled list-sm-article mb-4">
-                          <span>Capacidad para motivar y dirigir, creando un ambiente de empatía, colaboración y respeto, para lograr ...</span>
+                          <span  style="font-family: GothamLight;">Capacidad para motivar y dirigir, creando un ambiente de empatía, colaboración y respeto, para lograr ...</span>
                         </ul>
                       </div>
                     </div>
@@ -167,11 +167,11 @@
                     <!-- Pricing -->
                     <div class="card card-bordered shadow-none text-center bord_css" data-aos="fade-up" data-aos-delay="100">
                       <div class="card-body">
-                        <span class="text-dark font-size-2 font-weight-bold">Perseverancia</span>
+                        <span class="text-dark font-size-2 " style="font-family: GothamMedium;">Perseverancia</span>
                       </div>
                       <div class="card-body pt-0 pb-5 px-5">
                         <ul class="list-unstyled list-sm-article mb-4">
-                          <span>Actitud que marca el rumbo de la empresa con acciones concretas, logrando superar obstáculos y enfocándose ...</span>
+                          <span  style="font-family: GothamLight;">Actitud que marca el rumbo de la empresa con acciones concretas, logrando superar obstáculos y enfocándose ...</span>
                         </ul>
                       </div>
                     </div>
@@ -181,11 +181,11 @@
                     <!-- Pricing -->
                     <div class="card card-bordered shadow-none text-center bord_css" data-aos="fade-up" data-aos-delay="100">
                       <div class="card-body">
-                        <span class="text-dark font-size-2 font-weight-bold">Compromiso</span>
+                        <span class="text-dark font-size-2 " style="font-family: GothamMedium;">Compromiso</span>
                       </div>
                       <div class="card-body pt-0 pb-5 px-5">
                         <ul class="list-unstyled list-sm-article mb-4">
-                          <span>Cumplir con las obligaciones contraídas, buscando el mejor resultado, respetando las normas legales aplicables...</span>
+                          <span  style="font-family: GothamLight;">Cumplir con las obligaciones contraídas, buscando el mejor resultado, respetando las normas legales aplicables...</span>
                         </ul>
                       </div>
                     </div>
@@ -205,8 +205,8 @@
       <div class="container space-top-2">
         <!-- Title -->
         <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-          <h2>Nuestros Servicios</h2>
-          <p>Conozca nuestros servicios y comprenderá por qué la empresa Business inmobiliaria es mucho más que una simple empresa inmobiliaria.</p>
+          <h2 style="font-family: GothamMedium;">Nuestros Servicios</h2>
+          <p  style="font-family: GothamLight;">Conozca nuestros servicios y comprenderá por qué la empresa Business inmobiliaria es mucho más que una simple empresa inmobiliaria.</p>
         </div>
         <!-- End Title -->
 
@@ -219,8 +219,8 @@
                   <figure class="max-w-6rem w-100 mb-4">
                     <img class="img-fluid" src="../assets/svg/icons/icon-2.svg" alt="SVG">
                   </figure>
-                  <h3 class="h4">Servicio 1</h3>
-                  <p class="text-body">This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.</p>
+                  <h3 class="h4" style="font-family: GothamMedium;">Servicio 1</h3>
+                  <p class="text-body"  style="font-family: GothamLight;">This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.</p>
                 </div>
                 <!-- End Icon Blocks -->
               </div>
@@ -231,8 +231,8 @@
                   <figure class="max-w-6rem w-100 mb-4">
                     <img class="img-fluid" src="../assets/svg/icons/icon-2.svg" alt="SVG">
                   </figure>
-                  <h4>Servicio 2</h4>
-                  <p class="text-body">Now that we've aligned the details, it's time to get things mapped out and organized.</p>
+                  <h4 style="font-family: GothamMedium;">Servicio 2</h4>
+                  <p class="text-body"  style="font-family: GothamLight;">Now that we've aligned the details, it's time to get things mapped out and organized.</p>
                 </div>
                 <!-- End Icon Blocks -->
               </div>
@@ -243,8 +243,8 @@
                   <figure class="max-w-6rem w-100 mb-4">
                     <img class="img-fluid" src="../assets/svg/icons/icon-2.svg" alt="SVG">
                   </figure>
-                  <h4>Servicio 3</h4>
-                  <p class="text-body">We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+                  <h4 style="font-family: GothamMedium;">Servicio 3</h4>
+                  <p class="text-body"  style="font-family: GothamLight;">We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
                 </div>
                 <!-- End Icon Blocks -->
               </div>
@@ -255,8 +255,8 @@
                   <figure class="max-w-6rem w-100 mb-4">
                     <img class="img-fluid" src="../assets/svg/icons/icon-2.svg" alt="SVG">
                   </figure>
-                  <h4>Servicio 4</h4>
-                  <p class="text-body">Staying focused allows us to turn every project we complete into something we love.</p>
+                  <h4 style="font-family: GothamMedium;">Servicio 4</h4>
+                  <p class="text-body"  style="font-family: GothamLight;">Staying focused allows us to turn every project we complete into something we love.</p>
                 </div>
                 <!-- End Icon Blocks -->
               </div>
@@ -297,8 +297,8 @@
         <div class="row justify-content-lg-between align-items-lg-center">
           <div class="col-md-10 col-lg-5 mb-9 mb-lg-0">
             <div class="mb-7">
-              <h1 class="display-4 mb-4">Solicita más información</h1>
-              <p class="lead">¡INVIERTE PENSANDO EN TU FUTURO!</p>
+              <h1 class="display-4 mb-4" style="font-family: GothamMedium;">Solicita más información</h1>
+              <p class="lead" style="font-family: GothamMedium;">¡INVIERTE PENSANDO EN TU FUTURO!</p>
             </div>
 
             <img class="img-fluid" src="../assets/inmobiliaria/img/we-are-in-office-1.svg" alt="Image Description">
@@ -306,9 +306,9 @@
 
           <div class="col-lg-6">
             <!-- Form -->
-            <form class="js-validate card shadow-lg mb-4" style="border: 6px solid #df924a; border-radius: 30px;">
+            <form class="js-validate card shadow-lg mb-4" style="border: 6px solid #EDC452; border-radius: 30px; font-family: GothamLight;">
               <div class="card-header border-0 bg-light text-center py-4 px-4 px-md-6">
-                <h2 class="h4 mb-0" style="font-family: monospace; color: black; font-size: 25px;">¡Escríbenos y te contactaremos! </h2>
+                <h2 class="h4 mb-0" style="color: black; font-size: 25px;">¡Escríbenos y te contactaremos! </h2>
               </div>
 
               <div class="card-body p-4 p-md-6" >
@@ -376,12 +376,12 @@
             <div class="col-md-6 col-lg-5">
               <div class="card bg-white position-relative z-index-999 p-5 p-sm-7">
                 <div class="mb-5">
-                  <span class="d-block font-size-2 text-dark text-lh-sm">3 medios para</span>
-                  <span class="d-block font-size-4 text-dark font-weight-bold text-lh-sm">contactarse</span>
+                  <span class="d-block font-size-2 text-dark text-lh-sm" style="font-family: GothamMedium;">3 medios para</span>
+                  <span class="d-block font-size-4 text-dark font-weight-bold text-lh-sm" style="font-family: GothamMedium;">contactarse</span>
                 </div>
 
                 <!-- Contacts -->
-                <div class="media mb-5">
+                <div class="media mb-5"  style="font-family: GothamLight;">
                   <span class="icon icon-xs icon-soft-primary icon-circle mr-3">
                     <i class="fas fa-phone"></i>
                   </span>
@@ -393,7 +393,7 @@
                 <!-- End Contacts -->
 
                 <!-- Contacts -->
-                <div class="media mb-5">
+                <div class="media mb-5"  style="font-family: GothamLight;">
                   <span class="icon icon-xs icon-soft-primary icon-circle mr-3">
                     <i class="fas fa-envelope"></i>
                   </span>
@@ -405,7 +405,7 @@
                 <!-- End Contacts -->
 
                 <!-- Contacts -->
-                <div class="media">
+                <div class="media"  style="font-family: GothamLight;">
                   <span class="icon icon-xs icon-soft-primary icon-circle mr-3">
                     <i class="fas fa-map-marker-alt"></i>
                   </span>

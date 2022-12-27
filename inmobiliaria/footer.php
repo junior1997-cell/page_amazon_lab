@@ -1,5 +1,5 @@
   <!-- ========== FOOTER ========== -->
-  <footer class="bg-dark">
+  <footer class="bg-dark" style="background-color: #101624!important; font-family: GothamLight;">
     <div class="container">
       <div class="" style="padding: 1rem;">
         <div class="row justify-content-lg-between">
@@ -79,7 +79,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="../admin/index.php">
                     <span class="media align-items-center">
                       <i class="fa fa-user-circle mr-2"></i>
                       <span class="media-body">Acceso</span>
