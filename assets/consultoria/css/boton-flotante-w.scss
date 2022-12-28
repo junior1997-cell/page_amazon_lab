@@ -1,0 +1,32 @@
+$azulMarino: #101624;
+$amarillo: #EDC452;
+$rosado: #FE013F;
+$azul: #0570e6;
+$rojo: #c4302b;
+$verde: #33B93F;
+
+*{ margin: 0; padding: 0; box-sizing: border-box;}
+#btn-mas{ display: none; }
+.container-btn-redes{ position: fixed; bottom: 20px; right: 20px;}
+.redes a{
+    display: block;
+    text-decoration: none;    
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 14px 4px rgba(237, 196, 82, 0.157);
+    transition: all 500ms ease;
+}
+
+.icon1 {
+    color: $azul;
+}
+
+.icon2 {
+    color: $rojo;
+}
+.icon3 {
+    color: $verde;
+}
