@@ -20,7 +20,11 @@
 
     <?php $title = "Datos generales"; require 'head.php'; ?>
   </head>
-  <style> .class_table{ padding-right: 3px!important; padding-left: 5px!important; } </style>
+  <style> 
+   .class_table{ padding-right: 3px!important; padding-left: 5px!important; } 
+   .classtextarea{width: 100%; border: none; background: none;}
+
+  </style>
   <body>
     <!-- ========== MAIN ========== -->
     <main id="content" role="main" class="bg-light">
@@ -122,30 +126,6 @@
                         <textarea name="descripcion" id="descripcion" class="form-control" rows="2"></textarea>
                       </div>
                     </div>
-                    <!-- Form Group Características -->
-                    <!-- <div class="col-lg-12 col-sm-12">
-                      <label class="col-sm-3 col-form-label input-label">Características</label>
-                      <div class="form-group">
-                        <div class="quill-custom">
-                          <div
-                            class="js-quill"
-                            style="min-height: 15rem;"
-                            data-hs-quill-options='{
-                              "placeholder": "Describa las Características...",
-                                "modules": {
-                                  "toolbar": [
-                                    ["bold", "italic", "underline", "strike", "link", "image", "blockquote", "code", {"list": "bullet"}]
-                                  ]
-                                }
-                              }'
-                          >
-                          <i class="fas fa-spinner fa-pulse fa-1x"></i>
-                          </div>
-                        </div>
-                        <textarea class="d-none" name="caracteristicas" id="caracteristicas" cols="30" rows="10"></textarea>
-                      </div>
-                      
-                    </div> -->
 
                     <!-- Factura -->
                     <div class="col-md-6">
@@ -216,24 +196,97 @@
       </div>
 
       <!-- Modal ver caracteristicas -->
-      <div class="modal fade" id="modal-ver-caracteristicas">
-        <div class="modal-dialog modal-dialog-scrollable modal-md">
+      <div class="modal fade" id="modal-ver-caracteristicas" style="background-color: rgba(0, 0, 0, 0.29);padding-right: 17px;">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title"> Caracteristicas: 
+              <h4 class="modal-title"> Caracteristicas servicio: 
                  <b class="nombre_s text-warning" ><i class="fas fa-spinner fa-pulse fa-1x" style="color: #768494;"></i></b>
               </h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span class="text-danger" aria-hidden="true">&times;</span>
               </button>
+
             </div>
 
             <div class="modal-body">
+              <h5 class="card-title">
+                <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#modal-agregar-detalle-servicios" onclick="limpiar();"><i class="fas fa-plus-circle"></i> Agregar</button>
+              </h5>
               <div class="listar_caracteristicas">
                 <p><i class="fas fa-spinner fa-pulse fa-1x"></i> Cargando ...</p>
               </div>
+              <table id="tabla-detalle-servicios" class="table table-bordered table-striped" style="width: 100% !important;">
+                <thead>
+                  <tr>
+                    <th class="">#</th>
+                    <th class="">Acc.</th>
+                    <th data-toggle="tooltip" data-original-title="Nombres">Detalle</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+                <tfoot>
+                  <tr>
+                    <th class="">#</th>
+                    <th class="">Acc.</th>
+                    <th data-toggle="tooltip" data-original-title="Nombres">Detalle</th>
+                  </tr>
+                </tfoot>
+              </table>
+
             </div>
 
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal agregar detalle servicios -->
+      <div class="modal fade" id="modal-agregar-detalle-servicios" style="background-color: rgba(0, 0, 0, 0.49);padding-right: 17px;">
+        <div class="modal-dialog modal-dialog-scrollable modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title"><b>Agregar:</b> detalle</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span class="text-danger" aria-hidden="true">&times;</span>
+              </button>
+            </div>
+
+            <div class="modal-body" style="padding: 0px;" >
+              <!-- form start -->
+              <form id="form-servicios" name="form-servicios" method="POST">
+                <div class="card-body">
+                  <div class="row" id="cargando-1-fomulario">
+                    <!--  idservicio -->
+                    <input type="hidden" name="idservicio" id="idservicio" />
+                    <!--  idservicio_detalle -->
+                    <input type="hidden" name="idservicio_detalle" id="idservicio_detalle" />
+
+                    <!--descripcion_detalle-->
+                    <div class="col-lg-12 class_pading">
+                      <div class="form-group">
+                        <label for="descripcion_detalle">Descripción <sup class="text-danger">*</sup></label> <br />
+                        <textarea name="descripcion_detalle" id="descripcion_detalle" class="form-control" rows="2"></textarea>
+                      </div>
+                    </div>
+                    
+                  </div>
+
+                  <div class="row" id="cargando-2-fomulario" style="display: none;">
+                    <div class="col-lg-12 text-center">
+                      <i class="fas fa-spinner fa-pulse fa-6x"></i><br />
+                      <br />
+                      <h4>Cargando...</h4>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+                <button type="submit" style="display: none;" id="submit-form-servicios">Submit</button>
+              </form>
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-danger btn-xs" data-dismiss="modal" onclick="limpiar();">Close</button>
+              <button type="submit" class="btn btn-success btn-xs" id="guardar_registro">Guardar Cambios</button>
+            </div>
           </div>
         </div>
       </div>

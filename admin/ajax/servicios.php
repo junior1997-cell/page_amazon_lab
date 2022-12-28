@@ -93,7 +93,7 @@ if (!isset($_SESSION["nombre"])) {
         $data = [];
         $comprobante = '';
         $cont = 1;
-        $imagen_error = "this.src='../dist/svg/defaul_valor.png'";
+        $imagen_error = "this.src='../dist/svg/defaul_valor1.png'";
 
         if ($rspta['status']) {
 
@@ -111,9 +111,8 @@ if (!isset($_SESSION["nombre"])) {
                           <span class="d-block h5 mb-0">'. $reg->nombre_servicio .'</span>
                         </div>
                       </div>',
-              "2" =>  '<div class="bg-color-242244245 " style="overflow: auto; resize: vertical; height: 45px; width: 300px;" >'.$reg->descripcion .'</div>',
-              "3" => '<button class="btn btn-info btn-xs" onclick="ver_caracteristicas(\'' . $reg->idservicio . '\')"><i class="fas fa-list-ul"></i></button>',
-              //'<textarea name="textarea" rows="10" cols="50">Write something here</textarea>',
+              "2" =>  '<textarea class="classtextarea" name="textarea" rows="2">'.$reg->descripcion.'</textarea>',
+              "3" => '<button class="btn btn-info btn-xs" onclick="ver_caracteristicas(\'' . $reg->idservicio . '\',\'' . $reg->nombre_servicio . '\')"><i class="fa fa-list-ol" aria-hidden="true"></i></button>',
             ];
           }
           $results = [

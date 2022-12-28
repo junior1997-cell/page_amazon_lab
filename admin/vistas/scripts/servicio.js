@@ -124,38 +124,9 @@ function ver_img_perfil(img_perfil,nombre_servicio){
 }
 
 //ver caracteristicas
-function ver_caracteristicas(idservicio){
-  // console.log(idservicio+'  - '+idservicio);
-
-
+function ver_caracteristicas(idservicio,nombre_servicio){
+  $(".nombre_s").text(nombre_servicio);
   $("#modal-ver-caracteristicas").modal("show");
-
-  $.post("../ajax/servicios.php?op=mostrar_servicio", { idservicio: idservicio }, function (e, status) {
-
-    e = JSON.parse(e);  console.log(e);  
-
-    if (e.status == true) {
-
-      if (e.data.caracteristicas==null || caracteristicas=="" || e.data.caracteristicas=='<p><br></p>') {
-        $(".nombre_s").html(e.data.nombre_servicio);
-
-        $(".listar_caracteristicas").html(`<div class="col-lg-12">
-        <div class="cbp-item product">
-          <div class="alert alert-warning alert-dismissible fade show" role="alert">
-            <strong>Ninguna Característica por mostrar!</strong> puede editar el registro y agregar características.
-          </div>
-        </div>
-      </div>`);
-        
-      } else {
-        $(".nombre_s").html(e.data.nombre_servicio);
-        $(".listar_caracteristicas").html(e.data.caracteristicas);
-      }
-    } else {
-      ver_errores(e);
-    } 
-
-  }).fail( function(e) { console.log(e); ver_errores(e); } );
  
 }
 
