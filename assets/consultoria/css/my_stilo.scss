@@ -9,6 +9,10 @@ $grisClaroHover: #ACABAB;
 $azul: #3E60E9;
 $azulHover: #254BE6;
 $verdeWhatsapp: #319331 !important;
+$azulMarino: #101624;
+$amarillo: #EFAB00;
+$rosado: #FE013F;
+$rosa: #EE2D5C;
 
 $sombreDark: 10px 10px 20px rgba(170,170,170,.16);
 $sombreLight: 10px 10px 20px rgba(0,0,0,.16); 
@@ -19,7 +23,7 @@ $sombreLight: 10px 10px 20px rgba(0,0,0,.16);
     border-color: #f5ca99 !important;
 }
 
-.btn-youtube{ background-color: red !important; border-color: red !important; color: white !important; }
+/*.btn-youtube{ background-color: red !important; border-color: red !important; color: white !important; }
 .btn-youtube:hover{ background-color: white !important; border-color: white !important; color: red !important; }
 
 .btn-facebook{ background-color: #1235d9 !important; border-color: #1235d9 !important; color: white !important; }
@@ -29,7 +33,7 @@ $sombreLight: 10px 10px 20px rgba(0,0,0,.16);
 .btn-twiter:hover{ background-color: white !important; border-color: white !important; color: cyan !important; }
 
 .btn-whatsapp{ background-color: green !important; border-color: green !important; color: white !important; }
-.btn-whatsapp:hover{ background-color: white !important; border-color: white !important; color: green !important; }
+.btn-whatsapp:hover{ background-color: white !important; border-color: white !important; color: green !important; }*/
 
 /*  ══════════════════════════════════════════ - B A C K G R O U N D   P E R S O N A L I Z A D O - ══════════════════════════════════════════ */
 /* celeste */
@@ -73,66 +77,156 @@ $sombreLight: 10px 10px 20px rgba(0,0,0,.16);
 /*  ══════════════════════════════════════════ - BODY - ══════════════════════════════════════════ */
 
 body{
-    background: $blanco;
+    background: $negroFondo;
     font-family: 'Roboto', sans-serif;
     transition: .3s ease all;
 
-    &.dark {
-        background: $negroFondo;
-    }
+    //&.dark { background: $negroFondo;}
 } /* 100% */
 
 /*  ══════════════════════════════════════════ - NAV - ══════════════════════════════════════════ */
 .nav_dark {
-    background-color: $blanco;
-    border-radius: 5px;
-    justify-content: space-between;
-    align-items: center;
-    transition: .3s ease all;
-    box-shadow: $sombreDark;
+    background-color: $azulMarino;
+    font-family: 'Titillium Web';
+    //text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    border: $grisClaro;
+   
+    //box-shadow: $sombreDark;
     //color: $negro !important;
 
-    body.dark & {
+    /*body.dark & {
         background: $negro;
         box-shadow: $sombreLight;
         
-    }
+    }*/
 
 }
 
-.nav_dark_text {
-    color: $negroText !important;
-    body.dark & {
-        color: $grisClaro !important;
-    }
+.nav_dark * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+    color: $grisClaro;
 }
+
+.nav_dark li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: .5em 1em;
+
+}
+.nav_dark a {
+    padding: .5em .8em;
+    color: rgba(255,255,255,.5);
+    position: relative;
+    text-decoration: none;
+    font-size: 17px;
+    
+}
+.nav_dark a::before,
+.nav_dark a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+  
+}
+
+.nav_dark a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #FE013F !important;
+    border-right: 3px solid #ff245b !important;
+    transform: translate(-100%, 50%);
+    
+}
+.nav_dark a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #FE013F;
+    border-left: 3px solid #ff245b;
+    transform: translate(100%, -50%)
+}
+.nav_dark a:hover:before,
+.nav_dark a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+.nav_dark a:hover {
+    color: $rosado !important;
+}
+
+
 
 polygon {
-    background: $blanco !important;
-    body.dark & {
-        background: $negro !important;
-    }
+    background: $negroFondo !important;
+    /*body.dark & {
+        background: $negroFondo;
+    }*/
 }
 
 .dark_buttom_brochure {
-    background: $blanco;
+    background: $botonNegro !important;
+    color: $blanco;
+    border: $negro;
+    /*background: $blanco;
     body.dark & {
         background: $botonNegro;
         color: $blanco;
         border: $negro;
-    }
+    }*/
+}
+
+.dark_buttom_brochure:hover {
+    color: $rosa;
 }
 .dark_buttom_contac {
     
-    body.dark & {
+    background: $verdeWhatsapp;
+    color: $negro;
+    border: $verdeWhatsapp;
+    /*body.dark & {
         background: $verdeWhatsapp;
         color: $negro;
         border: $verdeWhatsapp;
-    }
+    }*/
+}
+
+.letra1 {
+    color: $blanco !important;
+}
+
+.letra2 {
+    color: $amarillo !important;
+}
+
+.letra3 {
+    color: $azulMarino;
+}
+
+.letra4 {
+    color: $rosa !important;
+}
+
+.card_1 {
+    background-color: $azulMarino !important;
+}
+
+.card_2 {
+    background-color: $azulMarino;
+}
+
+.color_logo {
+    color: $blanco;
 }
 
 /*  ══════════════════════════════════════════ - SWITCH - ══════════════════════════════════════════ */
-.switch{
+/*.switch{
     background: #343D5B;
     border-radius: 1000px;
     border: none;
@@ -171,7 +265,7 @@ polygon {
         background: none;
         color: #fff;
     }
-}
+}*/
 /*  ══════════════════════════════════════════ - SWITCH - ══════════════════════════════════════════ */
 
 
