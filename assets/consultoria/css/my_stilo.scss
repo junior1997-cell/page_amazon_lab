@@ -224,7 +224,12 @@ polygon {
 .color_logo {
     color: $blanco;
 }
-
+.button_color{
+    background: $amarillo;
+    border: 15px;
+    text-align: center;
+    font-weight: 600;
+}
 /*  ══════════════════════════════════════════ - SWITCH - ══════════════════════════════════════════ */
 /*.switch{
     background: #343D5B;
