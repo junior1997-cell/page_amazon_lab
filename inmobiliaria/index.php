@@ -204,9 +204,9 @@
     <div class="overflow-hidden" id="idservicios">
       <div class="container space-top-2">
         <!-- Title -->
-        <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+        <div class="w-md-80 text-center mx-md-auto mb-5 mb-md-9">
           <h2 style="font-family: GothamMedium;">Nuestros Servicios</h2>
-          <p  style="font-family: GothamLight;">Conozca nuestros servicios y comprenderá por qué la empresa Business inmobiliaria es mucho más que una simple empresa inmobiliaria.</p>
+          <p  style="font-family: GothamLight; font-size: 25px;">Conozca nuestros servicios y comprenderá por qué la empresa Business inmobiliaria es mucho más que una simple empresa inmobiliaria.</p>
         </div>
         <!-- End Title -->
 
@@ -394,7 +394,7 @@
 
           <div class="col-lg-6">
             <!-- Form -->
-            <form class="js-validate card shadow-lg mb-4" style="border: 6px solid #EDC452; border-radius: 30px; font-family: GothamLight;">
+            <form class="js-validate card shadow-lg mb-4" style="border: 6px solid #EDC452; font-family: GothamLight;">
               <div class="card-header border-0 bg-light text-center py-4 px-4 px-md-6">
                 <h2 class="h4 mb-0" style="color: black; font-size: 25px;">¡Escríbenos y te contactaremos! </h2>
               </div>
