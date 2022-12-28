@@ -109,17 +109,10 @@
                     <input type="hidden" name="idservicio" id="idservicio" />
 
                    <!-- Sub total -->
-                    <div class="col-lg-8">
+                    <div class="col-lg-12">
                       <div class="form-group">
                         <label for="Nombre">Nombre  <sup class="text-danger">*</sup></label>
                         <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Nombre"/>
-                      </div>
-                    </div>
-                    <!-- Sub total -->
-                    <div class="col-lg-4">
-                      <div class="form-group">
-                        <label for="precio">Precio  <sup class="text-danger">*</sup></label>
-                        <input class="form-control" type="number" id="precio" name="precio" placeholder="Precio"/>
                       </div>
                     </div>
                     <!--Descripcion-->
@@ -130,10 +123,9 @@
                       </div>
                     </div>
                     <!-- Form Group Características -->
-                    <div class="col-lg-12 col-sm-12">
+                    <!-- <div class="col-lg-12 col-sm-12">
                       <label class="col-sm-3 col-form-label input-label">Características</label>
                       <div class="form-group">
-                        <!-- Quill -->
                         <div class="quill-custom">
                           <div
                             class="js-quill"
@@ -150,11 +142,10 @@
                           <i class="fas fa-spinner fa-pulse fa-1x"></i>
                           </div>
                         </div>
-                        <!-- End Quill -->
                         <textarea class="d-none" name="caracteristicas" id="caracteristicas" cols="30" rows="10"></textarea>
                       </div>
                       
-                    </div>
+                    </div> -->
 
                     <!-- Factura -->
                     <div class="col-md-6">
