@@ -135,23 +135,7 @@ body{
   
 }
 
-.nav_dark a::before {
-    content: '';
-    right: 0;
-    top: 0;
-    border-top: 3px solid #FE013F !important;
-    border-right: 3px solid #ff245b !important;
-    transform: translate(-100%, 50%);
-    
-}
-.nav_dark a:after {
-    content: '';
-    left: 0;
-    bottom: 0;
-    border-bottom: 3px solid #FE013F;
-    border-left: 3px solid #ff245b;
-    transform: translate(100%, -50%)
-}
+
 .nav_dark a:hover:before,
 .nav_dark a:hover:after{
   transform: translate(0,0);
@@ -224,6 +208,14 @@ polygon {
 .color_logo {
     color: $blanco;
 }
+.button_color{
+    background: $amarillo;
+    border: 15px;
+    text-align: center;
+    font-weight: 600;
+    color: $blanco !important;
+}
+
 
 /*  ══════════════════════════════════════════ - SWITCH - ══════════════════════════════════════════ */
 /*.switch{
