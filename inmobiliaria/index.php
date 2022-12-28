@@ -96,12 +96,10 @@
                 <h1 style="font-family: GothamMedium; text-align: center;">Sobre Nosotros</h1>
                 <div class="historia">
                   <p style="font-family: GothamLight; font-size: 18px; text-align: justify; padding: 6px;">
-                    Pertenecemos a una organización líder con 50 años de experiencia en el mercado inmobiliario en España, el Grupo Romero Mora,
-                    especializado en la inversión y gestión de activos inmobiliarios<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. 
-                      Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, 
-                      sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. 
-                      Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-                      <div class="mx-auto" style="text-align: center;padding-bottom: 9px;"><button class="btn btn-info btn-xs" onclick="myFunction()" id="myBtn" style="font-family: GothamMedium;">Leer más</button></div>
+                  La inmobiliaria Business Wasi, es parte del grupo empresarial Business Wasi, cuyo objetivo es ayudarte a
+                  evaluar y definir tus alternativas de adquisición (consumo o inversión) en el mundo de bienes raíces<span id="dots">.</span><span id="more"> evaluar y 
+                  definir tus alternativas de adquisición (consumo o inversión) en el mundo de bienes raíces.</span></p>
+                      <div class="mx-auto" style="text-align: center;padding-bottom: 9px; display:none"><button class="btn btn-info btn-xs" onclick="myFunction()" id="myBtn" style="font-family: GothamMedium;">Leer más</button></div>
                       
                 </div>
               </div>
@@ -112,14 +110,14 @@
                 <div class="col-lg-6 containerr">
                   <img src="../assets/inmobiliaria/img/vision2.png" class="image" style="width: 100%;" />
                   <div class="middle">
-                    <div class="text" style="font-family: GothamLight;">Liderar el mercado inmobiliario de la región con estrategias innovadoras que nos mantengan a la vanguardia en cada servicio ofrecido.</div>
+                    <div class="text" style="font-family: GothamLight;">Ser la empresa referente en alternativas de inversión en el mundo de bienes raíces.</div>
                   </div>
                 </div>
 
                 <div class="col-lg-6 containerr">
                   <img src="../assets/inmobiliaria/img/mision2.png" class="image" style="width: 100%;" />
                   <div class="middle">
-                    <div class="text" style="font-family: GothamLight;">Ofrecer productos inmobiliarios de manera confiable y segura para cumplir con las expectativas y necesidades de nuestros clientes.</div>
+                    <div class="text" style="font-family: GothamLight;">Somos la unidad de negocios comprometida en ayudarte a alcanzar tus metas financieras en bienes raíces.</div>
                   </div>
                 </div>
               </div>
@@ -213,10 +211,9 @@
         <!-- End Title -->
 
         <div class="row">
-          <div class="col-lg-8 mb-7 mb-lg-0">
+          <!-- <div class="col-lg-8 mb-7 mb-lg-0">
             <div class="row">
               <div class="col-sm-6 mb-3 mb-sm-7">
-                <!-- Icon Blocks -->
                 <div class="pr-lg-6">
                   <figure class="max-w-6rem w-100 mb-4">
                     <img class="img-fluid" src="../assets/svg/icons/icon-2.svg" alt="SVG">
@@ -224,11 +221,9 @@
                   <h3 class="h4" style="font-family: GothamMedium;">Servicio 1</h3>
                   <p class="text-body"  style="font-family: GothamLight;">This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.</p>
                 </div>
-                <!-- End Icon Blocks -->
               </div>
 
               <div class="col-sm-6 mb-3 mb-sm-7">
-                <!-- Icon Blocks -->
                 <div class="pr-lg-6">
                   <figure class="max-w-6rem w-100 mb-4">
                     <img class="img-fluid" src="../assets/svg/icons/icon-2.svg" alt="SVG">
@@ -236,11 +231,9 @@
                   <h4 style="font-family: GothamMedium;">Servicio 2</h4>
                   <p class="text-body"  style="font-family: GothamLight;">Now that we've aligned the details, it's time to get things mapped out and organized.</p>
                 </div>
-                <!-- End Icon Blocks -->
               </div>
 
               <div class="col-sm-6 mb-3 mb-sm-0">
-                <!-- Icon Blocks -->
                 <div class="pr-lg-6">
                   <figure class="max-w-6rem w-100 mb-4">
                     <img class="img-fluid" src="../assets/svg/icons/icon-2.svg" alt="SVG">
@@ -248,11 +241,9 @@
                   <h4 style="font-family: GothamMedium;">Servicio 3</h4>
                   <p class="text-body"  style="font-family: GothamLight;">We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
                 </div>
-                <!-- End Icon Blocks -->
               </div>
 
               <div class="col-sm-6 mb-sm-0">
-                <!-- Icon Blocks -->
                 <div class="pr-lg-6">
                   <figure class="max-w-6rem w-100 mb-4">
                     <img class="img-fluid" src="../assets/svg/icons/icon-2.svg" alt="SVG">
@@ -260,13 +251,11 @@
                   <h4 style="font-family: GothamMedium;">Servicio 4</h4>
                   <p class="text-body"  style="font-family: GothamLight;">Staying focused allows us to turn every project we complete into something we love.</p>
                 </div>
-                <!-- End Icon Blocks -->
               </div>
             </div>
           </div>
 
           <div class="col-sm-8 col-md-6 col-lg-4">
-            <!-- Article -->
             <article class="position-relative">
               <a class="card shadow-none bg-img-hero w-100 min-h-450rem transition-3d-hover" href="#" style="background-image: url(../assets/inmobiliaria/img/servicios1.jpg);">
                 <div class="card-body">
@@ -275,17 +264,114 @@
                 </div>
 
               </a>
-
-              <!-- SVG Elements -->
               <figure class="max-w-19rem w-100 position-absolute bottom-0 right-0 z-index-n1">
                 <div class="mb-n7 mr-n7">
                   <img class="img-fluid" src="../assets/svg/components/dots-2.svg" alt="Image Description">
                 </div>
               </figure>
-              <!-- End SVG Elements -->
             </article>
-            <!-- End Article -->
+          </div> -->
+
+          <!-- Features Section -->
+          <div class="container mx-auto">
+              <div class="border-bottom space-1 space-lg-1">
+                  <div class="row align-items-lg-center">
+                      <div class="col-lg-6 order-lg-2 mb-7 mb-lg-0">
+                          <div class="pl-lg-5">
+                              <div class="bg-soft-danger rounded-lg p-4"  style="background-color: rgb(246 192 74)!important;">
+                                  <!-- Nav -->
+                                  <img class="img-fluid" src="../assets/inmobiliaria/img/servicio1.png" alt="Image Description" style="border-radius: 20px;" />
+                                  <!-- End Tab Content -->
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="col-lg-6">
+                          <div class="mb-2">
+                              <h2 style="color: black;font-family: GothamMedium;">1. PLANIFICACIÓN FINANCIERA</h2>
+                              <p style="text-align: justify; font-family: GothamLight;">¿Quieres adquirir un terreno, casa, departamento o local comercial? pero... ¿No sabes cómo financiarla?.</p>
+                              <h3 style="color: black; text-align: center; font-family: GothamMedium;">¡No te preocupes!.</h3>
+                            </div>
+
+                          <!-- List -->
+                          <div class="row mb-4 contenido">
+                              <div class="col-12">
+                                  <div class="media text-body mb-3">
+                                      <i class="fas fa-check-circle mt-1 mr-2" style="color: #f4b222;"></i>
+                                      <div class="media-body" style="text-align: justify; font-family: GothamLight;">
+                                      Te asesoramos en las distintas alternativas de financiamiento para tu terreno, casa, 
+                                      departamento o local comercial. A través de una reunión consultiva de 1 hora, te brindaremos 
+                                      la alternativa financiera más económica y rentable del mercado adaptada a tus necesidades y acorde 
+                                      a tus flujos netos, buscando alternativas tanto en el mercado financiero Tradicional (Bancos, Cajas, CRAC, etc) 
+                                      como en el No Tradicional (Fintech, Crowdfunding, Crowdlending, etc).
+                                      </div>
+                                  </div>
+                                  <div class="media text-body mb-3" style="font-family: GothamLight;">
+                                      <i class="fas fa-check-circle mt-1 mr-2" style="color: #ec9a3c00!important;"></i>
+                                      <div class="media-body " >
+                                        Separa una cita y lo coordinamos: <a style="font-size: 15px; font-family: GothamLight;" target="_blank" href="https://calendly.com/kerrylewis7">https://calendly.com/kerrylewis7</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- End List -->
+
+                          <!-- <a class="font-weight-bold" href="#">Quiero mas <i class="fas fa-angle-right fa-sm ml-1"></i></a> -->
+                      </div>
+                  </div>
+              </div>
           </div>
+          <!-- End Features Section -->
+
+          <!-- Features Section -->
+          <div class="container">
+              <div class="border-bottom space-0 space-lg-2">
+                  <div class="row align-items-lg-center">
+                      <div class="col-lg-6 order-lg-1 mb-7 mb-lg-0">
+                          <div class="pl-lg-5">
+                              <div class="bg-warning rounded-lg p-4 class-min-height" style="background-color: rgb(246 192 74)!important;">
+                                  <!-- Nav -->
+                                  <img class="img-fluid" src="../assets/inmobiliaria/img/servicio2.png" alt="Image Description" style="border-radius: 20px;" />
+                                  <!-- End Tab Content -->
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="col-lg-6 order-lg-2">
+                          <div class="mb-2">
+                              <h2 class="titulos" style="font-family: GothamMedium;">2. CORRETAJE Y GESTIÓN DE PROPIEDADES</h2>
+                              <p class="contenido" style="text-align: justify;font-family: GothamLight;">¿Tienes una propiedad que no está generando ingresos?.</p>
+                          </div>
+
+                          <!-- List -->
+                          <div class="row mb-4 contenido"  style="font-family: GothamLight;">
+                              <div class="col-12"  style="text-align: justify;">
+                                  <div class="media text-body mb-3">
+                                      <i class="fas fa-check-circle text-warning mt-1 mr-2"></i>
+                                      <div class="media-body">
+                                        Te conseguimos el inquilino y administramos tu propiedad, o si lo decides vender te acompañamos en todo el proceso de venta.
+                                      </div>
+                                  </div>
+                                  <div class="media text-body mb-3"  style="font-family: GothamLight;">
+                                      <i class="fas fa-check-circle text-warning mt-1 mr-2" style="color:#ec9a3c00!important;"></i>
+                                      <div class="media-body">
+                                         Separa una cita y lo coordinamos: <a target="_blank" href="https://calendly.com/kerrylewis7">https://calendly.com/kerrylewis7</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- End List -->
+
+                          <!-- <a class="font-weight-bold" href="#">Quiero mas <i class="fas fa-angle-right fa-sm ml-1"></i></a> -->
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- End Features Section -->
+
+
+
+
         </div>
       </div>
     </div>
@@ -362,7 +448,7 @@
                   </div>
                 </div>
 
-                <a type="submit" id="btn_enviarwhats" class="btn btn-block btn-warning transition-3d-hover" href="#" target="_blank" style="font-size: 25px;"></i>Enviar</a>
+                <a type="submit" id="btn_enviarwhats" class="btn btn-block btn-warning transition-3d-hover" href="#" onclick="limpia_formulario_whatsapp();" target="_blank" style="font-size: 25px;"></i>Enviar</a>
               </div>
             </form>
             <!-- End Form -->
@@ -453,7 +539,7 @@
     <!-- boton flotante de whatsap  -->
     <div
             class="whatsappme whatsappme--right"
-            data-settings='{"telephone":"51921305769","mobile_only":false,"button_delay":1,"whatsapp_web":false,"message_text":"Hola!\nen que podemos ayudarte","message_delay":2,"message_badge":false,"message_send":""}'
+            data-settings='{"telephone":"+51944411328","mobile_only":false,"button_delay":1,"whatsapp_web":false,"message_text":"Hola!\nen que podemos ayudarte","message_delay":2,"message_badge":false,"message_send":""}'
         >
         <div class="whatsappme__button">
             <svg class="whatsappme__button__open" viewBox="0 0 24 24">
@@ -606,6 +692,24 @@
         var goTo = new HSGoTo($(this)).init();
       });
     });
+
+    function form_whatsapp(){
+      var nombres=$('#nombres').val();
+      var apeliidos=$('#apellidos').val();
+      var correo=$('#correo').val();
+      var descripcion=$('#descripcion').val();
+
+       
+       console.log(nombres, apeliidos, correo, descripcion);
+
+       $('#btn_enviarwhats').attr('href',`https://api.whatsapp.com/send?phone=+51944411328&text=*Hola, Soy* ${nombres}, ${apeliidos}, *con correo:* ${correo}, *mi consulta es:* ${descripcion}!!`);
+    }
+    function limpia_formulario_whatsapp(){
+      $('#nombres').val('');
+      $('#apellidos').val('');
+      $('#correo').val('');
+      $('#descripcion').val('');
+    }
   </script>
 
   <!-- IE Support -->

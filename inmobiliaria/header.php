@@ -10,7 +10,7 @@
         <nav class="js-mega-menu navbar navbar-expand-lg">
           <!-- Logo -->
           <a class="navbar-brand" href="index.php" aria-label="Front">
-            <img src="../assets/inmobiliaria/svg/logos/busines-wassi-inmobiliaria.svg" alt="Logo" style="width: 50%;">
+            <img src="../assets/inmobiliaria/svg/logos/busines-wassi-inmobiliaria.svg" alt="Logo" style="width: 70%;">
           </a>
           <!-- End Logo -->
 

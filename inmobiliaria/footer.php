@@ -36,7 +36,7 @@
                                         <span class="media">
                                             <span class="fas fa-phone-alt mt-1 mr-2"></span>
                                             <span class="media-body">
-                                                944 411 328
+                                                +51 944 411 328
                                             </span>
                                         </span>
                                     </a>

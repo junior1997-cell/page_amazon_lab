@@ -111,7 +111,7 @@
                   </div>
                 </div>
 
-                <a type="submit" id="btn_enviarwhats" class="btn btn-block transition-3d-hover text-white titulos" style= "background-color: #1f0453;" href="#" target="_blank"></i>Enviar</a>
+                <a type="submit" id="btn_enviarwhats" class="btn btn-block transition-3d-hover text-white titulos" style= "background-color: #1f0453;" onclick="limpia_formulario_whatsapp();" href="#" target="_blank"></i>Enviar</a>
               </div>
             </form>
             <!-- End Form -->
@@ -224,7 +224,13 @@
        
        console.log(nombres, apeliidos, correo, descripcion);
 
-       $('#btn_enviarwhats').attr('href',`https://api.whatsapp.com/send?phone=+51921305769&text=*Hola, Soy* ${nombres}, ${apeliidos}, *con correo:* ${correo}, *mi consulta es:* ${descripcion}!!`);
+       $('#btn_enviarwhats').attr('href',`https://api.whatsapp.com/send?phone=+51944411328&text=*Hola, Soy* ${nombres}, ${apeliidos}, *con correo:* ${correo}, *mi consulta es:* ${descripcion}!!`);
+    }
+    function limpia_formulario_whatsapp(){
+      $('#nombres').val('');
+      $('#apellidos').val('');
+      $('#correo').val('');
+      $('#descripcion').val('');
     }
 
   </script>
