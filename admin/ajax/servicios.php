@@ -26,7 +26,6 @@ if (!isset($_SESSION["nombre"])) {
     $idservicio = isset($_POST["idservicio"]) ? limpiarCadena($_POST["idservicio"]) : "";
     $nombre = isset($_POST["nombre"]) ? limpiarCadena($_POST["nombre"]) : "";
     $descripcion = isset($_POST["descripcion"]) ? limpiarCadena($_POST["descripcion"]) : "";
-    $caracteristicas = isset($_POST["caracteristicas"]) ? limpiarCadena($_POST["caracteristicas"]) : "";
 
     $foto2 = isset($_POST["doc1"]) ? limpiarCadena($_POST["doc1"]) : "";
 
@@ -54,7 +53,7 @@ if (!isset($_SESSION["nombre"])) {
 
         if (empty($idservicio)) {
           
-          $rspta = $servicios->insertar($id_paginaweb,$nombre, $descripcion, $caracteristicas, $imagen_perfil);
+          $rspta = $servicios->insertar($id_paginaweb,$nombre, $descripcion, $imagen_perfil);
           echo json_encode($rspta, true);
 
         } else {
@@ -71,7 +70,7 @@ if (!isset($_SESSION["nombre"])) {
             }
           }
 
-          $rspta = $servicios->editar($idservicio, $id_paginaweb, $nombre, $descripcion, $caracteristicas, $imagen_perfil);
+          $rspta = $servicios->editar($idservicio, $id_paginaweb, $nombre, $descripcion, $imagen_perfil);
           echo json_encode($rspta, true);
 
         }
@@ -110,11 +109,11 @@ if (!isset($_SESSION["nombre"])) {
                         </div>
                         <div class="media-body">
                           <span class="d-block h5 mb-0">'. $reg->nombre_servicio .'</span>
-                          <small class="d-block text-muted"><b>Precio:</b> S/ 56.00</small>
                         </div>
                       </div>',
-              "2" => '<div class="bg-color-242244245 " style="overflow: auto; resize: vertical; height: 45px;" >'.$reg->descripcion .'</div>',
+              "2" =>  '<div class="bg-color-242244245 " style="overflow: auto; resize: vertical; height: 45px; width: 300px;" >'.$reg->descripcion .'</div>',
               "3" => '<button class="btn btn-info btn-xs" onclick="ver_caracteristicas(\'' . $reg->idservicio . '\')"><i class="fas fa-list-ul"></i></button>',
+              //'<textarea name="textarea" rows="10" cols="50">Write something here</textarea>',
             ];
           }
           $results = [

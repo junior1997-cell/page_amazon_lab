@@ -43,9 +43,7 @@ function limpiar() {
   $("#idservicio").val("");
   $("#nombre").val("");
   $("#precio").val("");
-  $("#descripcion").val(""); 
-  $("#caracteristicas").val("");
-  $(".clss_caracteristicas").html("");
+  $("#descripcion").val("");
 
   $("#doc_old_1").val("");
   $("#doc1").val("");  
@@ -164,7 +162,6 @@ function ver_caracteristicas(idservicio){
 //Función para guardar o editar
 function guardaryeditar(e) {
   // e.preventDefault(); //No se activará la acción predeterminada del evento
-  $("#caracteristicas").val($(".clss_caracteristicas").html());
   var formData = new FormData($("#form-servicios")[0]);
  
   $.ajax({
@@ -230,10 +227,7 @@ function mostrar(idservicio) {
       $("#id_paginaweb").val(e.data.idpagina_web);
       $("#idservicio").val(e.data.idservicio);
       $("#nombre").val(e.data.nombre_servicio);
-      $("#precio").val(e.data.precio);
       $("#descripcion").val(e.data.descripcion);
-      $("#caracteristicas").val(e.data.caracteristicas);
-      $(".clss_caracteristicas").html(e.data.caracteristicas);
       
       if (e.data.icono == "" || e.data.icono == null  ) {
 

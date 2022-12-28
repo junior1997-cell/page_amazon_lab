@@ -69,7 +69,7 @@
                                     </li>
                                     <!-- Pages -->
                                     <li class="navbar navbar-white">
-                                        <a id="pagesMegaMenu" href="#" aria-haspopup="true" aria-expanded="false" class="hover_morado text-white" ><b>Cursos</b></a>
+                                        <a id="pagesMegaMenu" href="http://businesswasi.com/estrategia_digital/moodle_v1/" aria-haspopup="true" aria-expanded="false" class="hover_morado text-white" ><b>Cursos</b></a>
                                         <!-- Pages - Submenu -->
                                         <div id="pagesSubMenu" class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 230px;"></div>
                                         <div class="col-lg-6"></div>
