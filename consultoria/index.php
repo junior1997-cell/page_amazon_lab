@@ -1,117 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<!-- Mirrored from htmlstream.com/front/landing-app-payment.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 May 2021 14:18:13 GMT -->
-<head>
-  <!-- Title -->
-  <title>Nosotros | Consultoria</title>
-
-  <!-- Required Meta Tags Always Come First -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="../assets/consultoria/svg/ico-consultoria.svg">
-
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"/>
-
-  <!-- CSS Implementing Plugins -->
-  <link rel="stylesheet" href="../assets/css/vendor.min.css">
-
-  <!-- Font Awesome -->
-  <!-- <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css" /> -->
-  <link rel="stylesheet" href="../assets/css/fontawesome-free-6.2.0/css/all.min.css" />
-
-  <!-- IonIcons -->
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-
-  <!-- CSS Front Template -->
-  <link rel="stylesheet" href="../assets/css/theme.minc619.css?v=1.0">
-
-  <!-- mi stilo -->
-  <link rel="stylesheet" href="../assets/consultoria/css/boton-flotante-w.css">
-  <link rel="stylesheet" href="../assets/consultoria/css/my_stilo.css">
-  
-</head>
-<body style="background: #0f0f0fde !important;">
-  <!-- ========== HEADER ========== -->
-  <header id="header" class="header header-box-shadow-on-scroll header-abs-top header-white-nav-links-lg header-bg-transparent header-show-hide"
-          data-hs-header-options='{
-            "fixMoment": 1000,
-            "fixEffect": "slide"
-          }'>
-    <div class="nav_dark" >
-      <!-- Topbar -->
-      
-      <!-- End Topbar -->
-
-      <div id="logoAndNav" class="container">
-        <!-- Nav -->
-        <nav class="navbar navbar-expand-lg mt-3">
-          <!-- Logo -->
-          <a class="navbar-brand" href="index.html" aria-label="Front">
-            <img src="../assets/consultoria/svg/busines-wassi-amarillo.svg" alt="Logo" style="width: 150px !important; color: white;">
-          </a>
-          <!-- End Logo -->
-
-          <!-- Responsive Toggle Button -->
-          <button type="button" class="navbar-toggler btn btn-icon btn-sm btn-soft-secondary rounded-circle"  aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
-            <span class="navbar-toggler-default">
-              <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                <path fill="currentColor" d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z"/>
-              </svg>
-            </span>
-            <span class="navbar-toggler-toggled">
-              <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
-              </svg>
-            </span>
-          </button>
-          <!-- End Responsive Toggle Button -->
-
-          <!-- Navigation -->
-          <div id="navBar" class="collapse navbar-collapse navBar">
-            <ul class="navbar-nav">
-              <li class="navbar-nav-item">
-                <a class="nav-link active" href="index.html">Nosotros</a>
-              </li>
-
-              <!-- Property Pages -->
-              <li class="navbar-nav-item">
-                <a class="nav-link" href="servicios.html">Servicios</a>
-              </li>
-              <!-- End Property Pages -->
-
-              <li class="navbar-nav-item">
-                <a class="nav-link" href="contactanos.html">Contáctanos</a>
-              </li>
-
-              <!--===========================BOTON MOODLE================================-->
-              <a href="http://businesswasi.com/estrategia_digital/moodle_v1/">
-                <button type="button" class=" btn btn-outline-secondary button_color">
-                  <i class="fa-solid fa-user-graduate text-dark" style="color: #fff !important;"></i>
-                  Cursos
-                </button>
-              </a> 
-              
-
-              <!--<button class="switch" id="switch">
-                <span><i class="fa-solid fa-sun"></i></span>
-                <span><i class="fa-solid fa-moon"></i></span>
-              </button>-->
-              
-            </ul>
-          </div>
-          <!-- End Navigation -->
-        </nav>
-        <!-- End Nav -->
-      </div>
-    </div>
-  </header>
-  <!-- ========== END HEADER ========== -->
-
+<?php require 'head.php'; require 'header.php'; ?>
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main" >
     <!-- Hero Section -->
@@ -134,13 +21,13 @@
                         }'></span>
                 </span>
                 <br>
-                tu negocio con estrategias integradas!
+                Tu negocio con estrategias integradas!
               </h1>
               <p class="text-white-70 letra3">Brochure para emprendedores.</p>
             </div>
 
             <a class="btn btn-light btn-wide btn-pill shadow-soft transition-3d-hover mb-2 mb-sm-0 mr-4 dark_buttom_brochure" href="" download="Brochure"><i class="fas fa-download"></i> Descargar Brochure</a>
-            <a class="btn btn-success btn-wide btn-pill transition-3d-hover mb-2 mb-sm-0 dark_buttom_contac" href="#"><i class="fab fa-whatsapp"></i> Contactanos</a>
+            <a class="btn btn-success btn-wide btn-pill transition-3d-hover mb-2 mb-sm-0 dark_buttom_contac" href="#"><i class="fab fa-whatsapp"></i> Contáctanos</a>
             <!-- End Info -->
           </div>
 
@@ -187,7 +74,7 @@
 
       <figure class="position-absolute bottom-0 right-0 left-0">
         <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1921 273">
-          <polygon fill="#0f0f0f" points="0,273 1921,273 1921,0 " style="fill: #2e2e2e !important; "/>
+          <polygon fill="#0f0f0f" points="0,273 1921,273 1921,0 "/>
         </svg>
       </figure>
       <!-- End SVG Shape -->
@@ -199,7 +86,7 @@
       <!-- Title -->
       <div class="w-lg-50 text-center mx-lg-auto">
         <h2 class="letra1" style="font-size: 35px;">Somos Consultoría, Bussines Wassi.</h2>
-        <p class="letra2" style="font-size: 60px;">Bienvenido</p>
+        <p class="letra2" style="font-size: 60px;">Bienvenidos</p>
       </div>
       <!-- End Title -->
       <div class="row justify-content-lg-between align-items-lg-center" style="border-bottom: 1px solid #e37d2a; margin-bottom: 10px;">
@@ -372,122 +259,6 @@
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
 
-  <!-- ========== FOOTER ========== -->
-  <footer class="container space-2 space-top-lg-3">
-    <!-- Links -->
-    <div class="row mb-11">
-      <div class="col-md-3 mb-5 mb-md-0">
-        <div class="mb-4">
-          <h5 class="letra1">Get our mobile app</h5>
-        </div>
-
-        <a class="btn btn-icon btn-indigo rounded-circle mr-2" href="#">
-          <i class="fab fa-apple"></i>
-        </a>
-        <a class="btn btn-icon btn-indigo rounded-circle" href="#">
-          <i class="fab fa-google-play"></i>
-        </a>
-      </div>
-
-      <div class="col-sm-4 col-md-3 mb-3 mb-sm-0">
-        <!-- Nav Links -->
-        <ul class="nav nav-sm nav-x-0 flex-column">
-          <li class="nav-item"><a class="nav-link" href="page-about-agency.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="page-services-agency.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="page-careers.html">Careers <span class="badge badge-success badge-pill ml-1">We're hiring</span></a></li>
-          <li class="nav-item"><a class="nav-link" href="blog-newsroom.html">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="shop-classic.html">Shop with us</a></li>
-        </ul>
-        <!-- End Nav Links -->
-      </div>
-
-      <div class="col-sm-4 col-md-3 mb-3 mb-sm-0">
-        <!-- Nav Links -->
-        <ul class="nav nav-sm nav-x-0 flex-column">
-          <li class="nav-item"><a class="nav-link" href="#">Account</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">My tasks</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Edit profile</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Activity</a></li>
-        </ul>
-        <!-- End Nav Links -->
-      </div>
-
-      <div class="col-sm-4 col-md-3 mb-3 mb-sm-0">
-        <!-- Nav Links -->
-        <ul class="nav nav-sm nav-x-0 flex-column">
-          <li class="nav-item">
-            <a class="nav-link" href="page-pricing.html" target="_blank">
-              Pricing
-              <i class="fas fa-external-link-alt fa-xs ml-1"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="demo-help-desk/index.html" target="_blank">
-              Help
-              <i class="fas fa-external-link-alt fa-xs ml-1"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="page-terms.html" target="_blank">
-              Terms &amp; Conditions
-              <i class="fas fa-external-link-alt fa-xs ml-1"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="page-privacy.html" target="_blank">
-              Privacy &amp; Policy
-              <i class="fas fa-external-link-alt fa-xs ml-1"></i>
-            </a>
-          </li>
-        </ul>
-        <!-- End Nav Links -->
-      </div>
-    </div>
-    <!-- End Links -->
-
-    <!-- Copyright -->
-    <div class="row align-items-sm-center">
-      <div class="col-sm-6 mb-4 mb-sm-0">
-        <p class="small mb-0">&copy; Front. 2020 Htmlstream. All rights reserved.</p>
-      </div>
-
-      <div class="col-sm-6 text-sm-right">
-        <!-- Social Networks -->
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item mb-2 mb-sm-0">
-            <a class="btn btn-xs btn-icon btn-soft-indigo rounded-circle" href="#">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li class="list-inline-item mb-2 mb-sm-0">
-            <a class="btn btn-xs btn-icon btn-soft-indigo rounded-circle" href="#">
-              <i class="fab fa-google"></i>
-            </a>
-          </li>
-          <li class="list-inline-item mb-2 mb-sm-0">
-            <a class="btn btn-xs btn-icon btn-soft-indigo rounded-circle" href="#">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li class="list-inline-item mb-2 mb-sm-0">
-            <a class="btn btn-xs btn-icon btn-soft-indigo rounded-circle" href="#">
-              <i class="fab fa-github"></i>
-            </a>
-          </li>
-          <li class="list-inline-item mb-2 mb-sm-0">
-            <a class="btn btn-xs btn-icon btn-soft-indigo rounded-circle" href="#">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
-        </ul>
-        <!-- End Social Networks -->
-      </div>
-    </div>
-    <!-- End Copyright -->
-  </footer>
-  <!-- ========== END FOOTER ========== -->
-
   <div class="container-btn-redes">
     <!--<input type="checkbox" id="btn-mas">-->
     <div class="redes">
@@ -510,14 +281,8 @@
         
       </ul>
     </div>
-    
-    <!--<div class="redes">
-      <a href="https://www.facebook.com/" target="_blank" class="fab fa-facebook-f fa-lg icon" style='font-size:20px'></a> <br>
-      <a href="https://www.youtube.com/" target="_blank" class="fab fa-youtube fa-lg icon" style='font-size:20px'></a> <br>
-      <a href="https://web.whatsapp.com/" target="_blank" class="fab fa-whatsapp fa-lg icon" style='font-size:20px'></a> <br>
-    </div>-->
   </div>
-
+  <?php include_once 'footer.php'; ?>
   <!-- Go to Top -->
   <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;"
      data-hs-go-to-options='{
@@ -599,5 +364,4 @@
   </script>
 </body>
 
-<!-- Mirrored from htmlstream.com/front/landing-app-payment.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 May 2021 14:18:16 GMT -->
 </html>
