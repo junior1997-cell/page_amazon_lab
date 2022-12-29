@@ -65,9 +65,10 @@
 
 .text {
   background-color: #EDC452;
-  color: white;
+  color: black;
   font-size: 16px;
   padding: 16px 32px;
+  font-weight: bold;
 }
 
 #more {display: none;}

@@ -110,14 +110,14 @@
                 <div class="col-lg-6 containerr">
                   <img src="../assets/inmobiliaria/img/vision2.png" class="image" style="width: 100%;" />
                   <div class="middle">
-                    <div class="text" style="font-family: GothamLight;">Ser la empresa referente en alternativas de inversión en el mundo de bienes raíces.</div>
+                    <div class="text text-black" style="font-family: GothamLight;">Ser la empresa referente en alternativas de inversión en el mundo de bienes raíces.</div>
                   </div>
                 </div>
 
                 <div class="col-lg-6 containerr">
                   <img src="../assets/inmobiliaria/img/mision2.png" class="image" style="width: 100%;" />
                   <div class="middle">
-                    <div class="text" style="font-family: GothamLight;">Somos la unidad de negocios comprometida en ayudarte a alcanzar tus metas financieras en bienes raíces.</div>
+                    <div class="text text-black" style="font-family: GothamLight;">Somos la unidad de negocios comprometida en ayudarte a alcanzar tus metas financieras en bienes raíces.</div>
                   </div>
                 </div>
               </div>
@@ -702,7 +702,7 @@
        
        console.log(nombres, apeliidos, correo, descripcion);
 
-       $('#btn_enviarwhats').attr('href',`https://api.whatsapp.com/send?phone=+51944411328&text=*Hola, Soy* ${nombres}, ${apeliidos}, *con correo:* ${correo}, *mi consulta es:* ${descripcion}!!`);
+       $('#btn_enviarwhats').attr('href',`https://api.whatsapp.com/send?phone=+51944411328&text=*Hola, Soy* ${nombres}, ${apeliidos}, *con correo:* ${correo}, *mi consulta es:* ${descripcion}, *estaba navegando en tu página Business Wasi Inmobiliaria!!*`);
     }
     function limpia_formulario_whatsapp(){
       $('#nombres').val('');
