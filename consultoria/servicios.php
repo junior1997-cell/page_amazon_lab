@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from htmlstream.com/front/landing-app-saas.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 May 2021 14:18:06 GMT -->
+<head>
+  <!-- Title -->
+  <title>Servicios | Consultoria</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../assets/consultoria/svg/ico-consultoria.svg">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"/>
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="../assets/css/vendor.min.css">
+
+   <!-- Font Awesome -->
+  <!-- <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css" /> -->
+  <link rel="stylesheet" href="../assets/css/fontawesome-free-6.2.0/css/all.min.css" />
+
+  <!-- IonIcons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="../assets/css/theme.minc619.css?v=1.0">
+
+  <!-- mi stilo -->
+  <link rel="stylesheet" href="../assets/consultoria/css/boton-flotante-w.css">
+  <link rel="stylesheet" href="../assets/consultoria/css/my_stilo.css">
+</head>
+<body>
+  <!-- Search Content -->
+   
+  <!-- End Search Content -->
+
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="header header-box-shadow-on-scroll header-abs-top header-bg-transparent header-show-hide"
+          data-hs-header-options='{
+              "fixMoment": 1000,
+              "fixEffect": "slide"
+            }'>
+    <div class="nav_dark">
+      <!-- Topbar -->
+       
+      <!-- End Topbar -->
+
+      <div id="logoAndNav" class="container">
+        <!-- Nav -->
+        <nav class="navbar navbar-expand-lg mt-3">
+          <!-- Logo -->
+          <a class="navbar-brand" href="index.html" aria-label="Front">
+            <img src="../assets/consultoria/svg/busines-wassi-amarillo.svg" alt="Logo" style="width: 150px !important; color: white;">
+          </a>
+          <!-- End Logo -->
+
+          <!-- Responsive Toggle Button -->
+          <button type="button" class="navbar-toggler btn btn-icon btn-sm btn-soft-secondary rounded-circle"  aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+            <span class="navbar-toggler-default">
+              <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor" d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z"/>
+              </svg>
+            </span>
+            <span class="navbar-toggler-toggled">
+              <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
+              </svg>
+            </span>
+          </button>
+          <!-- End Responsive Toggle Button -->
+
+          <!-- Navigation -->
+          <div id="navBar" class="collapse navbar-collapse navBar">
+            <ul class="navbar-nav" style="color: #fff;">
+              <li class="navbar-nav-item">
+                <a class="nav-link " href="index.html">Nosotros</a>
+              </li>
+
+              <!-- Property Pages -->
+              <li class="navbar-nav-item">
+                <a class="nav-link active" href="servicios.html">Servicios</a>
+              </li>
+              <!-- End Property Pages -->
+
+              <li class="navbar-nav-item">
+                <a class="nav-link" href="contactanos.html">Contáctanos</a>
+              </li>
+
+              <!--========================BOTON MOODLE================================-->
+              <a href="http://businesswasi.com/estrategia_digital/moodle_v1/">
+                <button type="button" class=" btn btn-outline-secondary button_color">
+                  <i class="fa-solid fa-user-graduate text-dark" style="color: #fff !important;"></i>
+                  Cursos
+                </button>
+              </a> 
+              
+            </ul>
+          </div>
+          <!-- End Navigation -->
+        </nav>
+        <!-- End Nav -->
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Hero Section -->
+    <div class="position-relative bg-white overflow-hidden">
+      <div class="container position-relative z-index-2 space-top-3 space-top-lg-4 space-bottom-2 space-bottom-md-3">
+        <div class="row align-items-lg-center">
+          <div class="col-lg-5 mb-5 mb-lg-0">
+            <!-- Info -->
+            <div class="mb-5">
+              <h1 class="letra1" style="font-size: 45px;">Nuestros Servicios 2023</h1>
+              <p class="letra2">Conoce todos nuestro servicio actuales y aprovechalos al máximo.</p>
+            </div>
+
+            <a class="btn btn-light btn-wide btn-pill shadow-soft transition-3d-hover mb-2 mb-sm-0 mr-4 dark_buttom_brochure" href="" download="Brochure"><i class="fas fa-download"></i> Descargar Brochure</a>
+            <a class="btn btn-success btn-wide btn-pill transition-3d-hover mb-2 mb-sm-0 dark_buttom_contac" href="#"><i class="fab fa-whatsapp"></i> Contactanos</a>
+            <!-- End Info -->
+          </div>
+
+          <div class="col-lg-7">
+            <div class="position-relative">
+              <!-- Device Mockup -->
+              <div class="device d-none d-sm-block mb-3 mb-sm-0" data-aos="fade-up">
+                <img class="img-fluid fifth" src="../assets/svg/components/macbook.svg" alt="Image Description">
+                <img class="device-macbook-screen shadow-lg fifth1" src="../assets/consultoria/img/Imagen1.png" alt="Image Description">
+              </div>
+              <!-- End Device Mockup -->
+
+              <!-- Card Info -->
+              
+              <!-- Enc Card Info -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SVG Shape -->
+      <div class="fondo_inicio position-absolute top-0 right-0 bottom-0 left-0" ></div>
+
+      <figure class="position-absolute bottom-0 right-0 left-0">
+        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1921 273">
+          <polygon fill="#0f0f0f" points="0,273 1921,273 1921,0 "/>
+        </svg>
+      </figure>
+      <!-- End SVG Shape -->
+    </div>
+
+    <!-- End Hero Section -->
+
+    <!-- SVG Top Shape -->
+    <!-- <figure>
+      <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="64px"
+           viewBox="0 0 1921 273" style="margin-bottom: -8px; enable-background:new 0 0 1921 273;" xml:space="preserve">
+        <polygon fill="#f9fbff" points="0,273 1921,273 1921,0 "/>
+      </svg>
+    </figure> -->
+    <!-- End SVG Top Shape -->
+
+    <div id="aboutSection" class="container space-2 space-lg-2">
+      <!-- Title -->
+      <div class="w-lg-65 text-center mx-auto mb-5 mb-sm-9">
+        <h2 class="h1 letra1">Servicios</h2>
+        <p class="letra2">Los mejores servicios flexibles para las empresas modernas</p>
+      </div>
+      <!-- End Title -->
+
+      <div class="cont1">
+        <div class="card">
+          <img src="../assets/consultoria/img/img1.jpg" alt="">
+          <h3 class="letra1">Consultoría y Gestión empresarial</h3>
+          <p>¿Deseas mejorar el proceso productivo de tu empresa?, ¿Quieres mejorar la atención al cliente en tu negocio? ¿Tienes una idea de negocio y no sabes por donde iniciar?.</p>
+          <a href="">Leer más</a>
+        </div>
+
+        <div class="card">
+          <img src="../assets/consultoria/img/img2.jpg" alt="">
+          <h3 class="letra1">Formulación de Proyectos</h3>
+          <p>Contamos con un panel de expertos que te ayudarán a desarrollar tus ideas de negocio y presentarlo en los distintos fondos concursables para su financiamiento.</p>
+          <a href="">Leer más</a>
+        </div>
+
+        <div class="card">
+          <img src="../assets/consultoria/img/img3.jpg" alt="">
+          <h3 class="letra1">Escuela de Negocios</h3>
+          <p>¿Deseas fortalecer tus habilidades y competencias para los negocios?.</p>
+          <a href="">Leer más</a>
+        </div>
+
+      </div>
+
+      
+      
+    </div>
+
+    <!-- Features Section -->
+    <div class="container">
+      <div class="border-bottom space-2 space-lg-2">
+        <div class="row align-items-lg-center">
+
+          <div class="col-lg-6 order-lg-2 mb-7 mb-lg-0">
+            <div class="pl-lg-5">
+              <div class="bg-light rounded-lg min-h-450rem p-4">
+                <!-- Nav -->
+                <img class="img-fluid" src="../assets/consultoria/img/img_3.png" alt="Image Description">
+                <!-- End Tab Content -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 order-lg-1">
+            <div class="mb-5">
+              <h2 class="letra5">1.	CONSULTORÍA Y GESTIÓN EMPRESARIAL</h2>
+              <p class="letra1">Formamos un equipo de colaboradores creativos e innovadores, comprometidos en cada proyecto y 
+                reto que nos presentes. Nuestros profesionales están certificados internacionalmente y hacen uso de marcos de 
+                trabajos ágiles para acelerar y poner a prueba las soluciones como Design Thinking, SCRUM, Lean Startup.
+              </p>
+            </div>
+
+            <!-- List -->
+            <div class="row mb-4">
+              <div class="col-6">
+                <div class="media text-body mb-3">
+                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                  <div class="media-body">
+                    Diseño de perfil, portada e historias destacadas en redes sociales.
+                  </div>
+                </div>
+                <div class="media text-body mb-3">
+                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                  <div class="media-body">
+                    Mapa de contenido anual
+                  </div>
+                </div>
+                <div class="media text-body mb-3">
+                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                  <div class="media-body">
+                    Plan de contenido mensual
+                  </div>
+                </div>
+                <div class="media text-body mb-3">
+                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                  <div class="media-body">
+                    12 diseños (post e historia).
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="media text-body mb-3">
+                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                  <div class="media-body">
+                    Sesión fotográfica publicitaria.
+                  </div>
+                </div>
+                <div class="media text-body mb-3">
+                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                  <div class="media-body">
+                    Community Manager (8 horas)
+                  </div>
+                </div>
+                <div class="media text-body mb-3">
+                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                  <div class="media-body">
+                    Acompañamiento y reuniones online.
+                  </div>
+                </div>
+                <div class="media text-body mb-3">
+                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                  <div class="media-body">
+                    <span class="mr-1"></span>Consultoría en formalización de empresas </span> <span class="badge badge-primary badge-pill">(Regalo)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End List -->
+
+            <a class="font-weight-bold" href="#">Quiero mas <i class="fas fa-angle-right fa-sm ml-1"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Features Section -->
+
+    <!-- Features Section -->
+    <div class="container">
+      <div class="border-bottom space-2 space-lg-3">
+        <div class="row align-items-lg-center">
+
+          <div class="col-lg-6 order-lg-1 mb-7 mb-lg-0">
+            <div class="pl-lg-5">
+              <div class="bg-light rounded-lg min-h-450rem p-4">
+                <!-- Nav -->
+                <img class="img-fluid" src="../assets/consultoria/img/img_4.webp" alt="Image Description">
+                <!-- End Tab Content -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 order-lg-2">
+            <div class="mb-5">
+              <h2 class="letra5">2.	ASESORÍA Y ESCUELA DE NEGOCIOS</h2>
+              <p class="letra1"> La asesoría empresarial tiene origen en la necesidad por parte de las empresas de ser aconsejados y asesorados por profesionales expertos en determinadas materias.</p>
+            </div>
+
+            <!-- List -->
+            <div class="row mb-4">
+              <div class="col-6">
+                <div class="media text-body mb-3">
+                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                  <div class="media-body">
+                    3 talleres de especialización en marketing, negocios y empresas. En vivo y con certificación.
+                  </div>
+                </div>
+                <div class="media text-body mb-3">
+                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                  <div class="media-body">
+                    Acompañamiento y reuniones online
+                  </div>
+                </div>                
+              </div>
+
+              <div class="col-6">                
+                <div class="media text-body mb-3">
+                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                  <div class="media-body">
+                    <span class="mr-1"></span>Consultoría en formalización de empresas </span> <span class="badge badge-primary badge-pill">(Regalo)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End List -->
+
+            <a class="font-weight-bold" href="#">Quiero mas <i class="fas fa-angle-right fa-sm ml-1"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Features Section -->
+
+    <!-- Features Section -->
+    <div class="container">
+      <div class="border-bottom space-2 space-lg-3">
+        <div class="row align-items-lg-center">
+
+          <div class="col-lg-6 order-lg-2 mb-7 mb-lg-0">
+            <div class="pl-lg-5">
+              <div class="bg-light rounded-lg min-h-450rem p-4">
+                <!-- Nav -->
+                <img class="img-fluid" src="../assets/consultoria/img/img_5.png" alt="Image Description">
+                <!-- End Tab Content -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 order-lg-1">
+            <div class="mb-5">
+              <h2 class="letra5">3.	BRANDING</h2>
+              <p class="letra1">El branding, también conocido como gestión de marca, está conformado por un conjunto de acciones relacionadas con el posicionamiento.</p>
+            </div>
+
+            <!-- List -->
+            <div class="row mb-4">
+              <div class="col-6">
+                <div class="media text-body mb-3">
+                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                  <div class="media-body">
+                    Creación y diseño de logo.
+                  </div>
+                </div>
+                <div class="media text-body mb-3">
+                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                  <div class="media-body">
+                    Definición de línea gráfica.
+                  </div>
+                </div>
+                <div class="media text-body mb-3">
+                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                  <div class="media-body">
+                    Diseño de brochure informativo.
+                  </div>
+                </div>                
+              </div>
+
+              <div class="col-6">
+                <div class="media text-body mb-3">
+                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                  <div class="media-body">
+                    Diseño de tarjeta de presentación
+                  </div>
+                </div>                
+                
+                <div class="media text-body mb-3">
+                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                  <div class="media-body">
+                    <span class="mr-1"></span>+Impresión </span> <span class="badge badge-primary badge-pill">(50% descuento)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End List -->
+
+            <a class="font-weight-bold" href="#">Quiero mas <i class="fas fa-angle-right fa-sm ml-1"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Features Section -->
+    
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="container text-center space-1">
+    <!-- Logo -->
+    <a class="d-inline-flex align-items-center mb-2" href="index.html" aria-label="Front">
+      <!-- <img class="brand" src="../assets/svg/logos/logo-amazone-lab.svg" alt="Logo"> -->
+    </a>
+    <!-- End Logo -->
+
+    <p class="small text-muted mb-0">2022 © JDL Tecnology. Todos los derechos Reservados.</p>
+  </footer>
+  <!-- ========== END FOOTER ========== -->
+
+  <div class="container-btn-redes">
+    
+    <div class="redes">
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/" target="_blank">
+            <i class="fab fa-facebook-f fa-lg icon" style='font-size:20px; color: #0570e6;'></i>
+          </a> <br>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/" target="_blank">
+            <i class="fab fa-youtube fa-lg icon" style='font-size:20px; color: #c4302b;'></i>
+          </a> <br>
+        </li>
+        <li>
+          <a href="https://web.whatsapp.com/" target="_blank">
+            <i class="fab fa-whatsapp fa-lg icon" style='font-size:20px; color: #33B93F;'></i> 
+          </a> <br>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  <!-- Go to Top -->
+  <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;"
+     data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": 15
+         },
+         "show": {
+           "bottom": 15
+         },
+         "hide": {
+           "bottom": -15
+         }
+       }
+     }'>
+    <i class="fas fa-angle-up"></i>
+  </a>
+  <!-- End Go to Top -->
+
+
+  <!-- JS Implementing Plugins -->
+  <script src="../assets/js/vendor.min.js"></script>
+
+  <!-- JS Front -->
+  <script src="../assets/js/theme.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="../assets/consultoria/js/estilo.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      var header = new HSHeader($('#header')).init();
+
+
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      var megaMenu = new HSMegaMenu($('.js-mega-menu'), {
+        desktop: {
+          position: 'left'
+        }
+      }).init();
+
+
+      // INITIALIZATION OF TEXT ANIMATION (TYPING)
+      // =======================================================
+      var typed = $.HSCore.components.HSTyped.init(".js-text-animation");
+
+
+      // INITIALIZATION OF FANCYBOX
+      // =======================================================
+      $('.js-fancybox').each(function () {
+        var fancybox = $.HSCore.components.HSFancyBox.init($(this));
+      });
+
+
+      // INITIALIZATION OF AOS
+      // =======================================================
+      AOS.init({
+        duration: 650,
+        once: true
+      });
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      $('.js-go-to').each(function () {
+        var goTo = new HSGoTo($(this)).init();
+      });
+    });
+  </script>
+
+  <!-- IE Support -->
+  <script>
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="../assets/vendor/babel-polyfill/dist/polyfill.js"><\/script>');
+  </script>
+</body>
+
+<!-- Mirrored from htmlstream.com/front/landing-app-saas.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 May 2021 14:18:09 GMT -->
+</html>
