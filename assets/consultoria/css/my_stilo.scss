@@ -222,13 +222,20 @@ body{
     color: $rosa !important;
 }
 
+.fondo_inicio {
+    background-color: $azulMarino;
+}
+
 .card_1 {
     background-color: #192030 !important;
     border-radius: 10px;
 }
 
 .card_2 {
-    background-color: $azulMarino;
+    //margin: 5px;
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(200, 200, 200, .8);
+    //opacity: 0;
 }
 
 .color_logo {
@@ -243,6 +250,16 @@ body{
     border: none;
 }
 
+.fifth {
+    visibility: hidden;
+    opacity: .2;
+}
+
+.fifth1 {
+    border-radius: 10px;
+    height: 90%;
+    width: 87%;
+}
 
 .button_color:hover{
     background: $amarillo;
