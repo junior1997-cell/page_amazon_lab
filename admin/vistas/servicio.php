@@ -211,11 +211,8 @@
 
             <div class="modal-body">
               <h5 class="card-title">
-                <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#modal-agregar-detalle-servicios" onclick="limpiar();"><i class="fas fa-plus-circle"></i> Agregar</button>
+                <button type="button" class="btn btn-primary btn-xs mb-2" data-toggle="modal" data-target="#modal-agregar-detalle-servicios" onclick="limpiar_detalle();"><i class="fas fa-plus-circle"></i> Agregar</button>
               </h5>
-              <div class="listar_caracteristicas">
-                <p><i class="fas fa-spinner fa-pulse fa-1x"></i> Cargando ...</p>
-              </div>
               <table id="tabla-detalle-servicios" class="table table-bordered table-striped" style="width: 100% !important;">
                 <thead>
                   <tr>
@@ -233,7 +230,6 @@
                   </tr>
                 </tfoot>
               </table>
-
             </div>
 
           </div>
@@ -253,11 +249,11 @@
 
             <div class="modal-body" style="padding: 0px;" >
               <!-- form start -->
-              <form id="form-servicios" name="form-servicios" method="POST">
+              <form id="form-servicios-detalle" name="form-servicios-detalle" method="POST">
                 <div class="card-body">
-                  <div class="row" id="cargando-1-fomulario">
+                  <div class="row" id="cargando-3-fomulario">
                     <!--  idservicio -->
-                    <input type="hidden" name="idservicio" id="idservicio" />
+                    <input type="hidden" name="idservicio_d" id="idservicio_d" />
                     <!--  idservicio_detalle -->
                     <input type="hidden" name="idservicio_detalle" id="idservicio_detalle" />
 
@@ -271,7 +267,7 @@
                     
                   </div>
 
-                  <div class="row" id="cargando-2-fomulario" style="display: none;">
+                  <div class="row" id="cargando-4-fomulario" style="display: none;">
                     <div class="col-lg-12 text-center">
                       <i class="fas fa-spinner fa-pulse fa-6x"></i><br />
                       <br />
@@ -280,12 +276,12 @@
                   </div>
                 </div>
                 <!-- /.card-body -->
-                <button type="submit" style="display: none;" id="submit-form-servicios">Submit</button>
+                <button type="submit" style="display: none;" id="submit-form-servicios-detalle">Submit</button>
               </form>
             </div>
             <div class="modal-footer justify-content-between">
-              <button type="button" class="btn btn-danger btn-xs" data-dismiss="modal" onclick="limpiar();">Close</button>
-              <button type="submit" class="btn btn-success btn-xs" id="guardar_registro">Guardar Cambios</button>
+              <button type="button" class="btn btn-danger btn-xs" data-dismiss="modal" onclick="limpiar_detalle();">Close</button>
+              <button type="submit" class="btn btn-success btn-xs" id="guardar_registro_detalle">Guardar Cambios</button>
             </div>
           </div>
         </div>

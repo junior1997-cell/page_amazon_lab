@@ -47,6 +47,43 @@ Class Servicios
 		$sql="SELECT icono FROM servicio WHERE idservicio='$idservicio'";
 		return ejecutarConsultaSimpleFila($sql);		
 	}
+	//-------------------------------------------------------------------------------
+	//-------------------------------------------------------------------------------
+	public function insertar_detalle($idservicio_d, $descripcion)
+	{
+		//insertar registro servicio_detalle
+		$sql="INSERT INTO servicio_detalle(idservicio, descripcion)
+		VALUES ('$idservicio_d','$descripcion')";
+		return ejecutarConsulta($sql);
+	}
+
+	public function editar_detalle($idservicio_d, $idservicio_detalle, $descripcion)
+	{
+		//editar registro servicio_detalle
+		$sql="UPDATE servicio_detalle SET idservicio='$idservicio_d', descripcion='$descripcion'
+		 WHERE idservicio_detalle='$idservicio_detalle'";
+		return ejecutarConsulta($sql);
+
+	}
+
+	public function eliminar_detalle($idservicio_detalle)
+	{
+		$sql="DELETE FROM servicio_detalle WHERE idservicio_detalle ='$idservicio_detalle';";
+		return ejecutarConsulta($sql);
+	}
+
+	public function mostrar_detalle($idservicio_detalle )
+	{
+		$sql="SELECT*FROM servicio_detalle WHERE idservicio_detalle ='$idservicio_detalle'";
+		return ejecutarConsultaSimpleFila($sql);
+	}
+
+	public function listar_detalle($id)
+	{
+		$sql="SELECT*FROM servicio_detalle";
+		return ejecutarConsulta($sql);		
+	}
+
 		
 	//-------------------------------------------------------------------------------
 	//-------------------------------------------------------------------------------

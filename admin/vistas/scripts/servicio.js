@@ -1,4 +1,5 @@
 var tabla;
+var tabla1;
 var id_get = varaibles_get();
 var id =id_get.id;
 var carpeta =id_get.carpeta;
@@ -14,6 +15,7 @@ $(document).on("ready", function () {
   listar(id_get.id);  
 
   $("#guardar_registro").on("click", function (e) {$("#submit-form-servicios").submit();});
+  $("#guardar_registro_detalle").on("click", function (e) {$("#submit-form-servicios-detalle").submit();});
 
 });
 
@@ -121,13 +123,6 @@ function ver_img_perfil(img_perfil,nombre_servicio){
  
    }
 
-}
-
-//ver caracteristicas
-function ver_caracteristicas(idservicio,nombre_servicio){
-  $(".nombre_s").text(nombre_servicio);
-  $("#modal-ver-caracteristicas").modal("show");
- 
 }
 
 //Función para guardar o editar
@@ -240,24 +235,122 @@ function eliminar(idservicio) {
         Swal.fire("Eliminado!", "Tu registro ha sido Eliminado.", "success");
     
         tabla.ajax.reload();
-        total();
       });      
     }
   });   
 }
+// =======================================================
+// =======================================================
+//          C R U D  C A R A C T E R I S T I C A S
+// =======================================================
+// =======================================================
+//ver caracteristicas
+function ver_caracteristicas(idservicio,nombre_servicio){
+  $("#modal-ver-caracteristicas").modal("show");
+  $("#idservicio_d").val(idservicio);
+  $(".nombre_s").text(nombre_servicio); 
 
+  tabla1=$('#tabla-detalle-servicios').dataTable({
+    "responsive": true,
+    lengthMenu: [[ -1, 5, 10,], ["Todos", 5, 10, ]],//mostramos el menú de registros a revisar
+    "aProcessing": true,//Activamos el procesamiento del datatables
+    "aServerSide": true,//Paginación y filtrado realizados por el servidor
+    dom: '<Bl<f>rtip>',//Definimos los elementos del control de tabla
+    buttons: [],
+    "ajax":{
+        url: `../ajax/servicios.php?op=listar_detalle&id=${idservicio}`,
+        type : "get",
+        dataType : "json",						
+        error: function(e){
+          console.log(e.responseText);	
+        }
+      },
+      createdRow: function (row, data, ixdex) {
+
+        $("td", row).addClass('class_table');
+        if (data[0] != '') { $("td", row).eq(0).addClass('text-center'); }
+        if (data[2] != '') { $("td", row).eq(2).addClass('text-nowrap'); }
+
+      },
+    "language": {
+      "lengthMenu": "Mostrar: _MENU_ registros",
+      "buttons": {
+        "copyTitle": "Tabla Copiada",
+        "copySuccess": {
+          _: '%d líneas copiadas',
+          1: '1 línea copiada'
+        }
+      }
+    },
+    "bDestroy": true,
+    "iDisplayLength": 5,//Paginación
+    "order": [[ 0, "asc" ]]//Ordenar (columna,orden)
+
+  }).DataTable();
+ 
+}
+
+function limpiar_detalle() { 
+  $("#idservicio_detalle").val("");
+  $("#descripcion_detalle").val("");
+}
+
+//Función para guardar o editar
+function guardaryeditardetalle(e) {
+  // e.preventDefault(); //No se activará la acción predeterminada del evento
+  var formData = new FormData($("#form-servicios-detalle")[0]);
+ 
+  $.ajax({
+    url: "../ajax/servicios.php?op=guardaryeditar_detalle",
+    type: "POST",
+    data: formData,
+    contentType: false,
+    processData: false,
+    success: function (e) {             
+      try {
+        e = JSON.parse(e);  console.log(e);   
+        if (e.status == true) {
+          Swal.fire("Correcto!", "Registrado correctamente", "success");
+          tabla.ajax.reload();         
+          limpiar();  
+          $("#modal-agregar-servicios").modal("hide");   
+        }else{    
+          ver_errores(e);
+        }            
+      } catch (err) {
+        console.log('Error: ', err.message); toastr.error('<h5 class="font-size-16px">Error temporal!!</h5> puede intentalo mas tarde, o comuniquese con <i><a href="tel:+51921305769" >921-305-769</a></i> ─ <i><a href="tel:+51921487276" >921-487-276</a></i>');
+      } 
+      $("#guardar_registro").html('Actualizar').removeClass('disabled');
+    },
+    xhr: function () {
+      var xhr = new window.XMLHttpRequest();
+      xhr.upload.addEventListener("progress", function (evt) {
+        if (evt.lengthComputable) {
+          var percentComplete = (evt.loaded / evt.total)*100;
+          /*console.log(percentComplete + '%');*/
+          $("#barra_progress").css({"width": percentComplete+'%'});
+          $("#barra_progress").text(percentComplete.toFixed(2)+" %");
+        }
+      }, false);
+      return xhr;
+    },
+    beforeSend: function () {
+      $("#guardar_registro").html('<i class="fas fa-spinner fa-pulse fa-lg"></i>').addClass('disabled');
+      $("#barra_progress").css({ width: "0%",  });
+      $("#barra_progress").text("0%").addClass('progress-bar-striped progress-bar-animated');
+    },
+    complete: function () {
+      $("#barra_progress").css({ width: "0%", });
+      $("#barra_progress").text("0%").removeClass('progress-bar-striped progress-bar-animated');
+    },
+    error: function (jqXhr) { ver_errores(jqXhr); },
+  });
+}
+
+
+//------------------------------------------------------------------
 var idproyecto=0;
 $(function () {
-
-  
-  $.validator.setDefaults({
-
-    submitHandler: function (e) {
-        guardaryeditar(e);
-      
-    },
-  });
-  
 
   $("#form-servicios").validate({
     ignore: '.select2-input, .select2-focusser',
@@ -291,10 +384,37 @@ $(function () {
     unhighlight: function (element, errorClass, validClass) {
 
       $(element).removeClass("is-invalid").addClass("is-valid");
-   
+
+    },
+    submitHandler: function (e) { 
+      $(".modal-body").animate({ scrollTop: $(document).height() }, 600); // Scrollea hasta abajo de la página
+      guardaryeditar(e);
     },
 
 
+  });
+
+  $("#form-servicios-detalle").validate({
+    rules: { descripcion_detalle:{required: true}},
+    messages: { descripcion_detalle: { required: "Campo requerido", } },
+        
+    errorElement: "span",
+
+    errorPlacement: function (error, element) {
+      error.addClass("invalid-feedback");
+      element.closest(".form-group").append(error);    },
+
+    highlight: function (element, errorClass, validClass) {
+      $(element).addClass("is-invalid").removeClass("is-valid");
+    },
+
+    unhighlight: function (element, errorClass, validClass) {
+      $(element).removeClass("is-invalid").addClass("is-valid");   
+    },
+    submitHandler: function (e) { 
+      $(".modal-body").animate({ scrollTop: $(document).height() }, 600); // Scrollea hasta abajo de la página
+      guardaryeditardetalle(e);
+    },
   });
 
 });

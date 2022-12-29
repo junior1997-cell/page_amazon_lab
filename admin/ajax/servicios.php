@@ -28,7 +28,12 @@ if (!isset($_SESSION["nombre"])) {
     $descripcion = isset($_POST["descripcion"]) ? limpiarCadena($_POST["descripcion"]) : "";
 
     $foto2 = isset($_POST["doc1"]) ? limpiarCadena($_POST["doc1"]) : "";
+    //----------------------------------detalle------------------------------------------
+    $idservicio_detalle = isset($_POST["idservicio_detalle"]) ? limpiarCadena($_POST["idservicio_detalle"]) : "";
+    $idservicio_d = isset($_POST["idservicio_d"]) ? limpiarCadena($_POST["idservicio_d"]) : "";
+    $descripcion_detalle = isset($_POST["descripcion_detalle"]) ? limpiarCadena($_POST["descripcion_detalle"]) : "";
 
+// $idservicio_d, $idservicio_detalle, $descripcion
     switch ($_GET["op"]) {
 
       case 'guardaryeditar':
@@ -113,6 +118,64 @@ if (!isset($_SESSION["nombre"])) {
                       </div>',
               "2" =>  '<textarea class="classtextarea" name="textarea" rows="2">'.$reg->descripcion.'</textarea>',
               "3" => '<button class="btn btn-info btn-xs" onclick="ver_caracteristicas(\'' . $reg->idservicio . '\',\'' . $reg->nombre_servicio . '\')"><i class="fa fa-list-ol" aria-hidden="true"></i></button>',
+            ];
+          }
+          $results = [
+            "sEcho" => 1, //Información para el datatables
+            "iTotalRecords" => count($data), //enviamos el total registros al datatable
+            "iTotalDisplayRecords" => 1, //enviamos el total registros a visualizar
+            "data" => $data,
+          ];
+          echo json_encode($results, true);
+
+        } else {
+          echo $rspta['code_error'] . ' - ' . $rspta['message'] . ' ' . $rspta['data'];
+        }
+
+      break;
+      // -----------------------------------------
+      
+      case 'guardaryeditar_detalle':
+
+        if (empty($idservicio_detalle)) {
+          
+          $rspta = $servicios->insertar_detalle($idservicio_d, $descripcion_detalle);
+          echo json_encode($rspta, true);
+
+        } else {
+
+          $rspta = $servicios->insertar_detalle($idservicio_d, $idservicio_detalle, $descripcion_detalle);
+          echo json_encode($rspta, true);
+
+        }
+
+      break;
+
+      case 'eliminar_detalle':
+        $rspta = $servicios->eliminar_detalle($idservicio_detalle);
+        echo json_encode($rspta, true);
+      break;
+
+      case 'mostrar_servicio':
+        $rspta = $servicios->mostrar_detalle($idservicio_detalle);
+        echo json_encode($rspta, true);
+      break;
+
+      case 'listar_detalle':
+        $rspta = $servicios->listar_detalle($_GET['id']);
+        $data = [];
+        $comprobante = '';
+        $cont = 1;
+
+        if ($rspta['status']) {
+
+          while ($reg = $rspta['data']->fetch_object()) {
+            $data[] = [
+
+              "0" => $cont++,
+              "1" =>'<button class="btn btn-warning btn-xs" onclick="mostrar(' . $reg->idservicio_detalle . ')"><i class="fas fa-pencil-alt"></i></button>
+                        <button class="btn btn-danger btn-xs" onclick="eliminar(' . $reg->idservicio_detalle . ')"><i class="far fa-trash-alt"></i></button>',
+              "2" =>  '<textarea class="classtextarea" name="textarea" rows="2">'.$reg->descripcion.'</textarea>',
             ];
           }
           $results = [
