@@ -1,7 +1,7 @@
 $negro: #000000;
 $botonNegro: #161616;
 $negroText: #000000;
-$negroFondo: #070707;
+$negroFondo: #0f0f0f;
 $blanco: #FEFEFE;
 $grisOscuro: #222222;
 $grisClaro: #C8C8C8;
@@ -86,13 +86,7 @@ body{
 
 /*  ══════════════════════════════════════════ - NAV - ══════════════════════════════════════════ */
 .nav_dark {
-    background-color: $azulMarino;
-    font-family: 'Titillium Web';
-    //text-transform: uppercase;
-    text-align: center;
-    font-weight: 600;
-    border: $grisClaro;
-   
+    background-color: $negro;
     //box-shadow: $sombreDark;
     //color: $negro !important;
 
@@ -104,60 +98,82 @@ body{
 
 }
 
-.nav_dark * {
+.navBar{
+    font-family: 'Ø';
+    text-transform: capitalize;
+    font-weight: bold;
+    //text-align: center;
+    //font-weight: 600;
+    //transform: translate(-50%, -50%);
+    
+}
+
+.navBar * {
     box-sizing: border-box;
     transition: all .35s ease;
     color: $grisClaro;
 }
 
-.nav_dark li {
-    display: inline-block;
-    list-style: outside none none;
-    margin: .5em 1em;
+.navBar li {
+    /*display: inline-block;
+    margin: .5em 1em;*/
+    list-style: none;
 
 }
-.nav_dark a {
-    padding: .5em .8em;
-    color: rgba(255,255,255,.5);
-    position: relative;
+
+.navBar ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navBar a {
     text-decoration: none;
+    /*padding: .5em .8em;
+    color: rgba(255,255,255,.5);
+    position: relative;*/
     font-size: 17px;
     
 }
-.nav_dark a::before,
-.nav_dark a::after {
-  content: '';
-  height: 14px;
-  width: 14px;
-  position: absolute;
-  transition: all .35s ease;
-  opacity: 0;
-  
+
+.navBar ul li a {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: 0 1rem;
+    
 }
 
-
-.nav_dark a:hover:before,
-.nav_dark a:hover:after{
-  transform: translate(0,0);
-  opacity: 1;
-}
-.nav_dark a:hover {
+.navBar ul li:hover a {
     color: $rosado !important;
 }
 
+.navBar ul li:hover a::before {
+    width: 50%;
+    transform: translate(100%);
+}
 
+.navBar ul li:hover a::after {
+    width: 50%;
+    transform: translate(-100%);
+}
 
-polygon {
-    background: $negroFondo !important;
-    /*body.dark & {
-        background: $negroFondo;
-    }*/
+/*  ══════════════════════════════════════════ - NAV - ══════════════════════════════════════════ */
+
+.tipoletra1 {
+    font-family: 'Ø';
+}
+.tipoletra2 {
+    font-family: 'FSP DEMO - Cosmata Bold';
+    font-weight: bold;
 }
 
 .dark_buttom_brochure {
     background: $botonNegro !important;
     color: $blanco;
     border: $negro;
+    font-family: 'FSP DEMO - Cosmata Bold';
+    font-weight: bold;
     /*background: $blanco;
     body.dark & {
         background: $botonNegro;
@@ -168,12 +184,15 @@ polygon {
 
 .dark_buttom_brochure:hover {
     color: $rosa;
+    box-shadow: $negro;
 }
 .dark_buttom_contac {
     
     background: $verdeWhatsapp;
     color: $negro;
     border: $verdeWhatsapp;
+    font-family: 'FSP DEMO - Cosmata Bold';
+    font-weight: bold;
     /*body.dark & {
         background: $verdeWhatsapp;
         color: $negro;
@@ -183,14 +202,20 @@ polygon {
 
 .letra1 {
     color: $blanco !important;
+    font-family: 'Ø';
+    font-weight: bold;
 }
 
 .letra2 {
     color: $amarillo !important;
+    font-family: 'Ø';
+    font-weight: bold;
 }
 
 .letra3 {
     color: $azulMarino;
+    font-family: 'FSP DEMO - Cosmata Bold';
+    font-weight: bold;
 }
 
 .letra4 {
@@ -198,7 +223,8 @@ polygon {
 }
 
 .card_1 {
-    background-color: $azulMarino !important;
+    background-color: #192030 !important;
+    border-radius: 10px;
 }
 
 .card_2 {
@@ -208,13 +234,52 @@ polygon {
 .color_logo {
     color: $blanco;
 }
-.button_color{
-    background: $amarillo;
-    border: 15px;
-    text-align: center;
-    font-weight: 600;
+
+.button_color i {
     color: $blanco !important;
 }
+
+.button_color {
+    border: none;
+}
+
+
+.button_color:hover{
+    background: $amarillo;
+    //background: #878a91;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border: 6px solid #EDC452;
+    border-radius: 20px;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+.containerr:hover .image {
+    opacity: 0.3;
+}
+  
+.containerr:hover .middle {
+    opacity: 1;
+}
+
+
 
 
 /*  ══════════════════════════════════════════ - SWITCH - ══════════════════════════════════════════ */

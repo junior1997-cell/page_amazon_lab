@@ -15,9 +15,17 @@
 
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"/>
 
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="../assets/css/vendor.min.css">
+
+   <!-- Font Awesome -->
+  <!-- <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css" /> -->
+  <link rel="stylesheet" href="../assets/css/fontawesome-free-6.2.0/css/all.min.css" />
+
+  <!-- IonIcons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
   <!-- CSS Front Template -->
   <link rel="stylesheet" href="../assets/css/theme.minc619.css?v=1.0">
@@ -47,7 +55,7 @@
         <nav class="navbar navbar-expand-lg mt-3">
           <!-- Logo -->
           <a class="navbar-brand" href="index.html" aria-label="Front">
-            <img src="../assets/consultoria/svg/busines-wassi-amarillo.svg" alt="Logo" style="width: 200px !important;">
+            <img src="../assets/consultoria/svg/busines-wassi-amarillo.svg" alt="Logo" style="width: 150px !important; color: white;">
           </a>
           <!-- End Logo -->
 
@@ -67,8 +75,8 @@
           <!-- End Responsive Toggle Button -->
 
           <!-- Navigation -->
-          <div id="navBar" class="collapse navbar-collapse">
-            <ul class="navbar-nav">
+          <div id="navBar" class="collapse navbar-collapse navBar">
+            <ul class="navbar-nav" style="color: #fff;">
               <li class="navbar-nav-item">
                 <a class="nav-link " href="index.html">Nosotros</a>
               </li>
@@ -83,10 +91,13 @@
                 <a class="nav-link" href="contactanos.html">Contáctanos</a>
               </li>
 
-              <li class="navbar-nav-item" href="http://businesswasi.com/estrategia_digital/moodle_v1/">
-                <button type="button" class=" btn button_color">Cursos</button>
-                
-              </li>
+              <!--========================BOTON MOODLE================================-->
+              <a href="http://businesswasi.com/estrategia_digital/moodle_v1/">
+                <button type="button" class=" btn btn-outline-secondary button_color">
+                  <i class="fa-solid fa-user-graduate text-dark" style="color: #fff !important;"></i>
+                  Cursos
+                </button>
+              </a> 
               
             </ul>
           </div>
@@ -101,68 +112,49 @@
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
     <!-- Hero Section -->
-    <div class="container space-top-3 space-top-lg-4 space-bottom-1 space-bottom-lg-1">
-      <div class="row justify-content-lg-between mb-7">
-        <div class="col-md-6 col-lg-5">
-          <!-- Info -->
-          <div class="mb-5">
-            <h1 class="letra1">Nuestros Servicios 2022</h1>
-            <p class="letra2">Conoce todos nuestro servicio actuales y aprovechalos al máximo.</p>
+    <div class="position-relative bg-white overflow-hidden">
+      <div class="container position-relative z-index-2 space-top-3 space-top-lg-4 space-bottom-2 space-bottom-md-3">
+        <div class="row align-items-lg-center">
+          <div class="col-lg-5 mb-5 mb-lg-0">
+            <!-- Info -->
+            <div class="mb-5">
+              <h1 class="letra1" style="font-size: 45px;">Nuestros Servicios 2022</h1>
+              <p class="letra2">Conoce todos nuestro servicio actuales y aprovechalos al máximo.</p>
+            </div>
+
+            <a class="btn btn-light btn-wide btn-pill shadow-soft transition-3d-hover mb-2 mb-sm-0 mr-4 dark_buttom_brochure" href="" download="Brochure"><i class="fas fa-download"></i> Descargar Brochure</a>
+            <a class="btn btn-success btn-wide btn-pill transition-3d-hover mb-2 mb-sm-0 dark_buttom_contac" href="#"><i class="fab fa-whatsapp"></i> Contactanos</a>
+            <!-- End Info -->
           </div>
 
-          <div class="mb-3">
-            <a class="btn btn-light btn-wide btn-pill shadow-soft transition-3d-hover mb-2 mb-sm-0 mr-4" href="" download="Brochure"><i class="fas fa-download"></i> Descargar Brochure</a>
-            <a class="btn btn-success btn-wide btn-pill transition-3d-hover mb-2 mb-sm-0" href="#"><i class="fab fa-whatsapp"></i> Contactanos</a>
+          <div class="col-lg-7">
+            <div class="position-relative">
+              <!-- Device Mockup -->
+              <div class="device d-none d-sm-block mb-3 mb-sm-0" data-aos="fade-up">
+                <img class="img-fluid" src="../assets/svg/components/macbook.svg" alt="Image Description">
+                <img class="device-macbook-screen shadow-lg" src="../assets/consultoria/img/Imagen1.png" alt="Image Description">
+              </div>
+              <!-- End Device Mockup -->
+
+              <!-- Card Info -->
+              
+              <!-- Enc Card Info -->
+            </div>
           </div>
-
-          <!-- <p class="small">Start free trial. * No credit card required.</p> -->
-          <!-- End Info -->
-        </div>
-
-        <div class="col-md-6 d-none d-md-inline-block">
-          <!-- SVG Illustration -->
-          <figure class="w-100">
-            <img class="img-fluid" src="../assets/consultoria/img/img_6.png" alt="Image Description">
-          </figure>
-          <!-- End SVG Illustration -->
         </div>
       </div>
 
-      <!-- Clients -->
-      <!-- <div class="row justify-content-between text-center">
-        <div class="col-4 col-lg-2 mb-5 mb-lg-0">
-          <div class="mx-3">
-            <img class="max-w-11rem max-w-md-13rem mx-auto" src="../assets/svg/clients-logo/boring-company.svg" alt="Image Description">
-          </div>
-        </div>
-        <div class="col-4 col-lg-2 mb-5 mb-lg-0">
-          <div class="mx-3">
-            <img class="max-w-11rem max-w-md-13rem mx-auto" src="../assets/svg/clients-logo/netflix.svg" alt="Image Description">
-          </div>
-        </div>
-        <div class="col-4 col-lg-2 mb-5 mb-lg-0">
-          <div class="mx-3">
-            <img class="max-w-11rem max-w-md-13rem mx-auto" src="../assets/svg/clients-logo/fitbit.svg" alt="Image Description">
-          </div>
-        </div>
-        <div class="col-4 col-lg-2">
-          <div class="mx-3">
-            <img class="max-w-11rem max-w-md-13rem mx-auto" src="../assets/svg/clients-logo/google.svg" alt="Image Description">
-          </div>
-        </div>
-        <div class="col-4 col-lg-2">
-          <div class="mx-3">
-            <img class="max-w-11rem max-w-md-13rem mx-auto" src="../assets/svg/clients-logo/airbnb.svg" alt="Image Description">
-          </div>
-        </div>
-        <div class="col-4 col-lg-2">
-          <div class="mx-3">
-            <img class="max-w-11rem max-w-md-13rem mx-auto" src="../assets/svg/clients-logo/uber.svg" alt="Image Description">
-          </div>
-        </div>
-      </div> -->
-      <!-- End Clients -->
+      <!-- SVG Shape -->
+      <div class="card_2 position-absolute top-0 right-0 bottom-0 left-0" ></div>
+
+      <figure class="position-absolute bottom-0 right-0 left-0">
+        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1921 273">
+          <polygon fill="#0f0f0f" points="0,273 1921,273 1921,0 "/>
+        </svg>
+      </figure>
+      <!-- End SVG Shape -->
     </div>
+
     <!-- End Hero Section -->
 
     <!-- SVG Top Shape -->
@@ -451,9 +443,24 @@
   <div class="container-btn-redes">
     
     <div class="redes">
-      <a href="https://www.facebook.com/" target="_blank" class="fab fa-facebook-f fa-lg icon1" style='font-size:20px'></a> <br>
-      <a href="https://www.youtube.com/" target="_blank" class="fab fa-youtube fa-lg icon2" style='font-size:20px'></a> <br>
-      <a href="https://web.whatsapp.com/" target="_blank" class="fab fa-whatsapp fa-lg icon3" style='font-size:20px'></a> <br>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/" target="_blank">
+            <i class="fab fa-facebook-f fa-lg icon" style='font-size:20px; color: #0570e6;'></i>
+          </a> <br>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/" target="_blank">
+            <i class="fab fa-youtube fa-lg icon" style='font-size:20px; color: #c4302b;'></i>
+          </a> <br>
+        </li>
+        <li>
+          <a href="https://web.whatsapp.com/" target="_blank">
+            <i class="fab fa-whatsapp fa-lg icon" style='font-size:20px; color: #33B93F;'></i> 
+          </a> <br>
+        </li>
+        
+      </ul>
     </div>
   </div>
 
@@ -484,6 +491,9 @@
   <!-- JS Front -->
   <script src="../assets/js/theme.min.js"></script>
 
+  <!-- JS Implementing Plugins -->
+  <script src="../assets/consultoria/js/estilo.js"></script>
+
   <!-- JS Plugins Init. -->
   <script>
     $(document).on('ready', function () {
@@ -501,39 +511,23 @@
       }).init();
 
 
-      // INITIALIZATION OF UNFOLD
+      // INITIALIZATION OF TEXT ANIMATION (TYPING)
       // =======================================================
-      var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
+      var typed = $.HSCore.components.HSTyped.init(".js-text-animation");
 
 
-      // INITIALIZATION OF UNFOLD
+      // INITIALIZATION OF FANCYBOX
       // =======================================================
-      $('.js-hs-search-unfold-invoker').each(function() {
-        var searchUnfold = new HSUnfold($(this), {
-          afterOpen: function() {
-            $('#searchSlideDownControl').focus();
-          }
-        }).init();
+      $('.js-fancybox').each(function () {
+        var fancybox = $.HSCore.components.HSFancyBox.init($(this));
       });
 
 
-      // INITIALIZATION OF FORM VALIDATION
+      // INITIALIZATION OF AOS
       // =======================================================
-      $('.js-validate').each(function() {
-        $.HSCore.components.HSValidation.init($(this), {
-          rules: {
-            confirmPassword: {
-              equalTo: '#signupPassword'
-            }
-          }
-        });
-      });
-
-
-      // INITIALIZATION OF SHOW ANIMATIONS
-      // =======================================================
-      $('.js-animation-link').each(function () {
-        var showAnimation = new HSShowAnimation($(this)).init();
+      AOS.init({
+        duration: 650,
+        once: true
       });
 
 
