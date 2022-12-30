@@ -96,7 +96,7 @@
                 <h1 style="font-family: GothamMedium; text-align: center;">Sobre Nosotros</h1>
                 <div class="historia">
                   <p style="font-family: GothamLight; font-size: 18px; text-align: justify; padding: 6px;">
-                  La inmobiliaria Business Wasi, es parte del grupo empresarial Business Wasi, cuyo objetivo es ayudarte a
+                  La Inmobiliaria Business Wasi, es parte del Grupo Empresarial Business Wasi, cuyo objetivo es ayudarte a
                   evaluar y definir tus alternativas de adquisición (consumo o inversión) en el mundo de bienes raíces<span id="dots">.</span><span id="more"> evaluar y 
                   definir tus alternativas de adquisición (consumo o inversión) en el mundo de bienes raíces.</span></p>
                       <div class="mx-auto" style="text-align: center;padding-bottom: 9px; display:none"><button class="btn btn-info btn-xs" onclick="myFunction()" id="myBtn" style="font-family: GothamMedium;">Leer más</button></div>
@@ -144,7 +144,7 @@
                         <span class="text-dark font-size-2" style="font-family: GothamMedium;">Integridad</span>
                       </div>
                       <div class="card-body pt-0 pb-5 px-5">
-                        <p  style="font-family: GothamLight;">Ser muy consecuente con lo que se pueda decir o con lo que se pueda considera que es correcto ...</p>
+                        <p  style="font-family: GothamLight;">Ser muy consecuente con lo que se pueda decir o con lo que se pueda considera que es correcto, en cualquier circunstancia.</p>
                       </div>
                     </div>
                   </div>
@@ -157,7 +157,7 @@
                       </div>
                       <div class="card-body pt-0 pb-5 px-5">
                         <ul class="list-unstyled list-sm-article mb-4">
-                          <span  style="font-family: GothamLight;">Capacidad para motivar y dirigir, creando un ambiente de empatía, colaboración y respeto, para lograr ...</span>
+                          <span  style="font-family: GothamLight;">Capacidad para motivar y dirigir, creando un ambiente de empatía, colaboración y respeto, para lograr que estas contribuyan de forma efectiva y adecuada.</span>
                         </ul>
                       </div>
                     </div>
@@ -171,7 +171,7 @@
                       </div>
                       <div class="card-body pt-0 pb-5 px-5">
                         <ul class="list-unstyled list-sm-article mb-4">
-                          <span  style="font-family: GothamLight;">Actitud que marca el rumbo de la empresa con acciones concretas, logrando superar obstáculos y enfocándose ...</span>
+                          <span  style="font-family: GothamLight;">Actitud que marca el rumbo de la empresa con acciones concretas, logrando superar obstáculos y enfocándose a cumplir los objetivos y metas propuestas.</span>
                         </ul>
                       </div>
                     </div>
@@ -185,7 +185,7 @@
                       </div>
                       <div class="card-body pt-0 pb-5 px-5">
                         <ul class="list-unstyled list-sm-article mb-4">
-                          <span  style="font-family: GothamLight;">Cumplir con las obligaciones contraídas, buscando el mejor resultado, respetando las normas legales aplicables...</span>
+                          <span  style="font-family: GothamLight;">Cumplir con las obligaciones contraídas, buscando el mejor resultado, respetando las normas legales aplicables vigentes y desempeñando con dedicación.</span>
                         </ul>
                       </div>
                     </div>
@@ -206,7 +206,7 @@
         <!-- Title -->
         <div class="w-md-80 text-center mx-md-auto mb-5 mb-md-9">
           <h2 style="font-family: GothamMedium;">Nuestros Servicios</h2>
-          <p  style="font-family: GothamLight; font-size: 25px;">Conozca nuestros servicios y comprenderá por qué la empresa Business inmobiliaria es mucho más que una simple empresa inmobiliaria.</p>
+          <p  style="font-family: GothamLight; font-size: 25px;">Conozca nuestros servicios y comprenderá por qué la Empresa Business Wasi Inmobiliaria es mucho más que una simple empresa Inmobiliaria.</p>
         </div>
         <!-- End Title -->
 
@@ -345,16 +345,16 @@
 
                           <!-- List -->
                           <div class="row mb-4 contenido"  style="font-family: GothamLight;">
-                              <div class="col-12"  style="text-align: justify;">
+                              <div class="col-12" >
                                   <div class="media text-body mb-3">
                                       <i class="fas fa-check-circle text-warning mt-1 mr-2"></i>
-                                      <div class="media-body">
+                                      <div class="media-body" style="text-align: justify;">
                                         Te conseguimos el inquilino y administramos tu propiedad, o si lo decides vender te acompañamos en todo el proceso de venta.
                                       </div>
                                   </div>
                                   <div class="media text-body mb-3"  style="font-family: GothamLight;">
                                       <i class="fas fa-check-circle text-warning mt-1 mr-2" style="color:#ec9a3c00!important;"></i>
-                                      <div class="media-body">
+                                      <div class="media-body" style="font-size: 15px; font-family: GothamLight;">
                                          Separa una cita y lo coordinamos: <a target="_blank" href="https://calendly.com/kerrylewis7">https://calendly.com/kerrylewis7</a>
                                       </div>
                                   </div>
@@ -539,7 +539,7 @@
     <!-- boton flotante de whatsap  -->
     <div
             class="whatsappme whatsappme--right"
-            data-settings='{"telephone":"+51944411328","mobile_only":false,"button_delay":1,"whatsapp_web":false,"message_text":"Hola!\nen que podemos ayudarte","message_delay":2,"message_badge":false,"message_send":""}'
+            data-settings='{"telephone":"+51944411328","mobile_only":false,"button_delay":1,"whatsapp_web":false,"message_text":"Hola!\nen me pueden ayudar","message_delay":2,"message_badge":false,"message_send":""}'
         >
         <div class="whatsappme__button">
             <svg class="whatsappme__button__open" viewBox="0 0 24 24">
@@ -580,7 +580,7 @@
             <div class="whatsappme__message">
                 <div class="whatsappme__message__wrap">
                     <div class="whatsappme__message__content">
-                        Hola!<br /> somos Business Wasi inmobiliaria <br /> en que podemos ayudarte
+                        Hola!<br /> Somos Business Wasi Inmobiliaria <br /> en que podemos ayudarte
                     </div>
                 </div>
             </div>

@@ -73,7 +73,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">
+                                    <a class="nav-link" target="_blank" href="../admin/vistas/login.html">
                                         <span class="media align-items-center">
                                             <i class="fa fa-user-circle mr-2" style="color: white;"></i>
                                             <span class="media-body" style="color: white;">Acceso</span>

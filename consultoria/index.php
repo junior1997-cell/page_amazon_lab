@@ -196,7 +196,7 @@
               </figure>
               <div class="media-body">
                 <h4 class="text-dark mb-1 letra2">WhatsApp</h4>
-                <p class="text-white mb-0" style="font-size: 20px; text-align: justify;">Mensajeria inmediata al alcance de todos.</p>
+                <p class="text-white mb-0" style="font-size: 20px; text-align: justify;">Mensajería inmediata al alcance de todos.</p>
               </div>
             </div>
             <div class="border-top mb-4"></div>

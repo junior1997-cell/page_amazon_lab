@@ -68,6 +68,13 @@
                                         <!-- End Pages - Submenu -->
                                     </li>
                                     <!-- Pages -->
+                                    <li class="navbar navbar-white" >
+                                        <a id="pagesMegaMenu" href="../index.html" aria-haspopup="true" aria-expanded="false" class="hover_morado text-white"><b><i class="fa fa-home" aria-hidden="true"></i></b></a>
+                                        <!-- Pages - Submenu -->
+                                        <div id="pagesSubMenu" class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 30px;">
+                                        </div>
+                                    </li>
+                                    <!-- End Docs -->
                                     <!-- <li class="navbar navbar-white">
                                         <a id="pagesMegaMenu" href="http://businesswasi.com/estrategia_digital/moodle_v1/" aria-haspopup="true" aria-expanded="false" class="hover_morado text-white" ><b>Cursos</b></a>
                                         <div id="pagesSubMenu" class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 230px;"></div>

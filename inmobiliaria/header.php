@@ -75,8 +75,20 @@
                   <!-- Pages - Submenu -->
                   <div id="pagesSubMenu" class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 30px;">
                   </div>
+                  <div class="col-lg-6">
+                      </div>
+                  <!-- End Pages - Submenu -->
                 </li>
                 <!-- End Docs -->
+                <!-- Docs -->
+                <li class="navbar navbar-light" >
+                  <a id="pagesMegaMenu" href="../index.html" aria-haspopup="true" aria-expanded="false" class=" hover_h"><b><i class="fa fa-home" aria-hidden="true"></i></b></a>
+                  <!-- Pages - Submenu -->
+                  <div id="pagesSubMenu" class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 30px;">
+                  </div>
+                </li>
+                <!-- End Docs -->
+
 
               </ul>
             </div>

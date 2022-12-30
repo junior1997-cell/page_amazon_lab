@@ -58,6 +58,9 @@
                   Cursos
                 </button>
               </a> 
+              <li class="navbar-nav-item">
+                <a class="nav-link" href="../index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+              </li>
                 
             </ul>
           </div>

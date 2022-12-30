@@ -83,7 +83,8 @@
 
 .bord_css:hover {
   background-color: #EDC452!important;
-  color: white!important;
+  color: black!important;
+  font-weight: bold;
 }
 
 .class_p_d{
