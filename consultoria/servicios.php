@@ -69,22 +69,26 @@
         <div class="card">
           <img src="../assets/consultoria/img/img1.jpg" alt="">
           <h3 class="letra1">Consultoría y Gestión empresarial</h3>
-          <p>¿Deseas mejorar el proceso productivo de tu empresa?, ¿Quieres mejorar la atención al cliente en tu negocio? ¿Tienes una idea de negocio y no sabes por donde iniciar?.</p>
-          <a href="">Leer más</a>
+          <p>¿Deseas mejorar el proceso productivo de tu empresa?, ¿Quieres mejorar la atención al cliente en tu negocio?
+             ¿Tienes una idea de negocio y no sabes por donde iniciar?. <br>
+             
+             Descuida!....
+          </p>
         </div>
 
         <div class="card">
           <img src="../assets/consultoria/img/img2.jpg" alt="">
           <h3 class="letra1">Formulación de Proyectos</h3>
-          <p>Contamos con un panel de expertos que te ayudarán a desarrollar tus ideas de negocio y presentarlo en los distintos fondos concursables para su financiamiento.</p>
-          <a href="">Leer más</a>
+          <p>¿Deseas financiamiento para tu idea o proyecto?.
+            Contamos con un panel de expertos que te ayudarán a desarrollar tus ideas de negocio y 
+            presentarlo en los distintos fondos concursables para su financiamiento.
+          </p>
         </div>
 
         <div class="card">
           <img src="../assets/consultoria/img/img3.jpg" alt="">
           <h3 class="letra1">Escuela de Negocios</h3>
           <p>¿Deseas fortalecer tus habilidades y competencias para los negocios?.</p>
-          <a href="">Leer más</a>
         </div>
 
       </div>
@@ -99,12 +103,12 @@
         <div class="row align-items-lg-center">
 
           <div class="col-lg-6 order-lg-2 mb-7 mb-lg-0">
-            <div class="pl-lg-5">
-              <div class="bg-light rounded-lg min-h-450rem p-4">
-                <!-- Nav -->
-                <img class="img-fluid" src="../assets/consultoria/img/img_3.png" alt="Image Description">
-                <!-- End Tab Content -->
-              </div>
+            <div class="pl-lg-5 imgconsul1">
+              
+              <!-- Nav -->
+              <img class="img-fluid" src="../assets/consultoria/img/Imagen2.png" alt="Image Description">
+              <!-- End Tab Content -->
+              
             </div>
           </div>
 
@@ -118,7 +122,7 @@
             </div>
 
             <!-- List -->
-            <div class="row mb-4">
+            <!--<div class="row mb-4">
               <div class="col-6">
                 <div class="media text-body mb-3">
                   <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
@@ -172,10 +176,9 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div>-->
             <!-- End List -->
-
-            <a class="font-weight-bold" href="#">Quiero mas <i class="fas fa-angle-right fa-sm ml-1"></i></a>
+            <a class="font-weight-bold" href="https://calendly.com/kerrylewis7">Separa una cita  <i class="fas fa-angle-right fa-sm ml-1"></i></a>
           </div>
         </div>
       </div>
@@ -188,50 +191,29 @@
         <div class="row align-items-lg-center">
 
           <div class="col-lg-6 order-lg-1 mb-7 mb-lg-0">
-            <div class="pl-lg-5">
-              <div class="bg-light rounded-lg min-h-450rem p-4">
-                <!-- Nav -->
-                <img class="img-fluid" src="../assets/consultoria/img/img_4.webp" alt="Image Description">
-                <!-- End Tab Content -->
-              </div>
+            <div class="pl-lg-5 imgconsul2">
+              
+              <!-- Nav -->
+              <img class="img-fluid" src="../assets/consultoria/img/Imagen3.png" alt="Image Description">
+              <!-- End Tab Content -->
+              
             </div>
           </div>
 
           <div class="col-lg-6 order-lg-2">
             <div class="mb-5">
               <h2 class="letra5">2.	ASESORÍA Y ESCUELA DE NEGOCIOS</h2>
-              <p class="letra1"> La asesoría empresarial tiene origen en la necesidad por parte de las empresas de ser aconsejados y asesorados por profesionales expertos en determinadas materias.</p>
+              <p class="letra1"> ¿Deseas financiamiento para tu idea o proyecto?. <br>
+                Contamos con un panel de expertos que te ayudarán a desarrollar tus ideas de negocio y presentarlo 
+                en los distintos fondos concursables para su financiamiento.
+              </p>
             </div>
 
             <!-- List -->
-            <div class="row mb-4">
-              <div class="col-6">
-                <div class="media text-body mb-3">
-                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-                  <div class="media-body">
-                    3 talleres de especialización en marketing, negocios y empresas. En vivo y con certificación.
-                  </div>
-                </div>
-                <div class="media text-body mb-3">
-                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-                  <div class="media-body">
-                    Acompañamiento y reuniones online
-                  </div>
-                </div>                
-              </div>
-
-              <div class="col-6">                
-                <div class="media text-body mb-3">
-                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-                  <div class="media-body">
-                    <span class="mr-1"></span>Consultoría en formalización de empresas </span> <span class="badge badge-primary badge-pill">(Regalo)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
             <!-- End List -->
 
-            <a class="font-weight-bold" href="#">Quiero mas <i class="fas fa-angle-right fa-sm ml-1"></i></a>
+            <a class="font-weight-bold" href="https://calendly.com/kerrylewis7">Separa una cita <i class="fas fa-angle-right fa-sm ml-1"></i></a>
           </div>
         </div>
       </div>
@@ -244,63 +226,31 @@
         <div class="row align-items-lg-center">
 
           <div class="col-lg-6 order-lg-2 mb-7 mb-lg-0">
-            <div class="pl-lg-5">
-              <div class="bg-light rounded-lg min-h-450rem p-4">
-                <!-- Nav -->
-                <img class="img-fluid" src="../assets/consultoria/img/img_5.png" alt="Image Description">
-                <!-- End Tab Content -->
-              </div>
+            <div class="pl-lg-5 imgconsul1">
+              
+              <!-- Nav -->
+              <img class="img-fluid" src="../assets/consultoria/img/Imagen4.jpg" alt="Image Description">
+              <!-- End Tab Content -->
+              
             </div>
           </div>
 
           <div class="col-lg-6 order-lg-1">
             <div class="mb-5">
               <h2 class="letra5">3.	BRANDING</h2>
-              <p class="letra1">El branding, también conocido como gestión de marca, está conformado por un conjunto de acciones relacionadas con el posicionamiento.</p>
+              <p class="letra1">¿Deseas fortalecer tus habilidades y competencias para los negocios?. <br>
+                Ponemos a tu disposición nuestra Escuela de Negocios Business Wasi, 
+                donde encontrarás cursos y talleres presenciales, hibridas y online, cuyo objetivo es fortalecer tus 
+                competencias y habilidades que te ayuden a tener éxito en tu emprendimiento y/o empresa. Contamos con convenios 
+                con CIDE-PUCP y la UPeU.
+              </p>
             </div>
 
             <!-- List -->
-            <div class="row mb-4">
-              <div class="col-6">
-                <div class="media text-body mb-3">
-                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-                  <div class="media-body">
-                    Creación y diseño de logo.
-                  </div>
-                </div>
-                <div class="media text-body mb-3">
-                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-                  <div class="media-body">
-                    Definición de línea gráfica.
-                  </div>
-                </div>
-                <div class="media text-body mb-3">
-                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-                  <div class="media-body">
-                    Diseño de brochure informativo.
-                  </div>
-                </div>                
-              </div>
-
-              <div class="col-6">
-                <div class="media text-body mb-3">
-                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-                  <div class="media-body">
-                    Diseño de tarjeta de presentación
-                  </div>
-                </div>                
-                
-                <div class="media text-body mb-3">
-                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-                  <div class="media-body">
-                    <span class="mr-1"></span>+Impresión </span> <span class="badge badge-primary badge-pill">(50% descuento)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+           
             <!-- End List -->
 
-            <a class="font-weight-bold" href="#">Quiero mas <i class="fas fa-angle-right fa-sm ml-1"></i></a>
+            <a class="font-weight-bold" href="#">Ver Cursos <i class="fas fa-angle-right fa-sm ml-1"></i></a>
           </div>
         </div>
       </div>

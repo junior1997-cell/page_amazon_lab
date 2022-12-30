@@ -290,6 +290,21 @@ body{
     font-weight: 300;
 }
 
+.imgconsul1 img {
+    border-radius: 10px;
+    height: 300px;
+}
+
+.imgconsul2 img{
+    border-radius: 10px;
+    //height: 300px;
+}
+
+.imgconsul2{
+    padding-right: 30px;
+
+}
+
 .color_logo {
     color: $blanco;
 }
