@@ -130,12 +130,12 @@
     <div class="redes">
       <ul>
         <li>
-          <a href="https://www.facebook.com/" target="_blank">
+          <a href="https://www.facebook.com/businesswasi" target="_blank">
             <i class="fab fa-facebook-f fa-lg icon" style='font-size:20px; color: #0570e6;'></i>
           </a> <br>
         </li>
         <li>
-          <a href="https://www.youtube.com/" target="_blank">
+          <a href="https://www.youtube.com/channel/UCO8gLd1Dq5hrYrZInS93XLQ" target="_blank">
             <i class="fab fa-youtube fa-lg icon" style='font-size:20px; color: #c4302b;'></i>
           </a> <br>
         </li>

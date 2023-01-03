@@ -13,8 +13,8 @@
               <p class="letra2">Conoce todos nuestro servicio actuales y aprovechalos al máximo.</p>
             </div>
 
-            <a class="btn btn-light btn-wide btn-pill shadow-soft transition-3d-hover mb-2 mb-sm-0 mr-4 dark_buttom_brochure" href="" download="Brochure"><i class="fas fa-download"></i> Descargar Brochure</a>
-            <a class="btn btn-success btn-wide btn-pill transition-3d-hover mb-2 mb-sm-0 dark_buttom_contac" href="#"><i class="fab fa-whatsapp"></i> Contactanos</a>
+            <!--<a class="btn btn-light btn-wide btn-pill shadow-soft transition-3d-hover mb-2 mb-sm-0 mr-4 dark_buttom_brochure" href="" download="Brochure"><i class="fas fa-download"></i> Descargar Brochure</a>-->
+            <a class="btn btn-success btn-wide btn-pill transition-3d-hover mb-2 mb-sm-0 dark_buttom_contac" href="https://api.whatsapp.com/send?phone=+51944411328&text=*Hola buenos dias amigo Lewis, vengo de tu pagina principal!!*" target="_blank"><i class="fab fa-whatsapp"></i> Contactanos</a>
             <!-- End Info -->
           </div>
 
@@ -178,7 +178,7 @@
               </div>
             </div>-->
             <!-- End List -->
-            <a class="font-weight-bold" href="https://calendly.com/kerrylewis7">Separa una cita  <i class="fas fa-angle-right fa-sm ml-1"></i></a>
+            <a class="font-weight-bold" href="https://calendly.com/kerrylewis7" target="_blank">Separa tu cita y proforma con nosotros  <i class="fas fa-angle-right fa-sm ml-1"></i></a>
           </div>
         </div>
       </div>
@@ -202,7 +202,7 @@
 
           <div class="col-lg-6 order-lg-2">
             <div class="mb-5">
-              <h2 class="letra5">2.	ASESORÍA Y ESCUELA DE NEGOCIOS</h2>
+              <h2 class="letra5">2.	FORMULACIÓN DE PROYECTOS</h2>
               <p class="letra1"> ¿Deseas financiamiento para tu idea o proyecto?. <br>
                 Contamos con un panel de expertos que te ayudarán a desarrollar tus ideas de negocio y presentarlo 
                 en los distintos fondos concursables para su financiamiento.
@@ -213,7 +213,7 @@
             
             <!-- End List -->
 
-            <a class="font-weight-bold" href="https://calendly.com/kerrylewis7">Separa una cita <i class="fas fa-angle-right fa-sm ml-1"></i></a>
+            <a class="font-weight-bold" href="https://calendly.com/kerrylewis7" target="_blank">Separa tu cita y proforma con nosotros <i class="fas fa-angle-right fa-sm ml-1"></i></a>
           </div>
         </div>
       </div>
@@ -237,7 +237,7 @@
 
           <div class="col-lg-6 order-lg-1">
             <div class="mb-5">
-              <h2 class="letra5">3.	BRANDING</h2>
+              <h2 class="letra5">3.	ESCUELA DE NEGOCIOS</h2>
               <p class="letra1">¿Deseas fortalecer tus habilidades y competencias para los negocios?. <br>
                 Ponemos a tu disposición nuestra Escuela de Negocios Business Wasi, 
                 donde encontrarás cursos y talleres presenciales, hibridas y online, cuyo objetivo es fortalecer tus 
@@ -250,7 +250,7 @@
            
             <!-- End List -->
 
-            <a class="font-weight-bold" href="#">Ver Cursos <i class="fas fa-angle-right fa-sm ml-1"></i></a>
+            <a class="font-weight-bold" href="http://businesswasi.com/estrategia_digital/moodle_v1/" target="_blank">Ver Cursos <i class="fas fa-angle-right fa-sm ml-1"></i></a>
           </div>
         </div>
       </div>
@@ -277,17 +277,17 @@
     <div class="redes">
       <ul>
         <li>
-          <a href="https://www.facebook.com/" target="_blank">
+          <a href="https://www.facebook.com/businesswasi" target="_blank">
             <i class="fab fa-facebook-f fa-lg icon" style='font-size:20px; color: #0570e6;'></i>
           </a> <br>
         </li>
         <li>
-          <a href="https://www.youtube.com/" target="_blank">
+          <a href="https://www.youtube.com/channel/UCO8gLd1Dq5hrYrZInS93XLQ" target="_blank">
             <i class="fab fa-youtube fa-lg icon" style='font-size:20px; color: #c4302b;'></i>
           </a> <br>
         </li>
         <li>
-          <a href="https://web.whatsapp.com/" target="_blank">
+          <a href="https://api.whatsapp.com/send?phone=+51944411328&text=*Hola buenos dias amigo Lewis, vengo de tu pagina principal!!*" target="_blank">
             <i class="fab fa-whatsapp fa-lg icon" style='font-size:20px; color: #33B93F;'></i> 
           </a> <br>
         </li>
