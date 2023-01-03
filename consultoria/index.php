@@ -27,7 +27,7 @@
             </div>
 
             <a class="btn btn-light btn-wide btn-pill shadow-soft transition-3d-hover mb-2 mb-sm-0 mr-4 dark_buttom_brochure" href="" download="Brochure"><i class="fas fa-download"></i> Descargar Brochure</a>
-            <a class="btn btn-success btn-wide btn-pill transition-3d-hover mb-2 mb-sm-0 dark_buttom_contac" href="#"><i class="fab fa-whatsapp"></i> Contáctanos</a>
+            <a class="btn btn-success btn-wide btn-pill transition-3d-hover mb-2 mb-sm-0 dark_buttom_contac" href="https://api.whatsapp.com/"><i class="fab fa-whatsapp"></i> Contáctanos</a>
             <!-- End Info -->
           </div>
 
