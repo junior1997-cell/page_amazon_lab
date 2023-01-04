@@ -97,7 +97,6 @@
                     </div>
                     <!-- End Form Group -->
                   </div>
-
                   <div class="col-sm-12">
                     <!-- Form Group -->
                     <div class="js-form-message form-group">
@@ -112,7 +111,7 @@
                   </div>
                 </div>
 
-                <a type="submit" id="btn_enviarwhats" class="btn btn-block transition-3d-hover text-black" style= "background-color: #fae11f;" href="#" target="_blank"></i>Enviar</a>
+                <a type="submit" id="btn_enviarwhats" class="btn btn-block transition-3d-hover text-white titulos" style= "background-color: #1f0453;" onclick="limpia_formulario_whatsapp();" href="#" target="_blank"></i>Enviar</a>
               </div>
             </form>
             <!-- End Form -->
@@ -130,12 +129,12 @@
     <div class="redes">
       <ul>
         <li>
-          <a href="https://www.facebook.com/" target="_blank">
+          <a href="https://www.facebook.com/businesswasi" target="_blank">
             <i class="fab fa-facebook-f fa-lg icon" style='font-size:20px; color: #0570e6;'></i>
           </a> <br>
         </li>
         <li>
-          <a href="https://www.youtube.com/" target="_blank">
+          <a href="https://www.youtube.com/channel/UCO8gLd1Dq5hrYrZInS93XLQ" target="_blank">
             <i class="fab fa-youtube fa-lg icon" style='font-size:20px; color: #c4302b;'></i>
           </a> <br>
         </li>
@@ -244,9 +243,16 @@
       var correo=$('#correo').val();
       var descripcion=$('#descripcion').val();
 
-      console.log(nombres, apeliidos, correo, descripcion);
+       
+       console.log(nombres, apeliidos, correo, descripcion);
 
-       $('#btn_enviarwhats').attr('href',`https://api.whatsapp.com/send?phone=+51921305769&text=*Hola, Soy* ${nombres}, ${apeliidos}, *con correo:* ${correo}, *mi consulta es:* ${descripcion}!!`);
+       $('#btn_enviarwhats').attr('href',`https://api.whatsapp.com/send?phone=+51944411328&text=*Hola, Soy* ${nombres}, ${apeliidos}, *con correo:* ${correo}, *mi consulta es:* ${descripcion}!!`);
+    }
+    function limpia_formulario_whatsapp(){
+      $('#nombres').val('');
+      $('#apellidos').val('');
+      $('#correo').val('');
+      $('#descripcion').val('');
     }
 
   </script>

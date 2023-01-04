@@ -168,6 +168,12 @@
                                         <div class="media-body"><span class="mr-1"></span>Consultoría en formalización de empresas<span class="badge badge-warning badge-pill">(Regalo)</span></div>
                                     </div>
                                 </div>
+                                <div class="col-12 text-center"  >
+                                    <i class="fas fa-check-circle mt-1 mr-2" style="color: #803588;"></i> Separa una cita:
+                                    <a style="font-size: 15px; font-weight: bold; 
+                                           color:#803588; font-size: 18px;"
+                                         target="_blank" href="https://calendly.com/kerrylewis7">Aquí</a>
+                                </div>
                             </div>
                             <!-- End List -->
 
@@ -209,7 +215,7 @@
                                         </div>
                                     </div>
                                     <div class="media text-body mb-3">
-                                        <i class="fas fa-check-circle text-warning mt-1 mr-2"></i>
+                                        <i class="fas fa-check-circle text-warning mt-1 mr-2" ></i>
                                         <div class="media-body">
                                             Acompañamiento y reuniones online
                                         </div>
@@ -221,6 +227,12 @@
                                         <i class="fas fa-check-circle text-warning mt-1 mr-2"></i>
                                         <div class="media-body"><span class="mr-1">Consultoría en formalización de empresas </span> <span class="badge badge-warning badge-pill">(Regalo)</span></div>
                                     </div>
+                                </div>
+                                <div class="col-12 text-center"  >
+                                    <i class="fas fa-check-circle mt-1 mr-2" style="color: #803588;"></i> Separa una cita:
+                                    <a style="font-size: 15px; font-weight: bold; 
+                                           color:#803588; font-size: 18px;"
+                                         target="_blank" href="https://calendly.com/kerrylewis7">Aquí</a>
                                 </div>
                             </div>
                             <!-- End List -->
@@ -256,19 +268,19 @@
                             <div class="row mb-4 contenido">
                                 <div class="col-6">
                                     <div class="media text-body mb-3">
-                                        <i class="fas fa-check-circle mt-1 mr-2" style="color: #803588;"></i>
+                                        <i class="fas fa-check-circle mt-1 mr-2 text-warning"></i>
                                         <div class="media-body">
                                             Creación y diseño de logo.
                                         </div>
                                     </div>
                                     <div class="media text-body mb-3">
-                                        <i class="fas fa-check-circle mt-1 mr-2" style="color: #803588;"></i>
+                                        <i class="fas fa-check-circle mt-1 mr-2 text-warning"></i>
                                         <div class="media-body">
                                             Definición de línea gráfica.
                                         </div>
                                     </div>
                                     <div class="media text-body mb-3">
-                                        <i class="fas fa-check-circle mt-1 mr-2" style="color: #803588;"></i>
+                                        <i class="fas fa-check-circle mt-1 mr-2 text-warning"></i>
                                         <div class="media-body">
                                             Diseño de brochure informativo.
                                         </div>
@@ -277,16 +289,22 @@
 
                                 <div class="col-6">
                                     <div class="media text-body mb-3">
-                                        <i class="fas fa-check-circle mt-1 mr-2" style="color: #803588;"></i>
+                                        <i class="fas fa-check-circle mt-1 mr-2 text-warning"></i>
                                         <div class="media-body" style="text-align: justify;">
                                             Diseño de tarjeta de presentación
                                         </div>
                                     </div>
 
                                     <div class="media text-body mb-3">
-                                        <i class="fas fa-check-circle mt-1 mr-2" style="color: #803588;"></i>
+                                        <i class="fas fa-check-circle mt-1 mr-2 text-warning" ></i>
                                         <div class="media-body"><span class="mr-1">+Impresión </span> <span class="badge badge-danger badge-pill">(50% descuento)</span></div>
                                     </div>
+                                </div>
+                                <div class="col-12 text-center"  >
+                                    <i class="fas fa-check-circle mt-1 mr-2" style="color: #803588;"></i> Separa una cita:
+                                    <a style="font-size: 15px; font-weight: bold; 
+                                           color:#803588; font-size: 18px;"
+                                         target="_blank" href="https://calendly.com/kerrylewis7">Aquí</a>
                                 </div>
                             </div>
                             <!-- End List -->

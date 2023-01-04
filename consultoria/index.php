@@ -23,11 +23,14 @@
                 <br>
                 Tu negocio con estrategias integradas!
               </h1>
-              <p class="text-white-70 letra3">Brochure para emprendedores.</p>
+              <!--<p class="text-white-70 letra3">Brochure para emprendedores.</p>-->
             </div>
 
-            <a class="btn btn-light btn-wide btn-pill shadow-soft transition-3d-hover mb-2 mb-sm-0 mr-4 dark_buttom_brochure" href="" download="Brochure"><i class="fas fa-download"></i> Descargar Brochure</a>
-            <a class="btn btn-success btn-wide btn-pill transition-3d-hover mb-2 mb-sm-0 dark_buttom_contac" href="#"><i class="fab fa-whatsapp"></i> Contáctanos</a>
+           <!-- <a class="btn btn-light btn-wide btn-pill shadow-soft transition-3d-hover mb-2 mb-sm-0 mr-4 dark_buttom_brochure" href="" download="Brochure"><i class="fas fa-download"></i> Descargar Brochure</a>-->
+            <a class="btn btn-success btn-wide btn-pill transition-3d-hover mb-2 mb-sm-0 dark_buttom_contac" href="https://api.whatsapp.com/send?phone=+51944411328&text=*Hola buenos dias amigo Lewis, vengo de tu pagina principal!!*" target="_blank">
+              <i class="fab fa-whatsapp"></i> 
+              Contáctanos
+            </a>
             <!-- End Info -->
           </div>
 
@@ -173,7 +176,12 @@
               <p class="small text-white" style="font-size: 17px;" >Comunícate con nuestros agentes,<br>las 24 horas del día</p>
             </div>
 
-            <button type="button" class="btn btn-success btn-wide btn-pill transition-3d-hover"><i class="fab fa-whatsapp fa-lg"></i> contáctanos</button>
+            <a type="button" target="_blank" class="btn btn-success btn-wide btn-pill transition-3d-hover" href="https://api.whatsapp.com/send?phone=+51944411328&text=*Hola buenos dias amigo Lewis, vengo de tu pagina principal!!*">
+              <i class="fab fa-whatsapp fa-lg"></i>
+              contáctanos
+            </a>
+
+            
           </div>
         </div>
 
@@ -264,17 +272,17 @@
     <div class="redes">
       <ul>
         <li>
-          <a href="https://www.facebook.com/" target="_blank">
+          <a href="https://www.facebook.com/businesswasi" target="_blank">
             <i class="fab fa-facebook-f fa-lg icon" style='font-size:20px; color: #0570e6;'></i>
           </a> <br>
         </li>
         <li>
-          <a href="https://www.youtube.com/" target="_blank">
+          <a href="https://www.youtube.com/channel/UCO8gLd1Dq5hrYrZInS93XLQ" target="_blank">
             <i class="fab fa-youtube fa-lg icon" style='font-size:20px; color: #c4302b;'></i>
           </a> <br>
         </li>
         <li>
-          <a href="https://web.whatsapp.com/" target="_blank">
+          <a href="https://api.whatsapp.com/send?phone=+51944411328&text=*Hola buenos dias amigo Lewis, vengo de tu pagina principal!!*" target="_blank">
             <i class="fab fa-whatsapp fa-lg icon" style='font-size:20px; color: #33B93F;'></i> 
           </a> <br>
         </li>
