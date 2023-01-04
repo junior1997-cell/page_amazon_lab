@@ -168,6 +168,14 @@ body{
     font-weight: bold;
 }
 
+.hover_link{
+    font-size: 20px;
+}
+
+.hover_link:hover {
+    color: $rosado;
+}
+
 .dark_buttom_brochure {
     background: $botonNegro !important;
     color: $blanco;

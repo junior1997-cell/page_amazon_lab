@@ -178,7 +178,10 @@
               </div>
             </div>-->
             <!-- End List -->
-            <a class="font-weight-bold" href="https://calendly.com/kerrylewis7" target="_blank">Separa tu cita y proforma con nosotros  <i class="fas fa-angle-right fa-sm ml-1"></i></a>
+            <p class="letra1" style="font-size: 18px;">
+            Separa una cita: 
+              <a class="font-weight-bold tipoletra1 hover_link" href="https://calendly.com/kerrylewis7" target="_blank">Aquí</a>
+            </p>
           </div>
         </div>
       </div>
@@ -213,7 +216,10 @@
             
             <!-- End List -->
 
-            <a class="font-weight-bold" href="https://calendly.com/kerrylewis7" target="_blank">Separa tu cita y proforma con nosotros <i class="fas fa-angle-right fa-sm ml-1"></i></a>
+            <p class="letra1" style="font-size: 18px;">
+            Separa una cita: 
+              <a class="font-weight-bold tipoletra1 hover_link" href="https://calendly.com/kerrylewis7" target="_blank">Aquí</a>
+            </p>
           </div>
         </div>
       </div>
@@ -249,8 +255,11 @@
             <!-- List -->
            
             <!-- End List -->
-
-            <a class="font-weight-bold" href="http://businesswasi.com/estrategia_digital/moodle_v1/" target="_blank">Ver Cursos <i class="fas fa-angle-right fa-sm ml-1"></i></a>
+            <p class="letra1" style="font-size: 18px;">
+            Ver Cursos: 
+              <a class="font-weight-bold tipoletra1 hover_link" href="https://calendly.com/kerrylewis7" target="_blank">Aquí</a>
+            </p>
+            
           </div>
         </div>
       </div>
