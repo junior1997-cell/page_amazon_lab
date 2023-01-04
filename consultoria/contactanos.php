@@ -37,12 +37,12 @@
             <div class="col-sm-6">
               <div class="mb-3">
                 <span class="d-block h5 mb-1 letra2">Teléfono:</span>
-                <span class="d-block text-body font-size-1"> <a href="tel:+51944411328">944 411 328</a> </span>
+                <span class="d-block text-body font-size-1"> <a href="tel:+51944411328" style="color: white;">944 411 328</a> </span>
               </div>
 
               <div class="mb-3">
                 <span class="d-block h5 mb-1 letra2">Correo:</span>
-                <span class="d-block text-body font-size-1"><a href="mailto:consultoria@gmail.com">consultoria@gmail.com</a> </span>
+                <span class="d-block text-body font-size-1"><a href="mailto:consultoria@gmail.com" style="color: white;">consultoria@gmail.com</a> </span>
               </div>
             </div>
 
@@ -111,7 +111,7 @@
                   </div>
                 </div>
 
-                <a type="submit" id="btn_enviarwhats" class="btn btn-block transition-3d-hover text-white titulos" style= "background-color: #1f0453;" onclick="limpia_formulario_whatsapp();" href="#" target="_blank"></i>Enviar</a>
+                <a type="submit" id="btn_enviarwhats" class="btn btn-block transition-3d-hover text-white titulos" style= "background-color: #efab00;" onclick="limpia_formulario_whatsapp();" href="#" target="_blank"></i>Enviar</a>
               </div>
             </form>
             <!-- End Form -->
@@ -123,9 +123,7 @@
   </main>
   <!-- ========== END MAIN ========== -->
 
-
   <div class="container-btn-redes">
-    
     <div class="redes">
       <ul>
         <li>
