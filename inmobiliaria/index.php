@@ -309,7 +309,9 @@
                                   <div class="media text-body mb-3" style="font-family: GothamLight;">
                                       <i class="fas fa-check-circle mt-1 mr-2" style="color: #ec9a3c00!important;"></i>
                                       <div class="media-body " >
-                                        Separa una cita y lo coordinamos: <a style="font-size: 15px; font-family: GothamLight;" target="_blank" href="https://calendly.com/kerrylewis7">https://calendly.com/kerrylewis7</a>
+                                        Separa una cita: 
+                                        <a style="font-size: 15px; font-family: GothamMedium;font-weight: bold; 
+                                           color:#377dff; font-size: 18px;" target="_blank" href="https://calendly.com/kerrylewis7">Aquí</a>
                                       </div>
                                   </div>
                               </div>
@@ -355,7 +357,9 @@
                                   <div class="media text-body mb-3"  style="font-family: GothamLight;">
                                       <i class="fas fa-check-circle text-warning mt-1 mr-2" style="color:#ec9a3c00!important;"></i>
                                       <div class="media-body" style="font-size: 15px; font-family: GothamLight;">
-                                         Separa una cita y lo coordinamos: <a target="_blank" href="https://calendly.com/kerrylewis7">https://calendly.com/kerrylewis7</a>
+                                         Separa una cita: 
+                                         <a style="font-size: 15px; font-family: GothamMedium;font-weight: bold; 
+                                           color: #377dff; font-size: 18px;"  target="_blank" href="https://calendly.com/kerrylewis7">Aquí </a>
                                       </div>
                                   </div>
                               </div>
