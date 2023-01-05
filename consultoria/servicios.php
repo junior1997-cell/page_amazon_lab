@@ -14,7 +14,7 @@
             </div>
 
             <!--<a class="btn btn-light btn-wide btn-pill shadow-soft transition-3d-hover mb-2 mb-sm-0 mr-4 dark_buttom_brochure" href="" download="Brochure"><i class="fas fa-download"></i> Descargar Brochure</a>-->
-            <a class="btn btn-success btn-wide btn-pill transition-3d-hover mb-2 mb-sm-0 dark_buttom_contac" href="https://api.whatsapp.com/send?phone=+51944411328&text=*Hola buenos dias amigo Lewis, vengo de tu pagina principal!!*" target="_blank"><i class="fab fa-whatsapp"></i> Contactanos</a>
+            <a class="btn btn-success btn-wide btn-pill transition-3d-hover mb-2 mb-sm-0 dark_buttom_contac" href="https://api.whatsapp.com/send?phone=+51944411328&text=*Hola buenos dias amigo Lewis, vengo de tu pagina principal!!*" target="_blank"><i class="fab fa-whatsapp"></i> Contáctanos</a>
             <!-- End Info -->
           </div>
 
@@ -69,7 +69,7 @@
         <div class="card">
           <img src="../assets/consultoria/img/img1.jpg" alt="">
           <h3 class="letra1">Consultoría y Gestión empresarial</h3>
-          <p>¿Deseas mejorar el proceso productivo de tu empresa?, ¿Quieres mejorar la atención al cliente en tu negocio?
+          <p style="text-align: justify">¿Deseas mejorar el proceso productivo de tu empresa?, ¿Quieres mejorar la atención al cliente en tu negocio?
              ¿Tienes una idea de negocio y no sabes por donde iniciar?. <br>
              
              Descuida!....
@@ -79,7 +79,7 @@
         <div class="card">
           <img src="../assets/consultoria/img/img2.jpg" alt="">
           <h3 class="letra1">Formulación de Proyectos</h3>
-          <p>¿Deseas financiamiento para tu idea o proyecto?.
+          <p style="text-align: justify">¿Deseas financiamiento para tu idea o proyecto?.
             Contamos con un panel de expertos que te ayudarán a desarrollar tus ideas de negocio y 
             presentarlo en los distintos fondos concursables para su financiamiento.
           </p>
@@ -88,7 +88,7 @@
         <div class="card">
           <img src="../assets/consultoria/img/img3.jpg" alt="">
           <h3 class="letra1">Escuela de Negocios</h3>
-          <p>¿Deseas fortalecer tus habilidades y competencias para los negocios?.</p>
+          <p style="text-align: justify">¿Deseas fortalecer tus habilidades y competencias para los negocios?.</p>
         </div>
 
       </div>
@@ -115,7 +115,7 @@
           <div class="col-lg-6 order-lg-1">
             <div class="mb-5">
               <h2 class="letra5">1.	CONSULTORÍA Y GESTIÓN EMPRESARIAL</h2>
-              <p class="letra1">Formamos un equipo de colaboradores creativos e innovadores, comprometidos en cada proyecto y 
+              <p class="letra1" style="text-align: justify">Formamos un equipo de colaboradores creativos e innovadores, comprometidos en cada proyecto y 
                 reto que nos presentes. Nuestros profesionales están certificados internacionalmente y hacen uso de marcos de 
                 trabajos ágiles para acelerar y poner a prueba las soluciones como Design Thinking, SCRUM, Lean Startup.
               </p>
@@ -206,7 +206,7 @@
           <div class="col-lg-6 order-lg-2">
             <div class="mb-5">
               <h2 class="letra5">2.	FORMULACIÓN DE PROYECTOS</h2>
-              <p class="letra1"> ¿Deseas financiamiento para tu idea o proyecto?. <br>
+              <p class="letra1" style="text-align: justify"> ¿Deseas financiamiento para tu idea o proyecto?. <br>
                 Contamos con un panel de expertos que te ayudarán a desarrollar tus ideas de negocio y presentarlo 
                 en los distintos fondos concursables para su financiamiento.
               </p>
@@ -244,7 +244,7 @@
           <div class="col-lg-6 order-lg-1">
             <div class="mb-5">
               <h2 class="letra5">3.	ESCUELA DE NEGOCIOS</h2>
-              <p class="letra1">¿Deseas fortalecer tus habilidades y competencias para los negocios?. <br>
+              <p class="letra1" style="text-align: justify">¿Deseas fortalecer tus habilidades y competencias para los negocios?. <br>
                 Ponemos a tu disposición nuestra Escuela de Negocios Business Wasi, 
                 donde encontrarás cursos y talleres presenciales, hibridas y online, cuyo objetivo es fortalecer tus 
                 competencias y habilidades que te ayuden a tener éxito en tu emprendimiento y/o empresa. Contamos con convenios 
@@ -268,18 +268,6 @@
     
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
-
-  <!-- ========== FOOTER ========== -->
-  <footer class="container text-center space-1">
-    <!-- Logo -->
-    <a class="d-inline-flex align-items-center mb-2" href="index.html" aria-label="Front">
-      <!-- <img class="brand" src="../assets/svg/logos/logo-amazone-lab.svg" alt="Logo"> -->
-    </a>
-    <!-- End Logo -->
-
-    <p class="small text-muted mb-0">2022 © JDL Tecnology. Todos los derechos Reservados.</p>
-  </footer>
-  <!-- ========== END FOOTER ========== -->
 
   <div class="container-btn-redes">
     

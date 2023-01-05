@@ -135,7 +135,7 @@
       <div class="row justify-content-lg-between align-items-lg-center" style="border-bottom: 1px solid #e37d2a; margin-bottom: 10px;">
         <div class="col-lg-5 mb-9 mb-lg-0">
           <div class="mb-4">
-            <h3 class="letra1" style="font-size: 30px; text-align: justify;">La realización de estos talleres es de forma virtual y 
+            <h3 class="letra1" style="font-size: 25px; text-align: justify;">La realización de estos talleres es de forma virtual y 
               presencial, y trabajamos en convenio con la Universidad Peruana Unión y CIDE de la Pontificia Universidad Católica del Perú.</h3>
           </div>
 
@@ -159,7 +159,7 @@
                 <span class="display-4" style="color: #efab00 !important;">¿Cómo trabajamos?</span>
                 <!-- <span class="badge badge-indigo badge-pill align-top ml-1">+0.5 USD</span> -->
               </div>
-              <p style="color: white; text-align: center; font-size: 20px;">Trabajamos con diferentes herramientas para optimizar el tiempo y mejorar nuestra metodología 
+              <p style="color: white; text-align: justify; font-size: 20px;">Trabajamos con diferentes herramientas para optimizar el tiempo y mejorar nuestra metodología 
                 de trabajo, por ende, obtener mejores resultados.</p>
             </header>
 
