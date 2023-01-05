@@ -11,9 +11,9 @@
                         <div class="redes">
                             <ul>
                                 <li class="float"><a href="https://www.facebook.com/businesswasi" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
-                                <li class="float"><a href="https://twitter.com/pronabec" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
-                                <li class="float"><a href="https://www.instagram.com/pronabec" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
-                                <li class="float"><a href="https://pe.linkedin.com/company/pronabec" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li class="float"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+                                <li class="float"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+                                <li class="float"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
                                 <li class="float"><a href="https://www.youtube.com/channel/UCO8gLd1Dq5hrYrZInS93XLQ" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a></li>
                                                                                                                 
                             </ul>
