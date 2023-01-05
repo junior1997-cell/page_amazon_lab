@@ -116,6 +116,22 @@
   color: #EDC452 !important;
 }
 
+.redes ul li a {
+  background: #EDC452;
+  border-radius: 50%;
+  color: #fff;
+  display: block;
+  height: 25px;
+  line-height: 26px;
+  text-align: center;
+  width: 25px;
+}
+.float {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
 
 
 
