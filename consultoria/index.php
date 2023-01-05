@@ -159,7 +159,7 @@
                 <span class="display-4 tipoletra1" style="color: #efab00 !important; font-weight: bold;">¿Cómo trabajamos?</span>
                 <!-- <span class="badge badge-indigo badge-pill align-top ml-1">+0.5 USD</span> -->
               </div>
-              <p class="tipoletra2 letra1" style="text-align: justify; font-size: 20px; font-weight: bold;">Trabajamos con diferentes herramientas para optimizar el tiempo y mejorar nuestra metodología 
+              <p class="tipoletra2 letra1" style="text-align: justify; font-size: 20px;">Trabajamos con diferentes herramientas para optimizar el tiempo y mejorar nuestra metodología 
                 de trabajo, por ende, obtener mejores resultados.</p>
             </header>
 
