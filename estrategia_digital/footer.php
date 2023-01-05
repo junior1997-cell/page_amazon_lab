@@ -5,7 +5,7 @@
 
                     <div class="col-12 col-md-12 col-sm-12 col-lg-9 col-xl-9 contenido">
                         <span style="margin-right: 10px;"><i class="fas fa-location-arrow"></i> Jr. Los Helechos 214 - Urb. Bernabe Guridi.</span>
-                        <span><a href="https://api.whatsapp.com/send?phone=944411328&amp;text=" style="color: #F4B222; text-decoration: none; background-color: transparent;"><i class="fab fa-whatsapp"></i>Whatsapp: +51 944 411 328</a></span>
+                        <span><a href="https://api.whatsapp.com/send?phone=944411328&amp;text=" style="color: #F4B222; text-decoration: none; background-color: transparent;"><i class="fab fa-whatsapp"></i> Whatsapp: +51 944 411 328</a></span>
                     </div>
                     <div class="col-12 col-md-12 col-sm-12 col-lg-3 col-xl-3" style="text-align: end;">
                         <div class="redes">
