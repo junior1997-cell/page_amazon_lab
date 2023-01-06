@@ -25,13 +25,6 @@
               </h1>
               <!--<p class="text-white-70 letra3">Brochure para emprendedores.</p>-->
             </div>
-
-           <!-- <a class="btn btn-light btn-wide btn-pill shadow-soft transition-3d-hover mb-2 mb-sm-0 mr-4 dark_buttom_brochure" href="" download="Brochure"><i class="fas fa-download"></i> Descargar Brochure</a>-->
-            <a class="btn btn-success btn-wide btn-pill transition-3d-hover mb-2 mb-sm-0 dark_buttom_contac" style="font-weight: bold;" href="https://api.whatsapp.com/send?phone=+51944411328&text=*Hola buenos dias amigo Lewis, vengo de tu pagina principal!!*" target="_blank">
-              <i class="fab fa-whatsapp"></i> 
-              Contáctanos
-            </a>
-            <!-- End Info -->
           </div>
 
           <div class="col-lg-7">
@@ -88,8 +81,8 @@
     <div class="container">
       <!-- Title -->
       <div class="w-lg-50 text-center mx-lg-auto">
+      <p class="letra2 tipoletra1" style="font-size: 50px; font-weight: bold;">Bienvenidos</p>
         <h2 class="letra1 tipoletra1" style="font-size: 30px; font-weight: bold;">Somos Consultoría, Bussines Wassi.</h2>
-        <p class="letra2 tipoletra1" style="font-size: 45px; font-weight: bold;">Bienvenidos</p>
       </div>
       <!-- End Title -->
       <div class="row justify-content-lg-between align-items-lg-center" style="border-bottom: 1px solid #e37d2a; margin-bottom: 10px;">
@@ -102,7 +95,7 @@
 
         <div class="col-lg-6">
 
-          <img class="device-iphone-x-frame" src="../assets/consultoria/img/pngegg11.png" alt="Image Description">
+          <img class="device-iphone-x-frame" src="../assets/consultoria/img/pngegg111.png" alt="Image Description">
 
         </div>
       </div>
@@ -175,11 +168,6 @@
             <div class="mb-7">
               <p class="small text-white tipoletra2" style="font-size: 17px; font-weight: bold;" >Comunícate con nuestros agentes,<br>las 24 horas del día</p>
             </div>
-
-            <a type="button" target="_blank" class="btn btn-success btn-wide btn-pill transition-3d-hover" style="font-weight: bold;" href="https://api.whatsapp.com/send?phone=+51944411328&text=*Hola buenos dias amigo Lewis, vengo de tu pagina principal!!*">
-              <i class="fab fa-whatsapp fa-lg"></i>
-              contáctanos
-            </a>
 
             
           </div>
@@ -370,6 +358,7 @@
   <script>
     if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="../assets/vendor/babel-polyfill/dist/polyfill.js"><\/script>');
   </script>
+  <!-- <script src="s"></script> -->
 </body>
 
 </html>

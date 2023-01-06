@@ -38,17 +38,17 @@
           <div id="navBar" class="collapse navbar-collapse navBar">
             <ul class="navbar-nav">
               <li class="navbar-nav-item">
-                <a class="nav-link active" href="index.php">Nosotros</a>
+                <a class="nav-link nosotros hover_amarillo amarillo_active" href="index.php">Nosotros</a>
               </li>
 
               <!-- Property Pages -->
               <li class="navbar-nav-item">
-                <a class="nav-link" href="servicios.php">Servicios</a>
+                <a class="nav-link servicios hover_amarillo" href="servicios.php">Servicios</a>
               </li>
               <!-- End Property Pages -->
 
               <li class="navbar-nav-item">
-                <a class="nav-link" href="contactanos.php">Contáctanos</a>
+                <a class="nav-link contactanos hover_amarillo" href="contactanos.php">Contáctanos</a>
               </li>
 
               <!--===========================BOTON MOODLE================================-->

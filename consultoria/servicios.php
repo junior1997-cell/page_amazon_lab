@@ -12,10 +12,6 @@
               <h1 class="letra1 tipoletra1" style="font-size: 45px;">Nuestros Servicios 2023</h1>
               <p class="letra2 tipoletra2" style="font-weight: bold;">Conoce todos nuestros servicios actuales y aprovéchalos al máximo.</p>
             </div>
-
-            <!--<a class="btn btn-light btn-wide btn-pill shadow-soft transition-3d-hover mb-2 mb-sm-0 mr-4 dark_buttom_brochure" href="" download="Brochure"><i class="fas fa-download"></i> Descargar Brochure</a>-->
-            <a class="btn btn-success btn-wide btn-pill transition-3d-hover mb-2 mb-sm-0 dark_buttom_contac" href="https://api.whatsapp.com/send?phone=+51944411328&text=*Hola buenos dias amigo Lewis, vengo de tu pagina principal!!*" target="_blank"><i class="fab fa-whatsapp"></i> Contáctanos</a>
-            <!-- End Info -->
           </div>
 
           <div class="col-lg-7">
@@ -57,7 +53,7 @@
     </figure> -->
     <!-- End SVG Top Shape -->
 
-    <div id="aboutSection" class="container space-2 space-lg-2">
+    <div id="aboutSection" class="container space-1 space-lg-2" style="padding-top: 2px !important;" >
       <!-- Title -->
       <div class="w-lg-65 text-center mx-auto mb-5 mb-sm-9">
         <h2 class="h1 letra1 tipoletra1">Servicios</h2>
@@ -67,8 +63,8 @@
 
       <div class="cont1">
         <div class="card">
-          <img src="../assets/consultoria/img/img1.jpg" alt="">
-          <h3 class="tipoletra1" style="color: #C8C8C8;">Consultoría y Gestión empresarial</h3>
+          <img src="../assets/consultoria/img/img3.jpg" alt="">
+          <h4 class="tipoletra1 mt-3" style="color: #C8C8C8;">Consultoría y Gestión empresarial</h4>
           <p class="tipoletra2" style="text-align: justify; color: #B8B8B8; font-size: 15px;">¿Deseas mejorar el proceso productivo de tu empresa?, ¿Quieres mejorar la atención al cliente en tu negocio?
              ¿Tienes una idea de negocio y no sabes por donde iniciar?. <br>
              
@@ -78,7 +74,7 @@
 
         <div class="card">
           <img src="../assets/consultoria/img/img2.jpg" alt="">
-          <h3 class="tipoletra1" style="color: #C8C8C8;">Formulación de Proyectos</h3>
+          <h4 class="tipoletra1 mt-3" style="color: #C8C8C8;">Formulación de Proyectos</h4>
           <p class="tipoletra2" style="text-align: justify; color: #B8B8B8; font-size: 15px;">¿Deseas financiamiento para tu idea o proyecto?.
             Contamos con un panel de expertos que te ayudarán a desarrollar tus ideas de negocio y 
             presentarlo en los distintos fondos concursables para su financiamiento.
@@ -87,7 +83,7 @@
 
         <div class="card">
           <img src="../assets/consultoria/img/img3.jpg" alt="">
-          <h3 class="tipoletra1" style="color: #C8C8C8;">Escuela de Negocios</h3>
+          <h4 class="tipoletra1 mt-3" style="color: #C8C8C8;">Escuela de Negocios</h4>
           <p class="tipoletra2" style="text-align: justify; color: #B8B8B8; font-size: 15px;">¿Deseas fortalecer tus habilidades y competencias para los negocios?.</p>
         </div>
 
@@ -99,7 +95,7 @@
 
     <!-- Features Section -->
     <div class="container">
-      <div class="border-bottom space-2 space-lg-2">
+      <div class="border-bottom space-2 space-lg-1">
         <div class="row align-items-lg-center">
 
           <div class="col-lg-6 order-lg-2 mb-7 mb-lg-0">
@@ -111,7 +107,6 @@
               
             </div>
           </div>
-
           <div class="col-lg-6 order-lg-1">
             <div class="mb-5">
               <h2 class="letra2 tipoletra1" style="font-size: 29px;">1.	CONSULTORÍA Y GESTIÓN EMPRESARIAL</h2>
@@ -120,64 +115,6 @@
                 trabajos ágiles para acelerar y poner a prueba las soluciones como Design Thinking, SCRUM, Lean Startup.
               </p>
             </div>
-
-            <!-- List -->
-            <!--<div class="row mb-4">
-              <div class="col-6">
-                <div class="media text-body mb-3">
-                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-                  <div class="media-body">
-                    Diseño de perfil, portada e historias destacadas en redes sociales.
-                  </div>
-                </div>
-                <div class="media text-body mb-3">
-                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-                  <div class="media-body">
-                    Mapa de contenido anual
-                  </div>
-                </div>
-                <div class="media text-body mb-3">
-                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-                  <div class="media-body">
-                    Plan de contenido mensual
-                  </div>
-                </div>
-                <div class="media text-body mb-3">
-                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-                  <div class="media-body">
-                    12 diseños (post e historia).
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-6">
-                <div class="media text-body mb-3">
-                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-                  <div class="media-body">
-                    Sesión fotográfica publicitaria.
-                  </div>
-                </div>
-                <div class="media text-body mb-3">
-                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-                  <div class="media-body">
-                    Community Manager (8 horas)
-                  </div>
-                </div>
-                <div class="media text-body mb-3">
-                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-                  <div class="media-body">
-                    Acompañamiento y reuniones online.
-                  </div>
-                </div>
-                <div class="media text-body mb-3">
-                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-                  <div class="media-body">
-                    <span class="mr-1"></span>Consultoría en formalización de empresas </span> <span class="badge badge-primary badge-pill">(Regalo)</span>
-                  </div>
-                </div>
-              </div>
-            </div>-->
-            <!-- End List -->
             <p class="letra1" style="font-size: 18px;">
             Separa una cita: 
               <a class="font-weight-bold tipoletra1 hover_link" href="https://calendly.com/kerrylewis7" target="_blank">Aquí</a>
@@ -190,7 +127,7 @@
 
     <!-- Features Section -->
     <div class="container">
-      <div class="border-bottom space-2 space-lg-3">
+      <div class="border-bottom space-2 space-lg-1">
         <div class="row align-items-lg-center">
 
           <div class="col-lg-6 order-lg-1 mb-7 mb-lg-0">
@@ -228,7 +165,7 @@
 
     <!-- Features Section -->
     <div class="container">
-      <div class="border-bottom space-2 space-lg-3">
+      <div class="space-2 space-lg-1">
         <div class="row align-items-lg-center">
 
           <div class="col-lg-6 order-lg-2 mb-7 mb-lg-0">
@@ -372,6 +309,7 @@
   <script>
     if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="../assets/vendor/babel-polyfill/dist/polyfill.js"><\/script>');
   </script>
+   <script src="scripts/script_servicios.js"></script>
 </body>
 
 <!-- Mirrored from htmlstream.com/front/landing-app-saas.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 May 2021 14:18:09 GMT -->
