@@ -41,7 +41,7 @@
                         <!-- Navigation -->
                         <div id="navBar" class="collapse navbar-collapse">
                             <div class="navbar-body header-abs-top-inner">
-                                <ul class="navbar-nav">
+                                <ul class="navbar-nav" style="background: #f4b222;">
                                     <!-- Home -->
                                     <li class="navbar navbar-light">
                                         <a id="pagesMegaMenu" href="index.php" aria-haspopup="true" aria-expanded="false" class=" nosotros hover_morado morado_active"><b>Nosotros</b></a>

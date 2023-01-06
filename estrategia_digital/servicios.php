@@ -101,7 +101,7 @@
                     <div class="row align-items-lg-center">
                         <div class="col-lg-6 order-lg-2 mb-7 mb-lg-0">
                             <div class="pl-lg-5">
-                                <div class="bg-soft-danger rounded-lg min-h-450rem p-4">
+                                <div class="bg-soft-danger rounded-lg p-1">
                                     <!-- Nav -->
                                     <img class="img-fluid" src="../assets/consultoria/img/img_3.png" alt="Image Description" />
                                     <!-- End Tab Content -->
@@ -190,7 +190,7 @@
                     <div class="row align-items-lg-center">
                         <div class="col-lg-6 order-lg-1 mb-7 mb-lg-0">
                             <div class="pl-lg-5">
-                                <div class="bg-warning rounded-lg min-h-450rem p-4">
+                                <div class="bg-warning rounded-lg p-4">
                                     <!-- Nav -->
                                     <br></br>
                                     <img class="img-fluid" src="../assets/estrategia_digital/img/asesoria.png" alt="Image Description" />
@@ -199,7 +199,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-6 order-lg-2">
+                        <div class="col-lg-6 order-lg-2 mb-3">
                             <div class="mb-2">
                                 <h2 class="titulos">2. ASESORÍA Y ESCUELA DE NEGOCIOS</h2>
                                 <p class="contenido" style="text-align: justify;">La asesoría empresarial tiene origen en la necesidad por parte de las empresas de ser aconsejados y asesorados por profesionales expertos en determinadas materias.</p>
@@ -250,7 +250,7 @@
                     <div class="row align-items-lg-center">
                         <div class="col-lg-6 order-lg-2 mb-7 mb-lg-0">
                             <div class="pl-lg-5">
-                                <div class="bg-light rounded-lg min-h-450rem p-4">
+                                <div class="bg-light rounded-lg p-4">
                                     <!-- Nav -->
                                     <img class="img-fluid" src="../assets/consultoria/img/img_5.png" alt="Image Description" />
                                     <!-- End Tab Content -->
