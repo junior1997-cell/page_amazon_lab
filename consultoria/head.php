@@ -33,6 +33,18 @@
   <!-- mi stilo -->
   <link rel="stylesheet" href="../assets/consultoria/css/boton-flotante-w.css">
   <link rel="stylesheet" href="../assets/consultoria/css/my_stilo.css">
+
+  <style>
+    .hover_amarillo {
+    color: white !important;
+    }
+    .hover_amarillo:hover {
+        color: #583588 !important;
+    }
+    .amarillo_active {
+        color: #efab00 !important;
+    }
+  </style>
   
 </head>
 <body>

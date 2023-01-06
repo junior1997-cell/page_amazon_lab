@@ -31,7 +31,7 @@
             </div>
             <!--Button whatsapp-->
             <div class="btn-whatsapp">
-                <a href="https://api.whatsapp.com/send?phone=+51981796620&text=*Hola buenos dias amigo Lewis, vengo de tu pagina principal!!*" target="_blank">
+                <a href="https://api.whatsapp.com/send?phone=+51944411328&text=*Hola amigo Lewis*, estuve visitando tu página V5 Estrategia Digital y necesito más información!!" target="_blank">
                     <img src="http://s2.accesoperu.com/logos/btn_whatsapp.png" alt="" />
                 </a>
             </div>
@@ -39,7 +39,7 @@
         </div>
         <!-- Features Section -->
         <div class="bg-black rounded-lg mx-3 mx-xl-10" style="background-image: url(assets/svg/components/abstract-shapes-20.svg);" style="background-color: #1c0454;">
-            <div class="container-xl container-fluid space-0 space-md-2 px-4 px-md-8 px-lg-10">
+            <div class="container-xl container-fluid space-1 px-4 px-md-8 px-lg-10">
                 <div class="px-0">
                     <!-- Title -->
                     <div class="mx-auto text-center">
@@ -203,6 +203,7 @@
         </div>
         <!-- End Articles Section -->
     </main>
+    <br>
     <!-- ========== END MAIN CONTENT ========== -->
 
     <?php include_once 'footer.php'; ?>
@@ -327,7 +328,7 @@
         <script>
             if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="../assets/vendor/babel-polyfill/dist/polyfill.js"><\/script>');
         </script>
-        <script src="scripts/script_nosotros.js"></script>
+        <script src="script.js"></script>
     </body>
 
     <!-- Mirrored from htmlstream.com/front/landing-classic-advertisement.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 May 2021 14:17:37 GMT -->

@@ -8,7 +8,7 @@
           <div class="col-lg-5 mb-5 mb-lg-0">
             <!-- Info -->
             <div class="mb-6">
-              <h1 class="text-white mb-3 tipoletra1">
+              <h1 class="text-white mb-3 tipoletra1" style="font-weight: bold;">
                 ¡Es momento de 
                 <span class="text-dark font-weight-bold">
                   <span class="js-text-animation"
@@ -25,13 +25,6 @@
               </h1>
               <!--<p class="text-white-70 letra3">Brochure para emprendedores.</p>-->
             </div>
-
-           <!-- <a class="btn btn-light btn-wide btn-pill shadow-soft transition-3d-hover mb-2 mb-sm-0 mr-4 dark_buttom_brochure" href="" download="Brochure"><i class="fas fa-download"></i> Descargar Brochure</a>-->
-            <a class="btn btn-success btn-wide btn-pill transition-3d-hover mb-2 mb-sm-0 dark_buttom_contac" href="https://api.whatsapp.com/send?phone=+51944411328&text=*Hola buenos dias amigo Lewis, vengo de tu pagina principal!!*" target="_blank">
-              <i class="fab fa-whatsapp"></i> 
-              Contáctanos
-            </a>
-            <!-- End Info -->
           </div>
 
           <div class="col-lg-7">
@@ -88,21 +81,21 @@
     <div class="container">
       <!-- Title -->
       <div class="w-lg-50 text-center mx-lg-auto">
-        <h2 class="letra1" style="font-size: 35px;">Somos Consultoría, Bussines Wassi.</h2>
-        <p class="letra2" style="font-size: 60px;">Bienvenidos</p>
+      <p class="letra2 tipoletra1" style="font-size: 50px; font-weight: bold;">Bienvenidos</p>
+        <h2 class="letra1 tipoletra1" style="font-size: 30px; font-weight: bold;">Somos Consultoría, Bussines Wassi.</h2>
       </div>
       <!-- End Title -->
       <div class="row justify-content-lg-between align-items-lg-center" style="border-bottom: 1px solid #e37d2a; margin-bottom: 10px;">
         <div class="col-lg-5 mb-9 mb-lg-0">
           <div class="mb-5">
-            <h3 class="letra1" style="font-size: 25px; text-align: justify;">Nuestro propósito es ayudar a las personas a 
+            <h3 class="letra1 tipoletra2" style="font-size: 22px; text-align: justify;">Nuestro propósito es ayudar a las personas a 
               cristalizar sus ideas de negocios a través de la Investigación, Desarrollo, Innovación y el Emprendimiento.</h3>           
           </div>
         </div>
 
         <div class="col-lg-6">
 
-          <img class="device-iphone-x-frame" src="../assets/consultoria/img/pngegg11.png" alt="Image Description">
+          <img class="device-iphone-x-frame" src="../assets/consultoria/img/pngegg111.png" alt="Image Description">
 
         </div>
       </div>
@@ -113,8 +106,8 @@
     <div class="container">
       <div class="row justify-content-lg-between align-items-lg-center"  style="border-bottom: 1px solid #e37d2a;; margin-bottom: 10px;">
         <div class="col-lg-5 order-lg-2 mb-9 mb-lg-0">
-          <div class="mb-5">
-            <h3 class="letra1" style="font-size: 25px; text-align: justify;">
+          <div class="mb-2">
+            <h3 class="letra1 tipoletra2" style="font-size: 22px; text-align: justify;">
               Business Wasi es una empresa dedicada a la realización de cursos, 
               especializaciones y talleres a nivel nacional, para así apoyar en el crecimiento y 
               desarrollo empresarial del Perú. Contamos con certificaciones internacionales y docentes calificados para 
@@ -135,8 +128,8 @@
       <div class="row justify-content-lg-between align-items-lg-center" style="border-bottom: 1px solid #e37d2a; margin-bottom: 10px;">
         <div class="col-lg-5 mb-9 mb-lg-0">
           <div class="mb-4">
-            <h3 class="letra1" style="font-size: 25px; text-align: justify;">La realización de estos talleres es de forma virtual y 
-              presencial, y trabajamos en convenio con la Universidad Peruana Unión y CIDE de la Pontificia Universidad Católica del Perú.</h3>
+            <h3 class="letra1 tipoletra2" style="font-size: 22px; text-align: justify;">La realización de estos talleres es de forma virtual y 
+              presencial, trabajamos en convenio con la Universidad Peruana Unión y CIDE de la Pontificia Universidad Católica del Perú.</h3>
           </div>
 
         </div>
@@ -156,10 +149,10 @@
           <div class="text-center py-5 px-5 px-sm-9 card_1">
             <header class="mb-9">
               <div class="mb-1">
-                <span class="display-4" style="color: #efab00 !important;">¿Cómo trabajamos?</span>
+                <span class="display-4 tipoletra1" style="color: #efab00 !important; font-weight: bold; font-size: 50px;"">¿Cómo trabajamos?</span>
                 <!-- <span class="badge badge-indigo badge-pill align-top ml-1">+0.5 USD</span> -->
               </div>
-              <p style="color: white; text-align: justify; font-size: 20px;">Trabajamos con diferentes herramientas para optimizar el tiempo y mejorar nuestra metodología 
+              <p class="tipoletra2 letra1" style="text-align: justify; font-size: 20px;">Trabajamos con diferentes herramientas para optimizar el tiempo y mejorar nuestra metodología 
                 de trabajo, por ende, obtener mejores resultados.</p>
             </header>
 
@@ -173,13 +166,8 @@
             </div>
 
             <div class="mb-7">
-              <p class="small text-white" style="font-size: 17px;" >Comunícate con nuestros agentes,<br>las 24 horas del día</p>
+              <p class="small text-white tipoletra2" style="font-size: 17px; font-weight: bold;" >Comunícate con nuestros agentes,<br>las 24 horas del día</p>
             </div>
-
-            <a type="button" target="_blank" class="btn btn-success btn-wide btn-pill transition-3d-hover" href="https://api.whatsapp.com/send?phone=+51944411328&text=*Hola buenos dias amigo Lewis, vengo de tu pagina principal!!*">
-              <i class="fab fa-whatsapp fa-lg"></i>
-              contáctanos
-            </a>
 
             
           </div>
@@ -193,8 +181,8 @@
                 <img class="avatar-img" src="../assets/consultoria/svg/logo-google-drive.svg" alt="Logo">
               </figure>
               <div class="media-body">
-                <h4 class="text-dark mb-1 letra2">Google Drive</h4>
-                <p class="text-white mb-0"  style=" font-size: 20px; text-align: justify;">Documentos compartidos para todos nuestros asociados.</p>
+                <h4 class="text-dark mb-1 letra2 tipoletra1" style="font-weight: bold;">Google Drive</h4>
+                <p class="text-white mb-0 tipoletra2"  style=" font-size: 20px; text-align: justify;">Documentos compartidos para todos nuestros asociados.</p>
               </div>
             </div>
             <div class="border-top mb-4"></div>
@@ -203,8 +191,8 @@
                 <img class="avatar-img" src="../assets/consultoria/svg/logo-whatsapp.svg" alt="Logo">
               </figure>
               <div class="media-body">
-                <h4 class="text-dark mb-1 letra2">WhatsApp</h4>
-                <p class="text-white mb-0" style="font-size: 20px; text-align: justify;">Mensajería inmediata al alcance de todos.</p>
+                <h4 class="text-dark mb-1 letra2 tipoletra1" style="font-weight: bold;">WhatsApp</h4>
+                <p class="text-white mb-0 tipoletra2" style="font-size: 20px; text-align: justify;">Mensajería inmediata al alcance de todos.</p>
               </div>
             </div>
             <div class="border-top mb-4"></div>
@@ -213,8 +201,8 @@
                 <img class="avatar-img" src="../assets/consultoria/svg/logo-google-gmail.svg" alt="Logo">
               </figure>
               <div class="media-body">
-                <h4 class="text-dark mb-1 letra2">Gmail</h4>
-                <p class="text-white mb-0" style="font-size: 20px; text-align: justify;">Cominicación optima con la mejor herramienta del mercado.</p><br>
+                <h4 class="text-dark mb-1 letra2 tipoletra1" style="font-weight: bold;">Gmail</h4>
+                <p class="text-white mb-0 tipoletra2" style="font-size: 20px; text-align: justify;">Cominicación optima con la mejor herramienta del mercado.</p><br>
               </div>
             </div>
             <div class="border-top mb-4"></div>
@@ -223,8 +211,8 @@
                 <img class="avatar-img" src="../assets/consultoria/svg/logo-zoom.svg" alt="Logo">
               </figure>
               <div class="media-body">
-                <h4 class="text-dark mb-1 letra2">Zoom</h4>
-                <p class="text-white mb-0" style="font-size: 20px; text-align: justify;">Tranmisiones en vivo.</p><br>
+                <h4 class="text-dark mb-1 letra2 tipoletra1" style="font-weight: bold;">Zoom</h4>
+                <p class="text-white mb-0 tipoletra2" style="font-size: 20px; text-align: justify;">Tranmisiones en vivo.</p><br>
               </div>
             </div>
             <div class="border-top mb-4"></div>
@@ -233,8 +221,8 @@
                 <img class="avatar-img" src="../assets/consultoria/img/we.jpg" alt="Logo">
               </figure>
               <div class="media-body">
-                <h4 class="text-dark mb-1 letra2">WeTransfer</h4>
-                <p class="text-white mb-0" style="font-size: 20px; text-align: justify;"> Transferencia de archivos informáticos inmediata.</p>
+                <h4 class="text-dark mb-1 letra2 tipoletra1" style="font-weight: bold;">WeTransfer</h4>
+                <p class="text-white mb-0 tipoletra2" style="font-size: 20px; text-align: justify;"> Transferencia de archivos informáticos inmediata.</p>
               </div>
             </div>
             <!-- End Info -->
@@ -370,6 +358,7 @@
   <script>
     if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="../assets/vendor/babel-polyfill/dist/polyfill.js"><\/script>');
   </script>
+  <!-- <script src="s"></script> -->
 </body>
 
 </html>

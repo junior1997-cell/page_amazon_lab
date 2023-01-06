@@ -7,8 +7,8 @@
       <div class="row">
         <div class="col-lg-6 mb-9 mb-lg-0">
           <div class="mb-5">
-            <h1 class="letra1">Ubícanos</h1>
-            <p class="letra2">Es momento de potenciar tu negocio.</p>
+            <h1 class="letra1 tipoletra1">Ubícanos</h1>
+            <p class="letra2 tipoletra1">Es momento de potenciar tu negocio.</p>
           </div>
 
           <!-- Leaflet -->
@@ -36,19 +36,19 @@
           <div class="row">
             <div class="col-sm-6">
               <div class="mb-3">
-                <span class="d-block h5 mb-1 letra2">Teléfono:</span>
+                <span class="d-block h5 mb-1 letra2 tipoletra1">Teléfono:</span>
                 <span class="d-block text-body font-size-1"> <a href="tel:+51944411328" style="color: white;">944 411 328</a> </span>
               </div>
 
               <div class="mb-3">
-                <span class="d-block h5 mb-1 letra2">Correo:</span>
+                <span class="d-block h5 mb-1 letra2 tipoletra1">Correo:</span>
                 <span class="d-block text-body font-size-1"><a href="mailto:consultoria@gmail.com" style="color: white;">consultoria@gmail.com</a> </span>
               </div>
             </div>
 
             <div class="col-sm-6">
               <div class="mb-3">
-                <span class="d-block h5 mb-1 letra2">Dirección:</span>
+                <span class="d-block h5 mb-1 letra2 tipoletra1">Dirección:</span>
                 <span class="d-block text-body letra1 font-size-1">Jr. Los Helechos 214 – Urb. Bernabe Guridi.</span>
               </div>
             </div>
@@ -259,6 +259,7 @@
   <script>
     if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="assets/vendor/babel-polyfill/dist/polyfill.js"><\/script>');
   </script>
+  <script src="scripts/script_contactanos.js"></script>
 </body>
 
 <!-- Mirrored from htmlstream.com/front/page-contacts-start-up.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 May 2021 14:20:42 GMT -->
