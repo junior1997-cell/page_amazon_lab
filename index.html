@@ -34,6 +34,21 @@
     .background-footer-new{
       background: linear-gradient(to right,rgb(0 0 0) 0,rgb(82 0 0) 100%) !important;
     }
+    @media only screen and (max-width: 1180px) {
+      .foter_none {
+        display: none;
+      }
+    }
+    @media only screen and (max-width: 960px) {
+      .foter_none {
+        display: none;
+      }
+    }
+    @media only screen and (max-width: 540px) {
+      .foter_none {
+        display: none;
+      }
+    }
   
   </style>
 </head>
@@ -129,17 +144,14 @@
   <!-- ========== END MAIN ========== -->
 
   <!-- ========== FOOTER ========== -->
-  <footer class="position-sm-absolute right-0 bottom-0 left-0 z-index-2">
+  <footer class="position-sm-absolute right-0 bottom-0 left-0 z-index-2 foter_none">
     <div class="container space-bottom-1">
       <div class="row justify-content-between align-items-center">
         <div class="col-6 col-sm-5 mb-3 mb-sm-0">
-          <!-- Copyright -->
           <p class="small text-white-70 mb-0">&copy; JDL Tecnology, 2022.</p>
-          <!-- End Copyright -->
         </div>
 
         <div class="col-6 col-sm-6 text-sm-right">
-          <!-- Social Networks -->
           <ul class="list-inline mb-0">
             <li class="list-inline-item">
               <a class="btn btn-xs btn-icon btn-soft-light" href="https://www.facebook.com/profile.php?id=100086343481837" target="_blank">
@@ -157,7 +169,6 @@
               </a>
             </li>            
           </ul>
-          <!-- End Social Networks -->
         </div>
       </div>
     </div>
