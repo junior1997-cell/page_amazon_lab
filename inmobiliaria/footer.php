@@ -7,13 +7,13 @@
                         <span><i class="fas fa-location-arrow"></i>Jr. Los Helechos 214 - Urb. Bernabe Guridi.</span>
                         <span><a href="https://api.whatsapp.com/send?phone=944411328&amp;text=" style=" color: #edc452; text-decoration: none; background-color: transparent;"><i class="fab fa-whatsapp"></i> Whatsapp: +51 944 411 328</a></span>
                     </div>
-                    <div class="col-12 col-md-12 col-sm-12 col-lg-3 col-xl-3">
+                    <div class="col-12 col-md-12 col-sm-12 col-lg-3 col-xl-3" style="text-align: end;" >
                         <div class="redes">
                             <ul>
                                 <li class="float"><a href="https://www.facebook.com/businesswasi" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
-                                <li class="float"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+                                <!-- <li class="float"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
                                 <li class="float"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
-                                <li class="float"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li class="float"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li> -->
                                 <li class="float"><a href="https://www.youtube.com/channel/UCO8gLd1Dq5hrYrZInS93XLQ" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a></li>
                                                                                                                 
                             </ul>
