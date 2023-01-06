@@ -88,7 +88,7 @@
       <div class="row justify-content-lg-between align-items-lg-center" style="border-bottom: 1px solid #e37d2a; margin-bottom: 10px;">
         <div class="col-lg-5 mb-9 mb-lg-0">
           <div class="mb-5">
-            <h3 class="letra1 tipoletra2" style="font-size: 25px; text-align: justify;">Nuestro propósito es ayudar a las personas a 
+            <h3 class="letra1 tipoletra2" style="font-size: 22px; text-align: justify;">Nuestro propósito es ayudar a las personas a 
               cristalizar sus ideas de negocios a través de la Investigación, Desarrollo, Innovación y el Emprendimiento.</h3>           
           </div>
         </div>
@@ -106,8 +106,8 @@
     <div class="container">
       <div class="row justify-content-lg-between align-items-lg-center"  style="border-bottom: 1px solid #e37d2a;; margin-bottom: 10px;">
         <div class="col-lg-5 order-lg-2 mb-9 mb-lg-0">
-          <div class="mb-5">
-            <h3 class="letra1 tipoletra2" style="font-size: 25px; text-align: justify;">
+          <div class="mb-2">
+            <h3 class="letra1 tipoletra2" style="font-size: 22px; text-align: justify;">
               Business Wasi es una empresa dedicada a la realización de cursos, 
               especializaciones y talleres a nivel nacional, para así apoyar en el crecimiento y 
               desarrollo empresarial del Perú. Contamos con certificaciones internacionales y docentes calificados para 
@@ -128,7 +128,7 @@
       <div class="row justify-content-lg-between align-items-lg-center" style="border-bottom: 1px solid #e37d2a; margin-bottom: 10px;">
         <div class="col-lg-5 mb-9 mb-lg-0">
           <div class="mb-4">
-            <h3 class="letra1 tipoletra2" style="font-size: 25px; text-align: justify;">La realización de estos talleres es de forma virtual y 
+            <h3 class="letra1 tipoletra2" style="font-size: 22px; text-align: justify;">La realización de estos talleres es de forma virtual y 
               presencial, trabajamos en convenio con la Universidad Peruana Unión y CIDE de la Pontificia Universidad Católica del Perú.</h3>
           </div>
 
@@ -149,7 +149,7 @@
           <div class="text-center py-5 px-5 px-sm-9 card_1">
             <header class="mb-9">
               <div class="mb-1">
-                <span class="display-4 tipoletra1" style="color: #efab00 !important; font-weight: bold;">¿Cómo trabajamos?</span>
+                <span class="display-4 tipoletra1" style="color: #efab00 !important; font-weight: bold; font-size: 50px;"">¿Cómo trabajamos?</span>
                 <!-- <span class="badge badge-indigo badge-pill align-top ml-1">+0.5 USD</span> -->
               </div>
               <p class="tipoletra2 letra1" style="text-align: justify; font-size: 20px;">Trabajamos con diferentes herramientas para optimizar el tiempo y mejorar nuestra metodología 
