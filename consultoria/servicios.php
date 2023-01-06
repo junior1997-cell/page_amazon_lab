@@ -9,8 +9,8 @@
           <div class="col-lg-5 mb-5 mb-lg-0">
             <!-- Info -->
             <div class="mb-5">
-              <h1 class="letra1" style="font-size: 45px;">Nuestros Servicios 2023</h1>
-              <p class="letra2">Conoce todos nuestro servicio actuales y aprovechalos al máximo.</p>
+              <h1 class="letra1 tipoletra1" style="font-size: 45px;">Nuestros Servicios 2023</h1>
+              <p class="letra2 tipoletra2" style="font-weight: bold;">Conoce todos nuestros servicios actuales y aprovéchalos al máximo.</p>
             </div>
 
             <!--<a class="btn btn-light btn-wide btn-pill shadow-soft transition-3d-hover mb-2 mb-sm-0 mr-4 dark_buttom_brochure" href="" download="Brochure"><i class="fas fa-download"></i> Descargar Brochure</a>-->
@@ -60,16 +60,16 @@
     <div id="aboutSection" class="container space-2 space-lg-2">
       <!-- Title -->
       <div class="w-lg-65 text-center mx-auto mb-5 mb-sm-9">
-        <h2 class="h1 letra1">Servicios</h2>
-        <p class="letra2">Los mejores servicios flexibles para las empresas modernas</p>
+        <h2 class="h1 letra1 tipoletra1">Servicios</h2>
+        <p class="letra2 tipoletra2" style="font-weight: bold;">Los mejores servicios flexibles para las empresas modernas</p>
       </div>
       <!-- End Title -->
 
       <div class="cont1">
         <div class="card">
           <img src="../assets/consultoria/img/img1.jpg" alt="">
-          <h3 class="letra1">Consultoría y Gestión empresarial</h3>
-          <p style="text-align: justify">¿Deseas mejorar el proceso productivo de tu empresa?, ¿Quieres mejorar la atención al cliente en tu negocio?
+          <h3 class="tipoletra1" style="color: #C8C8C8;">Consultoría y Gestión empresarial</h3>
+          <p class="tipoletra2" style="text-align: justify; color: #B8B8B8; font-size: 15px;">¿Deseas mejorar el proceso productivo de tu empresa?, ¿Quieres mejorar la atención al cliente en tu negocio?
              ¿Tienes una idea de negocio y no sabes por donde iniciar?. <br>
              
              Descuida!....
@@ -78,8 +78,8 @@
 
         <div class="card">
           <img src="../assets/consultoria/img/img2.jpg" alt="">
-          <h3 class="letra1">Formulación de Proyectos</h3>
-          <p style="text-align: justify">¿Deseas financiamiento para tu idea o proyecto?.
+          <h3 class="tipoletra1" style="color: #C8C8C8;">Formulación de Proyectos</h3>
+          <p class="tipoletra2" style="text-align: justify; color: #B8B8B8; font-size: 15px;">¿Deseas financiamiento para tu idea o proyecto?.
             Contamos con un panel de expertos que te ayudarán a desarrollar tus ideas de negocio y 
             presentarlo en los distintos fondos concursables para su financiamiento.
           </p>
@@ -87,8 +87,8 @@
 
         <div class="card">
           <img src="../assets/consultoria/img/img3.jpg" alt="">
-          <h3 class="letra1">Escuela de Negocios</h3>
-          <p style="text-align: justify">¿Deseas fortalecer tus habilidades y competencias para los negocios?.</p>
+          <h3 class="tipoletra1" style="color: #C8C8C8;">Escuela de Negocios</h3>
+          <p class="tipoletra2" style="text-align: justify; color: #B8B8B8; font-size: 15px;">¿Deseas fortalecer tus habilidades y competencias para los negocios?.</p>
         </div>
 
       </div>
@@ -114,8 +114,8 @@
 
           <div class="col-lg-6 order-lg-1">
             <div class="mb-5">
-              <h2 class="letra5">1.	CONSULTORÍA Y GESTIÓN EMPRESARIAL</h2>
-              <p class="letra1" style="text-align: justify">Formamos un equipo de colaboradores creativos e innovadores, comprometidos en cada proyecto y 
+              <h2 class="letra2 tipoletra1" style="font-size: 29px;">1.	CONSULTORÍA Y GESTIÓN EMPRESARIAL</h2>
+              <p class="letra1 tipoletra1" style="text-align: justify; font-size: 18px;">Formamos un equipo de colaboradores creativos e innovadores, comprometidos en cada proyecto y 
                 reto que nos presentes. Nuestros profesionales están certificados internacionalmente y hacen uso de marcos de 
                 trabajos ágiles para acelerar y poner a prueba las soluciones como Design Thinking, SCRUM, Lean Startup.
               </p>
@@ -205,8 +205,8 @@
 
           <div class="col-lg-6 order-lg-2">
             <div class="mb-5">
-              <h2 class="letra5">2.	FORMULACIÓN DE PROYECTOS</h2>
-              <p class="letra1" style="text-align: justify"> ¿Deseas financiamiento para tu idea o proyecto?. <br>
+              <h2 class="letra2 tipoletra1" style="font-size: 29px;">2.	FORMULACIÓN DE PROYECTOS</h2>
+              <p class="letra1 tipoletra1" style="text-align: justify; font-size: 18px;"> ¿Deseas financiamiento para tu idea o proyecto?. <br>
                 Contamos con un panel de expertos que te ayudarán a desarrollar tus ideas de negocio y presentarlo 
                 en los distintos fondos concursables para su financiamiento.
               </p>
@@ -243,8 +243,8 @@
 
           <div class="col-lg-6 order-lg-1">
             <div class="mb-5">
-              <h2 class="letra5">3.	ESCUELA DE NEGOCIOS</h2>
-              <p class="letra1" style="text-align: justify">¿Deseas fortalecer tus habilidades y competencias para los negocios?. <br>
+              <h2 class="letra2 tipoletra1" style="font-size: 29px;">3.	ESCUELA DE NEGOCIOS</h2>
+              <p class="letra1 tipoletra1" style="text-align: justify; font-size: 18px;">¿Deseas fortalecer tus habilidades y competencias para los negocios?. <br>
                 Ponemos a tu disposición nuestra Escuela de Negocios Business Wasi, 
                 donde encontrarás cursos y talleres presenciales, hibridas y online, cuyo objetivo es fortalecer tus 
                 competencias y habilidades que te ayuden a tener éxito en tu emprendimiento y/o empresa. Contamos con convenios 
@@ -256,7 +256,7 @@
            
             <!-- End List -->
             <p class="letra1" style="font-size: 18px;">
-            Ver Cursos: 
+            Ver cursos: 
               <a class="font-weight-bold tipoletra1 hover_link" href="https://calendly.com/kerrylewis7" target="_blank">Aquí</a>
             </p>
             

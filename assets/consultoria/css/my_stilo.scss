@@ -17,6 +17,21 @@ $rosa: #EE2D5C;
 $sombreDark: 10px 10px 20px rgba(170,170,170,.16);
 $sombreLight: 10px 10px 20px rgba(0,0,0,.16); 
 
+@font-face {
+    font-family: 'GothamThin';
+    src:     url('../font/Gotham-Thin.otf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+font-family: 'GothamMedium';
+src:     url('../font/GothamMedium.ttf')  format('truetype'); /* Safari, Android, iOS */
+
+}
+@font-face {
+font-family: 'GothamLight';
+src:     url('../font/GothamLight.ttf')  format('truetype'); /* Safari, Android, iOS */
+
+}
+
 
 .btn-amarillo{
     background-color: #f5ca99 !important;
@@ -78,7 +93,7 @@ $sombreLight: 10px 10px 20px rgba(0,0,0,.16);
 
 body{
     background: $negroFondo;
-    font-family: 'Roboto', sans-serif;
+    //font-family: 'Gotham', sans-serif;
     transition: .3s ease all;
 
     //&.dark { background: $negroFondo;}
@@ -99,8 +114,6 @@ body{
 }
 
 .navBar{
-    font-family: 'Ø';
-    text-transform: capitalize;
     font-weight: bold;
     //text-align: center;
     //font-weight: 600;
@@ -118,7 +131,7 @@ body{
     /*display: inline-block;
     margin: .5em 1em;*/
     list-style: none;
-
+    padding-right: 10px;
 }
 
 .navBar ul {
@@ -140,7 +153,7 @@ body{
     position: relative;
     display: block;
     text-align: center;
-    margin: 0 1rem;
+    //margin: 0 1rem;
     
 }
 
@@ -161,11 +174,15 @@ body{
 /*  ══════════════════════════════════════════ - NAV - ══════════════════════════════════════════ */
 
 .tipoletra1 {
-    font-family: 'Ø';
+    font-family: 'Gotham', sans-serif;
 }
 .tipoletra2 {
-    font-family: 'FSP DEMO - Cosmata Bold';
-    font-weight: bold;
+    font-family: 'GothamLight', sans-serif;
+    //font-weight: bold;
+}
+.tipoletra3 {
+    font-family: 'GothamThin', sans-serif;
+    //font-weight: bold;
 }
 
 .hover_link{
@@ -180,7 +197,7 @@ body{
     background: $botonNegro !important;
     color: $blanco;
     border: $negro;
-    font-family: 'FSP DEMO - Cosmata Bold';
+    font-family: 'Gotham', sans-serif;
     font-weight: bold;
     /*background: $blanco;
     body.dark & {
@@ -199,7 +216,7 @@ body{
     background: $verdeWhatsapp;
     color: $negro;
     border: $verdeWhatsapp;
-    font-family: 'FSP DEMO - Cosmata Bold';
+    font-family: 'Gotham', sans-serif;
     font-weight: bold;
     /*body.dark & {
         background: $verdeWhatsapp;
@@ -210,21 +227,18 @@ body{
 
 .letra1 {
     color: $blanco !important;
-    font-family: 'Ø';
-    font-weight: bold;
+    //font-weight: bold;
 }
 
 .letra2 {
     color: $amarillo !important;
-    font-family: 'Ø';
-    font-weight: bold;
+    //font-weight: bold;
     font-size: 20px;
 }
 
 .letra3 {
     color: $azulMarino;
-    font-family: 'FSP DEMO - Cosmata Bold';
-    font-weight: bold;
+    //font-weight: bold;
 }
 
 .letra4 {
@@ -233,7 +247,7 @@ body{
 
 .letra5 {
     color: $amarillo !important;
-    font-family: 'Ø';
+    font-family: 'Gotham', sans-serif;
     font-weight: bold;
 }
 
@@ -301,6 +315,8 @@ body{
 .imgconsul1 img {
     border-radius: 10px;
     height: 300px;
+    //padding-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .imgconsul2 img{

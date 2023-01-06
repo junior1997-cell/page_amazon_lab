@@ -169,9 +169,9 @@
                                     </div>
                                 </div>
                                 <div class="col-12 text-center"  >
-                                    <i class="fas fa-check-circle mt-1 mr-2" style="color: #803588;"></i> Separa una cita:
+                                    <i class="fas fa-check-circle mt-1 mr-2" style="color: #f4b222;"></i> Separa una cita:
                                     <a style="font-size: 15px; font-weight: bold; 
-                                           color:#803588; font-size: 18px;"
+                                           color:#f4b222; font-size: 18px;"
                                          target="_blank" href="https://calendly.com/kerrylewis7">Aquí</a>
                                 </div>
                             </div>
@@ -229,9 +229,9 @@
                                     </div>
                                 </div>
                                 <div class="col-12 text-center"  >
-                                    <i class="fas fa-check-circle mt-1 mr-2" style="color: #803588;"></i> Separa una cita:
+                                    <i class="fas fa-check-circle mt-1 mr-2" style="color: #f4b222;"></i> Separa una cita:
                                     <a style="font-size: 15px; font-weight: bold; 
-                                           color:#803588; font-size: 18px;"
+                                           color:#f4b222; font-size: 18px;"
                                          target="_blank" href="https://calendly.com/kerrylewis7">Aquí</a>
                                 </div>
                             </div>
@@ -297,13 +297,13 @@
 
                                     <div class="media text-body mb-3">
                                         <i class="fas fa-check-circle mt-1 mr-2 text-warning" ></i>
-                                        <div class="media-body"><span class="mr-1">+Impresión </span> <span class="badge badge-danger badge-pill">(50% descuento)</span></div>
+                                        <div class="media-body"><span class="mr-1">+Impresión </span> <span class="badge badge-warning badge-pill">(50% descuento)</span></div>
                                     </div>
                                 </div>
                                 <div class="col-12 text-center"  >
-                                    <i class="fas fa-check-circle mt-1 mr-2" style="color: #803588;"></i> Separa una cita:
+                                    <i class="fas fa-check-circle mt-1 mr-2 text-warning"></i> Separa una cita:
                                     <a style="font-size: 15px; font-weight: bold; 
-                                           color:#803588; font-size: 18px;"
+                                           color:#f4b222; font-size: 18px;"
                                          target="_blank" href="https://calendly.com/kerrylewis7">Aquí</a>
                                 </div>
                             </div>
