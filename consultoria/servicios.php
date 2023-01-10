@@ -61,32 +61,35 @@
       </div>
       <!-- End Title -->
 
-      <div class="cont1">
-        <div class="card">
-          <img src="../assets/consultoria/img/img3.jpg" alt="">
-          <h4 class="tipoletra1 mt-3" style="color: #C8C8C8;">Consultoría y Gestión empresarial</h4>
-          <p class="tipoletra2" style="text-align: justify; color: #B8B8B8; font-size: 15px;">¿Deseas mejorar el proceso productivo de tu empresa?, ¿Quieres mejorar la atención al cliente en tu negocio?
-             ¿Tienes una idea de negocio y no sabes por donde iniciar?. <br>
-             
-             Descuida!....
-          </p>
+      <div class="row">
+        <div class="col-lg-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 cont1">
+          <div class="card">
+            <img src="../assets/consultoria/img/img3.jpg" alt="">
+            <h4 class="tipoletra1 mt-3" style="color: #C8C8C8;">Consultoría y Gestión empresarial</h4>
+            <p class="tipoletra2" style="text-align: justify; color: #B8B8B8; font-size: 15px;">¿Deseas mejorar el proceso productivo de tu empresa?, ¿Quieres mejorar la atención al cliente en tu negocio?
+              ¿Tienes una idea de negocio y no sabes por donde iniciar?.
+              
+              Descuida!....
+            </p>
+          </div>
         </div>
-
-        <div class="card">
-          <img src="../assets/consultoria/img/img2.jpg" alt="">
-          <h4 class="tipoletra1 mt-3" style="color: #C8C8C8;">Formulación de Proyectos</h4>
-          <p class="tipoletra2" style="text-align: justify; color: #B8B8B8; font-size: 15px;">¿Deseas financiamiento para tu idea o proyecto?.
-            Contamos con un panel de expertos que te ayudarán a desarrollar tus ideas de negocio y 
-            presentarlo en los distintos fondos concursables para su financiamiento.
-          </p>
+        <div class="col-lg-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 cont1">
+          <div class="card">
+            <img src="../assets/consultoria/img/img2.jpg" alt="">
+            <h4 class="tipoletra1 mt-3" style="color: #C8C8C8;">Formulación de Proyectos</h4>
+            <p class="tipoletra2" style="text-align: justify; color: #B8B8B8; font-size: 15px;">¿Deseas financiamiento para tu idea o proyecto?.
+              Contamos con un panel de expertos que te ayudarán a desarrollar tus ideas de negocio y 
+              presentarlo en los distintos fondos concursables para su financiamiento.
+            </p>
+          </div>
         </div>
-
-        <div class="card">
-          <img src="../assets/consultoria/img/img3.jpg" alt="">
-          <h4 class="tipoletra1 mt-3" style="color: #C8C8C8;">Escuela de Negocios</h4>
-          <p class="tipoletra2" style="text-align: justify; color: #B8B8B8; font-size: 15px;">¿Deseas fortalecer tus habilidades y competencias para los negocios?.</p>
+        <div class="col-lg-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 cont1">
+          <div class="card">
+            <img src="../assets/consultoria/img/img3.jpg" alt="">
+            <h4 class="tipoletra1 mt-3" style="color: #C8C8C8;">Escuela de Negocios</h4>
+            <p class="tipoletra2" style="text-align: justify; color: #B8B8B8; font-size: 15px;">¿Deseas fortalecer tus habilidades y competencias para los negocios?.</p>
+          </div>
         </div>
-
       </div>
 
       
